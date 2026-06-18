@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+  h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', serif;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  .wrapper {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .line1 {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 8px;
+  }
+
+  .line2 {
+    font-size: 72px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    line-height: 1;
+  }
+
+  .line3 {
+    font-size: 14px;
+    margin-top: 8px;
+    display: block;
+    /* РАСТЯНУТЬ ВО ВСЮ ШИРИНУ ХИСТОРИЯ */
+    width: 100%;
+    text-align: justify;
+    text-align-last: justify; /* выравнивание по ширине */
+    letter-spacing: 1px;
+  }
+
+  /* Добавляем микро-отступы между словами */
+  .line3 span {
+    display: inline-block;
+  }
+</style>
+
+<h1>
+  <div class="wrapper">
+    <div class="line1">the</div>
+    <div class="line2">ХИСТОРИЯ</div>
+    <div class="line3">от средневековья до наших дней</div>
+  </div>
+</h1>
+</body>
+</html>

@@ -1,0 +1,18 @@
+# Зависимости (если будут)
+node_modules/
+*.log
+
+# Настройки VS Code
+.vscode/
+*.suo
+*.user
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Файлы с секретами (если будут)
+*.env
+*.key
+*.pem

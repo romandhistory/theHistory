@@ -1,0 +1,341 @@
+{
+  "year": 1,
+  "tabs": {
+    "world": {
+      "intro": null,
+      "articles": [
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        }
+      ]
+    },
+    "russia": {
+      "intro": null,
+      "articles": [
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "src": "cont/2020/clubhouse.jpg",
+        "alt": "ClubHouse",
+        "size": "large-vertical"
+      },
+      {
+        "src": "cont/2020/M.Jordan.png",
+        "alt": "Last Dance",
+        "size": "wide"
+      },
+      {
+        "src": "cont/2020/BTS.png",
+        "alt": "bts",
+        "size": "tall"
+      },
+      {
+        "src": "cont/2020/DrTHouse.png",
+        "alt": "dreamhouse",
+        "size": null
+      },
+      {
+        "src": "cont/2020/Pitt&Fenix.png",
+        "alt": "oscar",
+        "size": "wide"
+      },
+      {
+        "src": "cont/2020/Ведьмак.png",
+        "alt": "vedmak",
+        "size": null
+      },
+      {
+        "src": "cont/2020/dovod.jpg",
+        "alt": "dovodfilm",
+        "size": "large-horizontal"
+      },
+      {
+        "src": "cont/2020/grobovs.jpg",
+        "alt": "grobovsiki",
+        "size": "tall"
+      },
+      {
+        "src": "cont/2020/Мандалорец.jpg",
+        "alt": "mandalorec",
+        "size": null
+      },
+      {
+        "src": "cont/2020/poodnoi.jpg",
+        "alt": "poodnoifilm",
+        "size": "wide"
+      },
+      {
+        "src": "cont/2020/parazits.png",
+        "alt": "parazitsfilm",
+        "size": null
+      },
+      {
+        "src": "cont/2020/theend.jpg",
+        "alt": "konec",
+        "size": "large-vertical"
+      }
+    ]
+  }
+}

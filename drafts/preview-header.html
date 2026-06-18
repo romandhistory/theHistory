@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Preview Header</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { background: #f8f8f8; padding: 30px; font-family: Arial, sans-serif; color: #1f1f1f; }
+    .preview-wrapper { max-width: 1200px; margin: 0 auto; display: grid; gap: 40px; }
+    .preview-card { background: #ffffff; border-radius: 24px; box-shadow: 0 18px 50px rgba(0,0,0,0.08); padding: 36px 40px; }
+    .preview-card h2 { margin: 0 0 16px; font-size: 1.1rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #555; }
+    .preview-card p { margin: 0 0 28px; color: #444; line-height: 1.7; }
+    .preview-card .section-heading { margin: 0; }
+    .preview-card .section-heading.variant-line .main { position: relative; }
+    .preview-card .section-heading.variant-line .main::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -0.35em;
+      width: 4.6rem;
+      height: 2px;
+      background: linear-gradient(90deg, #111 0%, #777 100%);
+      border-radius: 1px;
+      transform: translateY(0.1rem);
+    }
+    .preview-card .section-heading.variant-compact {
+      padding-top: 0.2rem;
+    }
+    .preview-card .section-heading.variant-compact .main {
+      font-size: clamp(2.4rem, 4vw, 3.4rem);
+      letter-spacing: 0.04em;
+    }
+    .preview-card .section-heading.variant-compact .subtitle {
+      letter-spacing: 0.12em;
+      color: #5c5c5c;
+    }
+    .preview-card .section-heading.variant-compact .prefix {
+      font-size: 1.35rem;
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+  <div class="preview-wrapper">
+    <div class="preview-card">
+      <h2>1. Текущий вариант (более элегантный)</h2>
+      <p>Тот же стиль, который уже работает на странице: более мягкий размер заголовка и заметный, но не громоздкий префикс.</p>
+      <h1 class="section-heading">
+        <span class="prefix">the</span>
+        <span class="main">ХИСТОРИ</span>
+        <span class="subtitle">от средневековья до наших дней</span>
+      </h1>
+    </div>
+
+    <div class="preview-card">
+      <h2>2. Вариант с линией</h2>
+      <p>Псевдоэлемент под основным словом добавляет аккуратный акцент без перегрузки. Линия визуально отделяет «ХИСТОРИ» и делает композицию более дорогой.</p>
+      <h1 class="section-heading variant-line">
+        <span class="prefix">the</span>
+        <span class="main">ХИСТОРИ</span>
+        <span class="subtitle">от средневековья до наших дней</span>
+      </h1>
+    </div>
+
+    <div class="preview-card">
+      <h2>3. Компактный десктопный вариант</h2>
+      <p>Более сдержанный основной заголовок, чуть крупнее префикс и меньше расстояний. Подходит, если хотите элегантный строчный вариант без «тяжести».</p>
+      <h1 class="section-heading variant-compact">
+        <span class="prefix">the</span>
+        <span class="main">ХИСТОРИ</span>
+        <span class="subtitle">от средневековья до наших дней</span>
+      </h1>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>theХистори</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="header-title">theХистори</div>
+            <div class="header-actions">
+                <button type="button" class="header-btn">Кнопка 1</button>
+                <button type="button" class="header-btn">Кнопка 2</button>
+            </div>
+        </div>
+    </header>
+    <div class="bg-wrap">
+        <img src="pic/фон.png" alt="" class="bg-img" />
+    </div>
+    <section id="tranding">
+        <div class="container">
+            <h1 class="section-heading">theХистори</h1>
+        </div>
+        <div class="container">
+            <div class="slider-wrapper">
+                <div class="swiper tranding-slider">
+                    <div class="swiper-wrapper" id="slidesRoot"></div>
+                </div>
+                <div class="search-container">
+                    <input type="text" class="slide-search" placeholder="Выберите нужный Год" maxlength="4">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 id="modalTitle">Подробности о слайде</h2>
+                <button class="modal-close" aria-label="Закрыть">×</button>
+            </div>
+            <div class="modal-content" id="modalContent"></div>
+            <div class="modal-tabs">
+                <button class="tab-button active" data-tab="tab1">Мировые События</button>
+                <button class="tab-button" data-tab="tab2">Россия</button>
+                <button class="tab-button" data-tab="tab3">Галерея</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.2/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.2/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
+    <script src="scr.js"></script>
+</body>
+
+</html>

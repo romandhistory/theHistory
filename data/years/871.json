@@ -1,0 +1,275 @@
+{
+  "year": 871,
+  "tabs": {
+    "world": {
+      "intro": null,
+      "articles": [
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        }
+      ]
+    },
+    "russia": {
+      "intro": null,
+      "articles": [
+        {
+          "button": "Печенеги усиливаются в степи",
+          "title": "Новый хищник у порогов",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "Аскольд: торговля в новых условиях",
+          "title": "Южный маршрут меняет правила",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "Рюрик укрепляет дружину",
+          "title": "Сила, которая должна устоять",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "Олег набирает влияние",
+          "title": "Тень становится длиннее",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "Киев и греческое духовенство",
+          "title": "Церковь без прихожан",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "Русь в середине десятилетия",
+          "title": "Десять лет варяжской власти",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "src": "cont/2020/clubhouse.jpg",
+        "alt": "ClubHouse",
+        "size": "large-vertical"
+      },
+      {
+        "src": "cont/2020/M.Jordan.png",
+        "alt": "Last Dance",
+        "size": "wide"
+      },
+      {
+        "src": "cont/2020/BTS.png",
+        "alt": "bts",
+        "size": "tall"
+      },
+      {
+        "src": "cont/2020/DrTHouse.png",
+        "alt": "dreamhouse",
+        "size": null
+      },
+      {
+        "src": "cont/2020/Pitt&Fenix.png",
+        "alt": "oscar",
+        "size": "wide"
+      },
+      {
+        "src": "cont/2020/Ведьмак.png",
+        "alt": "vedmak",
+        "size": null
+      },
+      {
+        "src": "cont/2020/dovod.jpg",
+        "alt": "dovodfilm",
+        "size": "large-horizontal"
+      },
+      {
+        "src": "cont/2020/grobovs.jpg",
+        "alt": "grobovsiki",
+        "size": "tall"
+      },
+      {
+        "src": "cont/2020/Мандалорец.jpg",
+        "alt": "mandalorec",
+        "size": null
+      },
+      {
+        "src": "cont/2020/poodnoi.jpg",
+        "alt": "poodnoifilm",
+        "size": "wide"
+      },
+      {
+        "src": "cont/2020/parazits.png",
+        "alt": "parazitsfilm",
+        "size": null
+      },
+      {
+        "src": "cont/2020/theend.jpg",
+        "alt": "konec",
+        "size": "large-vertical"
+      }
+    ]
+  }
+}
