@@ -408,7 +408,6 @@ body {
     height: 2cm;
     max-height: 2cm;
     background: var(--white) !important;
-    background-color: var(--white) !important;
     border-top: none;
     box-shadow: none;
     display: flex;
@@ -416,6 +415,7 @@ body {
     justify-content: center;
     z-index: 1;
     pointer-events: auto;
+    print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
 }
 
