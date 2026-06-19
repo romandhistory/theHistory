@@ -64,12 +64,12 @@
         },
         {
           "button": "Король Людовик Немецкий вторгается в Моравию",
-          "title": "Людовик прижимает Растислава к стене",
+          "title": "Людовик прижимает Ростислава к стене",
           "body": [
-            "<p>В августе 864 года <strong>Людовик Немецкий</strong> вторгся в Моравию, переправился через Дунай и осадил крепость <strong>Довина</strong> — предположительно, нынешний замок Девин в Словакии. <strong>Растислав</strong> оказался заперт внутри.</p>",
-            "<p>Людовик рассчитывал действовать совместно с болгарским ханом <strong>Борисом I</strong>, однако тот в последний момент отказался от участия в походе. Несмотря на это, кампания удалась: Растислав капитулировал, выдал знатных заложников и принёс новую клятву верности.</p>",
-            "<p>Победа, однако, оказалась тактической. Уже через год Растислав вновь выступал против Людовика. Моравия раз за разом отбивалась от Восточной Франкии на протяжении десятилетий — и всё это время при дворе Растислава работали <strong>Кирилл и Мефодий</strong>, закладывая славянскую письменность.</p>",
-            "<p><em>Людовик взял замок. Историю взял Растислав.</em></p>"
+            "<p>В августе 864 года <strong>Людовик Немецкий</strong> вторгся в Моравию, переправился через Дунай и осадил крепость <strong>Довина</strong> — предположительно, нынешний замок Девин в Словакии. <strong>Ростислав</strong> оказался заперт внутри.</p>",
+            "<p>Людовик рассчитывал действовать совместно с болгарским ханом <strong>Борисом I</strong>, однако тот в последний момент отказался от участия в походе. Несмотря на это, кампания удалась: Ростислав капитулировал, выдал знатных заложников и принёс новую клятву верности.</p>",
+            "<p>Победа, однако, оказалась тактической. Уже через год Ростислав вновь выступал против Людовика. Моравия раз за разом отбивалась от Восточной Франкии на протяжении десятилетий — и всё это время при дворе Ростислава работали <strong>Кирилл и Мефодий</strong>, закладывая славянскую письменность.</p>",
+            "<p><em>Людовик взял замок. Историю взял Ростислав.</em></p>"
           ],
           "image": {
             "src": "cont/864/vtorshenievmoraviu.png",
@@ -94,9 +94,9 @@
           "button": "Ростислав Моравский укрепляет независимость церкви от франкского духовенства",
           "title": "Моравия ищет своих священников",
           "body": [
-            "<p><strong>Растислав</strong> стремился ограничить деятельность франкских миссионеров в своих землях. Сначала он обратился в Рим — безуспешно. Затем, около <strong>862 года</strong>, послал за «учителями» в Константинополь, особо оговорив нужду в людях, способных работать на славянском языке.</p>",
-            "<p>Причина была проста. Франкские епископы смотрели на Моравию как на территорию, законно входящую в их юрисдикцию — то есть церковная зависимость прямо конвертировалась в политическую. Растислав поддержал <strong>Кирилла и Мефодия</strong> не столько из религиозных, сколько из политических побуждений: Константинополь был нужен ему как противовес франкскому давлению.</p>",
-            "<p>В 864 году <strong>Людовик Немецкий</strong> всё же загнал Растислава в крепость и вырвал клятву верности — но сломить его окончательно не смог. Славянская миссия продолжала работать. Кирилл и Мефодий переводили литургические тексты, готовили местных священников, выстраивали то, чего у Моравии ещё не было: церковь, говорящую с народом на его языке.</p>",
+            "<p><strong>Ростислав</strong> стремился ограничить деятельность франкских миссионеров в своих землях. Сначала он обратился в Рим — безуспешно. Затем, около <strong>862 года</strong>, послал за «учителями» в Константинополь, особо оговорив нужду в людях, способных работать на славянском языке.</p>",
+            "<p>Причина была проста. Франкские епископы смотрели на Моравию как на территорию, законно входящую в их юрисдикцию — то есть церковная зависимость прямо конвертировалась в политическую. Ростислав поддержал <strong>Кирилла и Мефодия</strong> не столько из религиозных, сколько из политических побуждений: Константинополь был нужен ему как противовес франкскому давлению.</p>",
+            "<p>В 864 году <strong>Людовик Немецкий</strong> всё же загнал Ростислава в крепость и вырвал клятву верности — но сломить его окончательно не смог. Славянская миссия продолжала работать. Кирилл и Мефодий переводили литургические тексты, готовили местных священников, выстраивали то, чего у Моравии ещё не было: церковь, говорящую с народом на его языке.</p>",
             "<p><em>Независимость, которую не удалось отстоять мечом, строилась алфавитом.</em></p>"
           ],
           "image": {
@@ -278,62 +278,74 @@
       {
         "src": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/f86e303dc2a81e427e48af54927d7b2097560abf.jpg",
         "alt": "rurik",
-        "size": "large-vertical"
+        "size": "large-vertical",
+        "caption": "rurik"
       },
       {
         "src": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/e52029dc1a389e523e8b801e51ef1c58ce1f265d.jpg",
         "alt": "rurik",
-        "size": "wide"
+        "size": "wide",
+        "caption": "rurik"
       },
       {
         "src": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/3b7dc258594fa9637aefda7cd470406eed061353.jpg",
         "alt": "novgorod",
-        "size": "tall"
+        "size": "tall",
+        "caption": "novgorod"
       },
       {
         "src": "https://www.svithun.info/wp-content/uploads/2015/02/Olav-Trygvasson.jpg",
         "alt": "olaf.bel",
-        "size": null
+        "size": null,
+        "caption": "olaf.bel"
       },
       {
         "src": "https://i.pinimg.com/564x/76/9d/23/769d23f19d2082102ff83898a9b95b9f.jpg",
         "alt": "robert.sil",
-        "size": "wide"
+        "size": "wide",
+        "caption": "robert.sil"
       },
       {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Louis_I_of_East_Francia.jpg/250px-Louis_I_of_East_Francia.jpg?utm_source=www.wikidata.org&utm_campaign=index&utm_content=thumbnail",
         "alt": "ludov.nemec",
-        "size": null
+        "size": null,
+        "caption": "ludov.nemec"
       },
       {
         "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStAVxu_tRAjOTUwFN0SPSqAUkBxXNXKA438g&s",
         "alt": "rostislav.morav",
-        "size": "large-horizontal"
+        "size": "large-horizontal",
+        "caption": "rostislav.morav"
       },
       {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Retrat_imaginari_de_l%27emperador_franc_Carles_el_Calb_-_Filippo_Ariosto_%281587-1588%29.jpg/250px-Retrat_imaginari_de_l%27emperador_franc_Carles_el_Calb_-_Filippo_Ariosto_%281587-1588%29.jpg?utm_source=ru.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
         "alt": "karl.lisyi",
-        "size": "tall"
+        "size": "tall",
+        "caption": "karl.lisyi"
       },
       {
         "src": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Pepin_I_Aquitaine_denier_817_838.jpg",
         "alt": "pipin",
-        "size": null
+        "size": null,
+        "caption": "pipin"
       },
       {
         "src": "https://wasmedia.b-cdn.net/wp-content/uploads/2017/09/raskol-hristianskoj-cerkvi_was_01.jpg",
         "alt": "nikol1",
-        "size": "wide"
+        "size": "wide",
+        "caption": "nikol1"
       },
       {
         "src": "https://pccs.run/wp-content/uploads/2015/04/cm_kohler2_4.jpg",
         "alt": "kir&mef",
-        "size": null
+        "size": null,
+        "caption": "kir&mef"
       },
       {
         "src": "https://cdn.ruwiki.ru/commonswiki/files/thumb/1/10/Baptism_of_the_Preslav_Court.jpg/559px-Baptism_of_the_Preslav_Court.jpg",
         "alt": "borisI",
-        "size": "large-vertical"
+        "size": "large-vertical",
+        "caption": "borisI"
       }
     ]
   }

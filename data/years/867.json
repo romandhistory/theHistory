@@ -69,7 +69,7 @@
           "button": "Лотарь II едет в Рим к новому папе",
           "title": "Лотарь учуял слабину",
           "body": [
-            "<p>Десять лет <strong>Лотарь II</strong> воевал с <strong>Николаем I</strong> за право развестись с <strong>Тьетбергой</strong> и жениться на <strong>Вальдраде</strong>. Десять лет папа держал оборону — снимал архиепископов, угрожал отлучением, разворачивал посольства. Николай умер 13 ноября 867 года — и Лотарь немедленно двинулся на Рим.</p>", 
+            "<p>Десять лет <strong>Лотарь II</strong> воевал с <strong>Николаем I</strong> за право развестись с <strong>Тьетбергой</strong> и жениться на <strong>Вальдраде</strong>. Десять лет папа держал оборону — снимал архиепископов, угрожал отлучением, разворачивал посольства. Николай умер 13 ноября 867 года — и Лотарь немедленно двинулся на Рим.</p>",
             "<p>Новый папа <strong>Адриан II</strong> выглядел многообещающе. Он был избран как компромиссный кандидат — между сторонниками жёсткого курса Николая и теми, кто хотел мира. Семидесятипятилетний, мягкий по натуре, он сам в молодости был женат. Лотарь рассчитывал именно на это.</p>",
             "<p>Лотарь вынудил Тьетбергу самой обратиться к Адриану с просьбой об аннулировании брака. Тактика была изящной: пусть жена просит развода — тогда это уже не каприз короля, а воля обоих супругов.</p>",
             "<p>Адриан, однако, настаивал на возврате к законной жене — и лишь снял с Вальдрады отлучение при условии, что та разорвёт отношения с Лотарем. Встреча состоялась лишь в 869 году. На обратном пути из Рима Лотарь слёг от лихорадки и умер в Пьяченце — так и не получив развода.</p>",
@@ -287,62 +287,74 @@
       {
         "src": "https://history-names.ru/m/images/makedonskaya_dinastiya.jpg",
         "alt": "makedonskaya dinastiya",
-        "size": "large-vertical"
+        "size": "large-vertical",
+        "caption": "makedonskaya dinastiya"
       },
       {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Baptism_of_the_Preslav_Court.jpg/500px-Baptism_of_the_Preslav_Court.jpg",
         "alt": "fotiy-sxizma",
-        "size": "wide"
+        "size": "wide",
+        "caption": "fotiy-sxizma"
       },
       {
         "src": "https://cdnn1.lt.sputniknews.com/img/07e6/02/0f/21573627_0:300:2047:1451_2072x0_60_0_0_89ea1b14369551ed85f2bfcbe1cec109.jpg",
         "alt": "fotiy",
-        "size": "tall"
+        "size": "tall",
+        "caption": "fotiy"
       },
       {
         "src": "https://www.pravenc.ru/data/840/635/1234/3i400.gif",
         "alt": "adrianI",
-        "size": null
+        "size": null,
+        "caption": "adrianI"
       },
       {
         "src": "https://i0.wp.com/thehistorianshut.com/wp-content/uploads/2017/08/df650-painting2bof2blothar2bi252c2bc-2b9th2bcentury2bce252c2b255bpublic2bdomain255d2bvia2bcreative2bcommons.jpg?resize=696%2C1076&ssl=1",
         "alt": "lotharII",
-        "size": "wide"
+        "size": "wide",
+        "caption": "lotharII"
       },
       {
         "src": "https://hvylya.net/images/2016/09/26/hPtRh4xk1OZnfRljgluptKECs345WOVj.jpg",
         "alt": "york",
-        "size": null
+        "size": null,
+        "caption": "york"
       },
       {
         "src": "https://lingvostranovedcheskiy.academic.ru/pictures/lingvostranovedcheskiy/234-340_(242-348)_img_105.jpg",
         "alt": "kirillimefodi",
-        "size": "large-horizontal"
+        "size": "large-horizontal",
+        "caption": "kirillimefodi"
       },
       {
         "src": "https://cdn.ruwiki.ru/commonswiki/files/thumb/8/8e/Wilayah_Abbasiyyah_semasa_khalifah_Harun_al-Rashid.jpg/599px-Wilayah_Abbasiyyah_semasa_khalifah_Harun_al-Rashid.jpg",
         "alt": "abbasid caliphate",
-        "size": "tall"
+        "size": "tall",
+        "caption": "abbasid caliphate"
       },
       {
         "src": "https://preview.redd.it/the-tang-dynasty-618-907-ad-at-its-greatest-extent-fun-fact-v0-goq0m6eth3ff1.png?width=1080&crop=smart&auto=webp&s=39177f17c77f2275db691fcfe073265884020802",
         "alt": "tang dynasty",
-        "size": null
+        "size": null,
+        "caption": "tang dynasty"
       },
       {
         "src": "https://history-thema.com/wp-content/uploads/2016/09/boy-s-normannami.jpg",
         "alt": "karl-lysiy",
-        "size": "wide"
+        "size": "wide",
+        "caption": "karl-lysiy"
       },
       {
         "src": "https://cdn.monetnik.ru/storage/market-lot/46/49/827646/2921912_big.jpg",
         "alt": "monet",
-        "size": null
+        "size": null,
+        "caption": "monet"
       },
       {
         "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTXrQTZo1v3L23_hKw2nsX4IX4C57gLQCV_Q&s",
         "alt": "bogomater",
-        "size": "large-vertical"
+        "size": "large-vertical",
+        "caption": "bogomater"
       }
     ]
   }

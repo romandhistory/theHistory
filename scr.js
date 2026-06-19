@@ -186,8 +186,13 @@ document.addEventListener('DOMContentLoaded', async function () {
         let html = '<div class="tab-content" id="' + tabId + '"><div class="photo-gallery">';
         gallery.forEach(function (item) {
             const sizeClass = item.size ? ' photo-card--' + item.size : '';
+            const caption = item.caption ? item.caption : item.alt ? item.alt : '';
             html += '<div class="photo-card' + sizeClass + '"><img src="' + item.src +
-                '" alt="' + escapeAttr(item.alt) + '"></div>';
+                '" alt="' + escapeAttr(item.alt) + '">';
+            if (caption) {
+                html += '<div class="photo-caption">' + escapeHtml(caption) + '</div>';
+            }
+            html += '</div>';
         });
         html += '</div></div>';
         return html;

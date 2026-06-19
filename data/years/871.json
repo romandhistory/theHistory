@@ -5,7 +5,7 @@
       "intro": null,
       "articles": [
         {
-          "button": "***",
+          "button": "Коронация Альфреда Великого",
           "title": "***",
           "body": [
             "XXX"
@@ -16,7 +16,7 @@
           }
         },
         {
-          "button": "***",
+          "button": "Битва при Эшдауне",
           "title": "***",
           "body": [
             "XXX"
@@ -27,7 +27,7 @@
           }
         },
         {
-          "button": "***",
+          "button": "Взятие Бари — Людовик II берёт последний бастион арабов в Италии",
           "title": "***",
           "body": [
             "XXX"
@@ -38,7 +38,7 @@
           }
         },
         {
-          "button": "***",
+          "button": "Пленение Людовика II в Беневенто",
           "title": "***",
           "body": [
             "XXX"
@@ -49,7 +49,7 @@
           }
         },
         {
-          "button": "***",
+          "button": "Разграбление Басры зинджами",
           "title": "***",
           "body": [
             "XXX"
@@ -60,7 +60,7 @@
           }
         },
         {
-          "button": "***",
+          "button": "Падение Дамбартон Рока — Олав и Имар берут столицу Стратклайда",
           "title": "***",
           "body": [
             "XXX"
@@ -71,7 +71,7 @@
           }
         },
         {
-          "button": "***",
+          "button": "Святополк арестован франками — Моравия поднимается против них",
           "title": "***",
           "body": [
             "XXX"
@@ -82,7 +82,7 @@
           }
         },
         {
-          "button": "***",
+          "button": "Норманнские набеги на Фрисландию и Нижнюю Лотарингию",
           "title": "***",
           "body": [
             "XXX"
@@ -93,7 +93,7 @@
           }
         },
         {
-          "button": "***",
+          "button": "Карл Лысый укрепляет контроль над Западно-Франкским королевством",
           "title": "***",
           "body": [
             "XXX"
@@ -104,7 +104,7 @@
           }
         },
         {
-          "button": "***",
+          "button": "Викинги делят добычу под Лондоном",
           "title": "***",
           "body": [
             "XXX"
@@ -115,7 +115,7 @@
           }
         },
         {
-          "button": "***",
+          "button": "Родри Мор присоединяет Кередигион к своим владениям",
           "title": "***",
           "body": [
             "XXX"
@@ -126,7 +126,7 @@
           }
         },
         {
-          "button": "***",
+          "button": "Гибель епископа Хеахмунда в битве за Уэссекс",
           "title": "***",
           "body": [
             "XXX"
@@ -213,62 +213,74 @@
       {
         "src": "cont/2020/clubhouse.jpg",
         "alt": "ClubHouse",
-        "size": "large-vertical"
+        "size": "large-vertical",
+        "caption": "ClubHouse"
       },
       {
         "src": "cont/2020/M.Jordan.png",
         "alt": "Last Dance",
-        "size": "wide"
+        "size": "wide",
+        "caption": "Last Dance"
       },
       {
         "src": "cont/2020/BTS.png",
         "alt": "bts",
-        "size": "tall"
+        "size": "tall",
+        "caption": "bts"
       },
       {
         "src": "cont/2020/DrTHouse.png",
         "alt": "dreamhouse",
-        "size": null
+        "size": null,
+        "caption": "dreamhouse"
       },
       {
         "src": "cont/2020/Pitt&Fenix.png",
         "alt": "oscar",
-        "size": "wide"
+        "size": "wide",
+        "caption": "oscar"
       },
       {
         "src": "cont/2020/Ведьмак.png",
         "alt": "vedmak",
-        "size": null
+        "size": null,
+        "caption": "vedmak"
       },
       {
         "src": "cont/2020/dovod.jpg",
         "alt": "dovodfilm",
-        "size": "large-horizontal"
+        "size": "large-horizontal",
+        "caption": "dovodfilm"
       },
       {
         "src": "cont/2020/grobovs.jpg",
         "alt": "grobovsiki",
-        "size": "tall"
+        "size": "tall",
+        "caption": "grobovsiki"
       },
       {
         "src": "cont/2020/Мандалорец.jpg",
         "alt": "mandalorec",
-        "size": null
+        "size": null,
+        "caption": "mandalorec"
       },
       {
         "src": "cont/2020/poodnoi.jpg",
         "alt": "poodnoifilm",
-        "size": "wide"
+        "size": "wide",
+        "caption": "poodnoifilm"
       },
       {
         "src": "cont/2020/parazits.png",
         "alt": "parazitsfilm",
-        "size": null
+        "size": null,
+        "caption": "parazitsfilm"
       },
       {
         "src": "cont/2020/theend.jpg",
         "alt": "konec",
-        "size": "large-vertical"
+        "size": "large-vertical",
+        "caption": "konec"
       }
     ]
   }

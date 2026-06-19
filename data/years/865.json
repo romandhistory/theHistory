@@ -81,11 +81,11 @@
           "button": "Моравский князь Ростислав продолжает поддерживать миссию Кирилла и Мефодия",
           "title": "Моравия: чужие священники и своя азбука",
           "body": [
-            "<p>Миссия <strong>Кирилла и Мефодия</strong> в Моравии с самого начала была не только религиозной, но и политической. <strong>Растислав</strong> выгнал римских миссионеров и обратился к Константинополю — он искал независимость от франков, а не просто новых проповедников.</p>",
+            "<p>Миссия <strong>Кирилла и Мефодия</strong> в Моравии с самого начала была не только религиозной, но и политической. <strong>Ростислав</strong> выгнал римских миссионеров и обратился к Константинополю — он искал независимость от франков, а не просто новых проповедников.</p>",
             "<p>Пока братья работали, немецкое духовенство не сидело сложа руки. <strong>Теотмар</strong>, архиепископ Зальцбургский, считал Моравию своей канонической территорией и добивался, чтобы там звучала исключительно латинская литургия. Каждый переведённый текст, каждый обученный местный священник был ударом по его юрисдикции.</p>",
-            "<p>Растислав стоял за миссией твёрдо: его цель была именно в том, чтобы создать церковь, говорящую с народом на его языке — и тем самым вырвать Моравию из-под франкского церковного контроля.</p>",
+            "<p>Ростислав стоял за миссией твёрдо: его цель была именно в том, чтобы создать церковь, говорящую с народом на его языке — и тем самым вырвать Моравию из-под франкского церковного контроля.</p>",
             "<p>В <strong>867 году</strong> папа <strong>Николай I</strong> пригласил братьев в Рим — миссия к тому времени стала предметом открытого спора между Константинополем, Римом и франкскими епископами.</p>",
-            "<p><em>Растислав получил то, что хотел: несколько лет, за которые в Моравии выросло целое поколение священников, читавших Писание не на латыни.</em></p>"
+            "<p><em>Ростислав получил то, что хотел: несколько лет, за которые в Моравии выросло целое поколение священников, читавших Писание не на латыни.</em></p>"
           ],
           "image": {
             "src": "cont/865/RostislavZaKir&Mef.png",
@@ -279,62 +279,74 @@
       {
         "src": "https://homsk.com/upload/media/posts/2019-08/17/77bc18f0df3d2bbf4ff72408ee96a168_1566011655-b.jpg",
         "alt": "vikingi",
-        "size": "large-vertical"
+        "size": "large-vertical",
+        "caption": "vikingi"
       },
       {
         "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBDUcqnL2jn4OqR7la2f3LGqxvnB2hOl9ukA&s",
         "alt": "karl&ludovik",
-        "size": "wide"
+        "size": "wide",
+        "caption": "karl&ludovik"
       },
       {
         "src": "https://obrazovaka.ru/wp-content/images/predmet/istoriya-35524-karta-imperii-posle-verdenskogo-dogovora.jpg",
         "alt": "razdelkorolevstva",
-        "size": "tall"
+        "size": "tall",
+        "caption": "razdelkorolevstva"
       },
       {
         "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWsTRQahCVr6icTblxn6AATptnveAnzhvxnA&s",
         "alt": "ansgar",
-        "size": null
+        "size": null,
+        "caption": "ansgar"
       },
       {
         "src": "https://topwar.ru/uploads/posts/2024-04/5b5f659528_2.webp",
         "alt": "datvikings",
-        "size": "wide"
+        "size": "wide",
+        "caption": "datvikings"
       },
       {
         "src": "https://cs14.pikabu.ru/post_img/big/2024/02/10/6/1707552123135026835.png",
         "alt": "arabskievoiny",
-        "size": null
+        "size": null,
+        "caption": "arabskievoiny"
       },
       {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Abbasid_Caliphate_850AD.svg/330px-Abbasid_Caliphate_850AD.svg.png",
         "alt": "halifat",
-        "size": "large-horizontal"
+        "size": "large-horizontal",
+        "caption": "halifat"
       },
       {
         "src": "https://cdn.ruwiki.ru/commonswiki/files/thumb/f/f6/Palefrenier_menant_deux_chevaux_par_Han_Gan.jpg/600px-Palefrenier_menant_deux_chevaux_par_Han_Gan.jpg",
         "alt": "tan",
-        "size": "tall"
+        "size": "tall",
+        "caption": "tan"
       },
       {
         "src": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Domagoj.jpg",
         "alt": "domagoi",
-        "size": null
+        "size": null,
+        "caption": "domagoi"
       },
       {
         "src": "https://www.pravoslavie.ru/sas/image/102372/237293.p.jpg?mtime=1464083228",
         "alt": "fotii",
-        "size": "wide"
+        "size": "wide",
+        "caption": "fotii"
       },
       {
         "src": "https://rusarminfo.ru/wp-content/uploads/2018/09/vb.jpg",
         "alt": "vasili_makedon",
-        "size": null
+        "size": null,
+        "caption": "vasili_makedon"
       },
       {
         "src": "https://pravoslavie.ru/sas/image/103992/399293.p.jpg?mtime=1675193303",
         "alt": "kir&mef",
-        "size": "large-vertical"
+        "size": "large-vertical",
+        "caption": "kir&mef"
       }
     ]
   }

@@ -274,64 +274,76 @@
     },
     "gallery": [
       {
-        "src": "https://external-preview.redd.it/the-varangian-guard-vikings-mercenaries-of-the-byzantine-v0-qq85wzYgFoXfTupDti3BChvrdhKJeWs0Fb1wPIorXRc.jpg?width=640&crop=smart&auto=webp&s=4548b1d943729a6fe1a4d5bc20fe7e8e0a8f5ce6",
-        "alt": "varagi",
-        "size": "large-vertical"
+        "src": "cont/863/lalakon.png",
+        "alt": "lalakon",
+        "size": "large-vertical",
+        "caption": "В 863 году у реки Лалакаон в Пафлагонии (северная Турция) византийское войско под командованием Петронаса наголову разгромило арабскую армию эмира Умара аль-Акта из Мелитены, который пал в бою"
       },
       {
-        "src": "https://homsk.com/upload/media/posts/2018-05/17/b11cfd0e73d4a2ac13e1a5935749c1d2_1526513968-b.jpg",
-        "alt": "vadim_hrabr",
-        "size": "wide"
+        "src": "cont/863/borisI.png",
+        "alt": "borisI",
+        "size": "wide",
+        "caption": "В 863 году, оказавшись под давлением византийских войск и пытаясь лавировать между Римом и Константинополем, болгарский хан Борис I согласился принять крещение по восточному обряду."
       },
       {
-        "src": "https://russian7.ru/wp-content/uploads/2023/10/m_89367537e6c8c1ea7a1cedefc0169abb.jpg",
-        "alt": "kir&mef",
-        "size": "tall"
+        "src": "cont/863/zemletrias.png",
+        "alt": "zemletrias",
+        "size": "tall",
+        "caption": "В 863 году в древней столице Армении Двине произошло сильное землетрясение магнитудой около 6,0, которое привело к масштабным разрушениям и гибели людей."
       },
       {
-        "src": "https://lh6.googleusercontent.com/proxy/FRvqhg51twV-OyCEs7RUv3xLA15XtxeLAuK2V4FLzOcbB_FHTyAtppvjdOgEo19UP3qfNNI",
-        "alt": "voiny",
-        "size": null
+        "src": "cont/863/sobor.png",
+        "alt": "sobor",
+        "size": null,
+        "caption": "В 863 году в Меце прошёл собор, созванный папой Николаем I для повторного рассмотрения дела о разводе короля Лотаря II с его женой Тейтбергой ."
       },
       {
-        "src": "https://www.pravoslavie.ru/sas/image/102372/237292.p.jpg?0.46300912635810176",
-        "alt": "hazar.mission",
-        "size": "wide"
+        "src": "cont/863/otluchenie.png",
+        "alt": "otluchenie",
+        "size": "wide",
+        "caption": "В 863 году папа Николай I на Римском соборе официально отлучил константинопольского патриарха Фотия I, объявив его низложенным и лишённым сана."
       },
       {
-        "src": "https://obrazovaka.ru/wp-content/images/predmet/istoriya-35524-karta-imperii-posle-verdenskogo-dogovora.jpg",
-        "alt": "imper.karl",
-        "size": null
+        "src": "cont/863/voina_vizant.png",
+        "alt": "voina_vizant",
+        "size": null,
+        "caption": "В 863 году Византия вторглась в Болгарию, воспользовавшись голодом и слабостью страны"
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/15th_century_map_of_Turkey_region.jpg/330px-15th_century_map_of_Turkey_region.jpg",
-        "alt": "paflagon",
-        "size": "large-horizontal"
+        "src": "cont/863/emirat.png",
+        "alt": "emirat",
+        "size": "large-horizontal",
+        "caption": "В 863 году Кордовским эмиратом правил эмир Мухаммад I"
       },
       {
-        "src": "https://diletant.media/upload/medialibrary/e3f/e3f12a74e8b71a61ad43a4f646a36f4a.jpg",
-        "alt": "nortumbia",
-        "size": "tall"
+        "src": "cont/863/karl_provansk.png",
+        "alt": "karl_provansk",
+        "size": "tall",
+        "caption": "Карл Прованский, младший сын императора Лотаря I, скончался 25 января 863 года в Лионе, не оставив наследников."
       },
       {
-        "src": "https://cdn.ruwiki.ru/commonswiki/files/thumb/c/c2/Lower_Burgundy_1200.png/523px-Lower_Burgundy_1200.png",
-        "alt": "burgundia",
-        "size": null
+        "src": "cont/863/varags.png",
+        "alt": "varags",
+        "size": null,
+        "caption": "В 863 году, согласно летописным данным, варяжский князь Рюрик уже закрепился в Приладожье. Отсюда он начал рассылать своих людей для основания городов и установления контроля над ключевыми центрами, что положило начало формированию древнерусской государственности"
       },
       {
-        "src": "https://ic.pics.livejournal.com/vl_sokolov/85813790/366349/366349_800.jpg",
-        "alt": "khalifat",
-        "size": "wide"
+        "src": "cont/863/berta_tosk.png",
+        "alt": "berta_tosk",
+        "size": "wide",
+        "caption": "Берта Тосканская родилась около 863 года. Она была внебрачной дочерью короля Лотарингии Лотаря II и его наложницы Вальдрады."
       },
       {
-        "src": "https://sun9-56.userapi.com/impg/c837531/v837531174/3ffca/DsvhJOi8Nlg.jpg?size=1200x540&quality=96&sign=fe1616707973b47da1ff83e3ec21488b&type=album",
-        "alt": "viking",
-        "size": null
+        "src": "cont/863/osbertVSella1.png",
+        "alt": "osbertVSella1",
+        "size": null,
+        "caption": "Осберт против Эллы в Нортумбрии в 860-х годах"
       },
       {
-        "src": "https://storage.yandexcloud.net/roz-wiki/Die_deutschen_Kaiser_Ludwig_der_Deutsche.jpg",
-        "alt": "ludowignemec",
-        "size": "large-vertical"
+        "src": "cont/863/karloman1.png",
+        "alt": "karloman1",
+        "size": "large-vertical",
+        "caption": "В 863 году старший сын короля Восточно-Франкского королевства Людовика Немецкого, Карломан, поднял открытый мятеж против своего отца. "
       }
     ]
   }

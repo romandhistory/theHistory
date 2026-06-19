@@ -226,62 +226,74 @@
       {
         "src": "https://drevo-info.ru/images/thumbs/004/018527.jpg",
         "alt": "IV konstantin_sobor",
-        "size": "large-vertical"
+        "size": "large-vertical",
+        "caption": "IV konstantin_sobor"
       },
       {
         "src": "https://www.peoples.ru/state/king/bizantia/vasiliy_1/5MCKsy4X5sHLr.jpeg",
         "alt": "VasiliI",
-        "size": "wide"
+        "size": "wide",
+        "caption": "VasiliI"
       },
       {
         "src": "https://zapadrus.su/images/stories/2_imeges/serbia/s800.jpg",
         "alt": "bolgarsk_cerkov'",
-        "size": "tall"
+        "size": "tall",
+        "caption": "bolgarsk_cerkov'"
       },
       {
         "src": "https://to-name.ru/images/biography/kirill.jpg",
         "alt": "death_Kiril",
-        "size": null
+        "size": null,
+        "caption": "death_Kiril"
       },
       {
         "src": "https://i.pinimg.com/1200x/16/a6/a4/16a6a4e5fa3011e8dba178a671e65f33.jpg",
         "alt": "vikingi",
-        "size": "wide"
+        "size": "wide",
+        "caption": "vikingi"
       },
       {
         "src": "https://zhitanska.com/wp-content/uploads/2018/09/tikal-stela.jpg",
         "alt": "maia",
-        "size": null
+        "size": null,
+        "caption": "maia"
       },
       {
         "src": "https://media.foma.ru/2019/03/2_20160112_1462601000.jpg",
         "alt": "sviat_sofia",
-        "size": "large-horizontal"
+        "size": "large-horizontal",
+        "caption": "sviat_sofia"
       },
       {
         "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMKTkNwawZeS7jf_9AFl-TlLHIUOc4DvPfAS6fijtEnQ&s=10",
         "alt": "Lotar'II",
-        "size": "tall"
+        "size": "tall",
+        "caption": "Lotar'II"
       },
       {
         "src": "https://www.hrono.ru/img/monarhi/charles2fr.jpg",
         "alt": "karl_lis",
-        "size": null
+        "size": null,
+        "caption": "karl_lis"
       },
       {
         "src": "https://rus.team/images/article/1775/2019-06-14-206_12307-1_768559.webp",
         "alt": "cunami_honsu",
-        "size": "wide"
+        "size": "wide",
+        "caption": "cunami_honsu"
       },
       {
         "src": "https://lala-love-nippon.com/wp-content/uploads/2024/06/da193f53fa31cfa758f197c84fccd6ba.webp",
         "alt": "festival_gion",
-        "size": null
+        "size": null,
+        "caption": "festival_gion"
       },
       {
         "src": "https://history-thema.com/wp-content/uploads/2015/11/musulmane-idut-v-nastupleniye-300x201.jpg",
         "alt": "vosstanie_rabov",
-        "size": "large-vertical"
+        "size": "large-vertical",
+        "caption": "vosstanie_rabov"
       }
     ]
   }

@@ -276,62 +276,74 @@
       {
         "src": "https://www.meisterdrucke.ie/kunstwerke/1260px/Herbert_Norris_-_A_Byzantine_Emperor_of_the_Eighth_and_Ninth_Centuries_AD_1924_-_%28MeisterDrucke-765057%29.jpg",
         "alt": "emperor",
-        "size": "large-vertical"
+        "size": "large-vertical",
+        "caption": "emperor"
       },
       {
         "src": "https://historymedieval.com/wp-content/uploads/2023/01/Monastery-in-Dafni-on-the-outskirts-of-Athens.jpg.webp",
         "alt": "monastery",
-        "size": "wide"
+        "size": "wide",
+        "caption": "monastery"
       },
       {
         "src": "https://historymedieval.com/wp-content/uploads/2023/01/Virgin-and-Child-with-angels-and-Sts.-George-and-Theodore.-encaustic-icon-on-panel.jpg.webp",
         "alt": "cathedral",
-        "size": "tall"
+        "size": "tall",
+        "caption": "cathedral"
       },
       {
         "src": "https://historymedieval.com/wp-content/uploads/2025/10/Boniface-receiving-some-medical-writings-from-Galvano-da-Levanto-in-the-presence-of-his-cardinals.-Miniature-from-the-actual-presentation-copy.png",
         "alt": "boniface",
-        "size": null
+        "size": null,
+        "caption": "boniface"
       },
       {
         "src": "https://cache.getarchive.net/Prod/thumb/cdn2/L3Bob3RvLzIwMTQvMDIvMDQvYXNrb2xkLW9mLWtpZXYtZDdmYjY0LTY0MC5qcGc%3D/240/360/webp",
         "alt": "askold",
-        "size": "wide"
+        "size": "wide",
+        "caption": "askold"
       },
       {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/%D0%A3%D0%B1%D0%B8%D0%B9%D1%81%D1%82%D0%B2%D0%BE_%D0%90%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%B4%D0%B0_%D0%B8_%D0%94%D0%B8%D1%80%D0%B0_%D0%BA%D0%BD%D1%8F%D0%B7%D0%B5%D0%BC_%D0%9E%D0%BB%D0%B5%D0%B3%D0%BE%D0%BC.jpg/500px-%D0%A3%D0%B1%D0%B8%D0%B9%D1%81%D1%82%D0%B2%D0%BE_%D0%90%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%B4%D0%B0_%D0%B8_%D0%94%D0%B8%D1%80%D0%B0_%D0%BA%D0%BD%D1%8F%D0%B7%D0%B5%D0%BC_%D0%9E%D0%BB%D0%B5%D0%B3%D0%BE%D0%BC.jpg",
         "alt": "askold&dir",
-        "size": null
+        "size": null,
+        "caption": "askold&dir"
       },
       {
         "src": "https://odinstreasures.com/cdn/shop/articles/OT_blog_Heathen-Army.jpg?v=1734850874&width=700",
         "alt": "odin",
-        "size": "large-horizontal"
+        "size": "large-horizontal",
+        "caption": "odin"
       },
       {
         "src": "https://live.staticflickr.com/3088/2317744345_20e9d9f8aa_b.jpg",
         "alt": "mech",
-        "size": "tall"
+        "size": "tall",
+        "caption": "mech"
       },
       {
         "src": "https://www.ancient-origins.net/sites/default/files/styles/large/public/Viking-army-in-battle_0.jpg?itok=sxsug4eG",
         "alt": "viking",
-        "size": null
+        "size": null,
+        "caption": "viking"
       },
       {
         "src": "https://www.meisterdrucke.ie/kunstwerke/1260px/Jean_Michel_the_Younger_Moreau_-_Robert_the_Fort_died_%28circa_815-866%29_Duke_of_France_during_the_Battle_of_Brissar_-_%28MeisterDrucke-928163%29.jpg",
         "alt": "robert le fort",
-        "size": "wide"
+        "size": "wide",
+        "caption": "robert le fort"
       },
       {
         "src": "https://cdn.monetnik.ru/storage/market-lot/74/22/477774/1712312_big.jpg",
         "alt": "moneta",
-        "size": null
+        "size": null,
+        "caption": "moneta"
       },
       {
         "src": "https://edinstvo-news.ru/uploads/posts/2026-05/1778464527-3d6b99d4d-3672-443f-838c-185f83c73d71.webp",
         "alt": "eng",
-        "size": "large-vertical"
+        "size": "large-vertical",
+        "caption": "eng"
       }
     ]
   }
