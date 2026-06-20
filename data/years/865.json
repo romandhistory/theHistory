@@ -277,76 +277,76 @@
     },
     "gallery": [
       {
-        "src": "https://homsk.com/upload/media/posts/2019-08/17/77bc18f0df3d2bbf4ff72408ee96a168_1566011655-b.jpg",
-        "alt": "vikingi",
+        "src": "cont/865/Eigil'.jpg",
+        "alt": "Eigil'",
         "size": "large-vertical",
-        "caption": "vikingi"
+        "caption": "Убийство короля Эйгиля (Швеция)"
       },
       {
-        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBDUcqnL2jn4OqR7la2f3LGqxvnB2hOl9ukA&s",
-        "alt": "karl&ludovik",
+        "src": "cont/865/army_vik.png",
+        "alt": "army_vik",
         "size": "wide",
-        "caption": "karl&ludovik"
+        "caption": "Высадка «Великой языческой армии» в Ист-Англии"
       },
       {
-        "src": "https://obrazovaka.ru/wp-content/images/predmet/istoriya-35524-karta-imperii-posle-verdenskogo-dogovora.jpg",
-        "alt": "razdelkorolevstva",
+        "src": "cont/865/perevorot.png",
+        "alt": "perevorot",
         "size": "tall",
-        "caption": "razdelkorolevstva"
+        "caption": "Дворцовый переворот"
       },
       {
-        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWsTRQahCVr6icTblxn6AATptnveAnzhvxnA&s",
-        "alt": "ansgar",
+        "src": "cont/865/bitva.png",
+        "alt": "bitva",
         "size": null,
-        "caption": "ansgar"
+        "caption": "Битва при Ольстере"
       },
       {
-        "src": "https://topwar.ru/uploads/posts/2024-04/5b5f659528_2.webp",
-        "alt": "datvikings",
+        "src": "cont/865/pohorony.png",
+        "alt": "pohorony",
         "size": "wide",
-        "caption": "datvikings"
+        "caption": "Траурная церемония в базилике Святого Петра в Риме"
       },
       {
-        "src": "https://cs14.pikabu.ru/post_img/big/2024/02/10/6/1707552123135026835.png",
-        "alt": "arabskievoiny",
+        "src": "cont/865/school.png",
+        "alt": "school",
         "size": null,
-        "caption": "arabskievoiny"
+        "caption": "Первая школа в Болгарии"
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Abbasid_Caliphate_850AD.svg/330px-Abbasid_Caliphate_850AD.svg.png",
-        "alt": "halifat",
+        "src": "cont/865/monah.png",
+        "alt": "monah",
         "size": "large-horizontal",
-        "caption": "halifat"
+        "caption": "Франкский монах-географ у карты"
       },
       {
-        "src": "https://cdn.ruwiki.ru/commonswiki/files/thumb/f/f6/Palefrenier_menant_deux_chevaux_par_Han_Gan.jpg/600px-Palefrenier_menant_deux_chevaux_par_Han_Gan.jpg",
-        "alt": "tan",
+        "src": "cont/865/golod.png",
+        "alt": "golod",
         "size": "tall",
-        "caption": "tan"
+        "caption": "Голод в Западной Европе"
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Domagoj.jpg",
-        "alt": "domagoi",
+        "src": "cont/865/klad.png",
+        "alt": "klad",
         "size": null,
-        "caption": "domagoi"
+        "caption": "Золотой клад, зарытый в землю"
       },
       {
-        "src": "https://www.pravoslavie.ru/sas/image/102372/237293.p.jpg?mtime=1464083228",
-        "alt": "fotii",
+        "src": "cont/865/draka.png",
+        "alt": "draka",
         "size": "wide",
-        "caption": "fotii"
+        "caption": "Драка на торговой ладье (Волжский путь)"
       },
       {
-        "src": "https://rusarminfo.ru/wp-content/uploads/2018/09/vb.jpg",
-        "alt": "vasili_makedon",
+        "src": "cont/865/rain.png",
+        "alt": "rain",
         "size": null,
-        "caption": "vasili_makedon"
+        "caption": "«Апрельские дожди Средневековья»"
       },
       {
-        "src": "https://pravoslavie.ru/sas/image/103992/399293.p.jpg?mtime=1675193303",
-        "alt": "kir&mef",
+        "src": "cont/865/witch.jpg",
+        "alt": "witch",
         "size": "large-vertical",
-        "caption": "kir&mef"
+        "caption": "Морская ведьма (Скандинавский фольклор)"
       }
     ]
   }

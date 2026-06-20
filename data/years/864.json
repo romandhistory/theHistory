@@ -58,7 +58,7 @@
             "<p><em>Крещение под давлением обернулось одним из главных цивилизационных выборов средневековой Европы.</em></p>"
           ],
           "image": {
-            "src": "cont/864/borisI.jpg",
+            "src": "cont/864/borisI.png",
             "alt": "borisI"
           }
         },
@@ -276,76 +276,76 @@
     },
     "gallery": [
       {
-        "src": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/f86e303dc2a81e427e48af54927d7b2097560abf.jpg",
-        "alt": "rurik",
-        "size": "large-vertical",
-        "caption": "rurik"
-      },
-      {
-        "src": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/e52029dc1a389e523e8b801e51ef1c58ce1f265d.jpg",
-        "alt": "rurik",
+        "src": "cont/864/karl_lis.png",
+        "alt": "karl_lis",
         "size": "wide",
-        "caption": "rurik"
+        "caption": "Король Карл II Лысый издал Питрский эдикт"
       },
       {
-        "src": "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/3b7dc258594fa9637aefda7cd470406eed061353.jpg",
-        "alt": "novgorod",
+        "src": "cont/864/osada_zamka.png",
+        "alt": "osada_zamka",
+        "size": "wide",
+        "caption": "Осада замка Девин"
+      },
+      {
+        "src": "cont/864/razvod.png",
+        "alt": "razvod",
         "size": "tall",
-        "caption": "novgorod"
+        "caption": "Попытка короля Лотаря II расторгнуть брак"
       },
       {
-        "src": "https://www.svithun.info/wp-content/uploads/2015/02/Olav-Trygvasson.jpg",
-        "alt": "olaf.bel",
+        "src": "cont/864/nabegi_vikingov.png",
+        "alt": "nabegi_vikingov",
         "size": null,
-        "caption": "olaf.bel"
+        "caption": "Набег викингов"
       },
       {
-        "src": "https://i.pinimg.com/564x/76/9d/23/769d23f19d2082102ff83898a9b95b9f.jpg",
-        "alt": "robert.sil",
+        "src": "cont/864/skriptori.png",
+        "alt": "skriptori",
         "size": "wide",
-        "caption": "robert.sil"
+        "caption": "Каролингский скрипторий"
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Louis_I_of_East_Francia.jpg/250px-Louis_I_of_East_Francia.jpg?utm_source=www.wikidata.org&utm_campaign=index&utm_content=thumbnail",
-        "alt": "ludov.nemec",
+        "src": "cont/864/rynok.jpg",
+        "alt": "rynok",
         "size": null,
-        "caption": "ludov.nemec"
+        "caption": "Рынок в Кордовском эмирате"
       },
       {
-        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStAVxu_tRAjOTUwFN0SPSqAUkBxXNXKA438g&s",
-        "alt": "rostislav.morav",
+        "src": "cont/864/foti.png",
+        "alt": "foti",
         "size": "large-horizontal",
-        "caption": "rostislav.morav"
+        "caption": "Патриарх Фотий проповедует"
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Retrat_imaginari_de_l%27emperador_franc_Carles_el_Calb_-_Filippo_Ariosto_%281587-1588%29.jpg/250px-Retrat_imaginari_de_l%27emperador_franc_Carles_el_Calb_-_Filippo_Ariosto_%281587-1588%29.jpg?utm_source=ru.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
-        "alt": "karl.lisyi",
+        "src": "cont/864/kuznec.png",
+        "alt": "kuznec",
         "size": "tall",
-        "caption": "karl.lisyi"
+        "caption": "Скандинавский кузнец"
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Pepin_I_Aquitaine_denier_817_838.jpg",
-        "alt": "pipin",
+        "src": "cont/864/byt_rusi.png",
+        "alt": "byt_rusi",
         "size": null,
-        "caption": "pipin"
+        "caption": "Детища славянского града"
       },
       {
-        "src": "https://wasmedia.b-cdn.net/wp-content/uploads/2017/09/raskol-hristianskoj-cerkvi_was_01.jpg",
-        "alt": "nikol1",
+        "src": "cont/864/karavan.png",
+        "alt": "karavan",
         "size": "wide",
-        "caption": "nikol1"
+        "caption": "Персидский караван в пути"
       },
       {
-        "src": "https://pccs.run/wp-content/uploads/2015/04/cm_kohler2_4.jpg",
-        "alt": "kir&mef",
+        "src": "cont/864/trapeza.png",
+        "alt": "trapeza",
         "size": null,
-        "caption": "kir&mef"
+        "caption": "Трапеза в замке графа (Западная Европа)"
       },
       {
-        "src": "https://cdn.ruwiki.ru/commonswiki/files/thumb/1/10/Baptism_of_the_Preslav_Court.jpg/559px-Baptism_of_the_Preslav_Court.jpg",
-        "alt": "borisI",
+        "src": "cont/864/buryi.png",
+        "alt": "buryi",
         "size": "large-vertical",
-        "caption": "borisI"
+        "caption": "Буря в Северном море"
       }
     ]
   }
