@@ -224,76 +224,76 @@
     },
     "gallery": [
       {
-        "src": "https://drevo-info.ru/images/thumbs/004/018527.jpg",
-        "alt": "IV konstantin_sobor",
+        "src": "cont/869/edmund.jpg",
+        "alt": "edmund",
         "size": "large-vertical",
-        "caption": "IV konstantin_sobor"
+        "caption": "Гибель короля Эдмунда (20 ноября 869)"
       },
       {
-        "src": "https://www.peoples.ru/state/king/bizantia/vasiliy_1/5MCKsy4X5sHLr.jpeg",
-        "alt": "VasiliI",
+        "src": "cont/869/tetford.png",
+        "alt": "tetford",
         "size": "wide",
-        "caption": "VasiliI"
+        "caption": "Захват Тетфорда (Осень 869)"
       },
       {
-        "src": "https://zapadrus.su/images/stories/2_imeges/serbia/s800.jpg",
-        "alt": "bolgarsk_cerkov'",
+        "src": "cont/869/foti.png",
+        "alt": "foti",
         "size": "tall",
-        "caption": "bolgarsk_cerkov'"
+        "caption": "Изгнание патриарха Фотия"
       },
       {
-        "src": "https://to-name.ru/images/biography/kirill.jpg",
-        "alt": "death_Kiril",
+        "src": "cont/869/lotarII.jpg",
+        "alt": "lotarII",
         "size": null,
-        "caption": "death_Kiril"
+        "caption": "Смерть Лотаря II (8 августа 869)"
       },
       {
-        "src": "https://i.pinimg.com/1200x/16/a6/a4/16a6a4e5fa3011e8dba178a671e65f33.jpg",
-        "alt": "vikingi",
+        "src": "cont/869/lotargi.png",
+        "alt": "lotargi",
         "size": "wide",
-        "caption": "vikingi"
+        "caption": "Раздел Лотарингии (Встреча королей)"
       },
       {
-        "src": "https://zhitanska.com/wp-content/uploads/2018/09/tikal-stela.jpg",
-        "alt": "maia",
+        "src": "cont/869/tikal.png",
+        "alt": "tikal",
         "size": null,
-        "caption": "maia"
+        "caption": "Стела 11"
       },
       {
-        "src": "https://media.foma.ru/2019/03/2_20160112_1462601000.jpg",
-        "alt": "sviat_sofia",
+        "src": "cont/869/cunami.png",
+        "alt": "cunami",
         "size": "large-horizontal",
-        "caption": "sviat_sofia"
+        "caption": "Землетрясение Санрику"
       },
       {
-        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMKTkNwawZeS7jf_9AFl-TlLHIUOc4DvPfAS6fijtEnQ&s=10",
-        "alt": "Lotar'II",
+        "src": "cont/869/gion.png",
+        "alt": "gion",
         "size": "tall",
-        "caption": "Lotar'II"
+        "caption": "Первый фестиваль Гион"
       },
       {
-        "src": "https://www.hrono.ru/img/monarhi/charles2fr.jpg",
-        "alt": "karl_lis",
+        "src": "cont/869/dan'_viking.png",
+        "alt": "dan'_viking",
         "size": null,
-        "caption": "karl_lis"
+        "caption": "Дань викингам от Мерсии"
       },
       {
-        "src": "https://rus.team/images/article/1775/2019-06-14-206_12307-1_768559.webp",
-        "alt": "cunami_honsu",
+        "src": "cont/869/kupol_sofi.png",
+        "alt": "kupol_sofi",
         "size": "wide",
-        "caption": "cunami_honsu"
+        "caption": "Храм Святой Софии"
       },
       {
-        "src": "https://lala-love-nippon.com/wp-content/uploads/2024/06/da193f53fa31cfa758f197c84fccd6ba.webp",
-        "alt": "festival_gion",
+        "src": "cont/869/raskol.png",
+        "alt": "raskol",
         "size": null,
-        "caption": "festival_gion"
+        "caption": "Раскол Церквей"
       },
       {
-        "src": "https://history-thema.com/wp-content/uploads/2015/11/musulmane-idut-v-nastupleniye-300x201.jpg",
-        "alt": "vosstanie_rabov",
+        "src": "cont/869/simvol.png",
+        "alt": "simvol",
         "size": "large-vertical",
-        "caption": "vosstanie_rabov"
+        "caption": "Крест и Молот Тора"
       }
     ]
   }

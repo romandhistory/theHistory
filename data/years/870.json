@@ -275,76 +275,76 @@
     },
     "gallery": [
       {
-        "src": "https://dic.academic.ru/pictures/wiki/files/56/843-870_Europe.jpg",
-        "alt": "mers_dogovor",
+        "src": "cont/870/engfild.png",
+        "alt": "engfild",
         "size": "large-vertical",
-        "caption": "mers_dogovor"
+        "caption": "Битва при Энглфилде"
       },
       {
-        "src": "https://cdn.ruwiki.ru/commonswiki/files/thumb/4/41/Mahmuna_Tombstone.jpeg/600px-Mahmuna_Tombstone.jpeg",
-        "alt": "mal'ta",
+        "src": "cont/870/merc.png",
+        "alt": "merc",
         "size": "wide",
-        "caption": "mal'ta"
+        "caption": "Договор в Мерсене"
       },
       {
-        "src": "https://islamnews.ru/wp-content/uploads/2019/07/a819ad8b5070ef2faffb68e28c97009f.jpg",
-        "alt": "farrabi",
+        "src": "cont/870/malta.png",
+        "alt": "malta",
         "size": "tall",
-        "caption": "farrabi"
+        "caption": "Арабское завоевание Мальты"
       },
       {
-        "src": "https://rusmuseumvrm.ru/data/collections/painting/19_20/zh-4254/44123_mainfoto_03.jpg",
-        "alt": "sobor",
+        "src": "cont/870/pohod.png",
+        "alt": "pohod",
         "size": null,
-        "caption": "sobor"
+        "caption": "Поход Ивара Бескостного на Дамбартон"
       },
       {
-        "src": "https://static.islam.kz/uploads/images/UTa/3dY/BkWB3y3SHYUeiClK-md.jpg",
-        "alt": "maturidi",
+        "src": "cont/870/zimn.lag.png",
+        "alt": "zimn.lag",
         "size": "wide",
-        "caption": "maturidi"
+        "caption": "Зимний лагерь Великой армии"
       },
       {
-        "src": "https://cdn.labrujulaverde.com/en/wp-content/uploads/2024/11/1280px-samarra-gran-mezquita-1.jpg",
-        "alt": "abbasid",
+        "src": "cont/870/brak.png",
+        "alt": "brak",
         "size": null,
-        "caption": "abbasid"
+        "caption": "Брачный союз Карла Лысого и Рихильды"
       },
       {
-        "src": "https://cs14.pikabu.ru/post_img/big/2022/08/06/11/1659815312130186746.jpg",
-        "alt": "zavoevania",
+        "src": "cont/870/sigurd.png",
+        "alt": "sigurd",
         "size": "large-horizontal",
-        "caption": "zavoevania"
+        "caption": "Собрание Сигурда Змееглазого"
       },
       {
-        "src": "https://traveltheworld.com.ua/wp-content/uploads/2013/06/Istoriya-Islandii-680x455.jpg",
-        "alt": "iceland",
+        "src": "cont/870/rostisl.jpg",
+        "alt": "rostisl",
         "size": "tall",
-        "caption": "iceland"
+        "caption": "Смерть Ростислава Великоморавского"
       },
       {
-        "src": "https://img.pravda.ru/image/preview/article/8/2/7/1406827_five.jpeg",
-        "alt": "zindg",
+        "src": "cont/870/mdina.png",
+        "alt": "mdina",
         "size": null,
-        "caption": "zindg"
+        "caption": "Разрушение старой Мдины"
       },
       {
-        "src": "https://i0.wp.com/www.promptmedia.ro/wp-content/uploads/2024/05/Norvegia.jpg?fit=295%2C300&ssl=1",
-        "alt": "norvegia",
+        "src": "cont/870/samarra.png",
+        "alt": "samarra",
         "size": "wide",
-        "caption": "norvegia"
+        "caption": "Архитектура Самарры (Дворец аль-Джисс)"
       },
       {
-        "src": "https://hrono.ru/img/monety/roman1.jpg",
-        "alt": "moneta",
+        "src": "cont/870/razdel.png",
+        "alt": "razdel",
         "size": null,
-        "caption": "moneta"
+        "caption": "Раздел Лотарингии"
       },
       {
-        "src": "https://topwar.ru/uploads/posts/2023-09/scale_1200-1.webp",
-        "alt": "alfred",
+        "src": "cont/870/maltaII.png",
+        "alt": "maltaII",
         "size": "large-vertical",
-        "caption": "alfred"
+        "caption": "Потерянный рай (Мальтийские колонны)"
       }
     ]
   }

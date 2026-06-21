@@ -110,7 +110,7 @@
     "tag": "2017",
     "label": "2017",
     "century": "IX",
-    "image": "https://picsum.photos/280/350?random=11",
+    "image": "pic/2017.jpg",
     "locked": false,
     "content": "data/years/2017.json"
   },
