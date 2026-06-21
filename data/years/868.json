@@ -224,76 +224,76 @@
     },
     "gallery": [
       {
-        "src": "https://sun9-77.userapi.com/impg/c837123/v837123092/3ba0a/960lUwYLybI.jpg?size=2081x1560&quality=96&sign=7ca41190e49482459b3b82813affa605&type=album",
+        "src": "cont/868/zimovka.png",
+        "alt": "zimovka",
+        "size": "large-vertical",
+        "caption": "Зимовка викингов в Йорке"
+      },
+      {
+        "src": "cont/868/osada_noting.png",
+        "alt": "osada_noting",
+        "size": "wide",
+        "caption": "Осада Ноттингема"
+      },
+      {
+        "src": "cont/868/weddingII.jpg",
+        "alt": "weddingII",
+        "size": "tall",
+        "caption": "Свадьба Альфреда и Эльсвиты"
+      },
+      {
+        "src": "cont/868/episkop.png",
+        "alt": "episkop",
+        "size": null,
+        "caption": "Епископ Формоз в Риме"
+      },
+      {
+        "src": "cont/868/biblioteka.png",
+        "alt": "biblioteka",
+        "size": "wide",
+        "caption": "Перевод жития святого Иоанна Калабрийского"
+      },
+      {
+        "src": "cont/868/tulun.png",
+        "alt": "tulun",
+        "size": null,
+        "caption": "Ахмад ибн Тулун получает власть над Египтом"
+      },
+      {
+        "src": "cont/868/mechet'.png",
+        "alt": "mechet'",
+        "size": "large-horizontal",
+        "caption": "Закладка мечети Ибн Тулуна (Каир)"
+      },
+      {
+        "src": "cont/868/sud.png",
+        "alt": "sud",
+        "size": "tall",
+        "caption": "Суд над графом Балдуином"
+      },
+      {
+        "src": "cont/868/vstrecha.png",
+        "alt": "vstrecha",
+        "size": null,
+        "caption": "Встреча братьев в Меце"
+      },
+      {
+        "src": "cont/868/simvoly.png",
+        "alt": "simvoly",
+        "size": "wide",
+        "caption": "Меч и крест (Борьба за Болгарию)"
+      },
+      {
+        "src": "cont/868/drevo.jpg",
+        "alt": "drevo",
+        "size": null,
+        "caption": "Древо династий"
+      },
+      {
+        "src": "cont/868/sutra.jpg",
         "alt": "sutra",
         "size": "large-vertical",
-        "caption": "sutra"
-      },
-      {
-        "src": "https://yurovichi.by/upload/iblock/478/478d9c17803f8bc1d9aea2cc6da3ec83.jpg",
-        "alt": "Kir&Mef",
-        "size": "wide",
-        "caption": "Kir&Mef"
-      },
-      {
-        "src": "https://homsk.com/upload/media/posts/2019-08/17/77bc18f0df3d2bbf4ff72408ee96a168_1566011655-b.jpg",
-        "alt": "vikingi",
-        "size": "tall",
-        "caption": "vikingi"
-      },
-      {
-        "src": "https://d34-a.sdn.cz/d_34/c_img_QM_x/OkXB7AM.jpeg?fl=res,500,500,1",
-        "alt": "vormsksobor",
-        "size": null,
-        "caption": "vormsksobor"
-      },
-      {
-        "src": "https://cdn.ruwiki.ru/commonswiki/files/thumb/d/d8/Jean_de_Tillet_-_Charles_II_le_chauve_-_Recueil_des_rois_de_France.jpg/484px-Jean_de_Tillet_-_Charles_II_le_chauve_-_Recueil_des_rois_de_France.jpg",
-        "alt": "karl_lys",
-        "size": "wide",
-        "caption": "karl_lys"
-      },
-      {
-        "src": "https://egymonuments.gov.eg/media/1162/%D9%82%D8%A8%D8%A9-%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%AD-%D9%88%D9%8A%D8%B8%D8%B1-%D8%AE%D9%84%D9%81%D8%A7-%D8%AC%D8%A7%D9%85%D8%B9-%D8%B7%D9%88%D9%84%D9%88%D9%86.jpg?crop=0.0000000000000002526374171591,0.0050906225374310462,0,0.05227371854784045&cropmode=percentage&width=645&height=423&rnd=134192626980000000",
-        "alt": "ahmadI",
-        "size": null,
-        "caption": "ahmadI"
-      },
-      {
-        "src": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/30/8a/23/f9/caption.jpg?w=900&h=500&s=1",
-        "alt": "peres",
-        "size": "large-horizontal",
-        "caption": "peres"
-      },
-      {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Statue_d%27Alfred_le_Grand_%C3%A0_Winchester.jpg/330px-Statue_d%27Alfred_le_Grand_%C3%A0_Winchester.jpg",
-        "alt": "alfred_velik",
-        "size": "tall",
-        "caption": "alfred_velik"
-      },
-      {
-        "src": "https://www.e-notabene.ru/img/articles/70823_16.jpg",
-        "alt": "sicilia",
-        "size": null,
-        "caption": "sicilia"
-      },
-      {
-        "src": "https://medinaschool.org/files/images/2017/10/c839cec2377b3df6aff85310bd097d71.png",
-        "alt": "kordovsk",
-        "size": "wide",
-        "caption": "kordovsk"
-      },
-      {
-        "src": "https://royallib.com/zip_emu/br/391/391853/i_022.png",
-        "alt": "sever",
-        "size": null,
-        "caption": "sever"
-      },
-      {
-        "src": "https://static.tildacdn.com/tild3962-3864-4739-b939-656438666239/photo.jpg",
-        "alt": "frank_korol",
-        "size": "large-vertical",
-        "caption": "frank_korol"
+        "caption": "Алмазная сутра"
       }
     ]
   }

@@ -274,76 +274,76 @@
     },
     "gallery": [
       {
-        "src": "https://www.meisterdrucke.ie/kunstwerke/1260px/Herbert_Norris_-_A_Byzantine_Emperor_of_the_Eighth_and_Ninth_Centuries_AD_1924_-_%28MeisterDrucke-765057%29.jpg",
-        "alt": "emperor",
+        "src": "cont/866/vtorgenie.png",
+        "alt": "vtorgenie",
         "size": "large-vertical",
-        "caption": "emperor"
+        "caption": "Вторжение в Нортумбрию"
       },
       {
-        "src": "https://historymedieval.com/wp-content/uploads/2023/01/Monastery-in-Dafni-on-the-outskirts-of-Athens.jpg.webp",
-        "alt": "monastery",
+        "src": "cont/866/york.png",
+        "alt": "york",
         "size": "wide",
-        "caption": "monastery"
+        "caption": "Падение Йорка (Эофорвика)"
       },
       {
-        "src": "https://historymedieval.com/wp-content/uploads/2023/01/Virgin-and-Child-with-angels-and-Sts.-George-and-Theodore.-encaustic-icon-on-panel.jpg.webp",
-        "alt": "cathedral",
+        "src": "cont/866/poslanie.png",
+        "alt": "poslanie",
         "size": "tall",
-        "caption": "cathedral"
+        "caption": "Послание Гинкмара (Политическая интрига)"
       },
       {
-        "src": "https://historymedieval.com/wp-content/uploads/2025/10/Boniface-receiving-some-medical-writings-from-Galvano-da-Levanto-in-the-presence-of-his-cardinals.-Miniature-from-the-actual-presentation-copy.png",
-        "alt": "boniface",
+        "src": "cont/866/pomilovan.png",
+        "alt": "pomilovan",
         "size": null,
-        "caption": "boniface"
+        "caption": "Помилование Гунтера (Интриги Лотаря II)"
       },
       {
-        "src": "https://cache.getarchive.net/Prod/thumb/cdn2/L3Bob3RvLzIwMTQvMDIvMDQvYXNrb2xkLW9mLWtpZXYtZDdmYjY0LTY0MC5qcGc%3D/240/360/webp",
-        "alt": "askold",
+        "src": "cont/866/morning.png",
+        "alt": "morning",
         "size": "wide",
-        "caption": "askold"
+        "caption": "Утрехтская епархия (Земли Гунгера)"
       },
       {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/%D0%A3%D0%B1%D0%B8%D0%B9%D1%81%D1%82%D0%B2%D0%BE_%D0%90%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%B4%D0%B0_%D0%B8_%D0%94%D0%B8%D1%80%D0%B0_%D0%BA%D0%BD%D1%8F%D0%B7%D0%B5%D0%BC_%D0%9E%D0%BB%D0%B5%D0%B3%D0%BE%D0%BC.jpg/500px-%D0%A3%D0%B1%D0%B8%D0%B9%D1%81%D1%82%D0%B2%D0%BE_%D0%90%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%B4%D0%B0_%D0%B8_%D0%94%D0%B8%D1%80%D0%B0_%D0%BA%D0%BD%D1%8F%D0%B7%D0%B5%D0%BC_%D0%9E%D0%BB%D0%B5%D0%B3%D0%BE%D0%BC.jpg",
-        "alt": "askold&dir",
+        "src": "cont/866/lager'.png",
+        "alt": "lager'",
         "size": null,
-        "caption": "askold&dir"
+        "caption": "Скандинавский лагерь после захвата Йорка"
       },
       {
-        "src": "https://odinstreasures.com/cdn/shop/articles/OT_blog_Heathen-Army.jpg?v=1734850874&width=700",
-        "alt": "odin",
+        "src": "cont/866/mor.put.png",
+        "alt": "mor.put",
         "size": "large-horizontal",
-        "caption": "odin"
+        "caption": "Морской путь в Константинополь"
       },
       {
-        "src": "https://live.staticflickr.com/3088/2317744345_20e9d9f8aa_b.jpg",
-        "alt": "mech",
+        "src": "cont/866/nortumb.png",
+        "alt": "nortumb",
         "size": "tall",
-        "caption": "mech"
+        "caption": "Символ разделённой Нортумбрии"
       },
       {
-        "src": "https://www.ancient-origins.net/sites/default/files/styles/large/public/Viking-army-in-battle_0.jpg?itok=sxsug4eG",
-        "alt": "viking",
+        "src": "cont/866/wedding.png",
+        "alt": "wedding",
         "size": null,
-        "caption": "viking"
+        "caption": "Свадьба Этельвульфа и Юдифи (Вербери, 1 октября 866 года)"
       },
       {
-        "src": "https://www.meisterdrucke.ie/kunstwerke/1260px/Jean_Michel_the_Younger_Moreau_-_Robert_the_Fort_died_%28circa_815-866%29_Duke_of_France_during_the_Battle_of_Brissar_-_%28MeisterDrucke-928163%29.jpg",
-        "alt": "robert le fort",
+        "src": "cont/866/mech.png",
+        "alt": "mech",
         "size": "wide",
-        "caption": "robert le fort"
+        "caption": "Священный дар: Болгарский меч для Папы"
       },
       {
-        "src": "https://cdn.monetnik.ru/storage/market-lot/74/22/477774/1712312_big.jpg",
-        "alt": "moneta",
+        "src": "cont/866/koronacia.png",
+        "alt": "koronacia",
         "size": null,
-        "caption": "moneta"
+        "caption": "Коронация как оружие"
       },
       {
-        "src": "https://edinstvo-news.ru/uploads/posts/2026-05/1778464527-3d6b99d4d-3672-443f-838c-185f83c73d71.webp",
-        "alt": "eng",
+        "src": "cont/866/zal.png",
+        "alt": "zal",
         "size": "large-vertical",
-        "caption": "eng"
+        "caption": "Контуры Йорка (Интерьер)"
       }
     ]
   }
