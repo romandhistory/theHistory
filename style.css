@@ -469,6 +469,7 @@ body {
 }
 
 .social-btn {
+    position: relative;
     display: inline-flex;
     width: 2.2rem;
     height: 2.2rem;
@@ -483,6 +484,30 @@ body {
     transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease;
 }
 
+.social-btn::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: calc(100% + 0.45rem);
+    left: 50%;
+    transform: translateX(-50%) scale(0.95);
+    pointer-events: none;
+    opacity: 0;
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.55rem;
+    border-radius: 0.35rem;
+    transition: opacity 0.15s ease, transform 0.15s ease;
+    z-index: 1;
+}
+
+.social-btn:hover::after,
+.social-btn:focus-visible::after {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+
 .social-btn:hover {
     transform: translateY(-1px);
     background: var(--primary);
@@ -491,9 +516,14 @@ body {
 
 .social-btn ion-icon {
     font-size: 1.1rem;
+    pointer-events: none;
 }
 
-.social-btn svg { width: 1rem; height: 1rem; }
+.social-btn svg {
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+}
 
 @media (max-width: 480px) {
     .site-footer__inner { padding: 0 8px; }

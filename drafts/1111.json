@@ -277,64 +277,76 @@
     },
     "gallery": [
       {
-        "src": "cont/2020/clubhouse.jpg",
-        "alt": "ClubHouse",
-        "size": "large-vertical"
+        "src": "cont/2016/land.jpg",
+        "alt": "land",
+        "size": "large-vertical",
+        "caption": ""
       },
       {
-        "src": "cont/2020/M.Jordan.png",
-        "alt": "Last Dance",
-        "size": "wide"
+        "src": "cont/2016/betvssup.png",
+        "alt": "betvssup",
+        "size": "wide",
+        "caption": ""
       },
       {
-        "src": "cont/2020/BTS.png",
-        "alt": "bts",
-        "size": "tall"
+        "src": "cont/2016/protivostoan.jpg",
+        "alt": "protivostoan",
+        "size": "tall",
+        "caption": ""
       },
       {
-        "src": "cont/2020/DrTHouse.png",
-        "alt": "dreamhouse",
-        "size": null
+        "src": "cont/2016/passaj.jpg",
+        "alt": "passaj",
+        "size": null,
+        "caption": ""
       },
       {
-        "src": "cont/2020/Pitt&Fenix.png",
-        "alt": "oscar",
-        "size": "wide"
+        "src": "cont/2016/strange1.jpg",
+        "alt": "strange1",
+        "size": "wide",
+        "caption": ""
       },
       {
-        "src": "cont/2020/Ведьмак.png",
-        "alt": "vedmak",
-        "size": null
+        "src": "cont/2016/Westworld.jpg",
+        "alt": "Westworld",
+        "size": null,
+        "caption": ""
       },
       {
-        "src": "cont/2020/dovod.jpg",
-        "alt": "dovodfilm",
-        "size": "large-horizontal"
+        "src": "cont/2016/vr.jpg",
+        "alt": "vr",
+        "size": "large-horizontal",
+        "caption": ""
       },
       {
-        "src": "cont/2020/grobovs.jpg",
-        "alt": "grobovsiki",
-        "size": "tall"
+        "src": "cont/2016/pokemon-go.jpeg",
+        "alt": "pokemon-go",
+        "size": "tall",
+        "caption": ""
       },
       {
-        "src": "cont/2020/Мандалорец.jpg",
-        "alt": "mandalorec",
-        "size": null
+        "src": "cont/2016/airpods.jpeg",
+        "alt": "airpods",
+        "size": null,
+        "caption": ""
       },
       {
-        "src": "cont/2020/poodnoi.jpg",
-        "alt": "poodnoifilm",
-        "size": "wide"
+        "src": "cont/2016/striming.jpg",
+        "alt": "striming",
+        "size": "wide",
+        "caption": ""
       },
       {
-        "src": "cont/2020/parazits.png",
-        "alt": "parazitsfilm",
-        "size": null
+        "src": "cont/2016/crown.jpg",
+        "alt": "crown",
+        "size": null,
+        "caption": ""
       },
       {
-        "src": "cont/2020/theend.jpg",
-        "alt": "konec",
-        "size": "large-vertical"
+        "src": "cont/2016/deadpool.jpg",
+        "alt": "deadpool",
+        "size": "large-vertical",
+        "caption": ""
       }
     ]
   }
