@@ -93,23 +93,41 @@
     "tag": "871",
     "label": "871",
     "century": "IX",
-    "image": "img/logo(loc).png",
+    "image": "img/871.jpg",
     "locked": false,
     "content": "data/years/871.json"
   },
   {
+    "id": "872",
+    "tag": "872",
+    "label": "872",
+    "century": "IX",
+    "image": "img/logo(loc).png",
+    "locked": false,
+    "content": "data/years/872.json"
+  },
+  {
     "id": "19",
     "tag": "19",
-    "label": "872-2015",
+    "label": "873-2014",
     "century": "X-XX",
     "image": "img/logo.png",
     "locked": true
   },
   {
+    "id": "2015",
+    "tag": "2015",
+    "label": "2015",
+    "century": "XXI",
+    "image": "img/logo(loc).png",
+    "locked": false,
+    "content": "data/years/2015.json"
+  },
+  {
     "id": "2016",
     "tag": "2016",
     "label": "2016",
-    "century": "IX",
+    "century": "XXI",
     "image": "img/2016.jpg",
     "locked": false,
     "content": "data/years/2016.json"
@@ -118,7 +136,7 @@
     "id": "2017",
     "tag": "2017",
     "label": "2017",
-    "century": "IX",
+    "century": "XXI",
     "image": "img/2017.jpg",
     "locked": false,
     "content": "data/years/2017.json"
@@ -127,7 +145,7 @@
     "id": "2018",
     "tag": "2018",
     "label": "2018",
-    "century": "IX",
+    "century": "XXI",
     "image": "img/2018.jpg",
     "locked": false,
     "content": "data/years/2018.json"
