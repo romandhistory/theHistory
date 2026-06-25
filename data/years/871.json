@@ -322,7 +322,7 @@
       {
         "src": "cont/871/kuzneca.png",
         "alt": "kuzneca",
-        "size": "large-horizontal",
+        "size": null,
         "caption": "Кузница в торговом поселении"
       },
       {

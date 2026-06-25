@@ -278,7 +278,7 @@
       {
         "src": "cont/864/karl_lis.png",
         "alt": "karl_lis",
-        "size": "wide",
+        "size": "large-vertical",
         "caption": "Король Карл II Лысый издал Питрский эдикт"
       },
       {
@@ -314,7 +314,7 @@
       {
         "src": "cont/864/foti.png",
         "alt": "foti",
-        "size": "large-horizontal",
+        "size": null,
         "caption": "Патриарх Фотий проповедует"
       },
       {

@@ -277,74 +277,74 @@
     },
     "gallery": [
       {
-        "src": "cont/2016/land.jpg",
-        "alt": "land",
+        "src": "",
+        "alt": "",
         "size": "large-vertical",
         "caption": ""
       },
       {
-        "src": "cont/2016/betvssup.png",
-        "alt": "betvssup",
+        "src": "",
+        "alt": "",
         "size": "wide",
         "caption": ""
       },
       {
-        "src": "cont/2016/protivostoan.jpg",
-        "alt": "protivostoan",
+        "src": "",
+        "alt": "",
         "size": "tall",
         "caption": ""
       },
       {
-        "src": "cont/2016/passaj.jpg",
-        "alt": "passaj",
+        "src": "",
+        "alt": "",
         "size": null,
         "caption": ""
       },
       {
-        "src": "cont/2016/strange1.jpg",
-        "alt": "strange1",
+        "src": "",
+        "alt": "",
         "size": "wide",
         "caption": ""
       },
       {
-        "src": "cont/2016/Westworld.jpg",
-        "alt": "Westworld",
+        "src": "",
+        "alt": "",
         "size": null,
         "caption": ""
       },
       {
-        "src": "cont/2016/vr.jpg",
-        "alt": "vr",
-        "size": "large-horizontal",
+        "src": "",
+        "alt": "",
+        "size": null,
         "caption": ""
       },
       {
-        "src": "cont/2016/pokemon-go.jpeg",
-        "alt": "pokemon-go",
+        "src": "",
+        "alt": "",
         "size": "tall",
         "caption": ""
       },
       {
-        "src": "cont/2016/airpods.jpeg",
-        "alt": "airpods",
+        "src": "",
+        "alt": "",
         "size": null,
         "caption": ""
       },
       {
-        "src": "cont/2016/striming.jpg",
-        "alt": "striming",
+        "src": "",
+        "alt": "",
         "size": "wide",
         "caption": ""
       },
       {
-        "src": "cont/2016/crown.jpg",
-        "alt": "crown",
+        "src": "",
+        "alt": "",
         "size": null,
         "caption": ""
       },
       {
-        "src": "cont/2016/deadpool.jpg",
-        "alt": "deadpool",
+        "src": "",
+        "alt": "",
         "size": "large-vertical",
         "caption": ""
       }

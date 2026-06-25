@@ -323,7 +323,7 @@
       {
         "src": "cont/867/konst_sobor.png",
         "alt": "konst_sobor",
-        "size": "large-horizontal",
+        "size": null,
         "caption": "Константинопольский собор"
       },
       {

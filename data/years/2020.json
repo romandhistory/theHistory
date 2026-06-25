@@ -413,7 +413,7 @@
       {
         "src": "cont/2020/dovod.jpg",
         "alt": "dovodfilm",
-        "size": "large-horizontal",
+        "size": null,
         "caption": "Фильм «Довод», является научно-фантастическим боевиком Кристофера Нолана"
       },
       {

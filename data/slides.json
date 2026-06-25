@@ -102,24 +102,42 @@
     "tag": "872",
     "label": "872",
     "century": "IX",
-    "image": "img/logo(loc).png",
+    "image": "img/872.jpg",
     "locked": false,
     "content": "data/years/872.json"
   },
   {
+    "id": "873",
+    "tag": "873",
+    "label": "873",
+    "century": "IX",
+    "image": "img/logo(loc).png",
+    "locked": false,
+    "content": "data/years/873.json"
+  },
+  {
     "id": "19",
     "tag": "19",
-    "label": "873-2014",
+    "label": "874-2013",
     "century": "X-XX",
     "image": "img/logo.png",
     "locked": true
+  },
+  {
+    "id": "2014",
+    "tag": "2014",
+    "label": "2014",
+    "century": "XXI",
+    "image": "img/logo(loc).png",
+    "locked": false,
+    "content": "data/years/2014.json"
   },
   {
     "id": "2015",
     "tag": "2015",
     "label": "2015",
     "century": "XXI",
-    "image": "img/logo(loc).png",
+    "image": "img/2015.jpg",
     "locked": false,
     "content": "data/years/2015.json"
   },
