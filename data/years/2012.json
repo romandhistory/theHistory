@@ -1,0 +1,353 @@
+{
+  "year": 1,
+  "tabs": {
+    "world": {
+      "intro": null,
+      "articles": [
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        }
+      ]
+    },
+    "russia": {
+      "intro": null,
+      "articles": [
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "src": "",
+        "alt": "",
+        "size": "large-vertical",
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": "wide",
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": "tall",
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": null,
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": "wide",
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": null,
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": null,
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": "tall",
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": null,
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": "wide",
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": null,
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": "large-vertical",
+        "caption": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "year": 1,
+  "tabs": {
+    "world": {
+      "intro": null,
+      "articles": [
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        }
+      ]
+    },
+    "russia": {
+      "intro": null,
+      "articles": [
+        {
+          "button": "Печенеги и хазары: вынужденное сближение",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "Аскольд укрепляет городские стены Киева",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "Олег расширяет дружину за счёт новых варягов",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "Рюрик: последние годы зрелого правления",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "Игорь учится военному делу",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "Торговые гости в Новгороде: что покупает Север",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "src": "",
+        "alt": "",
+        "size": "large-vertical",
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": "wide",
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": "tall",
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": null,
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": "wide",
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": null,
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": null,
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": "tall",
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": null,
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": "wide",
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": null,
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": "large-vertical",
+        "caption": ""
+      }
+    ]
+  }
+}
