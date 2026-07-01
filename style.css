@@ -947,6 +947,23 @@ body {
     border-radius: 4px;
 }
 
+.event-links {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(47, 47, 47, 0.15);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    text-indent: 0;
+}
+
+.event-links .header-btn {
+    max-width: 100%;
+    white-space: normal;
+    line-height: 1.3;
+    text-align: center;
+}
+
 .content-image {
     flex: 1;
     display: flex;

@@ -155,8 +155,32 @@ document.addEventListener('DOMContentLoaded', async function () {
         return html;
     }
 
+    function resolveTabNum(tab) {
+        if (tab === 'russia' || tab === 2 || tab === '2') return 2;
+        return 1;
+    }
+
+    function renderArticleLinks(links) {
+        if (!links || !links.length) return '';
+
+        let html = '<div class="event-links">';
+        links.forEach(function (link) {
+            const tabNum = resolveTabNum(link.tab);
+            const articleNum = link.article || 1;
+            const label = link.label || (link.year + ' — событие ' + articleNum);
+            html += '<button type="button" class="header-btn event-link-btn"' +
+                ' data-year="' + escapeAttr(String(link.year)) + '"' +
+                ' data-tab="' + tabNum + '"' +
+                ' data-article="' + articleNum + '">' +
+                escapeHtml(label) + '</button>';
+        });
+        html += '</div>';
+        return html;
+    }
+
     function renderArticle(tabId, index, article) {
         const moreId = tabId + '-more' + index;
+        const linksHtml = renderArticleLinks(article.links);
         let html = '<div class="tab-more-content" id="' + moreId + '">';
         html += '<button class="tab-back-button"><ion-icon name="arrow-back"></ion-icon></button>';
 
@@ -167,6 +191,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                 html += '<h2>' + escapeHtml(article.title) + '</h2>';
             }
             article.body.forEach(function (p) { html += p; });
+            html += linksHtml;
             html += '</div>';
             if (article.image) {
                 html += '<div class="content-image"><img src="' + article.image.src +
@@ -175,10 +200,54 @@ document.addEventListener('DOMContentLoaded', async function () {
             html += '</div>';
         } else {
             article.body.forEach(function (p) { html += p; });
+            html += linksHtml;
         }
 
         html += '</div>';
         return html;
+    }
+
+    function openArticleInModal(tabNum, articleIndex) {
+        const tabId = 'slide' + currentYearId + '-tab' + tabNum;
+        const tabContent = document.getElementById(tabId);
+        const moreId = tabId + '-more' + articleIndex;
+
+        resetTabState();
+        setActiveTab(tabNum);
+
+        if (tabContent) {
+            const mainText = tabContent.querySelector(':scope > p');
+            if (mainText) mainText.style.display = 'none';
+            const buttonsContainer = tabContent.querySelector('.multi-buttons');
+            if (buttonsContainer) buttonsContainer.style.display = 'none';
+        }
+
+        const target = document.getElementById(moreId);
+        if (target) {
+            target.classList.add('active');
+            modalHeader.style.paddingLeft = '60px';
+            const contentText = target.querySelector('.content-text');
+            if (contentText) contentText.scrollTop = 0;
+        }
+    }
+
+    async function navigateToEvent(yearId, tabNum, articleIndex) {
+        yearId = String(yearId);
+        const slide = slidesData.find(function (s) { return s.id === yearId; });
+        if (!slide || !slide.content) return;
+
+        try {
+            const yearData = await loadYear(yearId);
+            currentYearId = yearId;
+            modalTitle.textContent = 'Подробности о ' + slide.label;
+            modalContent.innerHTML = renderYearContent(yearId, yearData);
+            openArticleInModal(tabNum, articleIndex);
+
+            const slideIndex = slidesData.findIndex(function (s) { return s.id === yearId; });
+            if (swiper && slideIndex >= 0) swiper.slideTo(slideIndex);
+        } catch (error) {
+            console.error('Ошибка перехода к событию ' + yearId, error);
+        }
     }
 
     function renderGalleryTab(yearId, tabNum, gallery) {
@@ -271,6 +340,16 @@ document.addEventListener('DOMContentLoaded', async function () {
                 const target = document.getElementById(moreId);
                 if (target) target.classList.add('active');
                 modalHeader.style.paddingLeft = '60px';
+                return;
+            }
+
+            const eventLink = event.target.closest('.event-link-btn');
+            if (eventLink) {
+                navigateToEvent(
+                    eventLink.getAttribute('data-year'),
+                    parseInt(eventLink.getAttribute('data-tab'), 10),
+                    parseInt(eventLink.getAttribute('data-article'), 10)
+                );
                 return;
             }
 

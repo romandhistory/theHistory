@@ -17,7 +17,21 @@
           "image": {
             "src": "cont/870/razlel_lotargi.png",
             "alt": "razlel_lotargi"
-          }
+          },
+          "links": [
+            {
+              "year": "869",
+              "tab": "world",
+              "article": 9,
+              "label": "869 — Захватыват Лотарингии"
+            },
+            {
+              "year": "874",
+              "tab": "world",
+              "article": 1,
+              "label": "874 — Падение Мерсии"
+            }
+          ]
         },
         {
           "button": "Ростислав предан племянником Святополком",
