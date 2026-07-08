@@ -143,19 +143,37 @@
     "content": "data/years/876.json"
   },
   {
+    "id": "877",
+    "tag": "877",
+    "label": "877",
+    "century": "IX",
+    "image": "img/logo(loc).png",
+    "locked": false,
+    "content": "data/years/877.json"
+  },
+  {
     "id": "19",
     "tag": "19",
-    "label": "877-2010",
+    "label": "878-2009",
     "century": "X-XX",
     "image": "img/logo.png",
     "locked": true
+  },
+  {
+    "id": "2010",
+    "tag": "2010",
+    "label": "2010",
+    "century": "XXI",
+    "image": "img/logo(loc).png",
+    "locked": false,
+    "content": "data/years/2010.json"
   },
   {
     "id": "2011",
     "tag": "2011",
     "label": "2011",
     "century": "XXI",
-    "image": "img/logo(loc).png",
+    "image": "img/2011.jpg",
     "locked": false,
     "content": "data/years/2011.json"
   },
