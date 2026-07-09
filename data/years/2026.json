@@ -110,6 +110,17 @@
             "src": "cont/2026/mask.jpg",
             "alt": "mask"
           }
+        },
+        {
+          "button": "Землетрясение в Венесуэле",
+          "title": "",
+          "body": [
+            ""
+          ],
+          "image": {
+            "src": "",
+            "alt": "zemletrias"
+          }
         }
       ]
     },
