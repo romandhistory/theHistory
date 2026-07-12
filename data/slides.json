@@ -156,9 +156,18 @@
     "tag": "878",
     "label": "878",
     "century": "IX",
-    "image": "img/logo(loc).png",
+    "image": "img/878.jpg",
     "locked": false,
     "content": "data/years/878.json"
+  },
+  {
+    "id": "879",
+    "tag": "879",
+    "label": "879",
+    "century": "IX",
+    "image": "img/logo(loc).png",
+    "locked": false,
+    "content": "data/years/879.json"
   },
   {
     "id": "19",
