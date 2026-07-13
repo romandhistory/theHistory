@@ -166,7 +166,7 @@
     "label": "879",
     "century": "IX",
     "image": "img/logo(loc).png",
-    "locked": false,
+    "locked": true,
     "content": "data/years/879.json"
   },
   {
@@ -182,7 +182,7 @@
     "tag": "2009",
     "label": "2009",
     "century": "XXI",
-    "image": "img/logo(loc).png",
+    "image": "img/2009.jpg",
     "locked": false,
     "content": "data/years/2009.json"
   },
