@@ -49,7 +49,7 @@
     "label": "866",
     "century": "IX",
     "image": "img/866.jpg",
-    "locked": false,
+    "locked": true,
     "content": "data/years/866.json"
   },
   {
@@ -58,7 +58,7 @@
     "label": "867",
     "century": "IX",
     "image": "img/867.jpg",
-    "locked": false,
+    "locked": true,
     "content": "data/years/867.json"
   },
   {
@@ -67,7 +67,7 @@
     "label": "868",
     "century": "IX",
     "image": "img/868.jpg",
-    "locked": false,
+    "locked": true,
     "content": "data/years/868.json"
   },
   {
@@ -76,7 +76,7 @@
     "label": "869",
     "century": "IX",
     "image": "img/869.jpg",
-    "locked": false,
+    "locked": true,
     "content": "data/years/869.json"
   },
   {
@@ -85,7 +85,7 @@
     "label": "870",
     "century": "IX",
     "image": "img/870.jpg",
-    "locked": false,
+    "locked": true,
     "content": "data/years/870.json"
   },
   {
@@ -94,7 +94,7 @@
     "label": "871",
     "century": "IX",
     "image": "img/871.jpg",
-    "locked": false,
+    "locked": true,
     "content": "data/years/871.json"
   },
   {
@@ -103,7 +103,7 @@
     "label": "872",
     "century": "IX",
     "image": "img/872.jpg",
-    "locked": false,
+    "locked": true,
     "content": "data/years/872.json"
   },
   {
@@ -112,7 +112,7 @@
     "label": "873",
     "century": "IX",
     "image": "img/873.jpg",
-    "locked": false,
+    "locked": true,
     "content": "data/years/873.json"
   },
   {
@@ -121,7 +121,7 @@
     "label": "874",
     "century": "IX",
     "image": "img/874.jpg",
-    "locked": false,
+    "locked": true,
     "content": "data/years/874.json"
   },
   {
@@ -130,7 +130,7 @@
     "label": "875",
     "century": "IX",
     "image": "img/875.jpg",
-    "locked": false,
+    "locked": true,
     "content": "data/years/875.json"
   },
   {
@@ -139,7 +139,7 @@
     "label": "876",
     "century": "IX",
     "image": "img/876.jpg",
-    "locked": false,
+    "locked": true,
     "content": "data/years/876.json"
   },
   {
@@ -148,7 +148,7 @@
     "label": "877",
     "century": "IX",
     "image": "img/877.jpg",
-    "locked": false,
+    "locked": true,
     "content": "data/years/877.json"
   },
   {
@@ -157,7 +157,7 @@
     "label": "878",
     "century": "IX",
     "image": "img/878.jpg",
-    "locked": false,
+    "locked": true,
     "content": "data/years/878.json"
   },
   {
@@ -166,7 +166,7 @@
     "label": "879",
     "century": "IX",
     "image": "img/879.jpg",
-    "locked": false,
+    "locked": true,
     "content": "data/years/879.json"
   },
   {

@@ -17,7 +17,15 @@
           "image": {
             "src": "cont/865/voiskovikingov.png",
             "alt": "voiskovikingov"
-          }
+          },
+          "links": [
+            {
+              "year": "863",
+              "tab": "world",
+              "article": 5,
+              "label": "863 — Начало борьбы за власть между Осбертом и Эллой"
+            }
+          ]
         },
         {
           "button": "Встреча Карла Лысого и Людовика Немецкого близ Туля",
@@ -61,7 +69,21 @@
           "image": {
             "src": "cont/865/fotyiotvergaenpretenzi.png",
             "alt": "fotyiotvergaenpretenzi"
-          }
+          },
+          "links": [
+            {
+              "year": "864",
+              "tab": "world",
+              "article": 4,
+              "label": "864 — Болгарский хан Борис I принимает крещение"
+            },
+            {
+              "year": "864",
+              "tab": "world",
+              "article": 6,
+              "label": "864 — Обострение конфликта между Николаем I и Фотием"
+            }
+          ]
         },
         {
           "button": "Василий Македонянин усиливает влияние при дворе Михаила III",
@@ -90,7 +112,15 @@
           "image": {
             "src": "cont/865/RostislavZaKir&Mef.png",
             "alt": "RostislavZaKir&Mef"
-          }
+          },
+          "links": [
+            {
+              "year": "864",
+              "tab": "world",
+              "article": 7,
+              "label": "864 — Ростислав укрепляет независимость церквиа"
+            }
+          ]
         },
         {
           "button": "Смерть Ансгара, апостола Севера",
@@ -118,7 +148,15 @@
           "image": {
             "src": "cont/865/vikinginafrizii.png",
             "alt": "vikinginafrizii"
-          }
+          },
+          "links": [
+            {
+              "year": "863",
+              "tab": "world",
+              "article": 4,
+              "label": "863 — Разграбление викингами Дорестада"
+            }
+          ]
         },
         {
           "button": "Арабские набеги на византийские фемы в Малой Азии",

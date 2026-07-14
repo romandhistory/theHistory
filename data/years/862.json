@@ -17,7 +17,15 @@
           "image": {
             "src": "cont/862/keln.png",
             "alt": "kelnvogne"
-          }
+          },
+          "links": [
+            {
+              "year": "863",
+              "tab": "world",
+              "article": 4,
+              "label": "863 — Разграбление викингами Дорестада"
+            }
+          ]
         },
         {
           "button": "Ашот Багратуни признан «князем князей» Армении",
@@ -134,7 +142,15 @@
           "image": {
             "src": "cont/862/Robert.png",
             "alt": "Robert_the_Strong"
-          }
+          },
+          "links": [
+            {
+              "year": "864",
+              "tab": "world",
+              "article": 3,
+              "label": "864 — Роберт Сильный атаковал викингов на Луаре"
+            }
+          ]
         },
         {
           "button": "Подавление мятежа в округе Сюйчжоу генералом Ван Ши",
@@ -164,7 +180,15 @@
           "image": {
             "src": "cont/862/Kiril&hazars.png",
             "alt": "kiril_mefodiy"
-          }
+          },
+          "links": [
+            {
+              "year": "864",
+              "tab": "world",
+              "article": 7,
+              "label": "864 — Ростислав укрепляет независимость церкви"
+            }
+          ]
         },
         {
           "button": "Борис Болгарский ищет союзника — и находит новую веру",
@@ -179,7 +203,15 @@
           "image": {
             "src": "cont/862/diplomatia.jpg",
             "alt": "boris_diplomatia"
-          }
+          },
+          "links": [
+            {
+              "year": "864",
+              "tab": "world",
+              "article": 4,
+              "label": "864 — Болгарский хан Борис I принимает крещени"
+            }
+          ]
         }
       ]
     },

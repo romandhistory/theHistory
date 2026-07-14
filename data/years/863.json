@@ -61,7 +61,21 @@
           "image": {
             "src": "cont/863/dorestad.png",
             "alt": "Dorestad and the Viking raids"
-          }
+          },
+          "links": [
+            {
+              "year": "862",
+              "tab": "world",
+              "article": 1,
+              "label": "862 — Викинги разграбили Кёльн"
+            },
+            {
+              "year": "865",
+              "tab": "world",
+              "article": 8,
+              "label": "865 — Набеги викингов на побережье Фризии"
+            }
+          ]
         },
         {
           "button": "Начало борьбы за королевскую власть в Нортумбрии между Осбертом и Эллой",
@@ -76,7 +90,15 @@
           "image": {
             "src": "cont/863/OsbertVSElla.png",
             "alt": "Osbert vs. Ella"
-          }
+          },
+          "links": [
+            {
+              "year": "865",
+              "tab": "world",
+              "article": 1,
+              "label": "865 — Великое языческое войско"
+            }
+          ]
         },
         {
           "button": "Битва при Лалакаоне между Византийской империей и войсками эмира Малатьи Умара аль-Акта",
@@ -133,7 +155,15 @@
           "image": {
             "src": "cont/863/nikolaIvsfotia.png",
             "alt": "nikola I vs fotia"
-          }
+          },
+          "links": [
+            {
+              "year": "864",
+              "tab": "world",
+              "article": 6,
+              "label": "864 — Обострение конфликта между Николаем I и Фотием"
+            }
+          ]
         },
         {
           "button": "Карломан Баварский поднял мятеж против Людовика Немецкого",
