@@ -165,17 +165,35 @@
     "tag": "879",
     "label": "879",
     "century": "IX",
+    "image": "img/879.jpg",
+    "locked": false,
+    "content": "data/years/879.json"
+  },
+  {
+    "id": "880",
+    "tag": "880",
+    "label": "880",
+    "century": "IX",
     "image": "img/logo(loc).png",
     "locked": true,
-    "content": "data/years/879.json"
+    "content": "data/years/880.json"
   },
   {
     "id": "19",
     "tag": "19",
-    "label": "879-2008",
+    "label": "881-2007",
     "century": "X-XX",
     "image": "img/logo.png",
     "locked": true
+  },
+  {
+    "id": "2008",
+    "tag": "2008",
+    "label": "2008",
+    "century": "XXI",
+    "image": "img/logo(loc).png",
+    "locked": true,
+    "content": "data/years/2008.json"
   },
   {
     "id": "2009",

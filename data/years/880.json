@@ -1,0 +1,287 @@
+{
+  "year": 1,
+  "tabs": {
+    "world": {
+      "intro": null,
+      "articles": [
+        {
+          "button": "Договор в Рибемоне",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "Смерть Карломана Баварского",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "Битва при Эбсторфе",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "Булла Industriae tuae",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "Учреждение епископства Нитры",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "Победа византийского флота у Кефалонии",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "Освящение Nea Ekklesia",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "Хуан Чао захватывает Лоян",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "Восстание Умара ибн Хафсуна",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "Битва при Тимеоне",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "Смерть Аривары-но Нарихиры",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "Итоги десятилетия (871–880)",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        }
+      ]
+    },
+    "russia": {
+      "intro": null,
+      "articles": [
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        },
+        {
+          "button": "***",
+          "title": "***",
+          "body": [
+            "XXX"
+          ],
+          "image": {
+            "src": "--",
+            "alt": "--"
+          }
+        }
+      ]
+    },
+    "gallery": [
+      {
+        "src": "",
+        "alt": "",
+        "size": "large-vertical",
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": "wide",
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": "tall",
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": null,
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": "wide",
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": null,
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": null,
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": "tall",
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": null,
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": "wide",
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": null,
+        "caption": ""
+      },
+      {
+        "src": "",
+        "alt": "",
+        "size": "large-vertical",
+        "caption": ""
+      }
+    ]
+  }
+}
