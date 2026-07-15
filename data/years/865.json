@@ -40,7 +40,15 @@
           "image": {
             "src": "cont/865/karl&ludovik.png",
             "alt": "karl&ludovik"
-          }
+          },
+          "links": [
+            {
+              "year": "864",
+              "tab": "world",
+              "article": 8,
+              "label": "864 — Карл Лысый укрепляет оборону королевства"
+            }
+          ]
         },
         {
           "button": "Раздел Франкского королевства между тремя сыновьями Людовика Немецкого",
@@ -54,7 +62,15 @@
           "image": {
             "src": "cont/865/deleniekorolevstva.png",
             "alt": "delenie korolevstva"
-          }
+          },
+          "links": [
+            {
+              "year": "864",
+              "tab": "world",
+              "article": 10,
+              "label": "864 — Распад Каролингской империи"
+            }
+          ]
         },
         {
           "button": "Фотий Константинопольский отвергает претензии Рима на Болгарию",
@@ -170,7 +186,15 @@
           "image": {
             "src": "cont/865/arabianwar.png",
             "alt": "arabianwar"
-          }
+          },
+          "links": [
+            {
+              "year": "863",
+              "tab": "world",
+              "article": 6,
+              "label": "863 — Битва при Лалакаоне"
+            }
+          ]
         },
         {
           "button": "Аббасидский халиф аль-Мутазз укрепляет власть",
@@ -185,7 +209,15 @@
           "image": {
             "src": "cont/865/halifMutazz.png",
             "alt": "halifMutazz"
-          }
+          },
+          "links": [
+            {
+              "year": "864",
+              "tab": "world",
+              "article": 9,
+              "label": "864 — Аббасидский халифат"
+            }
+          ]
         },
         {
           "button": "Империя Тан — продолжение внутренних восстаний",
@@ -200,7 +232,15 @@
           "image": {
             "src": "cont/865/imperiaTan.png",
             "alt": "imperiaTan"
-          }
+          },
+          "links": [
+            {
+              "year": "862",
+              "tab": "world",
+              "article": 10,
+              "label": "862 — Подавление мятежа в округе Сюйчжоу"
+            }
+          ]
         },
         {
           "button": "Хорватский князь Домагой заключает соглашение с Венецией",
