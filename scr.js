@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     function initSwiper() {
         const defaultSlideIndex = slidesData.findIndex(function (slide) {
-            return slide.tag === '865';
+            return slide.tag === '866';
         });
         swiper = new Swiper('.tranding-slider', {
             effect: 'coverflow',

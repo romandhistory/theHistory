@@ -49,7 +49,7 @@
     "label": "866",
     "century": "IX",
     "image": "img/866.jpg",
-    "locked": true,
+    "locked": false,
     "content": "data/years/866.json"
   },
   {
@@ -175,7 +175,7 @@
     "label": "880",
     "century": "IX",
     "image": "img/logo(loc).png",
-    "locked": true,
+    "locked": false,
     "content": "data/years/880.json"
   },
   {
@@ -192,7 +192,7 @@
     "label": "2008",
     "century": "XXI",
     "image": "img/logo(loc).png",
-    "locked": true,
+    "locked": false,
     "content": "data/years/2008.json"
   },
   {
