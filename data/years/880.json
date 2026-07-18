@@ -283,76 +283,76 @@
     },
     "gallery": [
       {
-        "src": "",
-        "alt": "",
+        "src": "cont/880/verf'.png",
+        "alt": "verf'",
         "size": "large-vertical",
-        "caption": ""
+        "caption": "Верфь на берегу Темзы (Лондон)"
       },
       {
-        "src": "",
-        "alt": "",
+        "src": "cont/880/monets.png",
+        "alt": "monets",
         "size": "wide",
-        "caption": ""
+        "caption": "Интерьер мастерской монетного двора (Лондон)"
       },
       {
-        "src": "",
-        "alt": "",
+        "src": "cont/880/mastersk.png",
+        "alt": "mastersk",
         "size": "tall",
-        "caption": ""
+        "caption": "Чайная мастерская в Юэчжоу (Китай)"
       },
       {
-        "src": "",
-        "alt": "",
+        "src": "cont/880/freska.png",
+        "alt": "freska",
         "size": null,
-        "caption": ""
+        "caption": "Фрагмент фрески в пещерном храме (Дуньхуан, Китай)"
       },
       {
-        "src": "",
-        "alt": "",
+        "src": "cont/880/bania.png",
+        "alt": "bania",
         "size": "wide",
-        "caption": ""
+        "caption": "Дворцовая баня в Самарре (Аббасидский халифат)"
       },
       {
-        "src": "",
-        "alt": "",
+        "src": "cont/880/kolokol.png",
+        "alt": "kolokol",
         "size": null,
-        "caption": ""
+        "caption": "Большой бронзовый колокол (Нанкин)"
       },
       {
-        "src": "",
-        "alt": "",
+        "src": "cont/880/zemchug.png",
+        "alt": "zemchug",
         "size": null,
-        "caption": ""
+        "caption": "Жемчужная ферма у берегов Бахрейна"
       },
       {
-        "src": "",
-        "alt": "",
+        "src": "cont/880/pogreb.png",
+        "alt": "pogreb",
         "size": "tall",
-        "caption": ""
+        "caption": "Ледяной погреб в горах Кавказа"
       },
       {
-        "src": "",
-        "alt": "",
+        "src": "cont/880/koni.png",
+        "alt": "koni",
         "size": null,
-        "caption": ""
+        "caption": "Карусель для тренировки конных лучников"
       },
       {
-        "src": "",
-        "alt": "",
+        "src": "cont/880/voda.png",
+        "alt": "voda",
         "size": "wide",
-        "caption": ""
+        "caption": "Водяные часы (константинопольский маяк)"
       },
       {
-        "src": "",
-        "alt": "",
+        "src": "cont/880/ulei.png",
+        "alt": "ulei",
         "size": null,
-        "caption": ""
+        "caption": "Пчелиные ульи на опушке леса (Мерсия)"
       },
       {
-        "src": "",
-        "alt": "",
+        "src": "cont/880/stena.png",
+        "alt": "stena",
         "size": "large-vertical",
-        "caption": ""
+        "caption": "Трещины на древней стеле" 
       }
     ]
   }

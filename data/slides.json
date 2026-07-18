@@ -174,8 +174,8 @@
     "tag": "880",
     "label": "880",
     "century": "IX",
-    "image": "img/logo(loc).png",
-    "locked": false,
+    "image": "img/880.jpg",
+    "locked": true,
     "content": "data/years/880.json"
   },
   {
