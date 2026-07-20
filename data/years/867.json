@@ -17,7 +17,15 @@
           "image": {
             "src": "cont/867/VasilyiI.png",
             "alt": "VasilyiI"
-          }
+          },
+          "links": [
+            {
+              "year": "866",
+              "tab": "world",
+              "article": 8,
+              "label": "866 — Убийство кесаря Варды"
+            }
+          ]
         },
         {
           "button": "Фотий отлучает Николая I — пик Фотианской схизмы",
@@ -33,7 +41,21 @@
           "image": {
             "src": "cont/867/fotianskaisxizma.png",
             "alt": "fotiy"
-          }
+          },
+          "links": [
+            {
+              "year": "866",
+              "tab": "world",
+              "article": 7,
+              "label": "866 — Появление болгарских послов на соборе в Риме"
+            },
+            {
+              "year": "867",
+              "tab": "world",
+              "article": 4,
+              "label": "867 — Смерть Николая I и избрание Адриана II"
+            }
+          ]
         },
         {
           "button": "Низложение Фотия и восстановление Игнатия",
@@ -48,7 +70,15 @@
           "image": {
             "src": "cont/867/nizlojeniefotia.png",
             "alt": "nizlojenie-fotia"
-          }
+          },
+          "links": [
+            {
+              "year": "867",
+              "tab": "world",
+              "article": 4,
+              "label": "867 — Смерть Николая I"
+            }
+          ]
         },
         {
           "button": "Смерть Николая I и избрание Адриана II",
@@ -63,7 +93,21 @@
           "image": {
             "src": "cont/867/papaNikolaI.png",
             "alt": "papa-nikolai-I"
-          }
+          },
+          "links": [
+            {
+              "year": "867",
+              "tab": "world",
+              "article": 2,
+              "label": "867 — Фотий отлучает Николая I"
+            },
+            {
+              "year": "867",
+              "tab": "world",
+              "article": 3,
+              "label": "867 — Низложение Фотия"
+            }
+          ]
         },
         {
           "button": "Лотарь II едет в Рим к новому папе",
@@ -78,7 +122,15 @@
           "image": {
             "src": "cont/867/lotar'eletvrim.png",
             "alt": "lotar-II"
-          }
+          },
+          "links": [
+            {
+              "year": "863",
+              "tab": "world",
+              "article": 11,
+              "label": "863 — Лотарь II: развод, который потряс королевство"
+            }
+          ]
         },
         {
           "button": "Битва при Йорке — гибель королей Нортумбрии и закрепление викингов",
@@ -93,7 +145,15 @@
           "image": {
             "src": "cont/867/bitvapriorke.png",
             "alt": "bitvazaYork"
-          }
+          },
+          "links": [
+            {
+              "year": "865",
+              "tab": "world",
+              "article": 1,
+              "label": "866 — Взятие викингами Йорка"
+            }
+          ]
         },
         {
           "button": "Кирилл и Мефодий направляются в Рим",
@@ -107,7 +167,15 @@
           "image": {
             "src": "cont/867/Kir&MefedutvRim.png",
             "alt": "kirill-i-mefodiy-v-rim"
-          }
+          },
+          "links": [
+            {
+              "year": "866",
+              "tab": "world",
+              "article": 6,
+              "label": "866 — Миссия Кирилла и Мефодия в Блатноград"
+            }
+          ]
         },
         {
           "button": "Арабская осада Дубровника",
@@ -122,7 +190,15 @@
           "image": {
             "src": "cont/867/vizantflot.png",
             "alt": "vizantisk flot"
-          }
+          },
+          "links": [
+            {
+              "year": "867",
+              "tab": "world",
+              "article": 9,
+              "label": "867 — Домагой сдерживает арабов на Адриатике"
+            }
+          ]
         },
         {
           "button": "Домагой сдерживает арабов на Адриатике",
@@ -136,7 +212,15 @@
           "image": {
             "src": "cont/867/domagoivspirats.png",
             "alt": "domagoy"
-          }
+          },
+          "links": [
+            {
+              "year": "867",
+              "tab": "world",
+              "article": 8,
+              "label": "867 — Арабская осада Дубровника"
+            }
+          ]
         },
         {
           "button": "Аббасидский халифат — дворцовые кризисы",
@@ -150,7 +234,15 @@
           "image": {
             "src": "cont/867/mutazdeistvuet.png",
             "alt": "mutazz deistvuet"
-          }
+          },
+          "links": [
+            {
+              "year": "866",
+              "tab": "world",
+              "article": 5,
+              "label": "866 — Аббасидский халиф аль-Мутазз"
+            }
+          ]
         },
         {
           "button": "Империя Тан — нарастание сепаратизма",
@@ -164,7 +256,15 @@
           "image": {
             "src": "cont/867/imperiaTan.png",
             "alt": "imperiaTan"
-          }
+          },
+          "links": [
+            {
+              "year": "865",
+              "tab": "world",
+              "article": 11,
+              "label": "865 — Империя Тан — продолжение внутренних восстаний"
+            }
+          ]
         },
         {
           "button": "Датские набеги на Западно-Франкское королевство",
@@ -179,7 +279,15 @@
           "image": {
             "src": "cont/867/RobSilnyi.png",
             "alt": "RobSilnyi"
-          }
+          },
+          "links": [
+            {
+              "year": "865",
+              "tab": "world",
+              "article": 8,
+              "label": "865 — Набеги датских викингов на побережье Фризии"
+            }
+          ]
         }
       ]
     },

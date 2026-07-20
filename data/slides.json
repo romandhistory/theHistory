@@ -58,7 +58,7 @@
     "label": "867",
     "century": "IX",
     "image": "img/867.jpg",
-    "locked": true,
+    "locked": false,
     "content": "data/years/867.json"
   },
   {
