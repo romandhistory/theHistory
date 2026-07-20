@@ -44,12 +44,32 @@ document.addEventListener('DOMContentLoaded', async function () {
         const defaultSlideIndex = slidesData.findIndex(function (slide) {
             return slide.tag === '866';
         });
+        const isMobile = window.matchMedia('(max-width: 768px)').matches;
+
         swiper = new Swiper('.tranding-slider', {
-            effect: 'coverflow',
+            effect: isMobile ? 'slide' : 'coverflow',
             grabCursor: true,
             centeredSlides: true,
             initialSlide: defaultSlideIndex >= 0 ? defaultSlideIndex : 0,
             slidesPerView: 'auto',
+            speed: isMobile ? 450 : 650,
+            threshold: 8,
+            touchRatio: 1,
+            resistanceRatio: 0.55,
+            allowTouchMove: true,
+            followFinger: true,
+            shortSwipes: true,
+            longSwipes: true,
+            longSwipesRatio: 0.25,
+            longSwipesMs: 250,
+            touchReleaseOnEdges: true,
+            freeMode: isMobile ? {
+                enabled: true,
+                sticky: true,
+                momentum: true,
+                momentumRatio: 0.85,
+                momentumBounce: false
+            } : false,
             coverflowEffect: {
                 rotate: 50,
                 stretch: 0,
