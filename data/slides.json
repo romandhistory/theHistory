@@ -67,7 +67,7 @@
     "label": "868",
     "century": "IX",
     "image": "img/868.jpg",
-    "locked": true,
+    "locked": false,
     "content": "data/years/868.json"
   },
   {
