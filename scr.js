@@ -353,6 +353,9 @@ document.addEventListener('DOMContentLoaded', async function () {
             currentYearId = yearId;
             modalTitle.textContent = 'Подробности о ' + slide.label;
             modalContent.innerHTML = renderYearContent(yearId, yearData);
+            modalOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            modalHeader.style.paddingLeft = '20px';
             openArticleInModal(tabNum, articleIndex);
 
             const slideIndex = slidesData.findIndex(function (s) { return s.id === yearId; });
