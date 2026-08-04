@@ -1,4 +1,8 @@
 # ⏳ theХистори
+![GitHub last commit](https://img.shields.io/github/last-commit/romandhistory/theHistory)
+![GitHub repo size](https://img.shields.io/github/repo-size/romandhistory/theHistory)
+![GitHub stars](https://img.shields.io/github/stars/romandhistory/theHistory)
+![GitHub issues](https://img.shields.io/github/issues/romandhistory/theHistory)
 
 > История, которую можно **увидеть**, **понять** и **прочувствовать**
 
