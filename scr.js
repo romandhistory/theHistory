@@ -27,8 +27,10 @@ document.addEventListener('DOMContentLoaded', async function () {
         initSwiper();
         bindEvents();
         initSliderWheelBehavior();
-        handleDeepLink();
-        window.addEventListener('hashchange', handleDeepLink);
+        history.replaceState({ deepLink: false }, '', window.location.pathname + window.location.search + window.location.hash);
+        handleDeepLink(true);
+        window.addEventListener('hashchange', function () { handleDeepLink(true); });
+        window.addEventListener('popstate', handlePopState);
     } catch (error) {
         console.error('Не удалось загрузить data/slides.json. Запустите через Live Server.', error);
     }
@@ -218,7 +220,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             modalOverlay.classList.add('active');
             document.body.style.overflow = 'hidden';
             modalHeader.style.paddingLeft = '20px';
-            updateDeepLink(yearId, 1, 1);
+            updateDeepLink(yearId, 1, 0);
         } catch (error) {
             console.error('Ошибка загрузки года ' + yearId, error);
         }
@@ -343,7 +345,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
     }
 
-    async function navigateToEvent(yearId, tabNum, articleIndex) {
+    async function navigateToEvent(yearId, tabNum, articleIndex, replaceStateFlag) {
         yearId = String(yearId);
         const slide = slidesData.find(function (s) { return s.id === yearId; });
         if (!slide || !slide.content) return;
@@ -356,12 +358,18 @@ document.addEventListener('DOMContentLoaded', async function () {
             modalOverlay.classList.add('active');
             document.body.style.overflow = 'hidden';
             modalHeader.style.paddingLeft = '20px';
-            openArticleInModal(tabNum, articleIndex);
+
+            if (articleIndex && articleIndex > 0) {
+                openArticleInModal(tabNum, articleIndex);
+            } else {
+                resetTabState();
+                setActiveTab(tabNum);
+            }
 
             const slideIndex = slidesData.findIndex(function (s) { return s.id === yearId; });
             if (swiper && slideIndex >= 0) swiper.slideTo(slideIndex);
 
-            updateDeepLink(yearId, tabNum, articleIndex);
+            updateDeepLink(yearId, tabNum, articleIndex, replaceStateFlag);
         } catch (error) {
             console.error('Ошибка перехода к событию ' + yearId, error);
         }
@@ -418,29 +426,46 @@ document.addEventListener('DOMContentLoaded', async function () {
         if (buttonsContainer) buttonsContainer.style.display = 'grid';
     }
 
-    function closeModal() {
+    function closeModal(pushHistory) {
+        if (pushHistory instanceof Event) pushHistory = false;
         modalOverlay.classList.remove('active');
         document.body.style.overflow = '';
         currentYearId = null;
-        history.replaceState(null, '', window.location.pathname + window.location.search);
+        const cleanedUrl = window.location.pathname + window.location.search;
+        if (pushHistory === true) {
+            history.pushState({ deepLink: false }, '', cleanedUrl);
+        } else {
+            history.replaceState({ deepLink: false }, '', cleanedUrl);
+        }
     }
 
-    function updateDeepLink(yearId, tabNum, articleIndex) {
+    function updateDeepLink(yearId, tabNum, articleIndex, replaceStateFlag) {
         if (!yearId) return;
+
         const params = new URLSearchParams();
         params.set('year', yearId);
 
         if (tabNum && tabNum !== 1) {
             params.set('tab', tabNum === 2 ? 'russia' : String(tabNum));
         }
-        if (articleIndex && articleIndex !== 1) {
+        if (articleIndex && articleIndex > 0) {
             params.set('article', String(articleIndex));
         }
 
         const hash = params.toString();
         const newHash = hash ? '#' + hash : '';
-        if (window.location.hash !== newHash) {
-            history.replaceState(null, '', window.location.pathname + window.location.search + newHash);
+        const newUrl = window.location.pathname + window.location.search + newHash;
+        const state = {
+            deepLink: true,
+            yearId: String(yearId),
+            tabNum: tabNum || 1,
+            articleIndex: typeof articleIndex === 'number' ? articleIndex : 0
+        };
+
+        if (replaceStateFlag) {
+            history.replaceState(state, '', newUrl);
+        } else {
+            history.pushState(state, '', newUrl);
         }
     }
 
@@ -460,11 +485,11 @@ document.addEventListener('DOMContentLoaded', async function () {
         return {
             yearId,
             tabNum: resolveTabNum(tab || 1),
-            articleIndex: article ? parseInt(article, 10) || 1 : 1
+            articleIndex: article ? parseInt(article, 10) || 0 : 0
         };
     }
 
-    function handleDeepLink() {
+    function handleDeepLink(replaceHistory) {
         const { yearId, tabNum, articleIndex } = parseDeepLinkHash();
         if (!yearId) return;
 
@@ -472,14 +497,35 @@ document.addEventListener('DOMContentLoaded', async function () {
         if (slideIndex === -1) return;
 
         if (swiper) swiper.slideTo(slideIndex);
-        navigateToEvent(yearId, tabNum, articleIndex);
+        navigateToEvent(yearId, tabNum, articleIndex, replaceHistory);
+    }
+
+    function handlePopState(event) {
+        const state = event.state;
+        if (state && state.deepLink) {
+            if (swiper) {
+                const slideIndex = slidesData.findIndex(function (slide) { return slide.id === state.yearId; });
+                if (slideIndex >= 0) swiper.slideTo(slideIndex);
+            }
+            navigateToEvent(state.yearId, state.tabNum, state.articleIndex, true);
+            return;
+        }
+
+        if (window.location.hash) {
+            handleDeepLink(true);
+            return;
+        }
+
+        if (modalOverlay.classList.contains('active')) {
+            closeModal(false);
+        }
     }
 
     function bindEvents() {
-        modalClose.addEventListener('click', closeModal);
+        modalClose.addEventListener('click', function () { closeModal(false); });
 
         modalOverlay.addEventListener('click', function (e) {
-            if (e.target === modalOverlay) closeModal();
+            if (e.target === modalOverlay) closeModal(false);
         });
 
         tabButtons.forEach(function (button) {
@@ -497,7 +543,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
                 const activeTabMatch = tabId.match(/slide\d+-tab(\d+)/);
                 const activeTabNum = activeTabMatch ? parseInt(activeTabMatch[1], 10) : 1;
-                updateDeepLink(currentYearId, activeTabNum, 1);
+                updateDeepLink(currentYearId, activeTabNum, 0);
             });
         });
 
@@ -542,7 +588,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                 if (activeTabButton) {
                     const activeTabMatch = activeTabButton.getAttribute('data-tab').match(/slide\d+-tab(\d+)/);
                     const activeTabNum = activeTabMatch ? parseInt(activeTabMatch[1], 10) : 1;
-                    updateDeepLink(currentYearId, activeTabNum, 1);
+                    updateDeepLink(currentYearId, activeTabNum, 0);
                 }
                 return;
             }
