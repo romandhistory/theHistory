@@ -638,6 +638,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                 const activeTabMatch = tabId.match(/slide\d+-tab(\d+)/);
                 const activeTabNum = activeTabMatch ? parseInt(activeTabMatch[1], 10) : 1;
                 updateDeepLink(currentYearId, activeTabNum, 0);
+                updatePageTitle(currentYearId, activeTabNum, 0);
             });
         });
 
@@ -678,6 +679,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                     const activeTabMatch = activeTabButton.getAttribute('data-tab').match(/slide\d+-tab(\d+)/);
                     const activeTabNum = activeTabMatch ? parseInt(activeTabMatch[1], 10) : 1;
                     updateDeepLink(currentYearId, activeTabNum, 0);
+                    updatePageTitle(currentYearId, activeTabNum, 0);
                 }
                 return;
             }
