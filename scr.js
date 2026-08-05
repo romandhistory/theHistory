@@ -75,6 +75,10 @@ document.addEventListener('DOMContentLoaded', async function () {
             longSwipesRatio: 0.3,
             longSwipesMs: 220,
             touchReleaseOnEdges: true,
+            navigation: {
+                nextEl: '.slide-arrow-next',
+                prevEl: '.slide-arrow-prev'
+            },
             freeMode: isMobile ? {
                 enabled: true,
                 sticky: true,
@@ -94,6 +98,19 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         swiper.on('slideChange', updateSlideSideClasses);
         updateSlideSideClasses();
+
+        const prevArrow = document.querySelector('.slide-arrow-prev');
+        const nextArrow = document.querySelector('.slide-arrow-next');
+        if (prevArrow) {
+            prevArrow.addEventListener('click', function () {
+                if (swiper) swiper.slidePrev();
+            });
+        }
+        if (nextArrow) {
+            nextArrow.addEventListener('click', function () {
+                if (swiper) swiper.slideNext();
+            });
+        }
 
         swiper.on('click', function (_swiperInstance, event) {
             const clickedSlide = event.target.closest('.swiper-slide');
