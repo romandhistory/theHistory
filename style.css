@@ -160,6 +160,20 @@ body {
     margin-top: 0.5rem;
 }
 
+.section-heading > .section-heading__link {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.section-heading > .section-heading__link:hover,
+.section-heading > .section-heading__link:focus-visible {
+    text-decoration: none;
+}
+
 .slider-wrapper {
     position: relative;
     margin-bottom: 100px;

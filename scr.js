@@ -699,6 +699,14 @@ document.addEventListener('DOMContentLoaded', async function () {
                 location.reload();
             });
         }
+
+        const headingLink = document.querySelector('.section-heading__link');
+        if (headingLink) {
+            headingLink.addEventListener('click', function (event) {
+                event.preventDefault();
+                location.reload();
+            });
+        }
     }
 
     function escapeHtml(text) {
