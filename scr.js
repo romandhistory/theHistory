@@ -271,6 +271,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     function resolveTabNum(tab) {
         if (tab === 'russia' || tab === 2 || tab === '2') return 2;
+        if (tab === 'gallery' || tab === 3 || tab === '3') return 3;
         return 1;
     }
 
@@ -452,8 +453,32 @@ document.addEventListener('DOMContentLoaded', async function () {
             params.set('article', String(articleIndex));
         }
 
-        const hash = params.toString();
-        const newHash = hash ? '#' + hash : '';
+        let newHash = '';
+
+        if (tabNum === 1) {
+            newHash = yearId;
+            if (articleIndex && articleIndex > 0) {
+                newHash += '/' + articleIndex;
+            }
+        } else if (tabNum === 2) {
+            newHash = yearId + '/russia';
+            if (articleIndex && articleIndex > 0) {
+                newHash += '/' + articleIndex;
+            }
+        } else if (tabNum === 3) {
+            newHash = yearId + '/gallery';
+            if (articleIndex && articleIndex > 0) {
+                newHash += '/' + articleIndex;
+            }
+        } else {
+            if (params.toString()) {
+                newHash = '#' + params.toString();
+            }
+        }
+
+        if (newHash && newHash[0] !== '#') {
+            newHash = '#' + newHash;
+        }
         const newUrl = window.location.pathname + window.location.search + newHash;
         const state = {
             deepLink: true,
@@ -473,14 +498,26 @@ document.addEventListener('DOMContentLoaded', async function () {
         const rawHash = window.location.hash.replace(/^#/, '');
         if (!rawHash) return {};
 
-        if (!rawHash.includes('=')) {
-            return { yearId: rawHash };
-        }
+        let yearId = null;
+        let tab = null;
+        let article = null;
 
-        const params = new URLSearchParams(rawHash);
-        const yearId = params.get('year') || params.get('id');
-        const tab = params.get('tab');
-        const article = params.get('article');
+        if (rawHash.includes('=') || rawHash.includes('&')) {
+            const params = new URLSearchParams(rawHash);
+            yearId = params.get('year') || params.get('id') || rawHash;
+            tab = params.get('tab');
+                if (tab === '3') tab = 'gallery';
+            if (segments.length === 2) {
+                if (/^\d+$/.test(segments[1])) {
+                    article = segments[1];
+                } else {
+                    tab = segments[1];
+                }
+            } else if (segments.length >= 3) {
+                tab = segments[1];
+                article = segments[2];
+            }
+        }
 
         return {
             yearId,
