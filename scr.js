@@ -506,7 +506,11 @@ document.addEventListener('DOMContentLoaded', async function () {
             const params = new URLSearchParams(rawHash);
             yearId = params.get('year') || params.get('id') || rawHash;
             tab = params.get('tab');
-                if (tab === '3') tab = 'gallery';
+            if (tab === '3') tab = 'gallery';
+            article = params.get('article');
+        } else {
+            const segments = rawHash.split('/').filter(Boolean);
+            yearId = segments[0] || null;
             if (segments.length === 2) {
                 if (/^\d+$/.test(segments[1])) {
                     article = segments[1];
@@ -515,6 +519,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                 }
             } else if (segments.length >= 3) {
                 tab = segments[1];
+                if (tab === '3') tab = 'gallery';
                 article = segments[2];
             }
         }
