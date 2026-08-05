@@ -238,6 +238,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             document.body.style.overflow = 'hidden';
             modalHeader.style.paddingLeft = '20px';
             updateDeepLink(yearId, 1, 0);
+            updatePageTitle(yearId, 1, 0);
         } catch (error) {
             console.error('Ошибка загрузки года ' + yearId, error);
         }
@@ -258,6 +259,35 @@ document.addEventListener('DOMContentLoaded', async function () {
             renderArticlesTab(yearId, 2, yearData.tabs.russia) +
             renderGalleryTab(yearId, 3, yearData.tabs.gallery)
         );
+    }
+
+    function getTabData(yearData, tabNum) {
+        if (!yearData || !yearData.tabs) return null;
+        if (tabNum === 2) return yearData.tabs.russia;
+        if (tabNum === 3) return yearData.tabs.gallery;
+        return yearData.tabs.world;
+    }
+
+    function getArticleTitle(yearData, tabNum, articleIndex) {
+        const tabData = getTabData(yearData, tabNum);
+        if (!tabData || !tabData.articles || articleIndex <= 0) return '';
+        const article = tabData.articles[articleIndex - 1];
+        return (article && (article.button || article.title || article.caption || '')) || '';
+    }
+
+    function updatePageTitle(yearId, tabNum, articleIndex, articleTitle) {
+        let title = 'theХистори';
+        if (yearId) {
+            title += ' | ' + yearId;
+            if (articleIndex && articleIndex > 0) {
+                title += ' | ' + (articleTitle || 'Событие ' + articleIndex);
+            } else if (tabNum === 2) {
+                title += ' | Россия';
+            } else if (tabNum === 3) {
+                title += ' | Галерея';
+            }
+        }
+        document.title = title;
     }
 
     function renderArticlesTab(yearId, tabNum, tabData) {
@@ -339,7 +369,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         return html;
     }
 
-    function openArticleInModal(tabNum, articleIndex) {
+    function openArticleInModal(tabNum, articleIndex, articleTitle) {
         const tabId = 'slide' + currentYearId + '-tab' + tabNum;
         const tabContent = document.getElementById(tabId);
         const moreId = tabId + '-more' + articleIndex;
@@ -361,6 +391,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             const contentText = target.querySelector('.content-text');
             if (contentText) contentText.scrollTop = 0;
         }
+
+        updatePageTitle(currentYearId, tabNum, articleIndex, articleTitle);
     }
 
     async function navigateToEvent(yearId, tabNum, articleIndex, replaceStateFlag) {
@@ -378,10 +410,12 @@ document.addEventListener('DOMContentLoaded', async function () {
             modalHeader.style.paddingLeft = '20px';
 
             if (articleIndex && articleIndex > 0) {
-                openArticleInModal(tabNum, articleIndex);
+                const articleTitle = getArticleTitle(yearData, tabNum, articleIndex);
+                openArticleInModal(tabNum, articleIndex, articleTitle);
             } else {
                 resetTabState();
                 setActiveTab(tabNum);
+                updatePageTitle(yearId, tabNum, 0);
             }
 
             const slideIndex = slidesData.findIndex(function (s) { return s.id === yearId; });
@@ -449,6 +483,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         modalOverlay.classList.remove('active');
         document.body.style.overflow = '';
         currentYearId = null;
+        document.title = 'theХистори';
         const cleanedUrl = window.location.pathname + window.location.search;
         if (pushHistory === true) {
             history.pushState({ deepLink: false }, '', cleanedUrl);
@@ -615,13 +650,8 @@ document.addEventListener('DOMContentLoaded', async function () {
                 const articleIndexMatch = moreId.match(/more(\d+)/);
                 const tabNum = tabMatch ? parseInt(tabMatch[1], 10) : 1;
                 const articleIndex = articleIndexMatch ? parseInt(articleIndexMatch[1], 10) : 1;
-                const mainText = tabContent.querySelector(':scope > p');
-                if (mainText) mainText.style.display = 'none';
-                const buttonsContainer = tabContent.querySelector('.multi-buttons');
-                if (buttonsContainer) buttonsContainer.style.display = 'none';
-                const target = document.getElementById(moreId);
-                if (target) target.classList.add('active');
-                modalHeader.style.paddingLeft = '60px';
+                const articleTitle = getArticleTitle(yearCache[currentYearId], tabNum, articleIndex);
+                openArticleInModal(tabNum, articleIndex, articleTitle);
                 updateDeepLink(currentYearId, tabNum, articleIndex);
                 return;
             }
