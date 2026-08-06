@@ -219,8 +219,8 @@
     "tag": "885",
     "label": "885",
     "century": "IX",
-    "image": "img/logo(loc).webp",
-    "locked": false,
+    "image": "img/885.webp",
+    "locked": true,
     "content": "data/years/885.json"
   },
   {
