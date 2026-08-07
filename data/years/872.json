@@ -31,7 +31,15 @@
           "image": {
             "src": "cont/872/koronac.webp",
             "alt": "koronac"
-          }
+          },
+          "links": [
+            {
+              "year": "871",
+              "tab": "world",
+              "article": 4,
+              "label": "871 — Пленение Людовика II в Беневенто"
+            }
+          ]
         },
         {
           "button": "Избрание Иоанна VIII папой",
@@ -46,7 +54,15 @@
           "image": {
             "src": "cont/872/papa_ioan.webp",
             "alt": "papa_ioan"
-          }
+          },
+          "links": [
+            {
+              "year": "867",
+              "tab": "world",
+              "article": 4,
+              "label": "867 — Смерть Николая I и избрание Адриана II"
+            }
+          ]
         },
         {
           "button": "Поход Людовика Немецкого тремя армиями против Святополка",
@@ -61,7 +77,15 @@
           "image": {
             "src": "cont/872/pohod.webp",
             "alt": "pohod"
-          }
+          },
+          "links": [
+            {
+              "year": "871",
+              "tab": "world",
+              "article": 7,
+              "label": "871 — Святополк арестован франками"
+            }
+          ]
         },
         {
           "button": "Битва при Вафириаке",
@@ -77,7 +101,15 @@
           "image": {
             "src": "cont/872/vafiriak.webp",
             "alt": "vafiriak"
-          }
+          },
+          "links": [
+            {
+              "year": "868",
+              "tab": "world",
+              "article": 5,
+              "label": "868 — Византийский флот снял осаду Рагузы"
+            }
+          ]
         },
         {
           "button": "Восстание в Йорке",
@@ -91,7 +123,15 @@
           "image": {
             "src": "cont/872/miateg.webp",
             "alt": "miateg"
-          }
+          },
+          "links": [
+            {
+              "year": "871",
+              "tab": "world",
+              "article": 10,
+              "label": "871 — Викинги делят добычу под Лондоном"
+            }
+          ]
         },
         {
           "button": "Санш III Митарра основывает герцогство Гасконь",
@@ -120,7 +160,15 @@
           "image": {
             "src": "cont/872/muffak.webp",
             "alt": "muffak"
-          }
+          },
+          "links": [
+            {
+              "year": "870",
+              "tab": "world",
+              "article": 6,
+              "label": "870 — Воцарение аль-Мутамида"
+            }
+          ]
         },
         {
           "button": "Признание Борживоя князем Чехии",
@@ -149,7 +197,15 @@
           "image": {
             "src": "cont/872/mototsune.webp",
             "alt": "mototsune"
-          }
+          },
+          "links": [
+            {
+              "year": "869",
+              "tab": "world",
+              "article": 11,
+              "label": "869 — Первый фестиваль Гион"
+            }  
+          ]
         },
         {
           "button": "Смерть Чжан Ичао, правителя Дуньхуана",
@@ -164,7 +220,15 @@
           "image": {
             "src": "cont/872/chjan.webp",
             "alt": "chjan"
-          }
+          },
+          "links": [
+            {
+              "year": "867",
+              "tab": "world",
+              "article": 11,
+              "label": "867 — Империя Тан — нарастание сепаратизма"
+            }
+          ]
         },
         {
           "button": "Мавры возвращают Коимбру",
@@ -178,7 +242,15 @@
           "image": {
             "src": "cont/872/koimbra.webp",
             "alt": "koimbra"
-          }
+          },
+          "links": [
+            {
+              "year": "868",
+              "tab": "world",
+              "article": 10,
+              "label": "868 — Восстание Мериды против Кордовского эмирата"
+            }
+          ]
         }
       ]
     },
