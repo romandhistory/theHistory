@@ -20,12 +20,6 @@
           },
           "links": [
             {
-              "year": "864",
-              "tab": "world",
-              "article": 10,
-              "label": "864 — Распад Каролингской империи"
-            },
-            {
               "year": "866",
               "tab": "world",
               "article": 2,
@@ -235,8 +229,8 @@
             {
               "year": "864",
               "tab": "world",
-              "article": 10,
-              "label": "864 — Распад Каролингской империи"
+              "article": 5,
+              "label": "864 — Людовик Немецкий вторгается в Моравию"
             }
           ]
         },
@@ -280,7 +274,15 @@
           "image": {
             "src": "cont/863/zemletrasvdvine.webp",
             "alt": "zemletras v dvine"
-          }
+          },
+          "links": [
+            {
+              "year": "862",
+              "tab": "world",
+              "article": 2,
+              "label": "862 — Ашот Багратуни признан «князем князей» Армении"
+            }
+          ]
         }
       ]
     },
