@@ -237,6 +237,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             modalOverlay.classList.add('active');
             document.body.style.overflow = 'hidden';
             modalHeader.style.paddingLeft = '20px';
+            updateStructuredData(yearId, 1, 0, yearData);
             updateDeepLink(yearId, 1, 0);
             updatePageTitle(yearId, 1, 0);
         } catch (error) {
@@ -288,6 +289,82 @@ document.addEventListener('DOMContentLoaded', async function () {
             }
         }
         document.title = title;
+    }
+
+    function updateStructuredData(yearId, tabNum, articleIndex, yearData) {
+        const existingScript = document.querySelector('script[data-schema="year-page"]');
+        if (existingScript) {
+            existingScript.remove();
+        }
+
+        if (!yearId || !yearData) return;
+
+        const slide = slidesData.find(function (s) { return String(s.id) === String(yearId); });
+        const baseUrl = 'https://thehistory.pro/';
+        const pageUrl = baseUrl + '#year=' + encodeURIComponent(String(yearId));
+        const article = (articleIndex && articleIndex > 0 && tabNum)
+            ? getTabData(yearData, tabNum)?.articles?.[articleIndex - 1]
+            : null;
+
+        const publisher = {
+            '@type': 'Organization',
+            name: 'theХистори',
+            url: baseUrl,
+            logo: 'https://thehistory.pro/img/logo1.png'
+        };
+
+        const defaultDescription = 'История и ключевые события ' + String(yearId) + ' года на theХистори.';
+        const articleDescription = article && Array.isArray(article.body)
+            ? article.body.join(' ').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 220)
+            : defaultDescription;
+
+        let schema = {
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            name: slide ? (slide.label + ' — theХистори') : 'theХистори',
+            url: pageUrl,
+            isPartOf: {
+                '@type': 'WebSite',
+                name: 'theХистори',
+                url: baseUrl
+            },
+            publisher: publisher,
+            description: defaultDescription,
+            image: slide && slide.image ? 'https://thehistory.pro/' + slide.image.replace('\\', '/') : 'https://thehistory.pro/img/logo1.png'
+        };
+
+        if (article && article.title) {
+            const articleImage = article.image && article.image.src
+                ? 'https://thehistory.pro/' + article.image.src.replace('\\', '/')
+                : 'https://thehistory.pro/img/logo1.png';
+
+            schema = {
+                '@context': 'https://schema.org',
+                '@type': 'Article',
+                headline: article.title,
+                name: article.title,
+                description: articleDescription,
+                url: pageUrl,
+                image: articleImage,
+                author: publisher,
+                publisher: publisher,
+                mainEntityOfPage: {
+                    '@type': 'WebPage',
+                    '@id': pageUrl
+                },
+                about: {
+                    '@type': 'Event',
+                    name: article.title,
+                    startDate: String(yearId)
+                }
+            };
+        }
+
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.dataset.schema = 'year-page';
+        script.textContent = JSON.stringify(schema, null, 2);
+        document.head.appendChild(script);
     }
 
     function renderArticlesTab(yearId, tabNum, tabData) {
@@ -412,10 +489,12 @@ document.addEventListener('DOMContentLoaded', async function () {
             if (articleIndex && articleIndex > 0) {
                 const articleTitle = getArticleTitle(yearData, tabNum, articleIndex);
                 openArticleInModal(tabNum, articleIndex, articleTitle);
+                updateStructuredData(yearId, tabNum, articleIndex, yearData);
             } else {
                 resetTabState();
                 setActiveTab(tabNum);
                 updatePageTitle(yearId, tabNum, 0);
+                updateStructuredData(yearId, tabNum, 0, yearData);
             }
 
             const slideIndex = slidesData.findIndex(function (s) { return s.id === yearId; });
