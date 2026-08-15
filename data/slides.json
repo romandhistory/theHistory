@@ -228,8 +228,8 @@
     "tag": "886",
     "label": "886",
     "century": "IX",
-    "image": "img/logo(loc).webp",
-    "locked": false,
+    "image": "img/886.webp",
+    "locked": true,
     "content": "data/years/886.json"
   },
   {
