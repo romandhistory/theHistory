@@ -229,7 +229,7 @@
     "label": "886",
     "century": "IX",
     "image": "img/logo(loc).webp",
-    "locked": true,
+    "locked": false,
     "content": "data/years/886.json"
   },
   {

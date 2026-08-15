@@ -28,6 +28,15 @@ document.addEventListener('DOMContentLoaded', async function () {
         bindEvents();
         initSliderWheelBehavior();
         history.replaceState({ deepLink: false }, '', window.location.pathname + window.location.search + window.location.hash);
+
+        if (window.location.hash && !window.location.pathname.startsWith('/years/')) {
+            const legacyRedirectTarget = redirectLegacyHashToStaticPath();
+            if (legacyRedirectTarget) {
+                window.location.replace(legacyRedirectTarget);
+                return;
+            }
+        }
+
         handleDeepLink(true);
         window.addEventListener('hashchange', function () { handleDeepLink(true); });
         window.addEventListener('popstate', handlePopState);
@@ -124,8 +133,9 @@ document.addEventListener('DOMContentLoaded', async function () {
             }
 
             const yearId = clickedSlide.getAttribute('data-year-id');
-            const slideName = clickedSlide.querySelector('.event-name').textContent;
-            openModal(yearId, slideName);
+            if (!yearId) return;
+
+            window.location.assign('/' + yearId + '/');
         });
     }
     function initSliderWheelBehavior() {
@@ -301,7 +311,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         const slide = slidesData.find(function (s) { return String(s.id) === String(yearId); });
         const baseUrl = 'https://thehistory.pro/';
-        const pageUrl = baseUrl + '#year=' + encodeURIComponent(String(yearId));
+        const pageUrl = baseUrl + 'years/' + encodeURIComponent(String(yearId)) + '/';
         const article = (articleIndex && articleIndex > 0 && tabNum)
             ? getTabData(yearData, tabNum)?.articles?.[articleIndex - 1]
             : null;
@@ -571,46 +581,48 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
     }
 
+    function slugifyPathText(value) {
+        const input = String(value || '').trim();
+        if (!input) return 'event';
+
+        const mapping = {
+            'а': 'a', 'б': 'b', 'в': 'v', 'г': 'g', 'д': 'd', 'е': 'e', 'ё': 'e', 'ж': 'zh', 'з': 'z',
+            'и': 'i', 'й': 'i', 'к': 'k', 'л': 'l', 'м': 'm', 'н': 'n', 'о': 'o', 'п': 'p', 'р': 'r',
+            'с': 's', 'т': 't', 'у': 'u', 'ф': 'f', 'х': 'h', 'ц': 'c', 'ч': 'ch', 'ш': 'sh', 'щ': 'shch',
+            'ы': 'y', 'э': 'e', 'ю': 'yu', 'я': 'ya', 'ъ': '', 'ь': ''
+        };
+
+        const lowered = input.toLowerCase();
+        const transliterated = Array.from(lowered).map(function (char) {
+            return mapping[char] || char;
+        }).join('');
+
+        return transliterated
+            .replace(/[^a-z0-9\s-]/g, '')
+            .replace(/\s+/g, '-')
+            .replace(/-+/g, '-')
+            .replace(/^-|-$/g, '') || 'event';
+    }
+
+    function getArticleSlug(yearId, tabNum, articleIndex) {
+        if (!yearId || !articleIndex || articleIndex <= 0) return null;
+
+        const data = yearCache[yearId];
+        if (!data || !data.tabs) return null;
+
+        const article = getTabData(data, tabNum)?.articles?.[articleIndex - 1];
+        if (!article) return null;
+
+        const title = article.title || article.button || 'event';
+        return slugifyPathText(title);
+    }
+
     function updateDeepLink(yearId, tabNum, articleIndex, replaceStateFlag) {
         if (!yearId) return;
 
-        const params = new URLSearchParams();
-        params.set('year', yearId);
-
-        if (tabNum && tabNum !== 1) {
-            params.set('tab', tabNum === 2 ? 'russia' : String(tabNum));
-        }
-        if (articleIndex && articleIndex > 0) {
-            params.set('article', String(articleIndex));
-        }
-
-        let newHash = '';
-
-        if (tabNum === 1) {
-            newHash = yearId;
-            if (articleIndex && articleIndex > 0) {
-                newHash += '/' + articleIndex;
-            }
-        } else if (tabNum === 2) {
-            newHash = yearId + '/russia';
-            if (articleIndex && articleIndex > 0) {
-                newHash += '/' + articleIndex;
-            }
-        } else if (tabNum === 3) {
-            newHash = yearId + '/gallery';
-            if (articleIndex && articleIndex > 0) {
-                newHash += '/' + articleIndex;
-            }
-        } else {
-            if (params.toString()) {
-                newHash = '#' + params.toString();
-            }
-        }
-
-        if (newHash && newHash[0] !== '#') {
-            newHash = '#' + newHash;
-        }
-        const newUrl = window.location.pathname + window.location.search + newHash;
+        const yearPath = '/' + String(yearId) + '/';
+        const articleSlug = getArticleSlug(String(yearId), tabNum || 1, articleIndex || 0);
+        const newUrl = articleSlug ? yearPath + articleSlug + '/' : yearPath;
         const state = {
             deepLink: true,
             yearId: String(yearId),
@@ -626,6 +638,44 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
 
     function parseDeepLinkHash() {
+        const pathMatch = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+        if (pathMatch) {
+            const yearId = pathMatch[1];
+            const articleSlug = pathMatch[2] || null;
+            let articleIndex = 0;
+            let tabNum = 1;
+
+            if (articleSlug) {
+                const data = yearCache[yearId];
+                if (data && data.tabs) {
+                    const allArticles = [].concat(
+                        (data.tabs.world && data.tabs.world.articles ? data.tabs.world.articles : []),
+                        (data.tabs.russia && data.tabs.russia.articles ? data.tabs.russia.articles : [])
+                    );
+                    const matchIndex = allArticles.findIndex(function (article) {
+                        const title = article.title || article.button || '';
+                        return slugifyPathText(title) === articleSlug;
+                    });
+                    if (matchIndex >= 0) {
+                        articleIndex = matchIndex + 1;
+                        tabNum = matchIndex < (data.tabs.world && data.tabs.world.articles ? data.tabs.world.articles.length : 0)
+                            ? 1
+                            : 2;
+                    }
+                }
+            }
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const tab = urlParams.get('tab');
+            if (tab) tabNum = resolveTabNum(tab);
+
+            return {
+                yearId,
+                tabNum,
+                articleIndex
+            };
+        }
+
         const rawHash = window.location.hash.replace(/^#/, '');
         if (!rawHash) return {};
 
@@ -660,6 +710,50 @@ document.addEventListener('DOMContentLoaded', async function () {
             tabNum: resolveTabNum(tab || 1),
             articleIndex: article ? parseInt(article, 10) || 0 : 0
         };
+    }
+
+    function redirectLegacyHashToStaticPath() {
+        const rawHash = window.location.hash.replace(/^#/, '').trim();
+        if (!rawHash) return null;
+
+        const legacySegments = rawHash.split('/').filter(Boolean);
+        if (!legacySegments.length) return null;
+
+        const yearId = legacySegments[0];
+        if (!/^\d+$/.test(String(yearId))) return null;
+
+        let tabNum = 1;
+        let articleIndex = 0;
+        if (legacySegments.length >= 2) {
+            const second = legacySegments[1];
+            if (/^\d+$/.test(second)) {
+                articleIndex = parseInt(second, 10) || 0;
+            } else {
+                tabNum = resolveTabNum(second);
+                if (legacySegments.length >= 3 && /^\d+$/.test(legacySegments[2])) {
+                    articleIndex = parseInt(legacySegments[2], 10) || 0;
+                }
+            }
+        }
+
+        if (!yearCache[yearId]) {
+            const slide = slidesData.find(function (item) { return String(item.id) === String(yearId); });
+            if (!slide || !slide.content) return null;
+            const data = loadYear(yearId);
+            if (!data) return null;
+        }
+
+        const data = yearCache[yearId];
+        if (!data || !data.tabs) return '/' + String(yearId) + '/';
+
+        const targetPath = '/' + String(yearId) + '/';
+        if (!articleIndex || articleIndex <= 0) return targetPath;
+
+        const article = getTabData(data, tabNum)?.articles?.[articleIndex - 1];
+        if (!article) return targetPath;
+
+        const slug = slugifyPathText(article.title || article.button || 'event');
+        return targetPath + slug + '/';
     }
 
     function handleDeepLink(replaceHistory) {
