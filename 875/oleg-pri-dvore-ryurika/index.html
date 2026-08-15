@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Олег при дворе Рюрика" />
     <meta name="twitter:description" content="Олег появился в окружении Рюрика не как случайный воин, а как родственник, чьё присутствие постепенно становилось заметнее. К 875 году это были ещё не власть и не влияние в полном смысле — скорее растущее доверие князя к..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/875/rurik&oleg.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

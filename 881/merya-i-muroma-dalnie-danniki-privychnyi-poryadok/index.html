@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Меря и мурома: дальние данники, привычный порядок" />
     <meta name="twitter:description" content="Восточные земли — меря с центром в Ростове, мурома в своих лесах — продолжали платить дань без сопротивления и задержек. Система, выстроенная за прошедшее десятилетие, работала по инерции, не требующая вмешательства со с..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/881/muroma.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

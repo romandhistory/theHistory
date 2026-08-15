@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Массовые антикоррупционные протесты по призыву Алексея Навального" />
     <meta name="twitter:description" content="26 марта 2017 года массовые протесты против коррупции прошли в более чем 80 городах России — от Москвы до Владивостока. Это крупнейшая скоординированная акция за пять лет, с момента протестов 2011–2012 годов. Только в Мо..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2017/mitingi.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

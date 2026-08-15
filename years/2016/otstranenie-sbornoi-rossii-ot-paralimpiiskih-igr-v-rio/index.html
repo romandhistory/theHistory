@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Отстранение сборной России от Паралимпийских игр в Рио" />
     <meta name="twitter:description" content="7 августа 2016 года Международный паралимпийский комитет исключил Паралимпийский комитет России из числа своих членов — глава МПК Филип Крэйвен объявил: «Исполком МПК принял решение отстранить Паралимпийский комитет Росс..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2016/rio_par.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

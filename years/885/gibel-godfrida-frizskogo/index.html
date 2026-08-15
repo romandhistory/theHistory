@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Гибель Годфрида Фризского" />
     <meta name="twitter:description" content="В июне 885 года Годфрид Фризский был вызван в Лобит на встречу, где ему предъявили обвинение в соучастии в восстании его родственника, герцога Эльзаса Гуго. С встречи он не вернулся. Годфрид был предательски убит группой..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/885/gotfreed.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

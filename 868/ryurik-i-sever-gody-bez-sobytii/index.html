@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Рюрик и север: годы без событий" />
     <meta name="twitter:description" content="Рюрик в 868 году не воевал, не подавлял восстаний и не расширял владений. Летопись об этом годе молчит — и это лучшая характеристика состояния севера. Шестой год правления — это уже не становление, это рутина. Полюдье ос..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/868/novgorod868.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

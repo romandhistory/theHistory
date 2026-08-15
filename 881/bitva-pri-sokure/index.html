@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Битва при Сокуре" />
     <meta name="twitter:description" content="3 августа 881 года у деревни Сокур в Пикардии войско Людовика III разбило норманнский отряд, возвращавшийся с добычей. Хроника передаёт это коротко: «король преследовал их и добился над ними славнейшей победы» . Норманны..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/881/sokura.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

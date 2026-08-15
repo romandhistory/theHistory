@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Замедление WhatsApp и Telegram на территории РФ" />
     <meta name="twitter:description" content="13 августа 2025 года Роскомнадзор официально сообщил о блокировке звонков в иностранных мессенджерах — прежде всего в Telegram и WhatsApp . Фактически ограничения начались двумя днями раньше: 11 августа пользователи по в..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2025/what's&tg.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

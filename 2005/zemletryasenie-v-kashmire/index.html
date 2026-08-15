@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Землетрясение в Кашмире" />
     <meta name="twitter:description" content="8 октября 2005 года в 8:50 утра земля под Кашмиром содрогнулась. Магнитуда — 7,6 , эпицентр — вблизи города Музаффарабад в пакистанской части региона. Толчки ощутили в Индии, Пакистане и Афганистане — за тысячу километро..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2005/kashmir.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Приостановка участия России в ДОВСЕ" />
     <meta name="twitter:description" content="14 июля 2007 года президент Путин подписал указ о приостановлении Россией действия Договора об обычных вооружённых силах в Европе . С декабря того же года Россия прекратила передачу данных о перемещении войск и технике и..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2007/dovse.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Прибытие Великой армии в Рединг — начало вторжения в Уэссекс" />
     <meta name="twitter:description" content="Около 28 декабря 870 года Великая армия под предводительством Хальфдана Рагнарссона достигла Рединга — города на слиянии Темзы и Кеннета. Северная и Восточная Англия уже покорены, Мерсия откупилась данью. Из четырёх англ..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/870/redding.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

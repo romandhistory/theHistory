@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Землетрясение в Турции и Сирии | 2023 | theХистори" />
     <meta name="twitter:description" content="6 февраля 2023 года в 4:17 утра по местному времени землетрясение магнитудой 7,8 ударило по южной Турции вблизи города Газиантеп. Через девять часов — второй удар магнитудой 7,7 в 90 километрах севернее. Два землетрясени..." />
     <meta name="twitter:image" content="https://thehistory.pro/img/2023.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

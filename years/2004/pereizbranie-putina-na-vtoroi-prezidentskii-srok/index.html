@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Переизбрание Путина на второй президентский срок" />
     <meta name="twitter:description" content="14 марта 2004 года Владимир Путин был переизбран президентом России, получив 71,31% голосов. Явка — 64,38%. Ни один из предыдущих сильных соперников на старт не вышел: Зюганов , Жириновский , Явлинский отказались баллоти..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2004/putin.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

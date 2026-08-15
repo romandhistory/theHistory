@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Теракт в петербургском метро — взрыв на станции «Технологический институт»" />
     <meta name="twitter:description" content="3 апреля 2017 года в Санкт-Петербурге террорист-смертник произвёл взрыв в вагоне поезда метро на перегоне между станциями «Сенная площадь» и «Технологический институт» . Погибли 16 человек , более 100 получили ранения. В..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2017/terakt.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

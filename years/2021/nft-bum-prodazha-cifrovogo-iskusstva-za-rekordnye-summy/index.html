@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="NFT-бум — продажа цифрового искусства за рекордные суммы" />
     <meta name="twitter:description" content="11 марта 2021 года аукционный дом Christie&#x27;s продал цифровой коллаж художника Beeple — Майка Винкельмана — за 69,3 миллиона долларов . Работа «Everydays: The First 5000 Days» стала первым полностью цифровым произведением..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2021/nft.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

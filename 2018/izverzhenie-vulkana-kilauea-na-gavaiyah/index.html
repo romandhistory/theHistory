@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Извержение вулкана Килауэа на Гавайях" />
     <meta name="twitter:description" content="3 мая 2018 года вулкан Килауэа на острове Гавайи вступил в новую активную фазу — открылись новые трещины в жилом районе Лейлани Эстейтс. Извержение продолжалось более четырёх месяцев и стало одним из наиболее разрушитель..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2018/kilauea.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

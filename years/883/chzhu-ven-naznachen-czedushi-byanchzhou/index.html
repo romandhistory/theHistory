@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Чжу Вэнь назначен цзедуши Бяньчжоу" />
     <meta name="twitter:description" content="В 883 году, после изгнания Хуан Чао из Чанъани, император Сицзун назначил Чжу Вэня военным наместником — цзедуши — округа Бяньчжоу в Хэнани, с центром в городе, стоявшем на перекрёстке Великого канала и главных дорог Цен..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/883/ven'.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

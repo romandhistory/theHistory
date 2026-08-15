@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Василий I издаёт «Прохирон»" />
     <meta name="twitter:description" content="Точная дата спорна — но именно с 870 года, когда Василий I правил уже вместе с обоими сыновьями-соправителями, историки начинают отсчёт работы над «Прохироном» — новым сборником византийских законов. Задача была не из пр..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/870/prohitron.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

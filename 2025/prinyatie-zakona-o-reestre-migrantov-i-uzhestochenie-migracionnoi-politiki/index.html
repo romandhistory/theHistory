@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Принятие закона о реестре мигрантов и ужесточение миграционной политики" />
     <meta name="twitter:description" content="2025 год стал переломным для миграционного законодательства России — вступили в силу самые масштабные поправки за последние десять лет. С 5 февраля заработал реестр иностранных граждан , нарушивших миграционные правила...." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2025/kontrol'emigrantov.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

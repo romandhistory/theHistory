@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Торговые пути зимой: как Новгород живёт в холода" />
     <meta name="twitter:description" content="Зима не останавливала новгородскую торговлю — она её меняла. Реки замерзали, и вместо ладей в дело шли сани, скользившие по льду быстрее, чем летние суда против течения. Зимний путь имел свои преимущества: замёрзшая земл..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/875/winter.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Открытие небоскрёба Бурдж-Халифа" />
     <meta name="twitter:description" content="4 января 2010 года в Дубае открылся Бурдж-Халифа — самое высокое сооружение в истории человечества. 828 метров , 163 этажа , шпиль длиной 180 метров , видный за 95 километров . Точная высота до последнего дня держалась в..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2010/zdanie.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

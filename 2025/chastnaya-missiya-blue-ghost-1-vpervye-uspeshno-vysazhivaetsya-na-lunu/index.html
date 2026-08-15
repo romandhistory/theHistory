@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Частная миссия Blue Ghost 1 впервые успешно высаживается на Луну" />
     <meta name="twitter:description" content="2 марта 2025 года в 3:34 утра по восточному времени лунный посадочный модуль Blue Ghost компании Firefly Aerospace совершил посадку вблизи вулканического образования Монс Латрей в кратере Маре Кризиум — на северо-восточн..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2025/BlueGhost1.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

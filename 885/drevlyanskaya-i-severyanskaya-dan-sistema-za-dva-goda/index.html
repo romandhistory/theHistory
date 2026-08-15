@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Древлянская и северянская дань: система за два года" />
     <meta name="twitter:description" content="К 885 году системы сбора дани с древлян и северян работали уже не первый год — достаточный срок, чтобы оценить их устойчивость не по первому впечатлению, а по повторяемости. Древлянская дань по чёрной кунице поступала ис..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/885/dan'_kievu.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

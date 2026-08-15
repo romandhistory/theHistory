@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Якуб ибн аль-Лейс берёт Кабул" />
     <meta name="twitter:description" content="В 870 году Якуб ибн аль-Лейс , основатель недавно возникшей династии Саффаридов , подошёл к Кабулу — и положил конец многовековому правлению тюркских шахов в этом регионе. Предыстория шла издалека. Ещё в 815 году Аббасид..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/870/Yakub.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

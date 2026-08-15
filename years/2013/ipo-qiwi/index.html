@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="IPO Qiwi" />
     <meta name="twitter:description" content="3 мая 2013 года акции российской платёжной системы Qiwi начали торговаться на бирже NASDAQ под тикером QIWI . Это стала вторая российская технологическая компания, разместившаяся на американской бирже — после Yandex , вы..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2013/qiwi.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

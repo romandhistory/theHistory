@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Гибель Хуан Чао — конец десятилетнего восстания" />
     <meta name="twitter:description" content="В 884 году Хуан Чао погиб в горах Тайшаня в провинции Шаньдун — там, откуда десять лет назад начинался его поход. Из Чанъани в 883-м вышла 150-тысячная армия. К 884-му от неё осталась тысяча человек. После изгнания из ст..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/884/huan_chao.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

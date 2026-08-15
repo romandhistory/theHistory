@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смена власти в Чечне" />
     <meta name="twitter:description" content="15 февраля 2007 года президент Алу Алханов подал в отставку. В тот же день Владимир Путин подписал указ о назначении Рамзана Кадырова временно исполняющим обязанности президента Чеченской Республики. 2 марта парламент ут..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2007/kadyrov.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

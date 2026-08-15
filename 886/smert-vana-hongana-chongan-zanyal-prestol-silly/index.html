@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть вана Хонгана — Чонган занял престол Силлы" />
     <meta name="twitter:description" content="В 886 году умер Хонган — сорок девятый ван государства Силла , правивший одиннадцать лет. Трон занял его младший брат Чонган . Сквозная линия этого престолонаследия тянется к тексту 875 года: тогда мы писали о смерти Кён..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/886/chongan.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

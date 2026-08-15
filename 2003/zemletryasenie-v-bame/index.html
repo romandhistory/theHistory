@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Землетрясение в Баме" />
     <meta name="twitter:description" content="26 декабря 2003 года в 5:26 утра по иранскому времени земля под городом Бам на юго-востоке Ирана содрогнулась. Магнитуда — 6,6, эпицентр — в 10 километрах от центра города. Большинство жителей спали. Погибли не менее 26..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2003/bam.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

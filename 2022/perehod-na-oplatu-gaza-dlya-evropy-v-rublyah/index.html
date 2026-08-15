@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Переход на оплату газа для Европы в рублях" />
     <meta name="twitter:description" content="31 марта 2022 года Владимир Путин подписал указ об обязательной оплате российского газа в рублях для покупателей из «недружественных» стран . Европейские компании получили дедлайн — с 1 апреля расчёты только через счета..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2022/gaszarub.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

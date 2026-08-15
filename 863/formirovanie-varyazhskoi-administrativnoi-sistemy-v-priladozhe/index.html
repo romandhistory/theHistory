@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Формирование варяжской административной системы в Приладожье" />
     <meta name="twitter:description" content="К 863 году варяжская власть в Приладожье перестала быть присутствием и стала системой. Разница принципиальная: присутствие — это дружина на постое, система — это регулярный сбор дани, контроль над торговыми путями и сеть..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/863/Varashsistem.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

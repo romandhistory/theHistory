@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Карл III Толстый примирился со Святополком Моравским" />
     <meta name="twitter:description" content="В 884 году Карл III Толстый лично явился на встречу со Святополком Моравским в Каумберге — и там была поставлена точка в конфликте, два года разорявшем Паннонию. «Война Вильгельминеров», продолжавшаяся с 882 года, опусто..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/884/mir.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

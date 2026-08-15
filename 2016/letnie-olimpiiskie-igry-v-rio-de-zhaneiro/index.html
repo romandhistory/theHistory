@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Летние Олимпийские игры в Рио-де-Жанейро" />
     <meta name="twitter:description" content="5 августа 2016 года в Рио-де-Жанейро открылись летние Олимпийские игры — первые в истории, проведённые в Южной Америке. Бразилия принимала турнир на фоне глубочайшего политического и экономического кризиса: за несколько..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2016/rio.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Объявление Путина об участии в президентских выборах 2018 года" />
     <meta name="twitter:description" content="6 декабря 2017 года Владимир Путин объявил о своём участии в президентских выборах 2018 года — на встрече с рабочими Горьковского автомобильного завода в Нижнем Новгороде, посвящённой 85-летию предприятия. «Я буду выдвиг..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2017/putin.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

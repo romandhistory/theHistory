@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть президента Венесуэлы Уго Чавеса" />
     <meta name="twitter:description" content="5 марта 2013 года в Каракасе на 59-м году жизни скончался Уго Чавес — президент Венесуэлы, правивший страной почти 14 лет и ставший одной из самых заметных и противоречивых фигур латиноамериканской политики XXI века. При..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2013/chavez.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

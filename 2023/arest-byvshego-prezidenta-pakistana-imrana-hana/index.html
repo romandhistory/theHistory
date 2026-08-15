@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Арест бывшего президента Пакистана Имрана Хана" />
     <meta name="twitter:description" content="9 мая 2023 года Имран Хан был арестован прямо в здании суда в Исламабаде — сотрудники Национального бюро по борьбе с коррупцией вошли в зал заседаний и увели его под стражу. Арест спровоцировал немедленные массовые беспо..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2023/imranhan.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

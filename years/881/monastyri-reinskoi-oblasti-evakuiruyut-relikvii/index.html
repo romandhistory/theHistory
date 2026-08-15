@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Монастыри Рейнской области эвакуируют реликвии" />
     <meta name="twitter:description" content="В 881 году, когда норманны Годфрида прошли по Рейну от Кёльна до Андернаха, монастыри рейнских и маасских берегов принялись эвакуировать реликвии — мощи святых, священные сосуды, рукописи — вглубь страны, подальше от вод..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/881/monastyri.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

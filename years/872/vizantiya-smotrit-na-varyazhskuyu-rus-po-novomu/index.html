@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Византия смотрит на варяжскую Русь по-новому" />
     <meta name="twitter:description" content="К 872 году отношение Константинополя к варяжской Руси прошло путь от настороженного интереса до устойчивого, хотя и осторожного, партнёрства. Народ, который двенадцать лет назад внезапно появился у стен столицы, теперь в..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/872/imper&rus'.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

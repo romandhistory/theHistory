@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Роберт Сильный и Двенадцать захваченных кораблей" />
     <meta name="twitter:description" content="В 862 году два викингских флота сошлись у берегов Бретани: один только что был выдворен Карлом Лысым с Сены, второй возвращался с Средиземноморской экспедиции. Саломан , король Бретани, нанял средиземноморский флот для о..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/862/Robert.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

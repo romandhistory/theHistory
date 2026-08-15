@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Запуск китайской пилотируемой миссии «Шэньчжоу-7»" />
     <meta name="twitter:description" content="25 сентября 2008 года с космодрома Цзюцюань стартовал «Шэньчжоу-7» — третий пилотируемый корабль Китая. На борту три тайконавта: Чжай Чжиган , Лю Бомин и Цзин Хайпэн . Полёт длился чуть менее трёх суток. 27 сентября в 16..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2008/shenzhou_7.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

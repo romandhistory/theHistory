@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Рекордная жара в Сибири и природные пожары" />
     <meta name="twitter:description" content="Летом 2020 года температура в Сибири превысила климатическую норму на 10 градусов Цельсия — Всемирная метеорологическая организация назвала это «поразительной аномалией». В июне в Верхоянске — одном из самых холодных нас..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2020/pozarf.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

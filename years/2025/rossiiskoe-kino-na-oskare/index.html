@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Российское кино на «Оскаре»" />
     <meta name="twitter:description" content="23 января 2025 года было объявлено, что Юра Борисов стал первым в истории российским актёром, номинированным на «Оскар» — в категории «Лучшая мужская роль второго плана» за фильм «Анора» Шона Бэйкера. 2 марта на 97-й цер..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2025/anora.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

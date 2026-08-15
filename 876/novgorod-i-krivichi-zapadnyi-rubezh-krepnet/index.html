@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Новгород и кривичи: западный рубеж крепнет" />
     <meta name="twitter:description" content="Полоцкая земля кривичей на западе оставалась спокойным рубежом Рюриковой державы — тем редким направлением, где не требовалось ни военных усилий, ни особого надзора. К 876 году эта граница окончательно закрепилась как ес..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/876/krivichi.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Население Земли - 8 миллиардов" />
     <meta name="twitter:description" content="15 ноября 2022 года ООН официально зафиксировала символический рубеж — население Земли достигло восьми миллиардов человек . Символическим он остаётся потому, что точной даты не существует: демографы работают с моделями и..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2022/8bilmen.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Король Людовик Немецкий вторгается в Моравию" />
     <meta name="twitter:description" content="В августе 864 года король Людовик Немецкий перешёл Дунай с огромным войском и осадил Ростислава Моравского в крепости Девин — скале над слиянием Моравы и Дуная, о которой хронисты до этого дня не писали ни строчки. Прист..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/864/vtorshenievmoraviu.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

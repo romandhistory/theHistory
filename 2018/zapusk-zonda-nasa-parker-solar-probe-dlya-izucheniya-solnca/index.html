@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Запуск зонда NASA Parker Solar Probe для изучения Солнца" />
     <meta name="twitter:description" content="12 августа 2018 года с мыса Канаверал стартовала ракета Delta IV Heavy с зондом Parker Solar Probe на борту. Впервые в истории космический аппарат был назван в честь живого учёного — 91-летнего астрофизика Юджина Паркера..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2018/zond_parker.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

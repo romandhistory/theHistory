@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Варяжская Русь в 867 году" />
     <meta name="twitter:description" content="867 год не войдёт в учебники как переломный — и правильно. Великих битв не было, династии не менялись, договоры не подписывались. Варяжская Русь просто жила — и это само по себе было достижением для государства, которому..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/867/Novgorod&Kiev.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Аскольд усиливает охрану караванов" />
     <meta name="twitter:description" content="Появление печенегов у днепровских порогов заставило Аскольда пересмотреть всю логистику торговых походов на Константинополь. То, что раньше обеспечивалось силами обычного дружинного сопровождения, теперь требовало куда б..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/873/zadumki.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

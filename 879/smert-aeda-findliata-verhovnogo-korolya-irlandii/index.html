@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть Аэда Финдлиата — верховного короля Ирландии" />
     <meta name="twitter:description" content="20 ноября 879 года в Дромискине умер Аэд Финдлиат — король Айлеха и верховный король Ирландии с 862 года . Похоронили его в Арме. «Анналы Ульстера» назвали его при смерти лишь «королём Тары» — титул куда скромнее того, ч..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/879/death_aed.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Консолидация власти рода Фудзивара в Японии" />
     <meta name="twitter:description" content="В 866 году в императорском дворце Хэйан сгорели главные ворота Отэмон. Поджог — случайный или намеренный — стал поводом, которым Фудзивара-но Ёсифуса воспользовался мастерски: он обвинил в преступлении своих главных поли..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/866/Fudzivara.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

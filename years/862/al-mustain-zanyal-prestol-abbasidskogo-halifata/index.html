@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Аль-Мустаин занял престол Аббасидского халифата" />
     <meta name="twitter:description" content="В 862 году, после смерти халифа аль-Мунтасира , тюркские командиры собрали совет и возвели на аббасидский престол его двоюродного брата Ахмада аль-Мустаина . Годом раньше аль-Мутаваккиль был убит собственной тюркской гва..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/862/mustain.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

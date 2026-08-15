@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Древляне: кто такие соседи Киева на западе" />
     <meta name="twitter:description" content="К западу от Киева, в Полесье, между реками Тетерев, Уж, Уборть и Ствига, жили древляне — восточнославянское племя, чьё имя летопись объясняет просто: «сидяще в лесах» . Земли эти были труднопроходимыми, богатыми лесом, н..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/883/drevline.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

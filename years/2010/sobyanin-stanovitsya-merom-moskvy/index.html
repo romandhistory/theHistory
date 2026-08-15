@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Собянин становится мэром Москвы" />
     <meta name="twitter:description" content="28 сентября 2010 года президент Дмитрий Медведев отправил Юрия Лужкова в отставку «в связи с утратой доверия» — формулировка беспрецедентная. Лужков руководил Москвой 18 лет и считался политически неуязвимым. Его уход ст..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2010/sobianin.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

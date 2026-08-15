@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Назначение Дмитрия Медведева на второй срок в должности премьер-министра" />
     <meta name="twitter:description" content="8 мая 2018 года Государственная дума утвердила Дмитрия Медведева на посту председателя правительства — на следующий день после инаугурации Путина на четвёртый президентский срок. За кандидатуру проголосовали 374 депутата..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2018/medvedev.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Скандал в FIFA — массовые аресты и обвинения в коррупции" />
     <meta name="twitter:description" content="27 мая 2015 года швейцарская полиция по запросу ФБР арестовала семь высокопоставленных функционеров ФИФА в цюрихском отеле — за два дня до запланированных выборов президента организации. Министерство юстиции США выдвинул..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2015/fifa.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

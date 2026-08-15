@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Крушение танкеров в Керченском проливе" />
     <meta name="twitter:description" content="15 декабря 2024 года в Керченском проливе во время шторма получили критические повреждения два российских танкера — «Волгонефть 212» и «Волгонефть 239» . Оба судна разломились. Один моряк погиб, несколько пропали без вес..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2024/Kercenskyprolive.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смоленск: первый город на пути" />
     <meta name="twitter:description" content="Смоленск , центр земли кривичей на верхнем Днепре, оказался первым серьёзным пунктом на пути войска Олега . Значение города было велико — здесь начинался водный путь, ведущий дальше на юг, к Любечу и Киеву. Сопротивления..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/882/smolensk.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

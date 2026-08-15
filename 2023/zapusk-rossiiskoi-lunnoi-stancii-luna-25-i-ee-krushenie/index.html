@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Запуск российской лунной станции «Луна-25» — и её крушение" />
     <meta name="twitter:description" content="11 августа 2023 года с космодрома Восточный стартовала ракета «Союз-2.1б» с автоматической станцией «Луна-25» — первой российской лунной миссией за 47 лет . Последний советский аппарат «Луна-24» достиг поверхности в 1976..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2023/luna25.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

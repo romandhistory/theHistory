@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Циклон «Сидр» обрушивается на Бангладеш" />
     <meta name="twitter:description" content="В ночь с 15 на 16 ноября 2007 года циклон четвёртой категории «Сидр» обрушился на южное побережье Бангладеш со скоростью ветра более 200 километров в час . Были эвакуированы около 3,2 миллиона человек . Погибло более трё..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2007/sidr.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

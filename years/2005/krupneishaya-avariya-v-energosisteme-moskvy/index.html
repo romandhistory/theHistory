@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Крупнейшая авария в энергосистеме Москвы" />
     <meta name="twitter:description" content="25 мая 2005 года нештатные ситуации в московских электросетях привели к масштабному отключению электроэнергии в столице, на юго-западе Московской агломерации, а также в Тульской , Калужской и Рязанской областях. ЧП затро..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2005/avaria.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

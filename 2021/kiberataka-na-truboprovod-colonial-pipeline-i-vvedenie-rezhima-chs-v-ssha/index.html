@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Кибератака на трубопровод Colonial Pipeline и введение режима ЧС в США" />
     <meta name="twitter:description" content="7 мая 2021 года группировка DarkSide атаковала Colonial Pipeline — крупнейший топливный трубопровод восточного побережья США. Компания остановила работу превентивно, опасаясь распространения вируса на операционные систем..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2021/hackat.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

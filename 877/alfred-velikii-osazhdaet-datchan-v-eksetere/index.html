@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Альфред Великий осаждает датчан в Эксетере" />
     <meta name="twitter:description" content="Ранней весной 877 года войско Альфреда обложило Эксетер с суши, а его флот заблокировал гавань с моря. Гутрум оказался заперт в городе, который сам же занял прошлой осенью — бежав из Уэрхема после нарушенной клятвы. Из У..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/877/alfred.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

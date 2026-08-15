@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Закон о «суверенном интернете»" />
     <meta name="twitter:description" content="1 ноября 2019 года в России вступил в силу закон о «суверенном интернете» — поправки к законам «О связи» и «Об информации», обязывавшие операторов установить специальное оборудование для централизованной фильтрации трафи..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2019/suveren_internet.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

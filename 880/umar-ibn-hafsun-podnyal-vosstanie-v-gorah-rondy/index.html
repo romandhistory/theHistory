@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Умар ибн Хафсун поднял восстание в горах Ронды" />
     <meta name="twitter:description" content="В 880 году в горной области Ронды на юге Аль-Андалуса вспыхнуло восстание под руководством Умара ибн Хафсуна — человека вестготского происхождения, выросшего в мусульманской среде. Умар был мувалладом — потомком обращённ..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/880/umar.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Выход документального фильма «Крым. Путь на Родину»" />
     <meta name="twitter:description" content="15 марта 2015 года на телеканале «Россия 1» вышел документальный фильм «Крым. Путь на Родину» — приуроченный к годовщине присоединения полуострова к России. В фильме Владимир Путин впервые публично и подробно рассказал о..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2015/krym.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

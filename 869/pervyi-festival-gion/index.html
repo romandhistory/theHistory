@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Первый фестиваль Гион" />
     <meta name="twitter:description" content="В 869 году по всей Японии прокатилась эпидемия — предположительно оспа или иная заразная болезнь, опустошавшая провинции одну за другой. Императорский двор искал способ умилостивить богов. По приказу императора Сэйвы в с..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/869/fest_gion.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

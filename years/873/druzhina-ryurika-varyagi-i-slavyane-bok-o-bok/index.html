@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Дружина Рюрика: варяги и славяне бок о бок" />
     <meta name="twitter:description" content="Дружина Рюрика с самого начала была смешанной — варяги, пришедшие с князем, и славяне, вступавшие в её ряды по мере укрепления власти. К 873 году это смешение стало нормой, а не исключением. Различия в происхождении не о..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/873/drugina.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

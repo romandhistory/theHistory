@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Ракетный удар США по сирийской авиабазе Шайрат" />
     <meta name="twitter:description" content="7 апреля 2017 года США нанесли удар 59 крылатыми ракетами «Томагавк» по сирийской военной авиабазе Шайрат — впервые с начала гражданской войны в Сирии американские силы атаковали объекты, напрямую контролируемые правител..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2017/rakety.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

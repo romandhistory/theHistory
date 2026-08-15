@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Новгород: жизнь вдали от южных завоеваний" />
     <meta name="twitter:description" content="Пока Киев принимал послов радимичей и пополнял казну новой данью, Новгород продолжал жить своим прежним ритмом — тем самым, что сложился ещё при Рюрике и не менялся с переездом двора на юг. Балтийская и волжская торговля..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/885/novgor.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

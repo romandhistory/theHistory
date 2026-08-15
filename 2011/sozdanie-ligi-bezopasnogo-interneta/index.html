@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Создание «Лиги безопасного интернета»" />
     <meta name="twitter:description" content="26 января 2011 года в Московской области зарегистрировали «Лигу безопасного интернета» — партнёрство, созданное предпринимателем Константином Малофеевым при поддержке МВД, Минкомсвязи и думского комитета по делам семьи...." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2011/liga.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

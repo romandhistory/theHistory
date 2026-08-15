@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Кривичи: данники западного рубежа" />
     <meta name="twitter:description" content="Полоцкая земля кривичей оставалась тем же спокойным рубежом, каким была уже не первый год. Дань поступала исправно, торговый обмен с Новгородом шёл по накатанному руслу. Наместник справлялся с делами без вмешательства со..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/881/krivichi.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

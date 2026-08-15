@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Запуск системы быстрых платежей" />
     <meta name="twitter:description" content="После отключения Visa и Mastercard от российского рынка 10 марта 2022 года Система быстрых платежей Банка России из удобного дополнения превратилась в инфраструктурную необходимость. За несколько недель СБП прошла путь,..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2022/sbp.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

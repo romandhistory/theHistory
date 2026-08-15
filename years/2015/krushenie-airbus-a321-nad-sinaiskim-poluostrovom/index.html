@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Крушение Airbus A321 над Синайским полуостровом" />
     <meta name="twitter:description" content="31 октября 2015 года Airbus A321 российской авиакомпании «Когалымавиа» , выполнявший рейс из Шарм-эль-Шейха в Санкт-Петербург, взорвался в воздухе над Синайским полуостровом через 23 минуты после взлёта. Все 224 человека..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2015/a321.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

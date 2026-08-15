@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть императора И-цзуна, вступление на престол Си-цзуна" />
     <meta name="twitter:description" content="15 августа 873 года в Чанъане умер император И-цзун — после торжественной церемонии встречи реликвии, которую он сам устроил незадолго до смерти. Месяцами ранее во дворец привезли то, что считалось пальцевой костью Будды..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/873/i-tsun.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

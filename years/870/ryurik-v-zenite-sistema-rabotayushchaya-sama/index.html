@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Рюрик в зените: система, работающая сама" />
     <meta name="twitter:description" content="Восемь лет минуло с тех пор, как Рюрик утвердился в Новгородской земле. К 870 году эта власть перестала быть завоеванием — она стала укладом, работающим без лишних усилий. Полюдье шло по накатанному маршруту, данники пла..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/870/rurik70.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

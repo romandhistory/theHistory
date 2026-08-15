@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Распад Каролингской империи — усиление региональных магнатов" />
     <meta name="twitter:description" content="864 год — не дата катастрофы, но показательный срез. Людовик Немецкий в том же году официально распределил свои земли между сыновьями: Бавария и Восточная марка — Карломану , Саксония и Франкония — Людовику Младшему , Ал..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/864/raspadimperii.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

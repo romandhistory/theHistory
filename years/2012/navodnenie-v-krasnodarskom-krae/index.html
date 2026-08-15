@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Наводнение в Краснодарском крае" />
     <meta name="twitter:description" content="В ночь с 6 на 7 июля 2012 года на Крымский район Краснодарского края обрушился ливень, за считаные часы превысивший месячную норму осадков в три-пять раз — по некоторым оценкам, выпала пятимесячная норма. Вода хлынула с..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2012/navodnenie.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

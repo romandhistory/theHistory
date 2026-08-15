@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Убийство Салиха ибн Васифа — воцарение аль-Мутамида" />
     <meta name="twitter:description" content="29 января 870 года в Самарре был убит Салих ибн Васиф — тюркский военачальник, один из тех, кто шесть лет назад привёл к власти аль-Мустаина, а затем сверг его. Убийство не остановило кровопролитие — оно его продолжило...." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/870/halif.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

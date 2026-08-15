@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Финальный вывод американских войск из Ирака" />
     <meta name="twitter:description" content="21 октября 2011 года президент США Барак Обама объявил: к концу года из Ирака будет выведена почти вся американская армия, оставшаяся лишь для охраны посольства горстка военных не в счёт. К тому моменту численность конти..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2011/am.soldat.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

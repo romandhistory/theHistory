@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Великое языческое войско захватывает Ноттингем" />
     <meta name="twitter:description" content="В 868 году Великое языческое войско повернуло на юг и захватило Ноттингем — укреплённый город в северо-западной Мерсии. Король Мерсии Бургред , давний союзник Уэссекса, немедленно обратился за помощью к королю Этельреду..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/868/Notingem.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

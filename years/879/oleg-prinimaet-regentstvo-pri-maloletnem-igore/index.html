@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Олег принимает регентство при малолетнем Игоре" />
     <meta name="twitter:description" content="Регентство Олега не потребовало церемоний — оно лишь получило имя для того, чем фактически было уже давно. Двухлетний Игорь остался на попечении родича, а вся полнота власти в Новгороде перешла в его руки. Формальной ина..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/879/oleg.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

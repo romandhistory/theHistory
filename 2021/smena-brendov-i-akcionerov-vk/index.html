@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смена брендов и акционеров VK" />
     <meta name="twitter:description" content="18 октября 2021 года Mail.ru Group объявила о ребрендинге в VK — по названию главного актива компании, социальной сети ВКонтакте . Смена вывески совпала с масштабной реструктуризацией акционерного капитала. Ещё в начале..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2021/vk.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

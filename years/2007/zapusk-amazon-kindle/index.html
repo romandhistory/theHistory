@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Запуск Amazon Kindle" />
     <meta name="twitter:description" content="19 ноября 2007 года Amazon представила электронную читалку Kindle . Устройство раскупили за несколько часов — запасы закончились в день старта, следующая партия появилась лишь через пять месяцев. Цена — 399 долларов . Ki..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2007/kindel.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

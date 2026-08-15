@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Массовая стрельба в Пермском государственном университете" />
     <meta name="twitter:description" content="20 сентября 2021 года студент Пермского государственного университета Тимур Б. открыл огонь на территории кампуса. Погибли шесть человек , ранены более 40 . Стрелок был остановлен выстрелом полицейского и госпитализирова..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2021/perm.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Война с Грузией в Южной Осетии" />
     <meta name="twitter:description" content="В ночь с 7 на 8 августа 2008 года грузинские войска начали артиллерийский обстрел Цхинвали и вошли в Южную Осетию с целью восстановления контроля над отколовшейся республикой. Уже днём 8 августа российская бронетехника д..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2008/war.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

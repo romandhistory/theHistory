@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Химическая атака в Думе и удары США, Великобритании и Франции по Сирии" />
     <meta name="twitter:description" content="7 апреля 2018 года в сирийском городе Дума , последнем оплоте оппозиции в Восточной Гуте под Дамаском, произошла химическая атака. По данным правозащитных организаций и медицинских работников на месте, погибли от 40 до 7..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2018/atakaposirii.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

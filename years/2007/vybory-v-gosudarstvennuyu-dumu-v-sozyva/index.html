@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Выборы в Государственную думу V созыва" />
     <meta name="twitter:description" content="2 декабря 2007 года прошли выборы в Государственную думу пятого созыва. «Единая Россия» получила 64,3% голосов и 315 мандатов из 450 — конституционное большинство, достаточное для единоличного принятия любых решений без..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2007/vybory.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

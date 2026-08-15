@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Зинджи установили контроль над Южным Ираком" />
     <meta name="twitter:description" content="К 878 году восставшие зинджи держали в руках весь Южный Ирак. За девять лет, прошедших со дня первого удара под Басрой, они прошли путь от соляных болот до берегов Тигра — и теперь двигались на северо-запад, к Багдаду. В..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/878/zindg.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

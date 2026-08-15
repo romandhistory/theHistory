@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Внесение поправок в Конституцию о продлении президентского срока" />
     <meta name="twitter:description" content="5 ноября 2008 года в первом же президентском послании Дмитрий Медведев предложил изменить Конституцию: увеличить срок полномочий президента с четырёх до шести лет, Государственной думы — с четырёх до пяти . Инициатива пр..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2008/konstitut.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

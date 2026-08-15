@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Ураган «Харви» обрушивается на Техас" />
     <meta name="twitter:description" content="25 августа 2017 года ураган «Харви» обрушился на побережье Техаса вблизи Корпус-Кристи — четвёртая категория по шкале Саффира-Симпсона, сильнейший ураган, ударивший по штату за 13 лет. Но настоящая катастрофа началась не..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2017/harvi.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

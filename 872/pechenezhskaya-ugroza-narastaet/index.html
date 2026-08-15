@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Печенежская угроза нарастает" />
     <meta name="twitter:description" content="К 872 году печенеги перестали быть отдалённой угрозой на горизонте — их присутствие у южных границ варяжской Руси стало постоянным фактом, с которым приходилось считаться каждый торговый сезон. Кочевники продвигались всё..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/872/pechenegi.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

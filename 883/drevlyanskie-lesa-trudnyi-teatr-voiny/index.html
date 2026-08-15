@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Древлянские леса: трудный театр войны" />
     <meta name="twitter:description" content="Полесские чащи не прощали ошибок, привычных для степной или речной войны. Густой лес скрывал численность и передвижения обеих сторон — разведка здесь работала хуже, а внезапность играла на руку обороняющимся, знавшим сво..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/883/lesa.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

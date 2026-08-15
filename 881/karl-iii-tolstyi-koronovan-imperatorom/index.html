@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Карл III Толстый коронован императором" />
     <meta name="twitter:description" content="12 февраля 881 года в Риме папа Иоанн VIII возложил императорскую корону на Карла III Толстого — короля Алемании и Италии, младшего сына Людовика Немецкого. Путь к короне он прошёл не войной и не дипломатией, а простым п..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/881/karl_tolst.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

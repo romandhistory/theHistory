@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Освобождение Курской области и операция &quot;Поток&quot;" />
     <meta name="twitter:description" content="26 апреля 2025 года начальник Генштаба ВС РФ Валерий Герасимов доложил Путину о полном освобождении Курской области от украинских формирований. Операция по вытеснению ВСУ длилась 264 дня с момента вторжения 6 августа 202..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2025/potok.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

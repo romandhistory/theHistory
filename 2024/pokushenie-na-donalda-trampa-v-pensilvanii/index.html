@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Покушение на Дональда Трампа в Пенсильвании" />
     <meta name="twitter:description" content="13 июля 2024 года во время предвыборного митинга в Батлере , штат Пенсильвания, 20-летний Томас К открыл огонь по Дональду Трампу с крыши здания в 130 метрах от сцены. Пуля задела правое ухо Трампа. Двое зрителей погибли..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2024/pokushenienatrumpa.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

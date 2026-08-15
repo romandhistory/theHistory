@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Авария на нефтепроводе «Дружба» в Брянской области" />
     <meta name="twitter:description" content="В течение 2023 года нефтеперекачивающая станция «Новозыбков» нефтепровода «Дружба» в Брянской области неоднократно становилась целью украинских атак. 1 февраля 2023 года ракета из системы «Точка-У» упала вблизи станции —..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2023/nefteprovdruzba.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

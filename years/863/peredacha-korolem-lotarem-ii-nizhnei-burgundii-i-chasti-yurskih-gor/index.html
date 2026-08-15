@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Передача королём Лотарем II Нижней Бургундии и части Юрских гор" />
     <meta name="twitter:description" content="Лотарь II был королём Лотарингии — срединной полосы между Западно-Франкским и Восточно-Франкским королевствами, унаследованной от отца Лотаря I . Территория стратегически значимая, политически уязвимая: два могущественны..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/863/lotarII.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

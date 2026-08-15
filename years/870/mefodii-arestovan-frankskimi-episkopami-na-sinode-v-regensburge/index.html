@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Мефодий арестован франкскими епископами на синоде в Регенсбурге" />
     <meta name="twitter:description" content="В конце 870 года в Регенсбурге собралась баварская провинциальная синода под председательством архиепископа Зальцбургского Адальвина . Король Людовик Немецкий присутствовал лично. Перед судом стоял Мефодий — архиепископ,..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/870/Mefodi_arest.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

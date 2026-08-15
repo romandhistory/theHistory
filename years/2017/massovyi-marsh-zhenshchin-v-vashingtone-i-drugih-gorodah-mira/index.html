@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Массовый «Марш женщин» в Вашингтоне и других городах мира" />
     <meta name="twitter:description" content="21 января 2017 года — на следующий день после инаугурации Трампа — миллионы людей вышли на улицы Вашингтона и сотен городов по всему миру. Марш женщин стал крупнейшей единовременной акцией протеста в истории США: по оцен..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2017/women.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

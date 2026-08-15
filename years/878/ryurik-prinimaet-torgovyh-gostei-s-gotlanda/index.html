@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Рюрик принимает торговых гостей с Готланда" />
     <meta name="twitter:description" content="Готландские купцы, давние партнёры новгородской торговли, прибыли в очередной сезон — привычный визит, повторявшийся из года в год. Рюрик , по обычаю, принял гостей лично, несмотря на то что многие текущие дела давно вёл..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/878/gosti.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

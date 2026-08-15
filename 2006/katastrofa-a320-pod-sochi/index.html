@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Катастрофа A320 под Сочи" />
     <meta name="twitter:description" content="3 мая 2006 года в 03:13 ночи Airbus A320 армянской авиакомпании «Армавиа» , выполнявший рейс Ереван — Сочи, упал в Чёрное море в нескольких километрах от берега. На борту находились 113 человек — 105 пассажиров и 8 члено..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2006/a320.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

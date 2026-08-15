@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть бывшего президента СССР Михаила Горбачёва" />
     <meta name="twitter:description" content="30 августа 2022 года на 92-м году жизни скончался Михаил Горбачёв — последний руководитель Советского Союза, лауреат Нобелевской премии мира 1990 года . Горбачёв пришёл к власти в марте 1985 года с репутацией реформатора..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2022/gorbachov.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Россия и Белоруссия — молочный торговый конфликт" />
     <meta name="twitter:description" content="6 июня 2009 года Роспотребнадзор запретил ввоз более тысячи наименований белорусской молочной продукции в Россию. Официальный повод — новый российский технический регламент, требующий переоформления документов. Белорусси..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2009/moloko.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

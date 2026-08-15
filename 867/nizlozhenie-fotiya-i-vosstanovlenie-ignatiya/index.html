@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Низложение Фотия и восстановление Игнатия" />
     <meta name="twitter:description" content="Осенью 867 года Фотий находился на вершине — собор только что отлучил Николая I , болгарский вопрос решался в пользу Константинополя. Всё рухнуло за несколько дней. Когда Василий I убил Михаила III и захватил трон, Фотий..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/867/nizlojeniefotia.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

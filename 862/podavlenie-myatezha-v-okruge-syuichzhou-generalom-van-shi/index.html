@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Подавление мятежа в округе Сюйчжоу генералом Ван Ши" />
     <meta name="twitter:description" content="В 862 году в округе Сюйчжоу взбунтовался гарнизон — прежде всего печально известное «войско Серебряного клинка» , одно из семи привилегированных подразделений местной армии. Мятежники изгнали наместника Вэнь Чжана , назн..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/862/van-she.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

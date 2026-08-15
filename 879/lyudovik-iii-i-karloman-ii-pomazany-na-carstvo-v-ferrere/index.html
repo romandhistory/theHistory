@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Людовик III и Карломан II помазаны на царство в Феррьере" />
     <meta name="twitter:description" content="В сентябре 879 года в аббатстве Феррьер близ Монтаржи архиепископ Санса Ансегиз помазал на царство двух сыновей Людовика Заики — шестнадцатилетнего Людовика и тринадцатилетнего Карломана . Западно-Франкское королевство п..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/879/koronac.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

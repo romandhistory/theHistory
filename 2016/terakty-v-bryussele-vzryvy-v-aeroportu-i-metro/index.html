@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Теракты в Брюсселе — взрывы в аэропорту и метро" />
     <meta name="twitter:description" content="22 марта 2016 года в Брюсселе произошли три скоординированных взрыва — два в аэропорту Завентем и один на станции метро Мальбек . Погибли 32 человека , более 300 получили ранения. Это крупнейший террористический акт в ис..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2016/ter_bruss.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

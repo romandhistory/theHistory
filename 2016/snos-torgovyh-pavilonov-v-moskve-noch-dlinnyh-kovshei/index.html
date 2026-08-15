@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Снос торговых павильонов в Москве («Ночь длинных ковшей»)" />
     <meta name="twitter:description" content="В ночь с 8 на 9 февраля 2016 года в Москве снесли 97 торговых павильонов — у станций метро «Чистые пруды», «Кропоткинская», «Таганская», «Щёлковская», «Партизанская», «Аэропорт», «Сокол» и других. Среди снесённых объекто..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2016/snos.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

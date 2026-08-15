@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Ли Юнь провозглашён соперничающим императором в Чанъани" />
     <meta name="twitter:description" content="Зимой 886 года в Чанъани был провозглашён соперничающий император — принц Ли Юнь при поддержке военного наместника Чжу Мэя . Законный император Сицзун в это время снова бежал из столицы — в Сычуань, под защиту Чэнь Цзинс..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/886/imperators.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

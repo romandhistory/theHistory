@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Ашот Багратуни признан «князем князей» Армении" />
     <meta name="twitter:description" content="В 862 году халиф аль-Мустаин признал Ашота Багратуни «князем князей» — ишханац ишхан — не только Армении, но и Иберии с Агванком. Вместе с титулом Ашот получил право сбирать налоги со всего Закавказья. Годом раньше в Сам..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/862/ashot.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

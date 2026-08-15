@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Подтверждение существования гравитационных волн" />
     <meta name="twitter:description" content="11 февраля 2016 года коллаборация LIGO объявила о первом прямом обнаружении гравитационных волн — колебаний пространства-времени, существование которых Альберт Эйнштейн предсказал в общей теории относительности ровно сто..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2016/volny.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

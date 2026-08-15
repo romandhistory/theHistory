@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Королевская свадьба принца Гарри и Меган Маркл" />
     <meta name="twitter:description" content="19 мая 2018 года в часовне Святого Георгия Виндзорского замка принц Гарри и Меган Маркл сочетались браком. Церемонию смотрели около 1,9 миллиарда человек по всему миру. Впервые в современной истории британской монархии п..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2018/harry&megan.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

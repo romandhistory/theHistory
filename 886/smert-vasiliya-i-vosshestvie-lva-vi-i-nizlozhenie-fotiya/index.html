@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть Василия I — восшествие Льва VI и низложение Фотия" />
     <meta name="twitter:description" content="29 августа 886 года Василий I погиб на охоте. Олень поддел его рогами за пояс и протащил по лесу шестнадцать миль. Слуга, перерубивший пояс мечом, спас ему жизнь — но Василий заподозрил его в намеренном покушении и казни..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/886/death_vasil.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

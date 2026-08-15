@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Подписание Минских соглашений" />
     <meta name="twitter:description" content="12 февраля 2015 года в Минске лидеры России, Украины, Германии и Франции в формате «нормандской четвёрки» подписали комплекс мер по выполнению Минских соглашений — документ, призванный остановить войну на востоке Украины..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2015/minsk_soglash.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

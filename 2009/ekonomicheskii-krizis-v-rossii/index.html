@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Экономический кризис в России" />
     <meta name="twitter:description" content="2009 год стал для российской экономики худшим за десятилетие. Валовой внутренний продукт сократился на 7,8% — самое резкое падение среди крупных экономик мира в том году. Нефть, обвалившаяся с летних пиков 2008 года до 4..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2009/krizis.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

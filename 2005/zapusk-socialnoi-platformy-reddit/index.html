@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Запуск социальной платформы Reddit" />
     <meta name="twitter:description" content="23 июня 2005 года выпускники Университета Вирджинии Стив Хаффман и Алексис Оганян запустили Reddit . Стартовый капитал — 100 тысяч долларов от венчурного фонда Y Combinator . Первые недели основатели сами публиковали ссы..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2005/reddit.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

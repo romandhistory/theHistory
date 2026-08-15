@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Саммит G8 в Санкт-Петербурге" />
     <meta name="twitter:description" content="С 15 по 17 июля 2006 года в Санкт-Петербурге прошёл саммит G8 — впервые под председательством России. Встреча проходила в Константиновском дворце в Стрельне — отреставрированной императорской резиденции, специально превр..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2006/g8.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

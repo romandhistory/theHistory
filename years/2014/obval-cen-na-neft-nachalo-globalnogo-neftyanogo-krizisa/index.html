@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Обвал цен на нефть — начало глобального нефтяного кризиса" />
     <meta name="twitter:description" content="Во второй половине 2014 года мировые цены на нефть обвалились почти вдвое — котировки марки Brent упали с примерно 115 долларов за баррель в июне до менее 60 долларов к концу декабря. Это стало одним из самых резких цено..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2014/neft'.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

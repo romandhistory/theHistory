@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Крушение теплохода «Булгария» на Волге" />
     <meta name="twitter:description" content="10 июля 2011 года, около 13:30, в Куйбышевском водохранилище затонул двухпалубный теплоход «Булгария» , совершавший круиз Казань — Болгар — Казань. Судну, построенному в 1955 году, было уже 56 лет : перед рейсом оно вышл..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2011/teplohod.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

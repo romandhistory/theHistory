@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Разрушительный ураган в Москве и Подмосковье" />
     <meta name="twitter:description" content="29 мая 2017 года около 15:00 по московскому времени на столицу и Подмосковье обрушился шквалистый ветер — сильнейший за последние сто лет. Скорость порывов достигала 30 метров в секунду — рекордный показатель за всю исто..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2017/mosk_uragan.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

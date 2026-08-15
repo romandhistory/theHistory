@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Вступление в силу закона о полиции" />
     <meta name="twitter:description" content="1 марта 2011 года в России официально упразднили милицию. Вступил в силу федеральный закон № 3-ФЗ «О полиции» , подписанный Медведевым ещё 7 февраля . Слово, знакомое со времён советской власти, исчезло из официального о..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2011/police.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

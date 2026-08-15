@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Терракты в Волгограде" />
     <meta name="twitter:description" content="29 декабря 2013 года в 12:45 на железнодорожном вокзале Волгоград-I у досмотровой зоны произошёл взрыв — смертник подорвал себя, когда сотрудник транспортной полиции попытался остановить его на входе в здание. Мощность в..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2013/volgograd.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

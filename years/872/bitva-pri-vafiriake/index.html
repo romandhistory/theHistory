@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Битва при Вафириаке" />
     <meta name="twitter:description" content="Дата спорна — традиционная хронология относит решающее сражение к 872 году , хотя часть современных историков сдвигает его на 878-й . Какой бы ни была точная дата, исход был один: главная военная угроза для восточной гра..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/872/vafiriak.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

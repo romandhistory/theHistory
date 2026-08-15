@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Подписание газового контракта «Сила Сибири» с Китаем" />
     <meta name="twitter:description" content="21 мая 2014 года в Шанхае «Газпром» и китайская CNPC подписали контракт на поставку российского газа в Китай по восточному маршруту — соглашение, переговоры по которому велись с перерывами почти десять лет. Подписание со..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2014/sila.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Киев и греческое духовенство" />
     <meta name="twitter:description" content="К 871 году христианская община Киева вступила в пятый год своего существования — и оставалась примерно тем же, чем была с самого начала: маленьким островком новой веры в языческом городе. Греческий епископ служил своей н..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/871/relig.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Вооружённый переворот в Сирии" />
     <meta name="twitter:description" content="8 декабря 2024 года вооружённые формирования под руководством группировки Hayat Tahrir al-Sham вошли в Дамаск. Башар Асад покинул страну — по имеющимся данным, улетел в Москву. Режим, державшийся 54 года — сначала при Ха..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2024/siria.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

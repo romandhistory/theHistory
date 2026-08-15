@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Проведение экономического форума во Владивостоке" />
     <meta name="twitter:description" content="10–13 сентября 2023 года во Владивостоке прошёл Восточный экономический форум — восьмой по счёту с момента основания в 2015 году. Центральной темой стала интеграция России в азиатские экономические цепочки на фоне западн..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2023/economicforum.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

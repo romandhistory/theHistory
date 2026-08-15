@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Мерсенский договор — раздел Лотарингии | 870 | theХистори" />
     <meta name="twitter:description" content="8 августа 870 года в Мерсене Людовик Немецкий принудил Карла Лысого к разделу Лотарингии. Год назад Карл взял эти земли целиком, единолично короновавшись в Меце сразу после смерти Лотаря II . Теперь он отдавал половину —..." />
     <meta name="twitter:image" content="https://thehistory.pro/img/870.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

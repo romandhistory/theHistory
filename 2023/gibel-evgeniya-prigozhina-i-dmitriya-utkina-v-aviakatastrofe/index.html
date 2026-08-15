@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Гибель Евгения Пригожина и Дмитрия Уткина в авиакатастрофе" />
     <meta name="twitter:description" content="23 августа 2023 года частный самолёт Embraer Legacy 600 разбился в Тверской области. Все десять человек на борту погибли. Среди них — Евгений Пригожин , основатель группы Вагнера, и Дмитрий Уткин , её военный командир. П..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2023/prigozhin.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

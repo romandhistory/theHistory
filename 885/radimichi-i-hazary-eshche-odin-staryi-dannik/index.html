@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Радимичи и хазары: ещё один старый данник" />
     <meta name="twitter:description" content="Радимичи платили дань Хазарскому каганату — связь, установившаяся ещё во времена, когда хазарская власть простиралась широко над славянскими землями лесостепи и её западными окраинами. К 885 году эта связь давно потеряла..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/885/radim&hazar.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

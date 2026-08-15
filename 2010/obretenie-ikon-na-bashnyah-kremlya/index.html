@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Обретение икон на башнях Кремля" />
     <meta name="twitter:description" content="В апреле 2010 года реставраторы вскрыли штукатурку на Спасской и Никольской башнях Московского Кремля — и обнаружили то, что давно считалось уничтоженным. Древние надвратные иконы оказались живы: в 1930-е годы их не снес..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2010/ikony.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

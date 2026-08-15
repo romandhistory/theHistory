@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Восстановление дипломатических отношений между США и Кубой" />
     <meta name="twitter:description" content="20 июля 2015 года США и Куба официально восстановили дипломатические отношения — впервые с 1961 года , когда они были разорваны на фоне холодной войны и победы кубинской революции. В Вашингтоне и Гаване вновь открылись п..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2015/usa&cuba.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

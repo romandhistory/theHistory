@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Дир и внутренние дела Киева" />
     <meta name="twitter:description" content="Пока Аскольд вёл переговоры с Византией и следил за печенежской угрозой, повседневное хозяйство Киева оставалось заботой Дира . Ремонт укреплений, споры между горожанами, порядок на торгу — рутина города редко попадала н..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/881/dir.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

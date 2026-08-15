@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Запуск доменной зоны .рф" />
     <meta name="twitter:description" content="В ночь с 12 на 13 мая 2010 года в корневую зону интернета были внесены записи о новом домене верхнего уровня — .рф . Россия стала первой страной в мире, получившей национальный домен, написанный полностью нелатинскими си..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2010/RF.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Голод в Западно-Франкском королевстве" />
     <meta name="twitter:description" content="«Анналы Ангулема» , составленные в Аквитании около 870 года, записали о 868-м: по всем провинциям случилась такая нехватка пищи и хлеба, что от голода люди в бесчисленном множестве убивали друг друга и пожирали зубами —..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/868/golod.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

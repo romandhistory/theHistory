@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Коронация Людовика II императором" />
     <meta name="twitter:description" content="18 мая 872 года в Риме Адриан II короновал Людовика II императором во второй раз — и в тот же визит освободил его от вынужденной клятвы никогда не возвращаться в Беневенто. Девятью месяцами ранее именно эта клятва стала..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/872/koronac.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

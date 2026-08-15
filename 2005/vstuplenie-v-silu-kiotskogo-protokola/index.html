@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Вступление в силу Киотского протокола" />
     <meta name="twitter:description" content="16 февраля 2005 года вступил в силу Киотский протокол к Рамочной конвенции ООН об изменении климата. Подписанный ещё в декабре 1997 года в японском Киото , документ ждал ратификации более семи лет. Условие — поддержка ст..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2005/protokol.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Вступление в силу антипиратского закона" />
     <meta name="twitter:description" content="1 августа 2013 года в России вступил в силу закон, прозванный «антипиратским» — он был принят Госдумой 21 июня , одобрен Советом Федерации 26 июня и подписан Путиным 2 июля . В прессе документ получил несколько прозвищ —..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2013/antipirat.zakon.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

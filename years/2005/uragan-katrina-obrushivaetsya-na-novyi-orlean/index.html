@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Ураган «Катрина» обрушивается на Новый Орлеан" />
     <meta name="twitter:description" content="29 августа 2005 года ураган «Катрина» пятой категории обрушился на побережье Луизианы. Под водой оказалось около 80% площади Нового Орлеана — город стоит ниже уровня моря и защищён дамбами. Дамбы не выдержали. Погибли 18..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2005/katrina.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Алмазная сутра — первая датированная печатная книга | 868 | theХистори" />
     <meta name="twitter:description" content="11 мая 868 года в Дуньхуане — на западной окраине Танской империи — был завершён свиток, которому суждено было стать древнейшей датированной печатной книгой в мире. Заказчик по имени Ван Цзе велел выгравировать текст на..." />
     <meta name="twitter:image" content="https://thehistory.pro/img/868.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть Джорджа Флойда и начало массовых протестов BLM" />
     <meta name="twitter:description" content="25 мая 2020 года в Миннеаполисе полицейский Дерек Шовин удерживал Джорджа Флойда коленом на шее 9 минут 29 секунд . Флойд был задержан по подозрению в использовании поддельной банкноты в 20 долларов. Он скончался на мест..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2020/blm.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

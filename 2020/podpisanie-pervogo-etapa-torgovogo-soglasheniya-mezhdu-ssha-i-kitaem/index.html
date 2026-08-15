@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Подписание первого этапа торгового соглашения между США и Китаем" />
     <meta name="twitter:description" content="15 января 2020 года в Белом доме Дональд Трамп и вице-премьер Лю Хэ подписали торговое соглашение «фаза один» — первую формальную паузу в двухлетней торговой войне между двумя крупнейшими экономиками мира. Китай обязался..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2020/amichi.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

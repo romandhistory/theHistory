@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Сокращение срока службы по призыву до 1 года" />
     <meta name="twitter:description" content="С 1 января 2008 года срок военной службы по призыву в России сократился с двух лет до одного . Переход был плавным: призывники 2007 года служили полтора года — единственный «переходный» призыв. С 2008-го — ровно двенадца..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2008/prizyv.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

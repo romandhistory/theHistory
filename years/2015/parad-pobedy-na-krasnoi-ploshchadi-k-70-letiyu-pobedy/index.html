@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Парад Победы на Красной площади к 70-летию Победы" />
     <meta name="twitter:description" content="9 мая 2015 года на Красной площади прошёл парад, ставший центральным событием празднования 70-летия окончания Великой Отечественной войны. В нём приняли участие свыше 16 тысяч военнослужащих , включая более 700 иностранн..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2015/parad_pobedy70.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Вторжение Гутрума в Уэссекс и захват Чиппенхэма" />
     <meta name="twitter:description" content="В ночь с 6 на 7 января 878 года, сразу после Двенадцатой ночи, войско Гутрума вышло из Глостера и ударило по Чиппенхэму — королевской усадьбе в Уилтшире, где Альфред праздновал Рождество. Зима считалась временем перемири..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/878/vtorgenie.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

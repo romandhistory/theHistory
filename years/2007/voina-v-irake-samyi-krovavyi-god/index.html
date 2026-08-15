@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Война в Ираке: самый кровавый год" />
     <meta name="twitter:description" content="2007 год стал переломным для американской кампании в Ираке — в обоих смыслах слова. В январе Буш объявил о переброске 20 тысяч дополнительных военных — стратегия получила название surge . Целью было подавить сектантское..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2007/irak.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

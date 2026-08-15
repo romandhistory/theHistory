@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Взрывы на шахте «Распадская»" />
     <meta name="twitter:description" content="В ночь с 8 на 9 мая 2010 года на крупнейшей угольной шахте России «Распадская» в Междуреченске с интервалом в четыре часа прогремели два взрыва метана. Второй, более мощный, ударил уже после того, как в шахту спустились..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2010/raspadskai.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

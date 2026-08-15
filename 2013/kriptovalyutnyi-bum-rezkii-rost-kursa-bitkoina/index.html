@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Криптовалютный бум — резкий рост курса биткоина" />
     <meta name="twitter:description" content="В 2013 году курс биткоина пережил беспрецедентный рост — с примерно 13 долларов в начале года до пика выше 1100 долларов в конце ноября, прежде чем резко скорректироваться. Это стало первым настоящим криптовалютным бумом..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2013/bitcoin.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

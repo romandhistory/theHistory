@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Зимние Олимпийские игры в Пекине" />
     <meta name="twitter:description" content="4 февраля 2022 года в Пекине открылись зимние Олимпийские игры — город стал первым в истории, принявшим и летние, и зимние Олимпиады. Церемония открытия совпала с днём начала переговоров Путина и Си Цзиньпина — лидеры по..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2022/pekin22.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

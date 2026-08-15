@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Судьба Игоря: наследник у цели" />
     <meta name="twitter:description" content="Игорю было пять лет, когда его именем был взят Киев. Формально весь поход Олега объяснялся именно этим — восстановлением прав законного наследника Рюрика на земли, которыми правили не княжеского рода люди. Мальчик не уча..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/882/igor'.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Встреча Путина и Зеленского в «нормандском формате» в Париже" />
     <meta name="twitter:description" content="9 декабря 2019 года в Елисейском дворце состоялся саммит в «нормандском формате» — первая личная встреча Владимира Путина и Владимира Зеленского . За одним столом также сидели президент Франции Эммануэль Макрон и канцлер..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2019/Putin&Zelensk.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

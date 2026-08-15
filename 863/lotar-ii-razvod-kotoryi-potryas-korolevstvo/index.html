@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Лотарь II: развод, который потряс королевство" />
     <meta name="twitter:description" content="На Синоде в Меце в июне 863 года Лотарь II выдвинул епископам совершенно новые основания для своего второго брака: он заявил, что с самого начала был женат на Вальдраде , а Тьетбергу взял в жёны лишь потому, что её брат..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/863/Lotar'II.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

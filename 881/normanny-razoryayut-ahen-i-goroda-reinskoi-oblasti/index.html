@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Норманны разоряют Ахен и города Рейнской области" />
     <meta name="twitter:description" content="В декабре 881 года норманны под предводительством Годфрида поднялись по Рейну на кораблях и прошли огнём по городам долины — Кёльн, Бонн, Нойс, Юлих и Андернах были разграблены или принудили к откупу. Льеж, Маастрихт и Т..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/881/ahen.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

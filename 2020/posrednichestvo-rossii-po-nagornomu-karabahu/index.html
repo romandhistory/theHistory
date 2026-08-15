@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Посредничество России по Нагорному Карабаху" />
     <meta name="twitter:description" content="27 сентября 2020 года Азербайджан начал масштабное наступление на Нагорный Карабах. 44 дня боёв изменили карту региона, замороженную с 1994 года. 10 ноября стороны подписали соглашение о прекращении огня при посредничест..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2020/nagornkar.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

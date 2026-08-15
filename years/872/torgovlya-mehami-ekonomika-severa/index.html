@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Торговля мехами: экономика севера" />
     <meta name="twitter:description" content="Меха были главным экспортным товаром Новгородской земли — и фундаментом, на котором держалась вся северная экономика варяжской Руси. Соболь, куница, бобёр, белка — северные леса давали богатство, не требовавшее ни землед..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/872/meha.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

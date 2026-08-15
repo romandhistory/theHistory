@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Готландские купцы: очередной торговый сезон" />
     <meta name="twitter:description" content="Готландские гости прибыли в Новгород в очередной сезон — привычный ритм, повторявшийся из года в год без изменений. Меха уходили на запад, взамен приходили серебро, стекло, изделия ремесла с Балтики. Остров оставался клю..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/881/kupcy.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

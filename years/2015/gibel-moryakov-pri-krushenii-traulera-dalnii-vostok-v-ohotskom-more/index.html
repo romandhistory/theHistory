@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Гибель моряков при крушении траулера «Дальний Восток» в Охотском море" />
     <meta name="twitter:description" content="2 апреля 2015 года около четырёх часов утра по местному времени в Охотском море, примерно в 300 километрах от Магадана, затонул большой автономный морозильный траулер «Дальний Восток» . На борту находились 132 человека —..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2015/trauler.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

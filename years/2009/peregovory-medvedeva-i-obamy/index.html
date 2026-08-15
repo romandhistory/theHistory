@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Переговоры Медведева и Обамы" />
     <meta name="twitter:description" content="В марте 2009 года госсекретарь Хиллари Клинтон вручила министру Лаврову символическую красную кнопку с надписью «Reset» — «Перезагрузка» . На русской стороне кнопки по ошибке было написано «Перегрузка» . Дипломаты засмея..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2009/medv&obama.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

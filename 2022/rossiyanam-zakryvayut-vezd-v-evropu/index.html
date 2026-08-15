@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Россиянам закрывают въезд в Европу" />
     <meta name="twitter:description" content="19 сентября 2022 года — за два дня до объявления мобилизации — Эстония, Латвия и Литва закрыли границы для российских граждан с шенгенскими визами. Финляндия ввела жёсткие ограничения с 30 сентября, сократив въезд в деся..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2022/baltzanaves.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

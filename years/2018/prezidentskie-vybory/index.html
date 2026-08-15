@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Президентские выборы" />
     <meta name="twitter:description" content="18 марта 2018 года в России прошли президентские выборы. Владимир Путин набрал 76,69% голосов при явке 67,54% — оба показателя стали рекордными для него лично за все предыдущие избирательные кампании. Дата была выбрана н..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2018/vibory.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

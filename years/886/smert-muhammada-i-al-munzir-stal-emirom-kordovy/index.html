@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть Мухаммада I — аль-Мунзир стал эмиром Кордовы" />
     <meta name="twitter:description" content="В 886 году умер Мухаммад I — эмир Кордовы с 852 года, сын Абд ар-Рахмана II, правитель, проведший три с лишним десятилетия в непрекращающихся войнах на нескольких фронтах одновременно. На севере его войска раз за разом в..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/886/death_muham.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

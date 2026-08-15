@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Константин I вступил на престол Альбы после смерти Дональда I" />
     <meta name="twitter:description" content="13 апреля 862 года умер Дональд I , король Альбы. Престол унаследовал его племянник Константин , сын покойного короля Кеннета I . В королевстве скотов действовал обычай танистри : власть переходила не от отца к сыну напр..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/862/konstantinI.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

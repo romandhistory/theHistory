@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Операция «Облачный столп» Израиль-ХАМАС" />
     <meta name="twitter:description" content="14 ноября 2012 года, около 16:00, израильская авиация точечным ударом уничтожила Ахмеда Джабари — командующего военным крылом ХАМАС «Бригады Изаддина аль-Кассама» , ехавшего в автомобиле по улицам Газы. Вместе с ним поги..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2012/obl.stolb.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

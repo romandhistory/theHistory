@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Раздел Франкского королевства между тремя сыновьями Людовика Немецкого" />
     <meta name="twitter:description" content="Раздел 865 года был не добровольным жестом — он был вырван силой. В 863 году Карломан поднял мятеж против отца; его примеру последовал Людовик Младший , к которому присоединился и Карл . Все три сына восставали поочерёдн..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/865/deleniekorolevstva.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Теракт на поезде «Невский экспресс»" />
     <meta name="twitter:description" content="27 ноября 2009 года в 21:35 на 284-м километре Октябрьской железной дороги, на границе Тверской и Новгородской областей, под локомотивом «Невского экспресса» сработало самодельное устройство мощностью семь килограммов в..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2009/nevsk.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

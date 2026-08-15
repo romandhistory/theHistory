@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Отстранение российских спортсменов от Олимпиады-2018 за допинг" />
     <meta name="twitter:description" content="5 декабря 2017 года Международный олимпийский комитет отстранил Олимпийский комитет России от участия в зимних Играх в Пхёнчхане — первое в истории отстранение целой страны от Олимпиады за допинг. Россиян на Играх будут..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2017/doping.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

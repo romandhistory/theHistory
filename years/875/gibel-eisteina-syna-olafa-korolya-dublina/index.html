@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Гибель Эйстейна, сына Олафа, короля Дублина" />
     <meta name="twitter:description" content="В 875 году погиб Эйстейн , сын Олафа Белого, правивший Дублином с 873 года. Согласно «Анналам Ольстера» — самому раннему свидетельству о его смерти, — он был предательски убит в Альбе, землях пиктов и скоттов. Кем именно..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/875/aistaein.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Массовое убийство в школе Паркленда" />
     <meta name="twitter:description" content="14 февраля 2018 года 19-летний Николас К. открыл огонь в средней школе Марджори Стоунман Дуглас в Паркленде , штат Флорида. Погибли 17 человек — 14 учеников и трое взрослых. Ещё 17 получили ранения. К. был задержан через..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2018/parkland.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Русь на пороге девятого десятилетия: итоги двадцатилетия" />
     <meta name="twitter:description" content="Восемнадцать лет минуло с призвания Рюрика — почти два полных десятилетия, за которые варяжская Русь прошла путь от рискованного эксперимента до устоявшейся системы. 880 год — подходящий момент, чтобы окинуть взглядом пр..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/880/rus880.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

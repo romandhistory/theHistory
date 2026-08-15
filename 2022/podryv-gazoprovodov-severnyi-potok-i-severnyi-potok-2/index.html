@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Подрыв газопроводов «Северный поток» и «Северный поток – 2»" />
     <meta name="twitter:description" content="26 сентября 2022 года на газопроводах «Северный поток — 1» и «Северный поток — 2» произошли четыре подводных взрыва. Сейсмографы зафиксировали толчки магнитудой 2,1 и 2,3 в районе острова Борнхольм. Три из четырёх ниток..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2022/sevpot1-2.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Программа материнского капитала вступает в полную силу" />
     <meta name="twitter:description" content="1 января 2007 года вступил в силу Федеральный закон «О дополнительных мерах государственной поддержки семей, имеющих детей» . Россия запустила программу материнского капитала : семьи, в которых с этого дня рождался второ..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2007/mat_cap.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

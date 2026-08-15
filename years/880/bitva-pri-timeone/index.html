@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Битва при Тимеоне" />
     <meta name="twitter:description" content="В 880 году, вернувшись из Рибемона, Людовик Младший двинул войско на норманнский отряд, разорявший земли к северу от Самбры. У Тимеона, близ Шарлеруа, франки настигли его и разбили наголову — в бою пало около пяти тысяч..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/880/timeon.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

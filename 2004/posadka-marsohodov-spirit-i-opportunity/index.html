@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Посадка марсоходов Spirit и Opportunity" />
     <meta name="twitter:description" content="4 января 2004 года на Марс сел Spirit , 25 января — Opportunity . Оба марсохода приземлились на противоположных сторонах планеты. Каждый из них весил около 185 килограммов и нёс набор научных инструментов для изучения гр..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2004/marsohod.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

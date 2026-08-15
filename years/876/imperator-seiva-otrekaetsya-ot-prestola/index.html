@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Император Сэйва отрекается от престола" />
     <meta name="twitter:description" content="18 декабря 876 года император Сэйва неожиданно отрёкся от престола в пользу своего семилетнего сына Ёдзэя и удалился в буддийский монастырь. Сам Сэйва стал императором при похожих обстоятельствах — в восемь лет, после вн..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/876/imperat.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

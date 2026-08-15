@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Рюрик в Старой Ладоге и основание Новгородского княжества" />
     <meta name="twitter:description" content="Рюрик пришёл с севера — и первой его остановкой была не Новгород, а Ладога . Это важная деталь, которую летопись упоминает вскользь, но археология подтверждает убедительно. Старая Ладога к середине IX века была уже сложи..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/862/novgorod.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

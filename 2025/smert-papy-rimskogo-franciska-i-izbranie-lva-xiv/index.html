@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть Папы Римского Франциска и избрание Льва XIV" />
     <meta name="twitter:description" content="21 апреля 2025 года папа римский Франциск скончался в возрасте 88 лет . Официальная причина смерти — инсульт, за которым последовала необратимая сердечная недостаточность. Похороны прошли 26 апреля. Франциск возглавлял к..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2025/papaleoXIV.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Пожар в торговом центре «Адмирал» в Казани" />
     <meta name="twitter:description" content="11 марта 2015 года в Кировском районе Казани вспыхнул пожар в торговом центре «Адмирал» . Сообщение поступило в 12:55, огонь распространился на площадь около 4 тысяч квадратных метров . Погибли 19 человек , более 70 полу..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2015/admiral.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

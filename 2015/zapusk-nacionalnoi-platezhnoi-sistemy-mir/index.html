@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Запуск национальной платёжной системы «Мир»" />
     <meta name="twitter:description" content="В марте 2014 года, после блокировки международными платёжными системами операций по картам клиентов нескольких российских банков, обнаружилась уязвимость финансовой системы от действий иностранных компаний. 16 июня 2014..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2015/karta_mir.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

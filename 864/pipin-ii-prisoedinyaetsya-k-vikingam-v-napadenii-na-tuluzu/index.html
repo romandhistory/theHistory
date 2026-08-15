@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Пипин II присоединяется к викингам в нападении на Тулузу" />
     <meta name="twitter:description" content="К 864 году Пипин II был фигурой конченой — без земель, без поддержки знати, скитавшийся по окраинам того королевства, которое когда-то считал своим. Последним ходом стал союз с викингами: вместе с норманнским отрядом он..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/864/pipinII.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Миссия Кирилла и Мефодия в Блатноград" />
     <meta name="twitter:description" content="В 866 году солунские братья Кирилл и Мефодий работали в Блатнограде — столице Паннонского княжества, при дворе князя Коцела . Это был второй этап их миссии: Моравию они уже охватили, теперь продвигались западнее, в земли..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/866/KiriMef.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Дир в тени Аскольда" />
     <meta name="twitter:description" content="Летопись почти не отделяет Дира от Аскольда — оба упоминаются вместе, как единое правящее двоевластие Киева. К 876 году эта традиция не изменилась: решения принимались от имени двоих, но голос и вес в них явно принадлежа..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/876/askol't&dir.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

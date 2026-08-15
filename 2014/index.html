@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Зимние Олимпийские игры в Сочи | 2014 | theХистори" />
     <meta name="twitter:description" content="7 февраля 2014 года в Сочи открылись зимние Олимпийские игры — впервые в истории России и впервые зимняя Олимпиада проводилась в столь южном, субтропическом климате. Подготовка к Играм заняла семь лет и обошлась, по боль..." />
     <meta name="twitter:image" content="https://thehistory.pro/img/2014.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

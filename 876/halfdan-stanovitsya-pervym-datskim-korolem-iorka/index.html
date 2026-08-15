@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Хальфдан становится первым датским королём Йорка" />
     <meta name="twitter:description" content="В 876 году Хальфдан Рагнарссон вернулся в Нортумбрию и принял в Йорке титул короля — первым из скандинавов, кто правил здесь не как военный вождь, а как государь. Годом раньше он вёл войско на север, против пиктов и брит..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/876/kor-viking.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

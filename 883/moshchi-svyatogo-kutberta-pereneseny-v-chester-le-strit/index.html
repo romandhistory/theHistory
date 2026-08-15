@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Мощи святого Кутберта перенесены в Честер-ле-Стрит" />
     <meta name="twitter:description" content="В 883 году монахи Линдисфарна наконец обрели постоянное пристанище в Честер-ле-Стрит . Вместе с ними туда прибыли мощи святого Кутберта — главной святыни Нортумбрии, хранившейся на Линдисфарне с 698 года. Бегство с остро..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/883/mochi.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

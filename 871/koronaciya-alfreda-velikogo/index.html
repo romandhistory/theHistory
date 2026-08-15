@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Коронация Альфреда Великого" />
     <meta name="twitter:description" content="Вскоре после Пасхи 871 года, выпавшей на 15 апреля, умер король Этельред — по словам биографа Ассера, «достойно правивший королевством среди многих трудностей» пять лет. Преемником стал младший брат — Альфред , которому..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/871/alfred.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

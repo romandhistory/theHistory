@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть Домналла мак Муйрекайна, короля Лейнстера" />
     <meta name="twitter:description" content="В 884 году умер Домналл мак Муйрекайн — король Лейнстера с 880 года, сын Муйрекана мак Диармата, убитого норманнами в 863-м. Реальная власть лейнстерских королей в этот период была номинальной — из-за постоянного давлени..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/884/domnal.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

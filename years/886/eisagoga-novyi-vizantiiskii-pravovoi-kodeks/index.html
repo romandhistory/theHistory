@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Эйсагога — новый византийский правовой кодекс" />
     <meta name="twitter:description" content="В период между 884 и 886 годами вышло второе издание Прохирона под названием Эпанагоги — или, точнее, Эйсагоги . Документ составлен от имени императора Василия I и его сыновей Льва и Александра . В написании принимал уча..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/886/aceagon.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

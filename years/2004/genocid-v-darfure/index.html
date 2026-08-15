@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Геноцид в Дарфуре" />
     <meta name="twitter:description" content="Конфликт в западном суданском регионе Дарфур разгорелся ещё в 2003-м, но мировое внимание привлёк в 2004 году. К весне тысячи чернокожих жителей были убиты, около миллиона покинули дома. Проправительственные арабские фор..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2004/darfur.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Пиратство у берегов Сомали достигает пика" />
     <meta name="twitter:description" content="В 2009 году сомалийские пираты совершили 214 нападений и захватили не менее 47 судов — рекорд для современной эпохи. Трафик через Суэцкий канал сократился на 20% по сравнению с 2008 годом — Египет недосчитался почти милл..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2009/pirats.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Уэдморский мир" />
     <meta name="twitter:description" content="Через три недели после капитуляции Гутрум с тридцатью своими вождями приехал в Эллер , близ Этелни, где его ждал Альфред . Здесь прошло крещение: Гутрум получил христианское имя Этельстан , а его крёстным отцом стал сам..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/878/gutrum.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

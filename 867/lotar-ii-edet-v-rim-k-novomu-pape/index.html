@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Лотарь II едет в Рим к новому папе" />
     <meta name="twitter:description" content="Десять лет Лотарь II воевал с Николаем I за право развестись с Тьетбергой и жениться на Вальдраде . Десять лет папа держал оборону — снимал архиепископов, угрожал отлучением, разворачивал посольства. Николай умер 13 нояб..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/867/lotar'eletvrim.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

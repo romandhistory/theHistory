@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Индраварман II основал Индрапуру — новую столицу Чампы" />
     <meta name="twitter:description" content="В 875 году царь Индраварман II основал Индрапуру — новую столицу на месте нынешнего Донгзыонга, неподалёку от современного Дананга — и положил начало новой, «северной» династии. Свой род он возводил к Бхригу , одному из..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/875/indrapura.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

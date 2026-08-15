@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Исчезновение рейса MH370 Malaysia Airlines над Индийским океаном" />
     <meta name="twitter:description" content="8 марта 2014 года Boeing 777 авиакомпании Malaysia Airlines , выполнявший рейс MH370 из Куала-Лумпура в Пекин, пропал с радаров над Южно-Китайским морем. На борту находились 239 человек . Спустя более чем десятилетие точ..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2014/mn370.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

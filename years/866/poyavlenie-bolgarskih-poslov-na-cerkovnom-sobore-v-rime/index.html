@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Появление болгарских послов на церковном соборе в Риме" />
     <meta name="twitter:description" content="Осенью 866 года в Риме открылся церковный собор, на котором появились послы хана Бориса I . Их присутствие было красноречивее любых слов: Болгария публично заявляла о церковной ориентации на Рим в обход Константинополя...." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/866/bolgposl.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

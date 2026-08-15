@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Войско Олега: кто идёт вместе с ним" />
     <meta name="twitter:description" content="Войско, выступившее на юг, не было однородным. Варяжское ядро дружины, годами служившее ещё Рюрику , составляло костяк — опытные воины, привычные к дальним походам и морскому делу. Рядом шли ильменские словене — те, чья..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/882/sbory.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

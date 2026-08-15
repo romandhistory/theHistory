@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Новгородский зимний торг: гости из-за Волги" />
     <meta name="twitter:description" content="Зимний торг в Новгороде не затихал даже в морозы — редкий сезон, когда санный путь по замёрзшим рекам делал восточное направление особенно оживлённым. К 877 году гости с Волги стали здесь привычным явлением зимней поры...." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/877/winter.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

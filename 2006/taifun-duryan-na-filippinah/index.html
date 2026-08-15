@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Тайфун «Дурьян» на Филиппинах" />
     <meta name="twitter:description" content="В конце ноября 2006 года тайфун «Дурьян» обрушился на полуостров Бикол — самый густонаселённый район южного Лусона. Порывы ветра достигали 250 километров в час . Но главной угрозой стало не это. Смешавшись с вулканическо..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2006/dur'ian.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

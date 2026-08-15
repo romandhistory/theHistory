@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Начало похода императора Людовика II против сараян на юге Италии" />
     <meta name="twitter:description" content="В 866 году император Людовик II выступил в новый поход против арабского эмирата в Бари — гнезда сарацинских набегов на Беневент и Салерно. Толчком послужили жалобы аббатов Монтекассино и Сан-Винченцо: их монастыри страда..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/866/LudovikII.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

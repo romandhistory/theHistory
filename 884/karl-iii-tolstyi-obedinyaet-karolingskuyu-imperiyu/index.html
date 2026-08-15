@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Карл III Толстый объединяет Каролингскую империю" />
     <meta name="twitter:description" content="В декабре 884 года, после гибели Карломана II на охоте, западнофранкская знать обратилась к Карлу III Толстому с предложением принять корону. Законных каролингских наследников на западе не осталось — единственным законны..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/884/karl_tolst.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

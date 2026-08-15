@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Китайская миссия «Шэньчжоу-6»" />
     <meta name="twitter:description" content="12 октября 2005 года с космодрома Цзюцюань стартовал « Шэньчжоу-6 » — второй пилотируемый корабль Китая. На борту двое тайконавтов: Фэй Цзюньлун и Не Хайшэн . Имена экипажа объявили лишь за пять часов до старта. Миссия д..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2005/korabl'.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

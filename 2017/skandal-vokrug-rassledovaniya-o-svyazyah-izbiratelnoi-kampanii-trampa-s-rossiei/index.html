@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Скандал вокруг расследования о связях избирательной кампании Трампа с Россией" />
     <meta name="twitter:description" content="Расследование связей предвыборной кампании Трампа с Россией формально началось в июле 2016 года, но именно в 2017 году превратилось в центральный политический кризис президентства. ФБР под руководством Джеймса Коми изуча..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2017/fbi.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Сдержанное празднование столетия Октябрьской революции 1917 года" />
     <meta name="twitter:description" content="В 2017 году Россия отмечала столетие Октябрьской революции 1917 года — но праздником это назвать было сложно. Никакого государственного парада, никакой официальной программы федерального масштаба. Власти выбрали стратеги..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2017/1917.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

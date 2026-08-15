@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Конфликт в Сирии переходит в полномасштабную гражданскую войну" />
     <meta name="twitter:description" content="15 июля 2012 года Международный комитет Красного Креста официально классифицировал происходящее в Сирии как гражданскую войну — после того как правительственные силы дали жёсткий отпор скоординированному наступлению повс..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2012/siria.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

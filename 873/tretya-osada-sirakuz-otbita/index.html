@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Третья осада Сиракуз отбита" />
     <meta name="twitter:description" content="В 873 году аглабиды предприняли очередную осаду Сиракуз — последнего крупного оплота Византии на Сицилии. Это была уже третья такая попытка за пять лет: город уже отбивался от штурма в 868-м и в 869-м, и оба раза стены и..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/873/osada3.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

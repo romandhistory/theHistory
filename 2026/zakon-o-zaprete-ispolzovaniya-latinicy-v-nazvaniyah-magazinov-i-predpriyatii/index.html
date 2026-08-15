@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Закон о запрете использования латиницы в названиях магазинов и предприятий" />
     <meta name="twitter:description" content="1 марта 2026 года в России вступил в силу Федеральный закон № 168-ФЗ от 24 июня 2025 года, обязывающий бизнес переводить на русский язык всю публичную информацию для потребителей. Требования охватили вывески и указатели..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2026/law168.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

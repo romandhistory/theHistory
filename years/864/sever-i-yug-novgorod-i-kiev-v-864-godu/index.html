@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Север и Юг: Новгород и Киев в 864 году" />
     <meta name="twitter:description" content="К концу 864 года контуры варяжской Руси обозначились достаточно отчётливо, чтобы говорить о системе. Не государстве — системе. Разница принципиальная. На севере Рюрик выстроил административную сеть: Новгород, Ладога, Бел..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/864/novgor&kiev.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

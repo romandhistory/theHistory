@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Гибель 30 военнослужащих при крушении Ан-26 в Крыму" />
     <meta name="twitter:description" content="31 марта 2026 года военно-транспортный самолёт Ан-26 ВКС России совершал плановый перелёт над Крымом, когда около 18:00 мск связь с ним была потеряна в районе села Куйбышево Бахчисарайского района. На борту находились 30..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2026/krusheniean-26.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

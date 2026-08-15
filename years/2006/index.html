@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Запуск Facebook для широкой аудитории | 2006 | theХистори" />
     <meta name="twitter:description" content="26 сентября 2006 года Facebook снял последнее ограничение: теперь зарегистрироваться мог любой пользователь старше 13 лет с действующим адресом электронной почты. До этого сеть была доступна только студентам американских..." />
     <meta name="twitter:image" content="https://thehistory.pro/img/2006.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

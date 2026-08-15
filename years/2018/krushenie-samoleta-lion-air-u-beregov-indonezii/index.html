@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Крушение самолёта Lion Air у берегов Индонезии" />
     <meta name="twitter:description" content="29 октября 2018 года Boeing 737 MAX 8 авиакомпании Lion Air упал в Яванское море через 13 минут после взлёта из Джакарты. Все 189 человек на борту погибли. Самолёту было два месяца от роду. Расследование установило причи..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2018/lion_air.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Взятие Бахмута российскими силами" />
     <meta name="twitter:description" content="20 мая 2023 года глава группы Вагнера Евгений Пригожин объявил о взятии Бахмута — небольшого донецкого города, превратившегося в самое долгое и кровопролитное сражение войны. Российский триколор подняли над последними ук..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2023/bahmut.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

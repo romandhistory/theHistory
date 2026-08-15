@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Реформа алкогольного рынка и кризис суррогата" />
     <meta name="twitter:description" content="В 2006 году государство взялось навести порядок на алкогольном рынке. Ввели Единую государственную автоматизированную информационную систему — ЕГАИС — для контроля производства и оборота спиртного. Одновременно ужесточил..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2006/alco.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

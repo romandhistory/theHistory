@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Операция «Литой свинец»" />
     <meta name="twitter:description" content="27 декабря 2008 года Израиль начал военную операцию в секторе Газа — первую масштабную после вывода войск в 2005 году. Поводом стало возобновление ракетных обстрелов ХАМАС после истечения перемирия. За неделю авиационных..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2009/lit_svinec.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -60,6 +60,18 @@ def slugify(value):
 
 
 def render_static_shell(title, description, page_url, hero_image, body_html, page_type='year'):
+    redirect_script = r'''
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    '''
     return f'''<!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -79,6 +91,7 @@ def render_static_shell(title, description, page_url, hero_image, body_html, pag
     <meta name="twitter:title" content="{escape(title)}" />
     <meta name="twitter:description" content="{escape(description)}" />
     <meta name="twitter:image" content="{hero_image}" />
+    {redirect_script}
     <style>
         :root {{
             --bg: #0d1117;

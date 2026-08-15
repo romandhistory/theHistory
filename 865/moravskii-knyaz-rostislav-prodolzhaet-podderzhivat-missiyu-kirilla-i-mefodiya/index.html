@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Моравский князь Ростислав продолжает поддерживать миссию Кирилла и Мефодия" />
     <meta name="twitter:description" content="Миссия Кирилла и Мефодия в Моравии с самого начала была не только религиозной, но и политической. Ростислав выгнал римских миссионеров и обратился к Константинополю — он искал независимость от франков, а не просто новых..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/865/RostislavZaKir&Mef.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

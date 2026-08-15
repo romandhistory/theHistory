@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Княгиня Мариам основывает монастырь Севанаванк" />
     <meta name="twitter:description" content="В 874 году княгиня Мариам , дочь Ашота Багратуни , заложила на острове озера Севан монастырь, который позже назовут в её честь — Мариамашен . Монахи жили на острове и раньше, с конца VIII века, в простой келье при часовн..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/874/dve_cerkvi.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

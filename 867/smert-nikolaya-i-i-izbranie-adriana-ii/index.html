@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть Николая I и избрание Адриана II" />
     <meta name="twitter:description" content="13 ноября 867 года в Риме умер Николай I — самый властный папа раннего средневековья, чей понтификат определил место папства в европейской политике на поколения вперёд. Он не узнал, что его анафема Фотием предана — ни до..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/867/papaNikolaI.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Печенеги: как меняется расстановка сил в степи" />
     <meta name="twitter:description" content="Ослабление Хазарии , лишившейся уже трёх данников за два года, меняло расклад сил в степи не только для Руси, но и для печенегов — прежнего противника и одновременно соседа угасающего каганата. Земли и влияние, уходившие..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/885/step'.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

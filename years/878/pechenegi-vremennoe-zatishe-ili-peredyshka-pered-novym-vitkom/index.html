@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Печенеги: временное затишье или передышка перед новым витком" />
     <meta name="twitter:description" content="После года нарастающего давления печенежская активность у порогов в 878 году заметно снизилась. Караваны проходили без прежних задержек, разведка не докладывала о крупных отрядах вблизи маршрута. Купцы вздохнули с облегч..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/878/step'.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

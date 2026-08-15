@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Аль-Муваффак консолидирует власть в Багдаде" />
     <meta name="twitter:description" content="В конце февраля 872 года Абу Ахмад , известный по титулу аль-Муваффак — брат и фактический регент халифа аль-Мутамида , — решил лично возглавить поход против зинджей. Поводом стали свежие зверства восставших: после взяти..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/872/muffak.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

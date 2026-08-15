@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Открытие Владивостокского моста — крупнейший вантовый мост в России" />
     <meta name="twitter:description" content="1 августа 2012 года во Владивостоке открыли движение по Русскому мосту — вантовому мосту через пролив Босфор Восточный, соединившему город с островом Русский. Строительство началось 3 сентября 2008 года в рамках подготов..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2012/most.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

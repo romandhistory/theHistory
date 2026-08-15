@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Падение Мерсии — изгнание Бургреда, воцарение Кеолвульфа" />
     <meta name="twitter:description" content="В 874 году, выйдя из зимнего лагеря в Рептоне, Великая армия покончила с последней видимостью мерсийской самостоятельности. Бургред правил королевством двадцать два года — дольше, чем кто-либо из современных ему англосак..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/874/bugret.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

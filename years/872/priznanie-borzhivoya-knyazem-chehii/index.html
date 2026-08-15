@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Признание Борживоя князем Чехии" />
     <meta name="twitter:description" content="Около 872 года Святополк , верховный правитель Великой Моравии, признал Борживоя — главу пражских Пршемысловичей — суверенным князем чешских земель. Этот шаг отличался от обычной франкской практики, где герцог оставался..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/872/borgvoi.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

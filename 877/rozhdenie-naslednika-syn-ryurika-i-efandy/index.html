@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Рождение наследника: сын Рюрика и Ефанды" />
     <meta name="twitter:description" content="В новгородских палатах в 877 году родился сын Рюрика и его жены Ефанды — ребёнок, которому предстояло со временем зваться Игорем . Роды прошли, по всей видимости, благополучно — источники не сохранили тревожных подробнос..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/877/rogenie.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

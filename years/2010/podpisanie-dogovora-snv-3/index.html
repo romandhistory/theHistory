@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Подписание договора СНВ-3" />
     <meta name="twitter:description" content="8 апреля 2010 года в Испанском зале Пражского Града Дмитрий Медведев и Барак Обама подписали Договор о мерах по дальнейшему сокращению стратегических наступательных вооружений — СНВ-3 . Церемония едва не началась с опозд..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2010/medv&obama.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

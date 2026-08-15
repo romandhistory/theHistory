@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Падение Аль-Мухтары — разгром восстания зинджей" />
     <meta name="twitter:description" content="10–11 августа 883 года аль-Муваффак взял штурмом аль-Мухтару — столицу государства зинджей, стоявшую к западу от Басры в кольце каналов и рукавов Евфрата и Тигра. Али ибн Мухаммад был убит при штурме или вскоре после нег..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/883/muhtara.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть Ансперта, архиепископа Миланского" />
     <meta name="twitter:description" content="7 декабря 881 года в Милане умер Анспер — архиепископ Миланский с 868 года, тринадцать лет занимавший самую влиятельную церковную кафедру Северной Италии. 12 августа 875 года он первым добрался до умершего в Брешии импер..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/881/anspert.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

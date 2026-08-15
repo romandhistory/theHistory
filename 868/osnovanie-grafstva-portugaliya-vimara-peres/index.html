@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Основание графства Португалия — Вимара Перес" />
     <meta name="twitter:description" content="В 868 году Альфонсо III Астурийский назначил Вимару Переса первым графом Португалии — после отвоевания земель к северу от реки Дуэро. Галисийский дворянин получил под управление полосу атлантического побережья между река..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/868/grafportugal.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Выход Android 2.0" />
     <meta name="twitter:description" content="26 октября 2009 года Google выпустила Android 2.0 — кодовое название Eclair . Первым смартфоном на новой платформе стал Motorola Droid , вышедший в США 6 ноября . Реклама была подчёркнуто агрессивной: «iDon&#x27;t» — прямой в..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2009/android.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

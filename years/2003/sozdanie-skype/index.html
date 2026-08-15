@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Создание Skype" />
     <meta name="twitter:description" content="В августе 2003 года эстонские разработчики Яан Таллинн , Прийт Казесалу и Тоомас Сыйнметс совместно с датчанином Янусом Фриисом и шведом Никласом Зеннстрёмом запустили Skype . Программа позволяла звонить через интернет б..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2003/skype.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

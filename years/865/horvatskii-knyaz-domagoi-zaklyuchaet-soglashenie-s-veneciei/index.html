@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Хорватский князь Домагой заключает соглашение с Венецией" />
     <meta name="twitter:description" content="В 865 году Домагой был вынужден заключить невыгодный мир с Венецией, передав заложников в качестве гарантии безопасного прохода венецианских кораблей по Адриатике. Предыстория была короткой и жёсткой. Едва новый дож Орсо..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/865/domagoi&Venecia.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

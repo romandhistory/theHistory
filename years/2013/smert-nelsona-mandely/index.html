@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть Нельсона Манделы" />
     <meta name="twitter:description" content="5 декабря 2013 года в Йоханнесбурге на 96-м году жизни скончался Нельсон Мандела — первый чернокожий президент Южно-Африканской Республики и символ борьбы против апартеида, признанный одной из самых уважаемых фигур миров..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2013/mandela.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

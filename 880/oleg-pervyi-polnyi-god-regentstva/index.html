@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Олег: первый полный год регентства" />
     <meta name="twitter:description" content="880 год стал для Олега первым, прожитым полностью в статусе регента, без переходного периода, отмеченного смертью и трауром. Система работала так же, как и в последний год жизни Рюрика, — только теперь без формальной тен..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/880/oleg.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

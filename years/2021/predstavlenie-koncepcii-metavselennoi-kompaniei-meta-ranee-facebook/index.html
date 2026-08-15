@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Представление концепции метавселенной компанией Meta (ранее Facebook)" />
     <meta name="twitter:description" content="28 октября 2021 года Марк Цукерберг объявил о переименовании Facebook Inc. в Meta Platforms — и представил концепцию метавселенной как главный стратегический приоритет компании на следующее десятилетие. Презентация длила..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2021/metafb.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

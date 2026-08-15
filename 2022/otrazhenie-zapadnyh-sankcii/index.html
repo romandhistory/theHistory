@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Отражение западных санкций" />
     <meta name="twitter:description" content="Весной 2022 года западные экономисты прогнозировали России обвал ВВП на 10–15% и финансовый коллапс. Этого не произошло — хотя цена адаптации оказалась высокой и во многом отложенной. Первый удар пришёлся на рубль. В нач..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2022/sankcii.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Теракты в мадридском метро" />
     <meta name="twitter:description" content="Утром 11 марта 2004 года в промежутке между 07:39 и 07:42 в четырёх пригородных поездах, въезжавших на мадридский вокзал «Аточа» , взорвалось десять бомб. Погибли 193 человека, ранены около 2050. Крупнейший джихадистский..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2004/madrid_m.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

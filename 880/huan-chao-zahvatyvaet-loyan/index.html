@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Хуан Чао захватывает Лоян" />
     <meta name="twitter:description" content="В ноябре 880 года армия Хуан Чао вошла в Лоян — восточную столицу империи Тан. Город не сопротивлялся. После резни в Гуанчжоу в 879-м и эпидемии, выкосившей почти сорок процентов войска, Хуан Чао перезимовал в Цзянси и д..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/880/loian.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

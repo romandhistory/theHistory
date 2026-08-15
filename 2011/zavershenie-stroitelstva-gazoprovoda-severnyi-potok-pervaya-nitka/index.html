@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Завершение строительства газопровода «Северный поток» (первая нитка)" />
     <meta name="twitter:description" content="Строительство первой нитки «Северного потока» завершилось в июне 2011 года. Газопровод длиной 1224 километра прошёл по дну Балтийского моря — от Выборга до немецкого Грайфсвальда — в обход всех транзитных стран. 8 ноября..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2011/sev_potok.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

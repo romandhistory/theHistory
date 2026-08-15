@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Великобритания — победа на референдуме сторонников выхода из ЕС | 2016 | theХистори" />
     <meta name="twitter:description" content="23 июня 2016 года в Великобритании прошёл референдум о членстве в Европейском союзе. За выход проголосовали 51,9% , за сохранение членства — 48,1% . Явка составила 72,2% — одна из самых высоких за десятилетия. Результат..." />
     <meta name="twitter:image" content="https://thehistory.pro/img/2016.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

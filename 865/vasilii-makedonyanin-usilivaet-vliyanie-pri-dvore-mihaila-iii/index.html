@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Василий Македонянин усиливает влияние при дворе Михаила III" />
     <meta name="twitter:description" content="К 865 году Василий , выходец из простых крестьян, поднявшийся при дворе от конюха до паракимомена — главного императорского спальничего, — прочно закрепился рядом с Михаилом III . Путь наверх Василий прошёл стремительно:..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/865/Vasilyi_Makidon.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

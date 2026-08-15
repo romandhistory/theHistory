@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть Людовика III, короля Западно-Франкского королевства" />
     <meta name="twitter:description" content="5 августа 882 года в Сен-Дени умер Людовик III — король Западно-Франкского королевства, разделявший власть с братом Карломаном с 879 года. Годом раньше, в августе 881-го, он разбил норманнов при Сокуре — одна из немногих..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/882/ludovikIII.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Диего Родригес Порселос основал Бургос" />
     <meta name="twitter:description" content="В 882 году кастильский граф Диего Родригес Порселос по приказу Альфонсо III заложил укреплённый город на реке Арлансон — будущий Бургос . Место выбрали не случайно: стратегически важная точка на границе между христиански..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/882/burgos.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Празднование 65-летия Победы в Великой Отечественной войне" />
     <meta name="twitter:description" content="9 мая 2010 года Россия отметила 65-летие Победы. Впервые за многие годы на Красной площади прошёл полноценный военный парад с участием иностранных войск — колонны солдат из США, Великобритании, Франции и Польши марширова..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2010/medal'.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

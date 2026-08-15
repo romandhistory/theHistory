@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Празднование 2000летия города Дербент" />
     <meta name="twitter:description" content="21 ноября 2012 года Владимир Путин подписал указ о праздновании 2000-летия основания Дербента в 2015 году. Основные торжества состоялись 19 сентября 2015 года в самом южном городе России — древнейшем поселении страны на..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2015/derbent.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

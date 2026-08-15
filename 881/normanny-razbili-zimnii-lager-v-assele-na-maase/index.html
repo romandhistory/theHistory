@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Норманны разбили зимний лагерь в Асселе на Маасе" />
     <meta name="twitter:description" content="В ноябре 881 года норманнские вожди Годфрид и Сигфрид возвели укреплённый лагерь в Асселе на Маасе — в современной провинции Лимбург. Лагерь был не временной стоянкой, а настоящей крепостью: земляные валы, укреплённый пе..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/881/lager'.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

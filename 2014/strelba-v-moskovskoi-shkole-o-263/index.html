@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Стрельба в московской школе № 263" />
     <meta name="twitter:description" content="3 февраля 2014 года в районе Отрадное в Москве произошёл инцидент со стрельбой в школе № 263. Это стал первый в России случай стрельбы в школе из гражданского оружия «по американскому сценарию» . По версии следствия, дес..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2014/school263.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

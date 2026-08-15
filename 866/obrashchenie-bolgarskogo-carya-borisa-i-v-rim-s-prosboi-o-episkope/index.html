@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Обращение болгарского царя Бориса I в Рим с просьбой о епископе" />
     <meta name="twitter:description" content="Летом 866 года болгарский хан Борис I отправил посольство не в Константинополь, а в Рим — к папе Николаю I . Он просил прислать епископа и священников. Для Византии, только что крестившей Болгарию и считавшей её своей ка..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/866/BorisI.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Флоки Вильгердарсон открывает Исландию" />
     <meta name="twitter:description" content="Точная дата неизвестна — сага «Книга о заселении земли» относит путешествие Флоки Вильгердарсона к концу 860-х, и традиционно начало эпохи заселения Исландии отсчитывают именно от 870 года. До Флоки на острове уже бывали..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/870/Floki_Vil.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

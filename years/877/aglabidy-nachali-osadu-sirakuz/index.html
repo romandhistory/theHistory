@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Аглабиды начали осаду Сиракуз" />
     <meta name="twitter:description" content="В августе 877 года аглабидский наместник Сицилии Джафар ибн Мухаммад начал осаду Сиракуз — последнего крупного византийского оплота на острове. Арабы блокировали город одновременно с моря и с суши, подтянув осадные оруди..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/877/osada.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

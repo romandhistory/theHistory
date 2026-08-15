@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть Аривары-но Нарихиры" />
     <meta name="twitter:description" content="9 июля 880 года умер Аривара-но Нарихира — поэт, придворный и принц по крови, внук императора Хэйдзэя . Ему было пятьдесят пять лет . При жизни он занимал незначительные посты при дворе и в провинции. Зато слава его была..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/880/arivara.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

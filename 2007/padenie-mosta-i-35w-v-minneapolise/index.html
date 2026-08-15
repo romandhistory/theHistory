@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Падение моста I-35W в Миннеаполисе" />
     <meta name="twitter:description" content="1 августа 2007 года в 18:05 восьмиполосный автомобильный мост через реку Миссисипи в Миннеаполисе рухнул в воду. На мосту в момент обрушения находились 111 автомобилей — шёл вечерний час пик, плюс велись дорожные ремонтн..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2007/most.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

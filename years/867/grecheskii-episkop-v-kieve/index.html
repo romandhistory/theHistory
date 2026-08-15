@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Греческий епископ в Киеве" />
     <meta name="twitter:description" content="Греческий епископ прибыл в Киев вслед за посольством — тихо, без торжественного въезда и летописных фанфар. Его имя история не сохранила. Но факт его присутствия зафиксировал сам патриарх Фотий — в окружном послании 867..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/867/episkopvkieve.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

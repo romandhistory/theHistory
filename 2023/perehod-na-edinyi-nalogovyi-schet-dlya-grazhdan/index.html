@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Переход на единый налоговый счёт для граждан" />
     <meta name="twitter:description" content="1 января 2023 года в России введён единый налоговый счёт — для всех организаций и индивидуальных предпринимателей в обязательном порядке, для физических лиц — в упрощённом формате. Реформа стала крупнейшим изменением в с..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2023/nalogovyischet.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

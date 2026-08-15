@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Землетрясение повреждает Святую Софию" />
     <meta name="twitter:description" content="В 869 году землетрясение повредило купол Святой Софии — главного храма Константинополя и всего православного мира. Конструкция, простоявшая три века, оказалась под угрозой обрушения. Василий I отреагировал немедленно. Ре..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/869/hramSofi.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

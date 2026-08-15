@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Блокировка WhatsApp и Telegram на территории РФ" />
     <meta name="twitter:description" content="Блокировка Telegram в России официально началась в феврале 2026 года — фактически с августа 2025-го, когда стала ограничиваться возможность звонков. 10 февраля 2026 года Роскомнадзор официально подтвердил замедление месс..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2026/blokirovkamess.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

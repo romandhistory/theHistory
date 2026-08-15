@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Эпидемия атипичной пневмонии SARS" />
     <meta name="twitter:description" content="Атипичная пневмония впервые была обнаружена в китайской провинции Гуандун в ноябре 2002 года. Китай поначалу скрывал масштаб вспышки. 21 февраля 2003 года врач из материковой части Китая приехал в Гонконг на свадьбу — и..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2003/pnevmon.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

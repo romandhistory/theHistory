@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Гибель Аэда Белоногого, короля Альбы" />
     <meta name="twitter:description" content="В 878 году в Стразэллене погиб Аэд Белоногий , король Альбы. Правил он около года — унаследовав престол от брата Константина I , погибшего в столкновении с данами. О самом правлении Аэда источники почти молчат. «Анналы У..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/878/aed_bel.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

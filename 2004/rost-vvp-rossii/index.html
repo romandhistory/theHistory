@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Рост ВВП России" />
     <meta name="twitter:description" content="В 2004 году ВВП России вырос на 7,2% — пятый год подряд уверенного роста после катастрофы 1998-го. Главный двигатель — нефть: мировые цены уверенно шли вверх, экспортная выручка наполняла бюджет, Стабилизационный фонд ро..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2004/vvp.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

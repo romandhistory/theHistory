@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Новгородский посад: город продолжает расти" />
     <meta name="twitter:description" content="Ремесленные кварталы, начавшие уплотняться вокруг торга ещё несколько лет назад, к 881 году продолжали расширяться. Новые дворы кузнецов и гончаров появлялись там, где прежде оставался пустырь. Приток людей шёл из окрест..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/881/gorod.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

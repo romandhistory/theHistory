@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Ашот I Багратуни коронован царём Армении" />
     <meta name="twitter:description" content="В 885 году Ашот I был торжественно коронован в столице Багаран католикосом Геворгом II Гарнеци . Арабский халифат в лице халифа аль-Мутамида и Византийская империя в лице императора Василия I признали независимость Армен..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/885/ashot.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

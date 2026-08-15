@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Авиакатастрофа Як-42 под Ярославлем" />
     <meta name="twitter:description" content="7 сентября 2011 года, около 16:00, самолёт Як-42Д авиакомпании «Як Сервис» разбился при взлёте из аэропорта Туношна под Ярославлем. На борту находился практически весь основной состав хоккейного клуба «Локомотив» — коман..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2011/samolet.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Проведение «Евровидения» в Москве" />
     <meta name="twitter:description" content="С 12 по 16 мая 2009 года Москва принимала 54-й конкурс «Евровидение» — впервые в истории России. Площадкой стал спортивный комплекс «Олимпийский» , в конкурсе участвовали 42 страны . Финансовый размах был беспрецедентным..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2009/eurovis.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Открытие скоростного поезда «Сапсан»" />
     <meta name="twitter:description" content="17 декабря 2009 года в 19:00 с Ленинградского вокзала Москвы отправился первый коммерческий рейс «Сапсана» . Совместный проект Российских железных дорог и немецкого концерна Siemens — поезд серии Velaro RUS, адаптированн..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2009/sapsan.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Печенеги доходят до днепровских порогов" />
     <meta name="twitter:description" content="К 873 году печенежская угроза перестала быть отдалённой перспективой — кочевники появились непосредственно у днепровских порогов , самого опасного и стратегически важного участка пути «из варяг в греки» . То, что годами..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/873/pechenegi.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

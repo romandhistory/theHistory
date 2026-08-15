@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Печенеги и новый расклад сил на Днепре" />
     <meta name="twitter:description" content="Смена власти в Киеве не могла остаться незамеченной в степи. Печенеги, годами испытывавшие на прочность прежних правителей города, теперь оказались перед новой силой — куда более значительной, чем разрозненная дружина Ас..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/882/pechenegi.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

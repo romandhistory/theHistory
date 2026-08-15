@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Битва при Эдингтоне" />
     <meta name="twitter:description" content="В мае 878 года, на седьмой неделе после Пасхи, Альфред вышел из болот Этелни и созвал ополчение у Камня Эгберта . На его зов пришли люди из Сомерсета, Уилтшира и Хэмпшира. Три месяца Альфред воевал из засады — уклонялся..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/878/edington.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

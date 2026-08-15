@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Запуск iPhone 6 и скандал «Bendgate»" />
     <meta name="twitter:description" content="19 сентября 2014 года в продажу поступили iPhone 6 и iPhone 6 Plus — самые большие экраны в истории линейки. Через несколько дней в сети начали появляться фотографии и видео гнущихся смартфонов: пользователи жаловались,..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2014/iphon6.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

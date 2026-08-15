@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Арабские набеги на византийские фемы в Малой Азии" />
     <meta name="twitter:description" content="После разгрома при Лалакаоне в 863 году и гибели эмира Умара аль-Акты арабские набеги на византийские фемы не прекратились — они лишь потеряли единое командование. Со времён арабских завоеваний VII века Византийская импе..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/865/arabianwar.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

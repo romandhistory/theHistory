@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Землетрясение на острове Ява" />
     <meta name="twitter:description" content="27 мая 2006 года в 05:53 по местному времени в центральной части острова Ява произошло разрушительное землетрясение магнитудой 5,9 . Эпицентр находился в 37 километрах к югу от Джокьякарты. Большинство жителей ещё спали...." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2006/iava.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

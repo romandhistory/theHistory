@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Начало частичной мобилизации" />
     <meta name="twitter:description" content="21 сентября 2022 года Владимир Путин объявил частичную мобилизацию — первую в России со времён Второй мировой войны. Министр обороны Шойгу назвал цифру: 300 000 резервистов . Указ о мобилизации содержал засекреченный пун..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2022/mobilizacia.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

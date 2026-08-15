@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Флот Василия I не застал Людовика II под Бари" />
     <meta name="twitter:description" content="Летом 869 года Василий I отправил к берегам Южной Италии флот под командованием друнгария Никиты Орифы — на помощь Людовику II , который уже который год осаждал арабский Бари. Союз выглядел логичным для обеих сторон. Люд..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/869/flotVasilia.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

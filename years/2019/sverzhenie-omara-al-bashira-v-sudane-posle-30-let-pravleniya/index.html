@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Свержение Омара аль-Башира в Судане после 30 лет правления" />
     <meta name="twitter:description" content="11 апреля 2019 года военные Судана отстранили от власти президента Омара аль-Башира — после четырёх месяцев непрекращающихся народных протестов. Башир правил страной с 1989 года — ровно 30 лет . Военные объявили о создан..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2019/omar_bashir.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

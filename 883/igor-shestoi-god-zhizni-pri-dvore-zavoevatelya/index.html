@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Игорь: шестой год жизни при дворе завоевателя" />
     <meta name="twitter:description" content="Игорю в 883 году исполнилось шесть лет — он рос уже не в Новгороде, а в Киеве, городе, который стал столицей во многом благодаря его имени, использованному Олегом как повод для похода. Перемена места не была для мальчика..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/883/igor'6.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

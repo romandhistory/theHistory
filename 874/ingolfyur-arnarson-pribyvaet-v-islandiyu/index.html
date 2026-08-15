@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Ингольфюр Арнарсон прибывает в Исландию" />
     <meta name="twitter:description" content="Около 874 года Ингольфюр Арнарсон ступил на берег бухты, которую назовёт Рейкьявик — Дымящаяся бухта , — и стал первым норвежцем, прибывшим в Исландию не на разведку, а навсегда. Причина отъезда была кровной в буквальном..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/874/reik'iavik.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

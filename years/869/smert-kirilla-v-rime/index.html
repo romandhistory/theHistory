@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть Кирилла в Риме" />
     <meta name="twitter:description" content="За пятьдесят дней до смерти Константин постригся в монахи и принял имя Кирилл . Он давно болел — путешествие из Моравии через Венецию в Рим далось тяжело. В феврале 869 года ему было около сорока двух лет. Братья прибыли..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/869/smert'_Kir.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

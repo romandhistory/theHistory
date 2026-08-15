@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Фань Чо завершил «Книгу южных племён»" />
     <meta name="twitter:description" content="В 862 году танский чиновник Фань Чо завершил трактат «Мань шу» — «Книгу южных племён» . Он писал по личному опыту: несколько лет провёл на южных границах империи, в зоне контакта Китая с царством Наньчжао — государством..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/862/fanjo.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

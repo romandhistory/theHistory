@@ -12,6 +12,18 @@
     <meta property="og:image" content="https://thehistory.pro/img/logo.webp" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://thehistory.pro/0/" />
+
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+
 </head>
 <body style="font-family:Arial,sans-serif;background:#0d1117;color:#fff;padding:40px;">
     <h1>theХистори | ∞-861</h1>

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Россия возглавила G20" />
     <meta name="twitter:description" content="1 декабря 2012 года Россия официально возглавила «Группу двадцати» — объединение крупнейших экономик мира, на год приняв председательство от Мексики. Ротация происходит ежегодно: 2009 год страны отдали Великобритании, 20..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2012/g20.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

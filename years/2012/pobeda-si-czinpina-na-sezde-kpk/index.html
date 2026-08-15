@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Победа Си Цзиньпина на съезде КПК" />
     <meta name="twitter:description" content="15 ноября 2012 года пленум ЦК Компартии Китая избрал Си Цзиньпина новым генеральным секретарём — высший партийный пост в стране, где партия и есть государство. Одновременно он возглавил Центральный военный совет ЦК КПК,..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2012/si.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

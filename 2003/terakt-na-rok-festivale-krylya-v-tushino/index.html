@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Теракт на рок-фестивале «Крылья» в Тушино" />
     <meta name="twitter:description" content="5 июля 2003 года в 14:39 у касс рок-фестиваля «Крылья» на Тушинском аэродроме подорвала себя 20-летняя террористка Зулихан Э. Устройство не сдетонировало. Через 13 минут на том же месте взорвала себя вторая смертница — 2..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2003/kryl'ia.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

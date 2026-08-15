@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Вихинг назначен первым епископом Нитры" />
     <meta name="twitter:description" content="В июне 880 года буллой Industriae tuae папа Иоанн VIII поставил на только что учреждённую кафедру Нитры швабского монаха Вихинга . Формально новый епископ подчинялся архиепископу Мефодию . Фактически он был его главным п..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/880/eparh.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Запуск App Store компанией Apple" />
     <meta name="twitter:description" content="10 июля 2008 года Apple открыла App Store — магазин приложений для iPhone. В первый день было доступно 500 программ , половина из них — бесплатно. За сутки пользователи скачали 10 миллионов приложений . До App Store прог..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2008/app-store.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

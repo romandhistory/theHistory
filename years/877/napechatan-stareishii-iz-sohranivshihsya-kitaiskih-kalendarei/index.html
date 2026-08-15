@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Напечатан старейший из сохранившихся китайских календарей" />
     <meta name="twitter:description" content="В 877 году, в год дин-ю по китайскому шестидесятилетнему циклу, был отпечатан календарь-альманах, фрагмент которого пережил тысячелетие в запечатанных пещерах Могао близ Дуньхуана. Это древнейший из сохранившихся образцо..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/877/kalendar.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

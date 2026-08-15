@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Папа Иоанн VIII даровал Овьедо апостольские привилегии" />
     <meta name="twitter:description" content="В 877 году папа Иоанн VIII даровал овьедской кафедре особые апостольские привилегии, возвысив её среди епископств Астурийского королевства. Овьедо к тому времени был не просто городом — он был столицей. Именно сюда в кон..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/877/ov'edo.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

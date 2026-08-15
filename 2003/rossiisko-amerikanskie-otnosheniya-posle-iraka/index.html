@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Российско-американские отношения после Ирака" />
     <meta name="twitter:description" content="18 марта 2003 года — за двое суток до начала вторжения — Владимир Путин позвонил Джорджу Бушу и призвал отказаться от силового сценария. «Нам нельзя подменять силу закона законом силы», — сказал он. Буш начал разговор с..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2003/put&bush.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

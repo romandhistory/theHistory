@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть Карломана Баварского" />
     <meta name="twitter:description" content="22 сентября 880 года в Альтёттинге умер Карломан Баварский — старший сын Людовика Немецкого, король Баварии и Италии. Похоронили его в монастырской церкви. В 861 году он поднял первый мятеж против отца, в 863-м — второй,..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/880/death_karloman.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

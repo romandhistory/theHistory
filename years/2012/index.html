@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Переизбрание Барака Обамы на второй президентский срок в США | 2012 | theХистори" />
     <meta name="twitter:description" content="6 ноября 2012 года Барак Обама победил на президентских выборах США, набрав 332 голоса выборщиков против 206 у республиканца Митта Ромни . В абсолютном выражении за Обаму проголосовали около 65,9 миллиона человек — на 3,..." />
     <meta name="twitter:image" content="https://thehistory.pro/img/2012.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

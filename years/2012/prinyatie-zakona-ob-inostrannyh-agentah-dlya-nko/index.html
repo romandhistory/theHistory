@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Принятие закона об иностранных агентах для НКО" />
     <meta name="twitter:description" content="20 июля 2012 года президент Владимир Путин подписал закон, обязавший российские некоммерческие организации, получающие деньги из-за рубежа и занимающиеся «политической деятельностью» , регистрироваться в реестре Минюста..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2012/in_agent.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

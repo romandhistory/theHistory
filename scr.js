@@ -38,9 +38,16 @@ document.addEventListener('DOMContentLoaded', async function () {
             }
         }
 
+        const routeParam = new URLSearchParams(window.location.search).get('route');
+        if (routeParam) {
+            const normalizedRoute = (routeParam.startsWith('/') ? routeParam : '/' + routeParam)
+                .replace(/\/+/g, '/');
+            history.replaceState({ deepLink: false }, '', normalizedRoute);
+        }
+
         const currentPath = window.location.pathname;
         const isYearStaticRoute = /^\/\d+(?:\/[^/]+)?\/?$/.test(currentPath);
-        if (!isYearStaticRoute) {
+        if (routeParam || isYearStaticRoute) {
             handleDeepLink(true);
         }
         window.addEventListener('hashchange', function () { handleDeepLink(true); });
@@ -595,7 +602,6 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         if (isYearDeepLink) {
             history.pushState({ deepLink: false }, '', '/');
-            window.location.assign('/');
             return;
         }
 

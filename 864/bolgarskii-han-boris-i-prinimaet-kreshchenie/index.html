@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Болгарский хан Борис I принимает крещение" />
     <meta name="twitter:description" content="В начале 864 года хан Борис I был тайно крещён в Плиске византийскими священнослужителями вместе с семьёй и частью болгарской знати. Крёстным отцом стал византийский император Михаил III — в его честь Борис принял христи..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/864/borisI.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

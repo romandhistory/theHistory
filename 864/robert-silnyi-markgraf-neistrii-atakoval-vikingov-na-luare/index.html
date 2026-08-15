@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Роберт Сильный, маркграф Нейстрии, атаковал викингов на Луаре" />
     <meta name="twitter:description" content="В 864 году Роберт Сильный , маркграф Нейстрии, напал на норманнский отряд, разорявший земли по Луаре. Атака удалась: воины Роберта взяли в плен Акфреда — бывшего советника Карла Дитя, короля Аквитании, обвинённого в мяте..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/864/robertsilniy.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

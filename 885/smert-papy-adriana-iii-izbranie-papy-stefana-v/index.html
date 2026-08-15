@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть папы Адриана III — избрание папы Стефана V" />
     <meta name="twitter:description" content="15 сентября 885 года папа Адриан III скончался в Модене — по дороге в Вормс , где собирался обсудить с Карлом III Толстым вопросы престолонаследия и борьбы с сарацинами. Некоторые считают, что папа был отравлен. Адриан п..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/885/death_papa.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;
