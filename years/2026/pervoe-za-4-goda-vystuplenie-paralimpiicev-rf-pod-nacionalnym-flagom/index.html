@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Первое за 4 года выступление паралимпийцев РФ под национальным флагом" />
     <meta name="twitter:description" content="В сентябре 2025 года на генассамблее Международного паралимпийского комитета в Сеуле члены МПК проголосовали против продления частичной приостановки членства Паралимпийского комитета России. Российским паралимпийцам верн..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2026/paralimpiadafr.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

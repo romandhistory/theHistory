@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть Людовика Младшего" />
     <meta name="twitter:description" content="20 января 882 года умер Людовик Младший — король Саксонии, Тюрингии и Франконии, средний сын Людовика Немецкого. Ему было около тридцати пяти лет . Из трёх братьев он оказался наиболее деятельным правителем. В октябре 87..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/882/mladshi.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

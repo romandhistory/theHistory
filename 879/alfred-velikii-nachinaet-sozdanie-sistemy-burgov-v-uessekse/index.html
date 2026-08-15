@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Альфред Великий начинает создание системы бургов в Уэссексе" />
     <meta name="twitter:description" content="В 879 году, пока армия Гутрума уходила из Уэссекса, Альфред начал то, что изменило характер войны с викингами: строительство системы укреплённых поселений — бургов . Тридцать три бурга должны были разместиться так, чтобы..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/879/bugry.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

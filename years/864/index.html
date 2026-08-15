@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Южное Чжао совершает нападение на областной центр Сычуань | 864 | theХистори" />
     <meta name="twitter:description" content="В 864 году войска царства Наньчжао перешли границу и атаковали Сычуань — один из ключевых административных центров танского Китая на юго-западе. Удар пришёлся по Чэнду или его окрестностям: Наньчжао уже не впервые испыты..." />
     <meta name="twitter:image" content="https://thehistory.pro/img/864.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

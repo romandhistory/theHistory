@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Евромайдан — начало протестов на Украине" />
     <meta name="twitter:description" content="21 ноября 2013 года украинское правительство объявило о приостановке подготовки к подписанию соглашения об ассоциации с Европейским союзом — решение, которое спровоцировало стихийные протесты на площади Незалежности в Ки..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2013/maidan.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

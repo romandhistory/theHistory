@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Встреча президентов России и США Владимира Путина и Джо Байдена в Женеве" />
     <meta name="twitter:description" content="16 июня 2021 года Владимир Путин и Джо Байден провели переговоры на вилле Ла Гранж в Женеве — первую личную встречу с момента прихода Байдена в Белый дом. Саммит длился около трёх часов . Ожиданий было немного — и они оп..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2021/putinbaid.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

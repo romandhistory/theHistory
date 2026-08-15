@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Взрыв в порту Бейрута" />
     <meta name="twitter:description" content="4 августа 2020 года в 18:08 по местному времени в порту Бейрута взорвались 2 750 тонн нитрата аммония . Взрыв унёс жизни более 220 человек , ранил свыше 6 000 , оставил без крова около 300 000 . Ударная волна ощущалась н..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2020/beirut.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

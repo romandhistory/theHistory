@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Битва при Лалакаоне между Византийской империей и войсками эмира Малатьи Умара аль-Акта" />
     <meta name="twitter:description" content="В сентябре 863 года византийская армия под командованием стратига Петроны разгромила войска эмира Малатьи Умара аль-Акта на реке Лалакаон в Малой Азии. Умар погиб в бою. Для Византии это была одна из самых значимых побед..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/863/lalakaon.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

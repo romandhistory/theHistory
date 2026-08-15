@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Мятеж Абу Руха в Александрийской пустыне" />
     <meta name="twitter:description" content="В 874 году в пустынных землях Александрийского округа поднял восстание человек, известный как Абу Рух — настоящее имя Сакн . Это был не первый подобный мятеж: годом ранее уже было подавлено восстание Ибн ас-Суфи, и Абу Р..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/874/miteg.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Пленение Людовика II в Беневенто" />
     <meta name="twitter:description" content="13 августа 871 года, всего полгода после триумфального взятия Бари, Людовика II , его жену Энгельбергу и дочь Эрменгарду внезапно арестовал собственный союзник — князь Адельгиз Беневентский . Арест сопровождался насилием..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/871/arest.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

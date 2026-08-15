@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Закон о валютном регулировании и контроле" />
     <meta name="twitter:description" content="10 декабря 2003 года Владимир Путин подписал Федеральный закон № 173-ФЗ «О валютном регулировании и валютном контроле». Думой он был принят 21 ноября, Советом Федерации одобрен 26 ноября. Закон пришёл на смену жёсткому в..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2003/regulir.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Гибель Барида мак Ивара, короля Дублина" />
     <meta name="twitter:description" content="В 881 году Барид мак Ивар , король Дублина с 873 года, разорил ораторий святого Кианана в Дулике — небольшое священное место в Мите. Вскоре после этого он был убит и сожжён в Дублине. «Хроникон Скотторум» записал его сме..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/881/barid.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

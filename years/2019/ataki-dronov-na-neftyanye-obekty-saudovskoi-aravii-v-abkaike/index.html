@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Атаки дронов на нефтяные объекты Саудовской Аравии в Абкайке" />
     <meta name="twitter:description" content="14 сентября 2019 года скоординированная атака беспилотников и крылатых ракет поразила нефтеперерабатывающий завод в Абкайке и нефтяные поля Хурайс — крупнейшие объекты Saudi Aramco . Саудовская Аравия временно потеряла о..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2019/abkaike.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

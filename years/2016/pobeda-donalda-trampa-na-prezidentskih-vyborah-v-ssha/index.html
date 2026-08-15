@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Победа Дональда Трампа на президентских выборах в США" />
     <meta name="twitter:description" content="8 ноября 2016 года Дональд Трамп победил на президентских выборах США — набрав 304 голоса выборщиков против 227 у Хиллари Клинтон . Клинтон при этом получила больше голосов избирателей в абсолютном выражении — почти на т..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2016/trump.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

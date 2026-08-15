@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Ученики Мефодия прибыли в Болгарию — основаны Охридская и Преславская книжные школы" />
     <meta name="twitter:description" content="В 886 году Климента Охридского и его спутников охотно принял болгарский князь Борис I и вскоре отправил Климента в качестве дидаскала — учителя в священном сане — на юго-запад Болгарии для обучения болгар славянской пись..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/886/bolgar.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Саммит Путина и Трампа в Хельсинки" />
     <meta name="twitter:description" content="16 июля 2018 года Владимир Путин и Дональд Трамп встретились в Президентском дворце Хельсинки — первый полноформатный двусторонний саммит двух лидеров. Переговоры один на один продолжались более двух часов. Присутствовал..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2018/sammit_helsinki.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

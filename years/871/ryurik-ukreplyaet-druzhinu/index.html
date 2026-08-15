@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Рюрик укрепляет дружину" />
     <meta name="twitter:description" content="К 871 году Рюрик правил севером девятый год — и думал не столько о расширении, сколько об устойчивости того, что уже построено. Дружина была главным инструментом этой устойчивости, и её состояние требовало постоянного вн..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/871/drugina.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

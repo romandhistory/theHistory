@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Захват судна Greenpeace «Arctic Sunrise»" />
     <meta name="twitter:description" content="18 сентября 2013 года активисты Greenpeace предприняли попытку проникновения на нефтяную платформу «Приразломная» в Печорском море — шесть человек на надувных лодках подошли к платформе, предупредив береговую охрану о ми..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2013/greenpeace.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

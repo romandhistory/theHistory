@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Начало борьбы за королевскую власть в Нортумбрии между Осбертом и Эллой" />
     <meta name="twitter:description" content="В 863 году власть в Нортумбрии оказалась расколота между двумя королями — Осбертом , правившим с 848 года, и Эллой , чьё появление на престоле хронисты описывают по-разному. Большинство свидетельств называют Эллу человек..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/863/OsbertVSElla.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

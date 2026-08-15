@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Аббасидский халифат — дворцовые кризисы" />
     <meta name="twitter:description" content="Аль-Мутазз занял трон в январе 866-го — и с первых дней понял, что трон этот ненастоящий. Тюркские военачальники Васиф и Буга , посадившие его на престол, по-прежнему контролировали армию, финансы и доступ к халифу. Аль-..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/867/mutazdeistvuet.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

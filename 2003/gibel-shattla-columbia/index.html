@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Гибель шаттла Columbia" />
     <meta name="twitter:description" content="1 февраля 2003 года шаттл Columbia разрушился в плотных слоях атмосферы при сходе с орбиты. Причиной стал дефект в термозащитном покрытии на передней кромке крыла — он образовался от удара куска пены теплоизоляции топлив..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2003/shatl.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

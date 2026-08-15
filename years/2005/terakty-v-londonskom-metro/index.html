@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Теракты в лондонском метро" />
     <meta name="twitter:description" content="7 июля 2005 года в 8:50 утра с промежутком в 50 секунд были взорваны три поезда Лондонского метрополитена. Почти час спустя четвёртый взрыв прогремел в автобусе на Тэвисток-сквер. Погибли 52 человека , ранены около 700 ...." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2005/terakty.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Первый полёт китайского тайконавта Ян Ливэя — «Шэньчжоу-5»" />
     <meta name="twitter:description" content="15 октября 2003 года в 9:03 по местному времени с космодрома Цзюцюань стартовал « Шэньчжоу-5 ». Корабль пилотировал 38-летний подполковник Народно-освободительной армии Ян Ливэй . Его имя держалось в секрете — стало изве..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2003/china.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

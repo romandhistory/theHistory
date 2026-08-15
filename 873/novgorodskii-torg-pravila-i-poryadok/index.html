@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Новгородский торг: правила и порядок" />
     <meta name="twitter:description" content="Формального свода правил новгородской торговли не существовало — но порядок держался крепче любого писаного закона. Купцы, ремесленники, приезжие гости знали правила на память, потому что нарушение грозило потерей репута..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/873/rinok.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

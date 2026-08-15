@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Джакарта обгоняет Токио по численности населения мегаполиса" />
     <meta name="twitter:description" content="В ноябре 2025 года доклад ООН «Перспективы мировой урбанизации 2025» зафиксировал смену лидера в рейтинге крупнейших городов мира. Токио , возглавлявший список с 2000 года, впервые уступил первое место. По оценке ООН, в..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2025/jakarta.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

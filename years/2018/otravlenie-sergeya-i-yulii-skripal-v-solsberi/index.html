@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Отравление Сергея и Юлии Скрипаль в Солсбери" />
     <meta name="twitter:description" content="4 марта 2018 года в британском городе Солсбери были отравлены Сергей Скрипаль — бывший офицер ГРУ, работавший на британскую разведку — и его дочь Юлия . Их обнаружили без сознания на скамейке в городском парке. Оба выжил..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2018/otravlenie.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

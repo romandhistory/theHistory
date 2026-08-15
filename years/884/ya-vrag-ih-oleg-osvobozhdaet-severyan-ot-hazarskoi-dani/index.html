@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="«Я враг их»: Олег освобождает северян от хазарской дани" />
     <meta name="twitter:description" content="После покорения северян Олег произнёс фразу, которую летопись сохранит: он враг хазарам, и северянам платить им незачем. Слова эти были не просто красивым жестом — они означали официальный разрыв прежней даннической связ..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/884/dan'.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

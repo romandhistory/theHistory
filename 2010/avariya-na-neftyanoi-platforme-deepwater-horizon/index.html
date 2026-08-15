@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Авария на нефтяной платформе Deepwater Horizon" />
     <meta name="twitter:description" content="20 апреля 2010 года в Мексиканском заливе, в 80 километрах от берегов Луизианы, взорвалась буровая платформа Deepwater Horizon . Погибли 11 человек . Пожар горел 36 часов , после чего платформа затонула, оставив открытую..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2010/horizont.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

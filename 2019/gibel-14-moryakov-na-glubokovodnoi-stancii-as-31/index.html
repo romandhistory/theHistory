@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Гибель 14 моряков на глубоководной станции АС-31" />
     <meta name="twitter:description" content="1 июля 2019 года на российской глубоководной исследовательской станции АС-31 вспыхнул пожар. Субмарина находилась в Баренцевом море на большой глубине. Погибли 14 офицеров — все члены экипажа, находившиеся в отсеке в мом..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2019/losharik.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

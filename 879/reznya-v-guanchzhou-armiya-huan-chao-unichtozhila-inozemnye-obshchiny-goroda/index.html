@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Резня в Гуанчжоу — армия Хуан Чао уничтожила иноземные общины города" />
     <meta name="twitter:description" content="Осенью 879 года армия Хуан Чао взяла штурмом Гуанчжоу — крупнейший морской порт Танской империи — и вырезала тысячи его жителей. Главным образом погибли иноземцы: мусульмане, евреи, христиане-несториане, зороастрийцы. Гу..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/879/reznia.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

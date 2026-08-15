@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Запуск США тарифной войны против большинства стран мира" />
     <meta name="twitter:description" content="2 апреля 2025 года Дональд Трамп объявил о введении пошлин в размере 10–54% на импорт из более чем 180 стран — практически всех торговых партнёров США без исключения. Масштаб превзошёл самые пессимистичные прогнозы. С 3..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2025/usavsworld.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

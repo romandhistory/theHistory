@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Переговоры Владимира Путина и Дональда Трампа на саммите в Анкоридже" />
     <meta name="twitter:description" content="15 августа 2025 года на военной базе Элмендорф-Ричардсон в Анкоридже состоялся первый полноформатный двусторонний саммит между лидерами России и США с женевской встречи июня 2021 года — и первый с момента начала российск..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2025/aliaska.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

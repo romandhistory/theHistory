@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Печенеги усиливаются в степи" />
     <meta name="twitter:description" content="К 871 году печенеги превратились из периферийной угрозы в главную проблему южных границ варяжской Руси. Тюркоязычные кочевники, пришедшие из степей за Волгой, медленно, но настойчиво продвигались на запад — к Дону, а зат..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/871/pechenegi.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

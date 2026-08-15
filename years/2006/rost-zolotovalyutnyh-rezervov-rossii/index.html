@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Рост золотовалютных резервов России" />
     <meta name="twitter:description" content="2006 год стал финансовым триумфом. Золотовалютные резервы страны выросли за год примерно на 100 миллиардов долларов — к ноябрю достигнув почти 279 миллиардов . Главный двигатель — нефть: цены держались выше 60 долларов з..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2006/gold.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

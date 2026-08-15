@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Трампу предъявлены обвинения в фальсификации документов" />
     <meta name="twitter:description" content="30 марта 2023 года большое жюри Манхэттена проголосовало за предъявление обвинений Дональду Трампу — бывшему президенту США. Впервые в американской истории действующий или бывший президент страны стал уголовным обвиняемы..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2023/trump&obvinenia.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

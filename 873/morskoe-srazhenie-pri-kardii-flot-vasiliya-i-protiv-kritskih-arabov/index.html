@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Морское сражение при Кардии — флот Василия I против критских арабов" />
     <meta name="twitter:description" content="Около 873 года критский эмир Шуайб направил против Византии флот более чем из пятидесяти кораблей — включая двадцать семь тяжёлых судов — под командованием грека-перебежчика по имени Фотий . Человек, родившийся в христиа..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/873/sragenie.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="60-летие Победы в Великой Отечественной войне" />
     <meta name="twitter:description" content="9 мая 2005 года Москва принимала более пятидесяти мировых лидеров — крупнейший дипломатический съезд в истории послесоветской России. Джордж Буш стоял рядом с Путиным на трибуне. Герхард Шрёдер приехал во главе немецкой..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2005/winner.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

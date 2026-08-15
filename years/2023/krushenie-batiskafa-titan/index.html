@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Крушение батискафа «Титан»" />
     <meta name="twitter:description" content="18 июня 2023 года туристический батискаф «Титан» компании OceanGate вышел на связь в последний раз — через час и 45 минут после погружения к обломкам «Титаника» на глубине 3 800 метров . На борту находились пятеро: основ..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2023/titan.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Празднование 300-летия Санкт-Петербурга" />
     <meta name="twitter:description" content="С 27 мая по 1 июня 2003 года Санкт-Петербург праздновал своё трёхсотлетие. В торжествах приняли участие представители около 80 государств. На праздник одновременно съехались 46 первых лиц — саммиты СНГ , Евросоюза и «Бол..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2003/piter.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

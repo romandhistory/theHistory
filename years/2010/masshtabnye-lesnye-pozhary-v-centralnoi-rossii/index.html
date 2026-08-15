@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Масштабные лесные пожары в центральной России" />
     <meta name="twitter:description" content="С конца июля по начало сентября 2010 года Центральная Россия горела. Причиной стал аномальный антициклон, державший европейскую часть страны без осадков почти два месяца. Только в Москве за лето было побито 22 температур..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2010/pojars.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

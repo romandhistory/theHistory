@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Извержение вулкана Шивелуч на Камчатке" />
     <meta name="twitter:description" content="Активное извержение Шивелуча началось в конце января 2026 года и не прекращалось на протяжении нескольких месяцев. 2 февраля в течение одного дня вулкан выбросил три пепловых столба. 8 февраля Шивелuch выбросил пепел на..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2026/shiveluch.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

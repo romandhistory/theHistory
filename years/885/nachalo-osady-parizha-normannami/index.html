@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Начало осады Парижа норманнами" />
     <meta name="twitter:description" content="В ноябре 885 года сотни кораблей викингов подошли к Парижу . Один из предводителей захватчиков, Зигфрид , потребовал дань — и получил отказ. Обороной города руководили Эд , граф Парижа, и Гозлен , епископ города. Одо смо..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/885/paris.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Печенеги: угроза продолжает висеть над Днепром" />
     <meta name="twitter:description" content="Днепровский маршрут оставался тем же, чем был последние годы, — путём, требующим постоянной настороженности. Печенежские отряды то появлялись у порогов, то отступали вглубь степи, не давая торговле ни полного покоя, ни о..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/881/pechenegi.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

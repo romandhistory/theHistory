@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Массовый отток иностранных компаний с российского рынка" />
     <meta name="twitter:description" content="Первыми объявили об уходе BP и Shell — 27 февраля и 28 февраля 2022 года, через три-четыре дня после начала вторжения. За ними последовали сотни компаний. К середине 2022 года Россию покинули или приостановили работу бол..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2022/ottokkompanii.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

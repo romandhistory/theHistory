@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Кибератака на государственные учреждения США" />
     <meta name="twitter:description" content="13 декабря 2020 года американские власти обнаружили, что правительственные сети США месяцами находились под иностранным контролем. Точкой входа стало программное обеспечение SolarWinds Orion — инструмент сетевого монитор..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2020/kiberatak.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

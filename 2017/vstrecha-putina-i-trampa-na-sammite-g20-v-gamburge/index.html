@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Встреча Путина и Трампа на саммите G20 в Гамбурге" />
     <meta name="twitter:description" content="7 июля 2017 года на саммите G20 в Гамбурге состоялась первая личная встреча Владимира Путина и Дональда Трампа — переговоры, которых ждали с момента инаугурации Трампа полгода назад. Запланированные на 30 минут, они раст..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2017/put&trump.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

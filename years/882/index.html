@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Норманны разорили Трир и двинулись на Мец | 882 | theХистори" />
     <meta name="twitter:description" content="Весной 882 года войско Годфрида и Сигфрида поднялось по Мозелю и взяло Трир — один из старейших городов империи, некогда резиденцию римских императоров. Трирский собор Святого Петра, заложенный ещё при Константине Велико..." />
     <meta name="twitter:image" content="https://thehistory.pro/img/882.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

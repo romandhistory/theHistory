@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Массовые банкротства туроператоров" />
     <meta name="twitter:description" content="В период с 16 июля по 15 сентября 2014 года в России обанкротились 14 крупных туроператоров , от чего пострадали около 130 000 россиян . Более 70% пострадавших — клиенты пяти компаний: «Невы» , «Лабиринта» , «Солвекс-Тур..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2014/bankrotstvo.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

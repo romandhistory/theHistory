@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Рюрик и север: спокойные годы" />
     <meta name="twitter:description" content="867 год на севере Руси не оставил следов в летописях — и это само по себе красноречиво. Нестор записывал войны, мятежи и смерти князей. Если записывать было нечего — значит, всё шло своим чередом. Рюрик к 867 году правил..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/867/stabilrurika.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

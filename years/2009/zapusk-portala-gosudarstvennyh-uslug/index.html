@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Запуск портала государственных услуг" />
     <meta name="twitter:description" content="15 декабря 2009 года в России официально открылся единый портал государственных услуг — gosuslugi.ru . Тестовый режим стартовал раньше, 25 ноября, но официальный запуск сопровождался значительными техническими трудностям..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2009/uslugi.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

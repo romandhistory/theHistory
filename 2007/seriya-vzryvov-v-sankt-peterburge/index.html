@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Серия взрывов в Санкт-Петербурге" />
     <meta name="twitter:description" content="4 февраля 2007 года во время антифашистской акции «Еда вместо бомб» у станции метро «Владимирская» в Петербурге сработало самодельное устройство. Пострадала продавщица цветочного ларька. Через две недели — 18 февраля — в..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2007/vzryv.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

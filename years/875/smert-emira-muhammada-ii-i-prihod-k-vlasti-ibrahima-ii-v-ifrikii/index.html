@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть эмира Мухаммада II и приход к власти Ибрахима II в Ифрикии" />
     <meta name="twitter:description" content="В 875 году умер Мухаммад II , эмир Ифрикии из династии Аглабидов, правивший одиннадцать лет. Престол унаследовал его брат Ибрахим . Мухаммад запомнился современникам не государственными делами, а любовью к вину, охоте и..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/875/ibrahim.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

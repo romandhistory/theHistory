@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Интервидение" />
     <meta name="twitter:description" content="В феврале 2025 года Владимир Путин подписал указ о проведении «Интервидения» в России — возрождение советского конкурса эстрадной песни, существовавшего с 1965 года для стран социалистического лагеря. На подготовку прави..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2025/intervision.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

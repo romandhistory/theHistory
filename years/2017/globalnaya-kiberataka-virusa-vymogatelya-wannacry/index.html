@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Глобальная кибератака вируса-вымогателя WannaCry" />
     <meta name="twitter:description" content="12 мая 2017 года вирус-вымогатель WannaCry начал распространяться по всему миру — заразив за несколько дней более 230 000 компьютеров в 150 странах . Это одна из крупнейших кибератак в истории по масштабу и скорости расп..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2017/wannacry.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

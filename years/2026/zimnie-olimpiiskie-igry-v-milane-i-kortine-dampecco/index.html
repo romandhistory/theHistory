@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Зимние Олимпийские игры в Милане и Кортине-д’Ампеццо" />
     <meta name="twitter:description" content="С 6 по 22 февраля 2026 года в Италии прошли зимние Олимпийские игры — соревнования распределились между Миланом , Кортиной-д&#x27;Ампеццо и рядом других площадок. Были разыграны 116 комплектов медалей . Россия и Беларусь снов..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2026/milano&cortiana.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

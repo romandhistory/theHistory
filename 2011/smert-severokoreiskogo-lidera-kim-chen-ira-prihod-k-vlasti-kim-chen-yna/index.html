@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть северокорейского лидера Ким Чен Ира — приход к власти Ким Чен Ына" />
     <meta name="twitter:description" content="17 декабря 2011 года, в 8:30 утра, во время инспекционной поездки по стране на личном бронепоезде скончался Ким Чен Ир — лидер Северной Кореи, правивший страной с 1994 года. Причиной смерти официально назвали инфаркт мио..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2011/kim.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

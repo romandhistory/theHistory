@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Трагедия на Сямозере в Карелии" />
     <meta name="twitter:description" content="18 июня 2016 года в Пряжинском районе Карелии перевернулись два туристических каноэ с воспитанниками детского оздоровительного лагеря «Парк-отель „Сямозеро“» . На лодках находились четыре инструктора в возрасте от 17 до..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2016/symozero.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Чемпионат мира по футболу в Катаре" />
     <meta name="twitter:description" content="20 ноября 2022 года в Дохе открылся чемпионат мира по футболу — первый в истории турнир, проводившийся на Ближнем Востоке и впервые перенесённый с лета на ноябрь-декабрь из-за невыносимой летней жары в Катаре. Восемь ста..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2022/katar.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

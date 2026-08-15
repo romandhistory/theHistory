@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Первое летописное упоминание городов: Муром, Ростов, Смоленск" />
     <meta name="twitter:description" content="«Повесть временных лет» под 862 годом перечисляет города почти списком — между рассказом о племенах и призванием варягов. Муром, Ростов, Смоленск появляются в летописи впервые. Но первое упоминание в тексте и реальное ро..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/862/murom.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

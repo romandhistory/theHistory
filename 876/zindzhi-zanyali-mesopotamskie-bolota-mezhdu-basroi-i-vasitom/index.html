@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Зинджи заняли месопотамские болота между Басрой и Васитом" />
     <meta name="twitter:description" content="В 876 году восставшие зинджи успешно завершили кампанию по захвату месопотамских болот Эль-Ахвар, лежавших между Басрой и Васитом, и вскоре пробились в район Кашкара. Карательный поход против них аль-Муваффак предпринима..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/876/zindg.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

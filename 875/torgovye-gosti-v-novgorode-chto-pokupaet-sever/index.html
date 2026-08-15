@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Торговые гости в Новгороде: что покупает Север" />
     <meta name="twitter:description" content="Новгород в 875 году был не только политическим центром Рюриковой власти, но и рынком — местом, куда стекались товары с половины известного мира. Торговые гости приходили сюда за мехами, но привозили с собой то, чего на С..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/875/tor.gosti.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

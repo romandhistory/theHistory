@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Химическая атака в Гуте под Дамаском" />
     <meta name="twitter:description" content="21 августа 2013 года в районе Восточная Гута под Дамаском произошла массовая химическая атака — снаряды с зарином ударили по нескольким населённым пунктам, контролируемым сирийской оппозицией. По различным оценкам, погиб..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2013/guta.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

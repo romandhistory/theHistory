@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Россия принимает закон об искусственном интеллекте" />
     <meta name="twitter:description" content="26 июля 2026 года Путин подписал Федеральный закон № 243-ФЗ «О поддержке развития технологий искусственного интеллекта в Российской Федерации». Первый базовый закон, вводящий правовое регулирование ИИ в российское законо..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2026/zakon.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

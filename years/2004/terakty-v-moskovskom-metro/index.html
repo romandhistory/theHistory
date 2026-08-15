@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Теракты в московском метро" />
     <meta name="twitter:description" content="6 февраля 2004 года в 8:32 утра в вагоне поезда на перегоне между «Автозаводской» и «Павелецкой» сработало взрывное устройство мощностью около 4 килограммов в тротиловом эквиваленте. Террорист-смертник привёл его в дейст..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2004/metro.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

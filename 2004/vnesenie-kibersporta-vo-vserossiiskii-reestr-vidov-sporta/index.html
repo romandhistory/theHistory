@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Внесение киберспорта во Всероссийский реестр видов спорта" />
     <meta name="twitter:description" content="12 марта 2004 года по распоряжению главы Госкомспорта России Вячеслава Фетисова компьютерный спорт был внесён во Всероссийский реестр видов спорта. Повторное признание: впервые киберспорт получил официальный статус ещё в..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2004/cyber.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

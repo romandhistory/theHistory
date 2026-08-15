@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Землетрясение магнитудой 7.2 на Гаити" />
     <meta name="twitter:description" content="14 августа 2021 года землетрясение магнитудой 7,2 ударило по южным районам Гаити. Погибли более 2 200 человек , свыше 12 000 получили ранения, около 137 000 домов были разрушены или повреждены. Эпицентр находился вблизи..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2021/gaiti.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

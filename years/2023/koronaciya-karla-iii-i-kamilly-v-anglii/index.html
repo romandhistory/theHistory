@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Коронация Карла III и Камиллы в Англии" />
     <meta name="twitter:description" content="6 мая 2023 года в Вестминстерском аббатстве состоялась коронация Карла III и его супруги Камиллы . Карл ждал этого момента дольше, чем любой другой наследник британского престола в истории — 70 лет и 214 дней . Церемония..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2023/karlIII.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

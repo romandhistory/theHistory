@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Вифред Волосатый отвоевал долину Риполь и основал монашескую общину" />
     <meta name="twitter:description" content="В 879 году граф Барселоны Вифред I Волосатый отвоевал у мавров долину Риполь в предгорьях Пиренеев и немедленно приступил к заселению обезлюдевших земель. Ещё год назад его владения представляли собой два изолированных а..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/879/ripol'.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

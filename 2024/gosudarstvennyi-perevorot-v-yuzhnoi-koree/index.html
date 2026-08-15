@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Государственный переворот в Южной Корее" />
     <meta name="twitter:description" content="3 декабря 2024 года президент Южной Кореи Юн Сок Ёль объявил военное положение — впервые с 1980 года . Через шесть часов Национальное собрание проголосовало за его отмену. Юн подчинился. Вся операция уложилась в одну ноч..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2024/perevprotvkorei.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

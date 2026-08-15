@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Дело ЮКОСа и арест Ходорковского" />
     <meta name="twitter:description" content="Утром 25 октября 2003 года самолёт Ходорковского совершил посадку для дозаправки в новосибирском аэропорту «Толмачёво». Его встретили сотрудники ФСБ . В тот же день Генпрокуратура предъявила ему обвинения по семи статьям..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2003/ukos.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

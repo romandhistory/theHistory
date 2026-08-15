@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Чемпионат мира по футболу в ЮАР" />
     <meta name="twitter:description" content="С 11 июня по 11 июля 2010 года Южная Африка принимала XIX чемпионат мира по футболу — первый в истории турнир на африканском континенте. 32 сборные , 64 матча на десяти стадионах от Йоханнесбурга до Кейптауна. Финал на «..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2010/fifa.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

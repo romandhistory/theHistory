@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Ангела Меркель становится канцлером Германии" />
     <meta name="twitter:description" content="22 ноября 2005 года бундестаг избрал Ангелу Меркель федеральным канцлером ФРГ — 397 голосов из 611. Она стала первой женщиной на этом посту, самым молодым канцлером в истории страны и первым выходцем из бывшей ГДР во гла..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2005/merkel'.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

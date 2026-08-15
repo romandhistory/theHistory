@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Мир в 861–870 годах: итог десятилетия" />
     <meta name="twitter:description" content="Каролингская Европа Десятилетие началось семейной войной: в 861 году Карломан Баварский поднял мятеж против отца, Людовика Немецкого , и уже в 863-м к нему присоединились братья, Людовик Младший и Карл Толстый . Карл Лыс..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/870/karta870.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

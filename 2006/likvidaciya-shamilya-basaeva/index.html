@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Ликвидация Шамиля Басаева" />
     <meta name="twitter:description" content="В ночь с 9 на 10 июля 2006 года в Ингушетии, в районе села Экажево, взорвался грузовик КамАЗ с оружием и боеприпасами. Среди погибших оказался Шамиль Басаев — человек, которого Россия разыскивала больше десяти лет. ФСБ д..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2006/basaev.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

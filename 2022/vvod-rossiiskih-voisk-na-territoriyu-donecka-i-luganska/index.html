@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Ввод российских войск на территорию Донецка и Луганска" />
     <meta name="twitter:description" content="27 февраля 2014 года вооружённые люди в форме без знаков различия заняли здание парламента Крыма и аэропорты Симферополя и Севастополя. Москва поначалу отрицала причастность — Путин назвал их «местной самообороной» . Поз..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2022/lnr&dnr.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

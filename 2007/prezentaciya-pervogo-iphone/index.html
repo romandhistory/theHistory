@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Презентация первого iPhone" />
     <meta name="twitter:description" content="9 января 2007 года на конференции Macworld в Сан-Франциско Стив Джобс вышел на сцену и произнёс: «Сегодня Apple изобретает телефон заново» . Зал не сразу понял, что происходит. Джобс держал паузу — и достал из кармана то..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2007/jobs.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

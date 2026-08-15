@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Набеги датских викингов на побережье Фризии" />
     <meta name="twitter:description" content="Фризское побережье в 860-е годы не знало мира. Даны грабили восточную и западную Фризию на протяжении десятилетий — «Анналы Ксантена» фиксируют набеги в 863-м, «Анналы Фульды» подробно описывают разорение Утрехта в 881–8..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/865/vikinginafrizii.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

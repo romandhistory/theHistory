@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть и похороны Елизаветы II в Лондоне" />
     <meta name="twitter:description" content="8 сентября 2022 года в замке Балморал в Шотландии скончалась королева Елизавета II . Ей было 96 лет . Она царствовала 70 лет и 214 дней — дольше любого другого монарха в британской истории. Елизавета взошла на трон в 195..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2022/ElizavetaII.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Битва при Йорке — гибель королей Нортумбрии и закрепление викингов" />
     <meta name="twitter:description" content="Когда Великое языческое войско вошло в Нортумбрию осенью 866 года, королевство было занято собственным уничтожением. Элла и Осберт делили трон — ни один не контролировал страну полностью. Викинги воспользовались моментом..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/867/bitvapriorke.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

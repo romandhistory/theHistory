@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Чемпионат мира по футболу в России" />
     <meta name="twitter:description" content="14 июня 2018 года в Москве открылся чемпионат мира по футболу — первый в истории России и первый в Восточной Европе. Турнир прошёл в 11 городах на 12 стадионах — от Калининграда до Екатеринбурга. Финал состоялся 15 июля..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2018/chemp_mira.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Первый триллионер в истории" />
     <meta name="twitter:description" content="12 июня 2026 года SpaceX провела крупнейшее IPO в истории — акции компании начали торговаться на NASDAQ по стартовой цене 135 долларов за штуку. Компанию оценили почти в 1,77 триллиона долларов . Выход SpaceX на биржу ст..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2026/mask.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

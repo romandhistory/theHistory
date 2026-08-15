@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть Патриарха Алексия II" />
     <meta name="twitter:description" content="5 декабря 2008 года в патриаршей резиденции в Переделкине скончался Патриарх Московский и всея Руси Алексий II . Ему было 79 лет . Причина — острая сердечная недостаточность: патриарх давно страдал ишемической болезнью с..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2008/patriarh.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

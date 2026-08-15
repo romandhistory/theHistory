@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Объединение Красноярского края" />
     <meta name="twitter:description" content="1 января 2007 года на карте России появился новый субъект федерации — объединённый Красноярский край . В его состав вошли Таймырский (Долгано-Ненецкий) и Эвенкийский автономные округа, прежде бывшие самостоятельными реги..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2007/krasnoiarsk.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

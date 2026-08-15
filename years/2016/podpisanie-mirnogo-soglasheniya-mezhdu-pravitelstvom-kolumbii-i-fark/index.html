@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Подписание мирного соглашения между правительством Колумбии и ФАРК" />
     <meta name="twitter:description" content="24 ноября 2016 года правительство Колумбии и партизанское движение ФАРК подписали пересмотренное мирное соглашение в Боготе — финал переговорного процесса, продолжавшегося четыре года и завершившего самый продолжительный..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2016/kolumbia.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

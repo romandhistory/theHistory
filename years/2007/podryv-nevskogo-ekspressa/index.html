@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Подрыв «Невского экспресса»" />
     <meta name="twitter:description" content="13 августа 2007 года в 21:37 скорый поезд «Невский экспресс» , следовавший из Москвы в Санкт-Петербург, потерпел крушение в Новгородской области. Под рельсами сработало самодельное взрывное устройство. С путей сошли локо..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2007/nevsk.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

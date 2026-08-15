@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Киев торгует с Константинополем" />
     <meta name="twitter:description" content="После крещения Аскольда торговые отношения Киева с Константинополем изменили характер — не dramatically, но ощутимо. Крещёный князь был другим партнёром, чем языческий вождь: с ним можно было заключать письменные договор..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/867/kievsktorgovlia.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

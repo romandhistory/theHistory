@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Аббасидский халифат — смуты" />
     <meta name="twitter:description" content="В феврале 865 года аль-Мустаин бежал из Самарры в Багдад вместе с тюркскими военачальниками Васифом и Бугой Младшим . Оставшаяся в Самарре тюркская военная верхушка немедленно извлекла аль-Мутазза из тюрьмы и провозгласи..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/865/halifMutazz.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

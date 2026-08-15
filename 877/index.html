@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть Карла Лысого | 877 | theХистори" />
     <meta name="twitter:description" content="6 октября 877 года Карл Лысый умер в простой хижине в Морьенне, у подножия альпийского перевала Мон-Сени. Он возвращался из Италии назад в Галлию — больной, разбитый лихорадкой, без армии, которую рассчитывал собрать. Вс..." />
     <meta name="twitter:image" content="https://thehistory.pro/img/877.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

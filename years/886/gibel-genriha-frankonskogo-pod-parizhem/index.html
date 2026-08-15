@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Гибель Генриха Франконского под Парижем" />
     <meta name="twitter:description" content="28 августа 886 года Генрих Франконский погиб под Парижем . Во время штурма предместий его конь упал в заранее подготовленные викингами рвы. Отрезанный от своих людей, Генрих был захвачен и казнён. Он пришёл под Париж в ф..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/886/death_henrih.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

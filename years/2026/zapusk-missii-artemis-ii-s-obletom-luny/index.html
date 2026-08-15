@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Запуск миссии Artemis II с облётом Луны" />
     <meta name="twitter:description" content="2 апреля 2026 года ракета Space Launch System с кораблём Orion стартовала с площадки LC-39B Космического центра Кеннеди во Флориде. Это первый пилотируемый полёт к Луне за 54 года — со времён «Аполлона-17» в декабре 1972..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2026/artemisII.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

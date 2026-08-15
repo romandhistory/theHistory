@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Гибель баскетболиста Коби Брайанта" />
     <meta name="twitter:description" content="26 января 2020 года вертолёт Sikorsky S-76 разбился в горах Калабасас к западу от Лос-Анджелеса. На борту находились девять человек — все погибли. Среди них — Коби Брайант и его 13-летняя дочь Джанна . Брайант летел на т..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2020/kobi.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

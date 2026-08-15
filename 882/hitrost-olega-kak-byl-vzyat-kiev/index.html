@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Хитрость Олега: как был взят Киев" />
     <meta name="twitter:description" content="Люди Олега передали Аскольду и Диру весть: идёт купеческий караван в Греческую землю, с товаром, который стоит увидеть. Приглашение выглядело обычным делом — торговля с Киевом шла годами, и ничего подозрительного в таком..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/882/oleg&igor.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

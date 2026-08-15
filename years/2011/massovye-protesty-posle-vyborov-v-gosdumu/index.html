@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Массовые протесты после выборов в Госдуму" />
     <meta name="twitter:description" content="4 декабря 2011 года в России прошли выборы в Госдуму — «Единая Россия» набрала официальные 49,5% , потеряв конституционное большинство. Уже на следующий день в графиках ЦИК заметили аномалии: явка 146% в Ростовской облас..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2011/mitingi.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Запуск «ВКонтакте» на мобильных платформах" />
     <meta name="twitter:description" content="В марте 2011 года «ВКонтакте» выпустила официальное приложение для iPhone — соцсеть, до этого доступная только через браузер, пришла на быстро растущий рынок смартфонов. Это случилось на фоне взрывного роста мобильного и..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2011/vk.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

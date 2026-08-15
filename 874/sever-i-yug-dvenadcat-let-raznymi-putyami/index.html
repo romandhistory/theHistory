@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Север и юг: двенадцать лет разными путями" />
     <meta name="twitter:description" content="К 874 году варяжская Русь существовала уже двенадцать лет — срок, достаточный, чтобы оценить, насколько по-разному сложились судьбы двух её центров. Север под Рюриком демонстрировал устойчивую, почти скучную стабильность..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/874/karta874.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

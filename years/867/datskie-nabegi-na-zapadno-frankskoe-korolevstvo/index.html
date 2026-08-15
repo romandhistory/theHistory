@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Датские набеги на Западно-Франкское королевство" />
     <meta name="twitter:description" content="Роберт Сильный погиб 2 июля 866 года при Брисарте — перехватив датский отряд и не дождавшись подкреплений. Со смертью главного защитника Нейстрии викинги почувствовали перемену немедленно. В 860-е годы датчане трижды воз..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/867/RobSilnyi.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

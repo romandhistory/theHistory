@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Переговоры Киева с Византией" />
     <meta name="twitter:description" content="Византийское посольство прибыло в Киев быстро — Константинополь не любил затягивать с дипломатией после военных инцидентов. Схема была отработана: вчерашний враг становился партнёром, угроза превращалась в торговый догов..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/866/vizantposly.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

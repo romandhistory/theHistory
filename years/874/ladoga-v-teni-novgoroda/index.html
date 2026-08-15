@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Ладога в тени Новгорода" />
     <meta name="twitter:description" content="Ладога когда-то была первой резиденцией Рюрика — местом, откуда начиналась его власть на этой земле. К 874 году город давно уступил столичный статус Новгороду, но не исчез и не захирел. Выгодное положение у входа в систе..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/874/ladoga.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

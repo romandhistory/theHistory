@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Победа Эммануэля Макрона на президентских выборах во Франции" />
     <meta name="twitter:description" content="7 мая 2017 года Эммануэль Макрон победил на президентских выборах Франции — набрав 66,1% голосов во втором туре против Марин Ле Пен . В 39 лет он стал самым молодым президентом в истории Французской республики. Путь Макр..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2017/makron.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

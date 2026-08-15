@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Гибель Алексея Навального" />
     <meta name="twitter:description" content="16 февраля 2024 года Федеральная служба исполнения наказаний сообщила о смерти Алексея Навального в исправительной колонии ИК-6 «Полярный волк» в Ямало-Ненецком автономном округе — за Полярным кругом. Ему было 47 лет . О..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2024/navalny.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

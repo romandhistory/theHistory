@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Печенеги блокируют торговый сезон" />
     <meta name="twitter:description" content="874 год стал первым, когда печенежская угроза перешла из категории постоянного риска в категорию реального срыва. Один из торговых сезонов оказался под вопросом полностью: крупное скопление кочевников у порогов сделало п..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/874/vibor_askolta.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

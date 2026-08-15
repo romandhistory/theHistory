@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Дир и Аскольд: как их помнят годы спустя" />
     <meta name="twitter:description" content="Прошло всего два года с гибели Аскольда и Дира , и в Киеве их ещё помнили — не как врагов новой власти, а как правителей, при которых город стал тем, чем он был к моменту прихода Олега. Крещение, укрепления горы, отношен..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/884/ask&dir.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

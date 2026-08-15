@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Игорь: седьмой год жизни" />
     <meta name="twitter:description" content="Игорю в 884 году исполнилось семь — возраст, когда детское любопытство постепенно уступает место более осознанному вниманию к происходящему вокруг. Мальчик рос в Киеве, ставшем свидетелем двух подряд успешных походов Оле..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/884/igor'7.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

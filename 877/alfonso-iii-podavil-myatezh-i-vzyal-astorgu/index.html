@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Альфонсо III подавил мятеж и взял Асторгу" />
     <meta name="twitter:description" content="В 877 году Альфонсо III взял мятежную Асторгу — не у мавров, а у собственной непокорной знати, поднявшей восстание против астурийской короны. Для Альфонсо это было не первое подобное испытание. Правление он начал в 866 г..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/877/astoga.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

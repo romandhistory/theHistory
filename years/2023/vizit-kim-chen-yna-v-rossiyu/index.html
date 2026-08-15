@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Визит Ким Чен Ына в Россию" />
     <meta name="twitter:description" content="13 сентября 2023 года Ким Чен Ын прибыл на космодром Восточный в Амурской области — на личном бронепоезде через российско-северокорейскую границу. Встреча с Владимиром Путиным стала первым личным контактом лидеров с 2019..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2023/kim&putin.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

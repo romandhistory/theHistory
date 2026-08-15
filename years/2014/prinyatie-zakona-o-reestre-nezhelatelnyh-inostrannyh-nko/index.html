@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Принятие закона о реестре «нежелательных» иностранных НКО" />
     <meta name="twitter:description" content="4 июня 2014 года Владимир Путин подписал поправки к закону «О некоммерческих организациях» , дающие Министерству юстиции право самостоятельно включать НКО в реестр «иностранных агентов» — без согласия самой организации...." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2014/nko.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

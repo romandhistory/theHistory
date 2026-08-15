@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Пожар в пермском клубе «Хромая лошадь»" />
     <meta name="twitter:description" content="В ночь с 4 на 5 декабря 2009 года в пермском клубе «Хромая лошадь» праздновали восьмилетие заведения. Около 300 человек — при вместимости зала значительно меньше. В финале праздничной программы на сцене запустили «холодн..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2009/hromai_losh.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

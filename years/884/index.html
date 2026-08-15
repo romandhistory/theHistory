@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть Карломана II | 884 | theХистори" />
     <meta name="twitter:description" content="6 декабря 884 года погиб Карломан II — король Западно-Франкского королевства. Он умер от несчастного случая на охоте. Ему было восемнадцать лет. С 879 года Карломан правил вместе с братом Людовиком III — тот получил севе..." />
     <meta name="twitter:image" content="https://thehistory.pro/img/884.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Фотий вернулся на патриарший престол Константинополя" />
     <meta name="twitter:description" content="В октябре 877 года умер патриарх Игнатий . На его место Василий I вернул Фотия — того самого, которого десятью годами раньше сам же низложил, чтобы наладить отношения с Римом. Фотий занимал Константинопольский престол с..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/877/foti.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

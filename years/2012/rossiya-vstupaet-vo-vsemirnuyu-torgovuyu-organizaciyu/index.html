@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Россия вступает во Всемирную торговую организацию" />
     <meta name="twitter:description" content="22 августа 2012 года Россия официально вступила во Всемирную торговую организацию , поставив точку в переговорах, тянувшихся 18 лет — с 1993 года. Страна стал 156-м членом организации, охватывающей свыше 97% мировой торг..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2012/WTO.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

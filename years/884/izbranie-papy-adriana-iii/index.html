@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Избрание папы Адриана III" />
     <meta name="twitter:description" content="15 мая 884 года умер папа Марин I — процарствовав меньше двух лет после избрания в декабре 882-го. Рим снова выбирал папу. 17 мая 884 года на папский престол взошёл Адриан III — после долгой борьбы партий. В миру его зва..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/884/papa.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

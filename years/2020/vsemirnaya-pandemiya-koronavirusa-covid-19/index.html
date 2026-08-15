@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Всемирная пандемия коронавируса COVID-19" />
     <meta name="twitter:description" content="В конце декабря 2019-го Ухань сообщил о пневмонии неизвестной этиологии. ВОЗ получила уведомление 31 декабря — и поначалу не забила тревогу. Уже 11 января 2020-го в Китае зафиксирована первая смерть: 61-летний мужчина, р..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2020/cov19.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

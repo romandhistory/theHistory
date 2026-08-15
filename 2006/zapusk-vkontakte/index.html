@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Запуск ВКонтакте" />
     <meta name="twitter:description" content="10 октября 2006 года, в день своего 22-летия, Павел Дуров запустил «ВКонтакте» — появились первые функции сайта. Идея возникла после окончания филфака СПбГУ: Дуров хотел поддерживать связь с однокурсниками и создал платф..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2006/vk.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

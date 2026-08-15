@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Теракты в мечетях Крайстчерча, Новая Зеландия" />
     <meta name="twitter:description" content="15 марта 2019 года вооружённый мужчина открыл огонь в двух мечетях новозеландского города Крайстчерч — мечети Аль-Нур и исламском центре Линвуд. Погибли 51 человек , 40 получили ранения. Это крупнейший теракт в истории Н..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2019/krystchet.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

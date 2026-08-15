@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Убийство Саломона Бретонского и раздел Бретани" />
     <meta name="twitter:description" content="28 июня 874 года Саломон , правивший Бретанью семнадцать лет, предали свои же военачальники. Заговор возглавили его собственный зять Паскветен и Гурван , зять покойного Эриспоэ — того самого правителя, чьё убийство в сво..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/874/razd.bretan.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

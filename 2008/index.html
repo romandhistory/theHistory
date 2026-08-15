@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Летние Олимпийские игры в Пекине | 2008 | theХистори" />
     <meta name="twitter:description" content="С 8 по 24 августа 2008 года Пекин принимал XXIX летние Олимпийские игры. 204 страны , более 10 тысяч спортсменов , 302 комплекта наград . Церемония открытия на стадионе «Птичье гнездо» поразила планету: 15 тысяч артистов..." />
     <meta name="twitter:image" content="https://thehistory.pro/img/2008.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

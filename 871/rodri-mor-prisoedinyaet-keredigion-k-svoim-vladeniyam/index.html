@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Родри Мор присоединяет Кередигион к своим владениям" />
     <meta name="twitter:description" content="Около 871–872 года умер Гугон ап Меуриг , последний правитель небольшого валлийского королевства Кередигион — по легенде, утонул. У него не было прямого наследника, способного претендовать на трон. Зато был зять. Родри ,..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/871/rodri.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

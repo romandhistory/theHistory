@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Победа фризов над викингами при Нордити" />
     <meta name="twitter:description" content="Осенью 884 года восточные фризы под командованием собственных вождей встретили датский отряд у Нордена — на побережье Восточной Фризии — и разбили его в бою при Нордити . Победа была полной. Датчан оттеснили к берегу Хил..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/884/frizia.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

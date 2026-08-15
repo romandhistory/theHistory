@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Аскольд ищет новых союзников в степи" />
     <meta name="twitter:description" content="Перед растущей печенежской угрозой Аскольд начал искать то, чего у Киева раньше почти не было — союзников в самой степи. Логика была простой и древней: враг твоего врага может стать партнёром, даже если вчера был неприми..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/872/askolt&hazary.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть Генри Киссинджера, бывшего госсекретаря США" />
     <meta name="twitter:description" content="29 ноября 2023 года скончался Генри Киссинджер — государственный секретарь США при Никсоне и Форде, лауреат Нобелевской премии мира, один из наиболее влиятельных и противоречивых дипломатов XX века. Ему было 100 лет. Кис..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2023/henrykiss.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Игорь: четвёртый год жизни" />
     <meta name="twitter:description" content="Игорю в 881 году исполнилось четыре — возраст, когда ребёнок уже не путается под ногами взрослых, а начинает наблюдать за миром двора осмысленно. Он узнавал дружинников по именам, различал порядок, в котором те служили...." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/881/igor'4.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

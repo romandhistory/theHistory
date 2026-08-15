@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть Папы Иоанна Павла II и избрание Бенедикта XVI | 2005 | theХистори" />
     <meta name="twitter:description" content="Вечером 2 апреля 2005 года скончался папа римский Иоанн Павел II . Кароль Войтыла занимал Святой Престол 26 лет — один из самых долгих понтификатов в истории. Проститься с ним в Ватикан приехали около четырёх миллионов ч..." />
     <meta name="twitter:image" content="https://thehistory.pro/img/2005.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

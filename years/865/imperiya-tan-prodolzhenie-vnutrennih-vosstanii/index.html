@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Империя Тан — продолжение внутренних восстаний" />
     <meta name="twitter:description" content="К середине 860-х годов главной угрозой для Танской империи на юге было царство Наньчжао — государство на территории нынешней Юньнани, которое за предыдущее десятилетие захватило Аннам и нанесло Тану несколько болезненных..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/865/imperiaTan.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Иранская атака дронами и ракетами по территории Израиля" />
     <meta name="twitter:description" content="13 апреля 2024 года Иран впервые в истории нанёс прямой военный удар по территории Израиля — выпустив свыше 300 беспилотников, крылатых и баллистических ракет . Атака стала ответом на авиаудар по иранскому консульству в..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2024/iranskataka.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

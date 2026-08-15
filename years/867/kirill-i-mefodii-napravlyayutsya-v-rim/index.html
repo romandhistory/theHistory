@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Кирилл и Мефодий направляются в Рим" />
     <meta name="twitter:description" content="В 867 году братья покинули Моравию и двинулись в Рим — отвечать на обвинения франкского духовенства, считавшего эти земли своей канонической территорией и требовавшего исключительного права на латинскую литургию. По доро..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/867/Kir&MefedutvRim.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

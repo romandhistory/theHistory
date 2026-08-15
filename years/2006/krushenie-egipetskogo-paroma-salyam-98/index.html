@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Крушение египетского парома «Салям 98»" />
     <meta name="twitter:description" content="3 февраля 2006 года египетский паром «Салям 98» вышел из саудовского порта Дуба и направился в египетскую Сафагу. На борту находились 1415 человек — паломники, возвращавшиеся из Мекки, и египетские рабочие. До рассвета п..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2006/salam98.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

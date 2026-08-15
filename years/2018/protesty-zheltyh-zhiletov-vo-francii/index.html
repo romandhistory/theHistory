@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Протесты «жёлтых жилетов» во Франции" />
     <meta name="twitter:description" content="17 ноября 2018 года по всей Франции прошли первые скоординированные акции протеста «жёлтых жилетов» — около 290 000 человек перекрыли дороги и съезды с автострад. Символом движения стали флуоресцентные жилеты — обязатель..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2018/protests_france.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

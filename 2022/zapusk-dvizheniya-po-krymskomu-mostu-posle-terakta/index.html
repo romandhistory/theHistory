@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Запуск движения по Крымскому мосту после теракта" />
     <meta name="twitter:description" content="8 октября 2022 года в 6:07 утра на Керченском мосту сработало взрывное устройство — по официальной российской версии, заложенное в грузовик. Взрыв вызвал пожар цистерн с топливом на железнодорожной части моста и обрушени..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2022/krimskmost.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

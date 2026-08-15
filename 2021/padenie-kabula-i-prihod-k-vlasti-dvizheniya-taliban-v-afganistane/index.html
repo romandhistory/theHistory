@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Падение Кабула и приход к власти движения «Талибан» в Афганистане" />
     <meta name="twitter:description" content="15 августа 2021 года боевики «Талибана» вошли в Кабул без боя. Президент Ашраф Гани бежал из страны — по имеющимся данным, с наличными в нескольких сумках. К вечеру талибы сидели в президентском дворце. Американские войс..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2021/taliban.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

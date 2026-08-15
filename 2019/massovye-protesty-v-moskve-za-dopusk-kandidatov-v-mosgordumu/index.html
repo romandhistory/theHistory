@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Массовые протесты в Москве за допуск кандидатов в Мосгордуму" />
     <meta name="twitter:description" content="27 июля 2019 года в центре Москвы прошла несанкционированная акция протеста — крупнейшая в городе со времён протестов 2011–2012 годов. По данным ОВД-Инфо , было задержано более 1 300 человек — рекорд для одного дня в ист..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2019/mitingvmoskve.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

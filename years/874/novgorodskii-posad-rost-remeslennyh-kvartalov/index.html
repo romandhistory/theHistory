@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Новгородский посад: рост ремесленных кварталов" />
     <meta name="twitter:description" content="Новгород 874 года разрастался не только как торговый, но и как ремесленный центр. Кузнецы, гончары, косторезы, кожевники селились вокруг торга плотнее год от года, формируя кварталы, где каждое ремесло держалось особняко..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/874/novgor.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

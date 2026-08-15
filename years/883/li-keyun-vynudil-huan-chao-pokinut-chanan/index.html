@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Ли Кэюн вынудил Хуан Чао покинуть Чанъань" />
     <meta name="twitter:description" content="В мае 883 года армия Хуан Чао покинула Чанъань . 17-тысячная конница Ли Кэюна разгромила выдвинутую против неё стотысячную армию самопровозглашённого императора и перекрыла подвоз продовольствия. Хуан Чао занял столицу в..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/883/kaun.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

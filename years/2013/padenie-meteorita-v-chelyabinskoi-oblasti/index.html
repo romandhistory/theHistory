@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Падение метеорита в Челябинской области" />
     <meta name="twitter:description" content="15 февраля 2013 года в 9:20 утра по местному времени над Челябинской областью взорвался метеорит — крупнейшее зафиксированное падение космического тела за более чем столетие, со времён Тунгусского события 1908 года. Вспы..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2013/meteorit.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Массовая стрельба в школе в Увалде (Техас)" />
     <meta name="twitter:description" content="24 мая 2022 года 18-летний Сальвадор Р вошёл в начальную школу Роб Элементари в Увалди, штат Техас, и открыл огонь. Погибли 19 детей и двое учителей . Это второй по числу жертв расстрел в американской школе после Сэнди-Х..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2022/uvaldeschool.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

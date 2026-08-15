@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Ученики Мефодия изгнаны из Великой Моравии" />
     <meta name="twitter:description" content="В 885 году, вскоре после смерти Мефодия , архиепископ Горазд вступил в спор с латинским духовенством — и проиграл. Папа Стефан V поддержал Вихинга Нитранского . Горазда заключили в темницу, затем изгнали вместе с двумяст..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/885/ucheniki.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

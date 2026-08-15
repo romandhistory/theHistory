@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Крупнейшие лесные пожары в Австралии" />
     <meta name="twitter:description" content="С сентября 2019 по март 2020 года лесные пожары уничтожили около 18,6 миллиона гектаров австралийской территории — площадь, сопоставимая с Сирией. Огонь прошёл через пять из шести штатов страны. Погибли 33 человека , сго..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2020/Avstrali.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

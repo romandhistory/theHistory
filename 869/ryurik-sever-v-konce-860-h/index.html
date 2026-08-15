@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Рюрик: север в конце 860-х" />
     <meta name="twitter:description" content="К 869 году Рюрик правил севером уже семь лет — и его власть стала настолько привычной, что перестала нуждаться в демонстрации. Это был качественный сдвиг: от власти, которую нужно постоянно подтверждать силой, к власти,..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/869/rurik.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

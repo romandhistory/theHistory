@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Мавры возвращают Коимбру" />
     <meta name="twitter:description" content="В январе 872 года мавры вернули себе Коимбру — город на севере Иберийского полуострова, который христианские королевства уже считали частью своей расширяющейся периферии. Граница между Астурией и Кордовским эмиратом в IX..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/872/koimbra.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

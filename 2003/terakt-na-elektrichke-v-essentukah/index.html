@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Теракт на электричке в Ессентуках" />
     <meta name="twitter:description" content="5 декабря 2003 года в 7:42 пригородная электричка № 6309 маршрута Кисловодск — Минеральные Воды подъезжала к Ессентукам . В народе её называли студенческой: вагоны были забиты молодёжью, спешившей к девяти утра на заняти..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2003/esentuki.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

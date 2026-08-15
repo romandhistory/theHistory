@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Землетрясение на Гаити" />
     <meta name="twitter:description" content="12 января 2010 года в 16:53 по местному времени земля под Гаити сдвинулась. Магнитуда — 7,0 , эпицентр — в 22 километрах от столицы Порт-о-Пренса. За ним последовали 15 повторных толчков с магнитудой выше 5. Порт-о-Пренс..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2010/gaiti.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

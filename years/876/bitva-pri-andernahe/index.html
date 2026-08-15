@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Битва при Андернахе" />
     <meta name="twitter:description" content="8 октября 876 года у города Андернах войско Людовика III Младшего разгромило армию императора Карла Лысого . Историки позже назовут это сражение первой битвой между складывавшимися немецкой и французской национальными ар..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/876/bitva.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

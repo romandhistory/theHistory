@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Битва при Хаврсфьорде | 872 | theХистори" />
     <meta name="twitter:description" content="Согласно преданию, Харальд дал обет не стричь волос, пока не объединит под своей властью всю Норвегию — и до этого дня жил с этим обетом уже добрый десяток лет. Поводом, по легенде, послужил отказ принцессы Гюды выйти за..." />
     <meta name="twitter:image" content="https://thehistory.pro/img/872.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

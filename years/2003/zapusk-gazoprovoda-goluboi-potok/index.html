@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Запуск газопровода «Голубой поток»" />
     <meta name="twitter:description" content="20 февраля 2003 года начались промышленные поставки российского газа в Турцию по газопроводу «Голубой поток» . Строительство, начатое в 1998 году, обошлось в 3,2 миллиарда долларов. Проект реализовали «Газпром» и итальян..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2003/potok.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

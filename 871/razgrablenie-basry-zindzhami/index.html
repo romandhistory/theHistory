@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Разграбление Басры зинджами" />
     <meta name="twitter:description" content="К августу 871 года Басра держалась на голоде и страхе. Зинджи месяцами блокировали город, перерезав пути снабжения, сжигая окрестные деревни, изматывая защитников непрекращающимися атаками днём и ночью. Когда Али ибн Мух..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/871/basra.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

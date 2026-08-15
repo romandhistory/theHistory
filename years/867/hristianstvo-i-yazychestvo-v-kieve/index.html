@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Христианство и язычество в Киеве" />
     <meta name="twitter:description" content="Киев в 867 году жил в странном двоеверии — не конфликтном, а параллельном. На Старокиевской горе соседствовали два мира, которые в других местах и в другие времена не уживались бы рядом. Аскольд молился по-христиански. Г..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/867/dvevery.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

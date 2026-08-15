@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Убийство главного редактора Forbes Пола Хлебникова" />
     <meta name="twitter:description" content="Вечером 9 июля 2004 года Пол Хлебников вышел из здания редакции на улице Докукина. Двое киллеров на «Жигулях» с поддельными номерами выпустили в него не менее десяти пуль из пистолета Макарова. Американский журналист с р..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2004/hlebnik.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

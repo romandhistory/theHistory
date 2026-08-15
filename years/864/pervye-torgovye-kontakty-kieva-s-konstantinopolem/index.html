@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Первые торговые контакты Киева с Константинополем" />
     <meta name="twitter:description" content="Днепр течёт в Чёрное море — и это знали все, кто жил по его берегам. Но одно дело знать, другое — использовать. Аскольд и Дир использовали. Торговые контакты Киева с Константинополем в этот период были не дипломатией в с..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/864/kiev&konstantinop.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

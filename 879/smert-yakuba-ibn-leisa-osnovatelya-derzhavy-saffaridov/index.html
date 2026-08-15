@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть Якуба ибн Лейса — основателя державы Саффаридов" />
     <meta name="twitter:description" content="5 июня 879 года в Гондишапуре умер Якуб ибн Лейс ас-Саффар — основатель державы Саффаридов, начавший путь подмастерьем медника в Систане за пятнадцать дирхемов в месяц. Якуб страдал от колики. Врачи советовали лечиться...." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/879/death_yakub.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

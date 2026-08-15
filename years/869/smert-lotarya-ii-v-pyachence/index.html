@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть Лотаря II в Пьяченце" />
     <meta name="twitter:description" content="7 августа 869 года Лотарь II слёг в Пьяченце с лихорадкой и умер. Ему было около тридцати трёх лет . За плечами — четырнадцать лет борьбы за развод, который так и остался недостижимым. Незадолго до смерти он встретился в..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/869/death_Lotar'.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

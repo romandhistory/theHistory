@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Гибель Хальфдана Рагнарссона в битве при Странгфорд-Лохе" />
     <meta name="twitter:description" content="В 877 году Хальфдан Рагнарссон погиб в битве при Странгфорд-Лохе в Ирландии. Убил его не английский король, не пикт и не бритт — а другие скандинавы, обосновавшиеся в Ирландии задолго до него. Двенадцать лет Хальфдан был..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/877/hal'fdan.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

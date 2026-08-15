@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Катастрофа на хадже в Мекке — массовая давка паломников" />
     <meta name="twitter:description" content="24 сентября 2015 года в окрестностях Мекки, в долине Мина , произошла массовая давка во время ритуала «бросание камней» — одного из ключевых обрядов хаджа, ежегодного паломничества мусульман к святыням Саудовской Аравии...." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2015/mekka.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

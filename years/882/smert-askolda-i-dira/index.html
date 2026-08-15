@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть Аскольда и Дира" />
     <meta name="twitter:description" content="Аскольд и Дир были убиты на месте — застигнутые врасплох, без охраны, способной защитить их от воинов, вышедших из ладей. Летопись не сохранила подробностей самой расправы, только факт: правление киевского двоевластия об..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/882/pohorony.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

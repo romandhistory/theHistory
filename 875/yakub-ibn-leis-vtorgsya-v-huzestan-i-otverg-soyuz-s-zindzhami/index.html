@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Якуб ибн Лейс вторгся в Хузестан и отверг союз с зинджами" />
     <meta name="twitter:description" content="В 875 году Якуб ибн Лейс , основатель державы Саффаридов, повёл войско через Хузестан на Багдад — против халифа аль-Мутамида , отказавшегося признавать его завоевания законными. Хузестан к тому времени шесть лет как не п..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/875/yakub&zinj.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

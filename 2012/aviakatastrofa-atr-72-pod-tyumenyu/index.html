@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Авиакатастрофа ATR-72 под Тюменью" />
     <meta name="twitter:description" content="Утром 2 апреля 2012 года, в 07:32 по местному времени, самолёт ATR-72 авиакомпании «ЮТэйр» вылетел из тюменского аэропорта Рощино рейсом в Сургут. Через минуту с небольшим после взлёта, набирая высоту, борт резко накрени..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2012/atr-72.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

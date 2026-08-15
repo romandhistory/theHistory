@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Арест создателя ВК и Telegram Павла Дурова во Франции" />
     <meta name="twitter:description" content="24 августа 2024 года Павел Дуров был задержан в парижском аэропорту Ле-Бурже — сразу после приземления частного самолёта, прилетевшего из Азербайджана. Основатель ВКонтакте и Telegram провёл под стражей четыре дня , посл..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2024/durov.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Игорь: третий год жизни" />
     <meta name="twitter:description" content="Игорю в 880 году исполнилось три года — возраст, когда ребёнок уже бегает, говорит первые слова, начинает узнавать лица вокруг себя. Для новгородского двора это означало, что наследник понемногу переставал быть просто мл..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/880/igor'.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Отречение папы Бенедикта XVI и избрание папы Франциска | 2013 | theХистори" />
     <meta name="twitter:description" content="28 февраля 2013 года Папа Римский Бенедикт XVI официально отрёкся от престола — впервые за почти 600 лет , с момента отречения Григория XII в 1415 году, глава Католической церкви добровольно покинул свой пост, сославшись..." />
     <meta name="twitter:image" content="https://thehistory.pro/img/2013.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

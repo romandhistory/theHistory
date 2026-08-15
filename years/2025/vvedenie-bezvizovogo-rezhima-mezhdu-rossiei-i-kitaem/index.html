@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Введение безвизового режима между Россией и Китаем" />
     <meta name="twitter:description" content="15 сентября 2025 года Китай ввёл безвизовый режим для граждан России — на срок до 30 дней при обычном загранпаспорте. 1 декабря 2025 года Путин подписал симметричный указ — китайские граждане получили аналогичное право в..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2025/china&rf.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

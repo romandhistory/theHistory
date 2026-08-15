@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Всемирный запуск протокола IPv6" />
     <meta name="twitter:description" content="6 июня 2012 года, в полночь по Гринвичу, крупнейшие ИТ-компании мира одновременно и на постоянной основе включили поддержку протокола IPv6 в своих сервисах и оборудовании — мероприятие получило название World IPv6 Launch..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2012/ipv6.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

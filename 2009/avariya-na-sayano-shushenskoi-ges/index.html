@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Авария на Саяно-Шушенской ГЭС" />
     <meta name="twitter:description" content="17 августа 2009 года в 8:13 утра на Саяно-Шушенской гидроэлектростанции — крупнейшей в России — разрушился второй гидроагрегат. Крышку турбины сорвало давлением воды, саму турбину выбросило в машинный зал. Через шахту хл..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2009/ges.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

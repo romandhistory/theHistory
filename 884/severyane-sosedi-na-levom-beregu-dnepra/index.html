@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Северяне: соседи на левом берегу Днепра" />
     <meta name="twitter:description" content="К востоку от Киева, на левом берегу Днепра, жили северяне — восточнославянское племя, чьи земли простирались вдоль рек Десна , Сейм и Сула . Несмотря на название, к скандинавскому северу они отношения не имели — происхож..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/884/severian.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

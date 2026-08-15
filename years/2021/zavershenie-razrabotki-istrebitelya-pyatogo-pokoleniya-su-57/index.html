@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Завершение разработки истребителя пятого поколения Су-57" />
     <meta name="twitter:description" content="В 2021 году Воздушно-космические силы России начали получать серийные Су-57 — многофункциональный истребитель пятого поколения, разработка которого велась с начала 2000-х под обозначением ПАК ФА (Перспективный авиационны..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2021/su57.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

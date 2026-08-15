@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Пролёт зонда New Horizons мимо Плутон" />
     <meta name="twitter:description" content="14 июля 2015 года зонд NASA New Horizons совершил исторический пролёт вблизи Плутона — впервые в истории космический аппарат приблизился к этой далёкой карликовой планете. Момент наибольшего сближения наступил в 11:49 по..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2015/pluton.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Крушение поезда с химикатами в Огайо" />
     <meta name="twitter:description" content="3 февраля 2023 года грузовой поезд компании Norfolk Southern сошёл с рельсов вблизи небольшого города Ист-Палестин на востоке штата Огайо. Из 150 вагонов состава с рельсов сошли 38 — часть из них перевозила опасные химич..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2023/poezdohaio.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

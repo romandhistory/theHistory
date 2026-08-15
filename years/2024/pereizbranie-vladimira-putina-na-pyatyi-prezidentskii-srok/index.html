@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Переизбрание Владимира Путина на пятый президентский срок" />
     <meta name="twitter:description" content="17 марта 2024 года Центральная избирательная комиссия России объявила результаты президентских выборов. Владимир Путин набрал 87,28% голосов при явке 77,49% — оба показателя стали рекордными за всю историю российских пре..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2024/putin.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

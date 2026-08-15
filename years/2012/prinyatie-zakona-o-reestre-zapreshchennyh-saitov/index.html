@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Принятие закона о реестре запрещённых сайтов" />
     <meta name="twitter:description" content="10 июля 2012 года, в ночь перед вторым чтением законопроекта о едином реестре запрещённых сайтов, русскоязычная Википедия закрылась на сутки в знак протеста. Вместо статей посетителей встречал баннер с предупреждением: п..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2012/block.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

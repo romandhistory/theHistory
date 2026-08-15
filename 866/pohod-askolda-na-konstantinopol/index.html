@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Поход Аскольда на Константинополь" />
     <meta name="twitter:description" content="Летом 866 года двести ладей вышли из Днепра в Чёрное море и взяли курс на юг. Константинополь не ждал удара — император Михаил III был в походе против арабов, столица стояла без армии. Когда дозорные увидели с башен бесч..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/866/flotaskolda.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

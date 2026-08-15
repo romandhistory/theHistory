@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Мятеж ЧВК «Вагнер» и марш на Москву" />
     <meta name="twitter:description" content="23 июня 2023 года Евгений Пригожин объявил о начале «марша справедливости» — колонны Вагнера двинулись из Ростова-на-Дону в сторону Москвы по трассе М4. За несколько часов до этого Пригожин обвинил Минобороны в ракетном..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2023/vagner.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

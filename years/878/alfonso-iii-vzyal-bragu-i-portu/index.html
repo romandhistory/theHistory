@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Альфонсо III взял Брагу и Порту" />
     <meta name="twitter:description" content="В 878 году Альфонсо III Великий взял Брагу и Порту — два крупных города на северо-западе полуострова, открывавших выход к Атлантическому побережью. Брага была некогда столицей римской провинции Галлеция и резиденцией епи..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/878/alfonso.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

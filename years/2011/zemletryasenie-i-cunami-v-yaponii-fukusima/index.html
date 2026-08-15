@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Землетрясение и цунами в Японии, Фукусима" />
     <meta name="twitter:description" content="11 марта 2011 года, в 14:46 по местному времени, у северо-восточного побережья острова Хонсю произошло землетрясение магнитудой 9,0 — сильнейшее за всю историю наблюдений в Японии. Толчки оказались настолько мощными, что..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2011/fukusima.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Авария на ракете-носителе «Союз-ФГ»" />
     <meta name="twitter:description" content="11 октября 2018 года ракета-носитель «Союз-ФГ» с кораблём «Союз МС-10» потерпела аварию через две минуты после старта с Байконура. Экипаж — американский астронавт Ник Хейг и российский космонавт Алексей Овчинин — катапул..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2018/souz-fg.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

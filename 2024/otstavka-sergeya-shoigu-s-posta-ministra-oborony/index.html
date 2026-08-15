@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Отставка Сергея Шойгу с поста министра обороны" />
     <meta name="twitter:description" content="12 мая 2024 года Владимир Путин внёс в Государственную думу кандидатуру Андрея Белоусова на пост министра обороны. Сергей Шойгу , занимавший этот пост с ноября 2012 года , был освобождён от должности и назначен секретарё..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2024/belousov.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

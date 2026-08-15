@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Топливный кризисв России" />
     <meta name="twitter:description" content="С середины мая 2026 года Россия столкнулась с нарастающим дефицитом топлива — крупнейшим за последние два десятилетия. К 23 июня ограничения в той или иной форме затронули 61 регион страны из 89 субъектов РФ. Причина был..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2026/benz.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

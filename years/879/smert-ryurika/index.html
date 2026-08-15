@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть Рюрика" />
     <meta name="twitter:description" content="Рюрик умер в 879 году — так сообщает «Повесть временных лет» . Причиной, судя по ходу предыдущего года, стала болезнь, начавшаяся внезапно и не отпустившая до конца. Смерть не стала потрясением — двор ждал её с зимы, и ч..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/879/death_rurik.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

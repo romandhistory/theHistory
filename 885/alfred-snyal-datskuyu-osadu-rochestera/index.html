@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Альфред снял датскую осаду Рочестера" />
     <meta name="twitter:description" content="В 885 году датский отряд, собравшийся в Булони и высадившийся близ Рочестера , осадил город. Рочестер оказался серьёзно укреплён — именно так, как того требовала система бургов, которую Альфред начал строить в 879-м. Гар..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/885/rochester.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

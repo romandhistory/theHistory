@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Карл III ослепил Гуго Лотарингского и объявил Бернарда наследником" />
     <meta name="twitter:description" content="В 885 году Гуго , сын короля Лотаря II , был схвачен и ослеплён по приказу императора. После ослепления Гуго был заточен в Сен-Галленский монастырь. Гуго был законным претендентом на Лотарингию — единственный выживший сы..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/885/karl_tolst.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

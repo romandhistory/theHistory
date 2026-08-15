@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Общероссийское голосование по поправкам к Конституции" />
     <meta name="twitter:description" content="1 июля 2020 года завершилось общероссийское голосование по поправкам к Конституции. Официальные результаты: 77,9% — за, явка — 67,9% . Поправки вступили в силу в тот же день. Пакет включал более 200 изменений: социальные..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2020/golosovrf.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

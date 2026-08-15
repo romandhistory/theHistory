@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Гильдия сценаристов и актеров начала забастовки" />
     <meta name="twitter:description" content="2 мая 2023 года Гильдия сценаристов Америки объявила забастовку — впервые с 2007 года. 14 июля к ней присоединилась Гильдия киноактёров SAG-AFTRA . Впервые с 1960 года обе гильдии бастовали одновременно. Голливуд останов..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2023/zabastovka.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

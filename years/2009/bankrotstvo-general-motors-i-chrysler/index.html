@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Банкротство General Motors и Chrysler" />
     <meta name="twitter:description" content="Весной 2009 года рухнули два столпа американского автопрома. 30 апреля процедуру банкротства начал Chrysler , 1 июня — General Motors . Для GM это стало крупнейшим банкротством промышленной компании в истории США: 82 мил..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2009/GM.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

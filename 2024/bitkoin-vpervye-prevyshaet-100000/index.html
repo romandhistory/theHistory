@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Биткоин впервые превышает $100000" />
     <meta name="twitter:description" content="5 декабря 2024 года биткоин впервые в истории превысил отметку 100 000 долларов — криптовалюта достигла этого уровня вскоре после полуночи по восточному времени США, торгуясь чуть выше психологической планки, прежде чем..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2024/bitkoin.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

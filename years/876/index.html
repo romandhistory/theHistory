@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть Людовика Немецкого | 876 | theХистори" />
     <meta name="twitter:description" content="28 августа 876 года во Франкфурте-на-Майне умер Людовик Немецкий — король, правивший Восточно-Франкским королевством пятьдесят девять лет , если считать с получения Баварии в 817 году, и тридцать три года как единовластн..." />
     <meta name="twitter:image" content="https://thehistory.pro/img/876.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

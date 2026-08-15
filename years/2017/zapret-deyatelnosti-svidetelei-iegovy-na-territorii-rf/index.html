@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Запрет деятельности «Свидетелей Иеговы» на территории РФ" />
     <meta name="twitter:description" content="20 апреля 2017 года Верховный суд России признал Управленческий центр «Свидетелей Иеговы» в России и все его 395 местных религиозных организаций экстремистскими и запретил их деятельность на территории страны. Имущество..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2017/svideteli.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

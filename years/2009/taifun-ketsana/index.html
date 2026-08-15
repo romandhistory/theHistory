@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Тайфун «Кетсана»" />
     <meta name="twitter:description" content="26 сентября 2009 года тайфун «Кетсана» обрушился на Филиппины. За несколько часов над Манилой выпало осадков больше, чем обычно выпадает за месяц. Река Марикина вышла из берегов, улицы превратились в реки, целые кварталы..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2009/ketsana.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

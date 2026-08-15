@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Итог кампании: покорение без разгрома" />
     <meta name="twitter:description" content="Осознав бесперспективность дальнейшего сопротивления, древляне пошли на соглашение. Олег не стремился к разорению земли — цель похода была не в уничтожении древлян, а в их подчинении. Города остались стоять, население —..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/883/plata.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

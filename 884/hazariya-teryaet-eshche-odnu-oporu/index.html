@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Хазария теряет ещё одну опору" />
     <meta name="twitter:description" content="Потеря северян стала для Хазарского каганата не просто утратой одного данника среди многих — это был знак того, насколько далеко зашло его ослабление в этом регионе. Ещё недавно каганат простирал влияние на обширные прос..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/884/hazari.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

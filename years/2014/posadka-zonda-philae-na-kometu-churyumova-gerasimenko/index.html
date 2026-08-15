@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Посадка зонда Philae на комету Чурюмова — Герасименко" />
     <meta name="twitter:description" content="12 ноября 2014 года спускаемый модуль Philae европейского зонда Rosetta совершил первую в истории посадку на ядро кометы — Чурюмова-Герасименко , объект диаметром около четырёх километров, находящийся на расстоянии более..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2014/kometa.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

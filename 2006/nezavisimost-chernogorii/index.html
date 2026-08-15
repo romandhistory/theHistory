@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Независимость Черногории" />
     <meta name="twitter:description" content="21 мая 2006 года в Черногории прошёл референдум о независимости. За выход из союза с Сербией проголосовали 55,5% — ровно чуть больше установленного ЕС порога в 55% . Явка составила 86,5% . Перевес был минимальным, но юри..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2006/chenogoria.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

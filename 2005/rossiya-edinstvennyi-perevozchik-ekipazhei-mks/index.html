@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Россия — единственный перевозчик экипажей МКС" />
     <meta name="twitter:description" content="После гибели шаттла Columbia в феврале 2003 года американские челноки были остановлены. Флот НАСА встал — и «Союзы» оказались единственным транспортом для доставки экипажей на МКС. В 2005 году эта ситуация сохранялась в..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2005/souz.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

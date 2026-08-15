@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Пожар в соборе Нотр-Дам де Пари" />
     <meta name="twitter:description" content="15 апреля 2019 года в 18:18 по парижскому времени в соборе Нотр-Дам де Пари вспыхнул пожар. Огонь охватил деревянные конструкции кровли — «лес» , как называли её реставраторы: 52 гектара дубовых балок XIII века. Шпиль об..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2019/noterdam.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

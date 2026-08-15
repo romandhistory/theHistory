@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Закрытие границы с Китаем из-за угрозы COVID-19" />
     <meta name="twitter:description" content="30 января 2020 года Россия полностью закрыла сухопутную границу с Китаем — протяжённостью более 4 200 километров . Решение приняли за несколько часов до того, как ВОЗ объявила вспышку COVID-19 чрезвычайной ситуацией межд..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2020/chinrf.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

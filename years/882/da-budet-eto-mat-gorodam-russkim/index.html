@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="«Да будет это мать городам русским»" />
     <meta name="twitter:description" content="Заняв Киев, Олег произнёс слова, которые летопись сохранит на века: «пусть этот город будет матерью городам русским» . Фраза короткая, но в ней — целая программа того, чем предстояло стать объединённой земле. Выбор Киева..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/882/stolica.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Эдвард Сноуден раскрывает масштабы слежки спецслужб США" />
     <meta name="twitter:description" content="5 июня 2013 года газета The Guardian опубликовала первые материалы, основанные на документах, переданных бывшим сотрудником ЦРУ и подрядчиком АНБ Эдвардом Сноуденом — начало серии разоблачений о масштабах глобальной элек..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2013/snouden.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Авиакатастрофа Ан-148 в Белгородской области" />
     <meta name="twitter:description" content="5 марта 2011 года над Белгородской областью разбился Ан-148 воронежского авиазавода. Шесть человек на борту — шесть погибших. Самолёт упал на окраине деревни Гарбузово в метрах от жилых домов. Машина была совсем новой —..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2011/an148.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

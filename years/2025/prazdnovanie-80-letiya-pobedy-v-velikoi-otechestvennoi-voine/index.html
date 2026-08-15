@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Празднование 80-летия победы в Великой Отечественной войне" />
     <meta name="twitter:description" content="9 мая 2025 года на Красной площади прошёл военный парад в честь 80-летия Победы в Великой Отечественной войне — четвёртый парад после начала полномасштабной операции на Украине. В нём участвовали 16 000 военнослужащих, 1..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2025/9.05.25.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

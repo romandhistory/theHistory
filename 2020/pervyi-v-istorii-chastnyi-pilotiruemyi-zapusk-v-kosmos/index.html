@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Первый в истории частный пилотируемый запуск в космос" />
     <meta name="twitter:description" content="30 мая 2020 года ракета Falcon 9 стартовала с мыса Канаверал и вывела на орбиту корабль Crew Dragon с двумя астронавтами NASA на борту. Роберт Бенкен и Дуглас Хёрли стали первыми людьми, полетевшими в космос на корабле ч..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2020/spacex.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

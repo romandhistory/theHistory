@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Карл Лысый признан королём Италии" />
     <meta name="twitter:description" content="В начале 876 года в Павии собралась итальянская знать, чтобы принести присягу Карлу Лысому как королю Италии — короне, отдельной от императорского титула, полученного им в Риме двумя месяцами раньше. Приняв клятвы вернос..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/876/kor_itali.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

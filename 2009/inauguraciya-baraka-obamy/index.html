@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Инаугурация Барака Обамы" />
     <meta name="twitter:description" content="20 января 2009 года в Вашингтоне состоялась инаугурация 44-го президента США. Барак Обама — первый афроамериканец на этом посту — принёс присягу перед толпой, которую оценивали от 800 тысяч до полутора миллионов человек..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2009/obama.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

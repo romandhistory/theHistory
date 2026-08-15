@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Падение Сиракуз" />
     <meta name="twitter:description" content="21 мая 878 года аглабидское войско прорвалось через брешь в приморской стене Сиракуз . Осада, начавшаяся в августе прошлого года, закончилась за несколько часов. Девять месяцев город держался сам: византийский флот всё э..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/878/sirukuzy.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

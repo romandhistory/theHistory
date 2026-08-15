@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Освобождение Мефодия — Иоанн VIII против баварского духовенств" />
     <meta name="twitter:description" content="Летом 873 года в Рим наконец дошла правда о судьбе Мефодия — архиепископа, рукоположенного ещё Адрианом II и пропавшего без вести почти три года назад. Когда епископ Анно Фрайзингский явился в Рим с визитом, Иоанн VIII с..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/873/mefodi.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

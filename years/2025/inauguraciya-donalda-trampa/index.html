@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Инаугурация Дональда Трампа" />
     <meta name="twitter:description" content="20 января 2025 года Дональд Трамп принёс президентскую присягу в Ротонде Капитолия — впервые за сорок лет церемония прошла внутри из-за сильных морозов в Вашингтоне. Трамп стал 47-м президентом США — и вторым в истории,..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2025/inauguraciatrumpa.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

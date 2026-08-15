@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Резкое падение курса рубля" />
     <meta name="twitter:description" content="В течение 2014 года российский рубль обвалился сильнее любой другой крупной мировой валюты — по оценке агентства Bloomberg , он подешевел к доллару на 58% . Острая фаза кризиса пришлась на середину декабря — момент, кото..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2014/rubl'.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Обострение конфликта между папой Николаем I и патриархом Фотием" />
     <meta name="twitter:description" content="К 864 году противостояние папы Николая I и константинопольского патриарха Фотия шло уже несколько лет. Николай воспользовался спором о законности возведения Фотия на патриарший престол, чтобы доказать: папа имеет законну..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/864/NikolaivsFotii.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="IPO Facebook на бирже NASDAQ" />
     <meta name="twitter:description" content="18 мая 2012 года Facebook провёл размещение акций на бирже NASDAQ — самое ожидаемое IPO в истории интернета со времён выхода Google в 2004 году. Компанию оценили в 104 миллиарда долларов , разместив 421,2 миллиона акций..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2012/FB.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

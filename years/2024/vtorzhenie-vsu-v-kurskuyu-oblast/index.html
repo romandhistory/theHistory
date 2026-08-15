@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Вторжение ВСУ в Курскую область" />
     <meta name="twitter:description" content="6 августа 2024 года украинские войска пересекли государственную границу России в Курской области — начав первое в истории вторжение иностранной армии на российскую территорию со времён Второй мировой войны. Операция стал..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2024/kursk.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

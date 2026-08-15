@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Теракты в Шарм-эш-Шейхе" />
     <meta name="twitter:description" content="В ночь с 22 на 23 июля 2005 года на египетском курорте Шарм-эш-Шейх прогремели три взрыва. Первый — у отеля «Газаля Гарденс» в районе Наама-Бей, через семь минут — ещё два: в торговой зоне и на автостоянке. Погибли от 64..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2005/terakt.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

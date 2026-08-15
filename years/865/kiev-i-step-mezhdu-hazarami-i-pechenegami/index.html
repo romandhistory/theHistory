@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Киев и степь: между хазарами и печенегами" />
     <meta name="twitter:description" content="Киев стоял на границе двух миров — лесного севера и открытой степи. На юге и востоке начиналось пространство, которое не контролировал никто и которое контролировали все одновременно: хазары, печенеги, мадьяры кочевали п..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/865/kiev865.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

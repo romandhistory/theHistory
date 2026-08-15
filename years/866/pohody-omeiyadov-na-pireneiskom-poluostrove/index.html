@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Походы Омейядов на Пиренейском полуострове" />
     <meta name="twitter:description" content="В 866 году Кордовский эмират вёл войну сразу на нескольких направлениях. Мухаммад I провёл в общей сложности десять походов против христианских королевств севера — но главная угроза его власти исходила не оттуда. Внутри..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/866/pohods.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

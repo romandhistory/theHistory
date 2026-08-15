@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Провозглашение императором Людовиком II своих прав на Прованс" />
     <meta name="twitter:description" content="В 863 году император Людовик II заявил права на Прованс — и этот шаг был частью большой каролингской игры за наследство, которая не прекращалась ни на год. Прованс оказался бесхозным после смерти Карла Прованского — одно..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/863/LudovikII.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

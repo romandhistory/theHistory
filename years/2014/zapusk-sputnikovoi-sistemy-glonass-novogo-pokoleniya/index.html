@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Запуск спутниковой системы ГЛОНАСС нового поколения" />
     <meta name="twitter:description" content="1 декабря 2014 года с космодрома Плесецк ракетой-носителем «Союз-2.1б» с разгонным блоком «Фрегат» был запущен второй спутник «Глонасс-К» нового поколения. Это стало важным шагом в обновлении российской навигационной гру..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2014/glonas.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

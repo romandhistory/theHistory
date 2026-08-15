@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Карл Лысый осуждает сына Карломана на смерть" />
     <meta name="twitter:description" content="В 873 году Карл Лысый довёл до конца дело, тянувшееся три года. Карломан , его младший сын, был предназначен для церковной карьеры с детства — постриг в шесть лет, аббатства одно за другим, отказ от мирского наследства в..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/873/sud.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

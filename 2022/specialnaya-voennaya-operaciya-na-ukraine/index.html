@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Специальная Военная Операция на Украине" />
     <meta name="twitter:description" content="24 февраля 2022 года в 5:00 утра Владимир Путин объявил о начале «специальной военной операции» на Украине. В течение нескольких минут ракеты ударили по Киеву, Харькову, Одессе, Мариуполю и десяткам других городов. Росси..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2022/SVO.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

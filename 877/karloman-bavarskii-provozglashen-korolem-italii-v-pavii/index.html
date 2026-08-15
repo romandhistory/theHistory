@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Карломан Баварский провозглашён королём Италии в Павии" />
     <meta name="twitter:description" content="В 877 году Карломан , старший сын покойного Людовика Немецкого , вошёл в Италию с войском и в Павии был провозглашён итальянским королём. Та самая Павия, где двумя годами раньше Карл Лысый принял присягу итальянской знат..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/877/karloman_bav.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

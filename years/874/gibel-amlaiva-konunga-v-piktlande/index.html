@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Гибель Амлайва Конунга в Пиктланде" />
     <meta name="twitter:description" content="В 874 году в Пиктланде погиб Амлайв Конунг — первый норвежский конунг Дублина, правивший там с 853 года. Согласно Пиктской хронике — единственному источнику, сообщающему об этой смерти, — король пиктов Константин , сын К..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/874/konung.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

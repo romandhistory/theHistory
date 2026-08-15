@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Принятие закона об «иноагентах»" />
     <meta name="twitter:description" content="Закон об «иностранных агентах» в России появился ещё в 2012 году — по образцу американского FARA 1938 года, на который власти неизменно ссылались в ответ на критику. Но именно в 2017–2021 годах закон превратился из точеч..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2021/inogent.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

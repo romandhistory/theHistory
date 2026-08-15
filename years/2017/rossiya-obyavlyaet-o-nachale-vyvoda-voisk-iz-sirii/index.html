@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Россия объявляет о начале вывода войск из Сирии" />
     <meta name="twitter:description" content="11 декабря 2017 года Владимир Путин внезапно прибыл на российскую авиабазу Хмеймим в Сирии — и, выступая перед военными, приказал министру обороны и начальнику Генштаба начать вывод российской группировки войск в пункты..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2017/voiska.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

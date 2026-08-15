@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Теракт на концерте Арианы Гранде в Манчестере" />
     <meta name="twitter:description" content="22 мая 2017 года на выходе со стадиона Manchester Arena после концерта Арианы Гранде произошёл взрыв. Смертник Салман А. подорвал самодельное устройство в фойе, заполненном родителями, ждавшими своих детей, и подростками..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2017/ar.grande.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Болгария возвращается к Византии: что это значит для Киева" />
     <meta name="twitter:description" content="В 870 году болгарский вопрос наконец разрешился — Борис I окончательно вернулся в орбиту Константинополя, получив то, чего четыре года добивался от Рима и не получил: самостоятельную церковную иерархию. На Константинопол..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/870/bolgarsk_vopros.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

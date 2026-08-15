@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Обвал российского фондового рынка" />
     <meta name="twitter:description" content="16–17 сентября 2008 года российские биржи зафиксировали катастрофическое падение вслед за крахом Lehman Brothers . 17 сентября торги на ММВБ и РТС были приостановлены — впервые в истории российского рынка. Потери по инде..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2008/obval.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

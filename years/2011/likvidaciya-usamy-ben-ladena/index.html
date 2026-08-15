@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Ликвидация Усамы бен Ладена" />
     <meta name="twitter:description" content="В ночь на 2 мая 2011 года спецназовцы американского подразделения SEAL Team Six на двух вертолётах Black Hawk высадились в пакистанском городе Абботтабаде и штурмом взяли трёхэтажный особняк, окружённый высокими стенами...." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2011/b_ladan.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

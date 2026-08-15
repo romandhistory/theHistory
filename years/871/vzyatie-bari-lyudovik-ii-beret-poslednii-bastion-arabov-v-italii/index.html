@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Взятие Бари — Людовик II берёт последний бастион арабов в Италии" />
     <meta name="twitter:description" content="В феврале 871 года пала цитадель Бари . Эмир Саудан , последний правитель арабского эмирата на материковой части Италии, сдался и в цепях был отправлен в Беневенто. Государство, простоявшее около двадцати четырёх лет , п..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/871/bari.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

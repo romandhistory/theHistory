@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="WikiLeaks публикует секретные дипломатические депеши США" />
     <meta name="twitter:description" content="28 ноября 2010 года сайт WikiLeaks одновременно с пятью крупнейшими газетами мира — The Guardian , Le Monde , Der Spiegel , El País и The New York Times — начал публикацию 251 287 секретных депеш Государственного департа..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2010/wikileaks.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

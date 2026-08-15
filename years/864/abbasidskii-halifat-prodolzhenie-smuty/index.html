@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Аббасидский халифат — продолжение смуты" />
     <meta name="twitter:description" content="К 864 году Аббасидский халифат существовал скорее номинально. Реальная власть в Самарре принадлежала тюркским военачальникам — гвардии, которую халифы сами же и создали как противовес арабской знати. Теперь гвардия сама..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/864/turskievoennye.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

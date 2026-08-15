@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Землетрясение Дзёган и цунами у Хонсю" />
     <meta name="twitter:description" content="9 июля 869 года у восточного побережья Хонсю произошло землетрясение магнитудой около 8,6 . Толчки ощущались по всему острову. Но главный удар нанесла не земля — а море. Цунами обрушилось на равнину Сэндай. Хроника «Нихо..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/869/cunami_honsu.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

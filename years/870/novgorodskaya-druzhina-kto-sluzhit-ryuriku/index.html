@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Новгородская дружина: кто служит Рюрику" />
     <meta name="twitter:description" content="Власть варяжского князя опиралась не на закон в письменном виде, а на дружину — вооружённых людей, связанных с Рюриком личной верностью и общей выгодой от походов и сбора дани. К 870 году эта дружина была уже сложившимся..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/870/drugina.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

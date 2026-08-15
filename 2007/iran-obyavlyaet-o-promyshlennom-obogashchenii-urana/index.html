@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Иран объявляет о промышленном обогащении урана" />
     <meta name="twitter:description" content="9 апреля 2007 года, в Национальный день ядерных технологий, Иран официально заявил о начале обогащения урана в промышленных масштабах. Президент Ахмадинежад торжественно объявил об этом на ядерном объекте в Натанзе . Тег..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2007/iran.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

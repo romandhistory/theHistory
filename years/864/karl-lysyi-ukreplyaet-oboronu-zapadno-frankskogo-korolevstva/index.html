@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Карл Лысый укрепляет оборону Западно-Франкского королевства" />
     <meta name="twitter:description" content="25 июня 864 года в Питре, на Сене, Карл Лысый обнародовал капитулярий, вошедший в историю как Питрский эдикт . Один из его пунктов предписывал снести все укрепления, возведённые без королевского разрешения. Сам этот пунк..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/864/KarlLisyi.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

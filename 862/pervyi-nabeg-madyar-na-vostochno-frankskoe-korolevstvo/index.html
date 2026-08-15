@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Первый набег мадьяр на Восточно-Франкское королевство" />
     <meta name="twitter:description" content="В 862 году в пределы Восточно-Франкского королевства впервые вторгся народ, которого франкские хронисты прежде не знали по имени — мадьяры . Пришли они не сами по себе. Годом раньше против короля Людовика Немецкого подня..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/862/nabegmad'ar.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

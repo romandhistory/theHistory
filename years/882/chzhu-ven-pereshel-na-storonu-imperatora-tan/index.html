@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Чжу Вэнь перешёл на сторону императора Тан" />
     <meta name="twitter:description" content="В 882 году Чжу Вэнь — один из главных военачальников Хуан Чао — перешёл на сторону императора Сицзуна и сдал подчинённые ему позиции танским войскам. За измену ему пожаловали новое имя: Цюаньчжун — «Искренне преданный» ...." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/882/ven'.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Открытие Крымского моста" />
     <meta name="twitter:description" content="15 мая 2018 года Владимир Путин лично открыл автомобильную часть Крымского моста — сев за руль оранжевого грузовика КамАЗ и проехав по мосту во главе колонны строительной техники. Церемония транслировалась в прямом эфире..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2018/krymskij-most.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

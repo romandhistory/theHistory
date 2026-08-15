@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Разлив 21 тысячи тонн дизельного топлива под Норильском" />
     <meta name="twitter:description" content="29 мая 2020 года на территории Норильско-Таймырской энергетической компании , дочерней структуры «Норникеля», обрушилась опора резервуара с дизельным топливом. В реку Амбарная и на прилегающий грунт вылилось около 21 000..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2020/norilsk.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

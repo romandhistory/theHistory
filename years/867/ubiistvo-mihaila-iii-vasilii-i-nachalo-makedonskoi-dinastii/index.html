@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Убийство Михаила III / Василий I — начало Македонской династии" />
     <meta name="twitter:description" content="В ночь с 23 на 24 сентября 867 года Василий пригласил Михаила III на пир. Пока император пил, Василий вышел из зала — и заранее вскрыл замки в его покоях. Вернувшись с восемью сообщниками, он убил императора, отрубив ему..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/867/VasilyiI.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

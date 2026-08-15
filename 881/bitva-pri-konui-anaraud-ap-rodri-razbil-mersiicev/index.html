@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Битва при Конуи — Анарауд ап Родри разбил мерсийцев" />
     <meta name="twitter:description" content="В 881 году эрл Мерсии Этельред вторгся в Гвинед — северный Уэльс, которым теперь правил Анарауд ап Родри , старший сын погибшего в 878-м Родри Великого . У устья реки Конуи мерсийское войско было разбито наголову. Валлий..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/881/konui.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

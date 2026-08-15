@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Вторжение США и союзников в Ирак — начало иракской войны" />
     <meta name="twitter:description" content="В ночь с 19 на 20 марта 2003 года американо-британские войска без санкции ООН начали военную операцию против Ирака. Официальное название — «Иракская свобода». Поводом послужили заявления разведки о наличии у Саддама Хусе..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2003/usa&irak.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Викинги во главе с Олавом Белым прибывают из Дублина в Шотландию" />
     <meta name="twitter:description" content="Около 864–866 года Олав Белый , конунг Дублина, повёл войско через море на север — в Пиктавию , королевство, занимавшее большую часть нынешней Шотландии. К тому моменту Олав уже более десяти лет правил Дублином как первы..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/864/olaf.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

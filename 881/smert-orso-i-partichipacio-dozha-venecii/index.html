@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть Орсо I Партичипацио, дожа Венеции" />
     <meta name="twitter:description" content="В 881 году умер Орсо I Партичипацио — четырнадцатый дож Венеции, правивший с 864 года . Умер своей смертью — что для его предшественников было исключением, а не правилом. Орсо стал дожем сразу после убийства Пьетро Традо..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/881/orso.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Возвращение картин из коллекции Морозова на Родину" />
     <meta name="twitter:description" content="Летом 2022 года собрание из 200 шедевров коллекции Морозова завершило выставку в парижском Фонде Louis Vuitton и вернулось в Россию. Экспозиция, открывшаяся в октябре 2021 года, стала последней крупной совместной культур..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2022/kollekcmorozova.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

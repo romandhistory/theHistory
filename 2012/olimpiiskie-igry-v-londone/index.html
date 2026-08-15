@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Олимпийские игры в Лондоне" />
     <meta name="twitter:description" content="27 июля 2012 года на Олимпийском стадионе в Лондоне открылись XXX летние Олимпийские игры — с церемонией «Острова Чудес» под режиссурой оскароносного Дэнни Бойла . Ролик с прыжком королевы Елизаветы II и Джеймса Бонда (а..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2012/olimp.igry.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

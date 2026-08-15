@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Свадьба принца Уильяма и Кейт Миддлтон" />
     <meta name="twitter:description" content="29 апреля 2011 года в Вестминстерском аббатстве, где английские монархи короновались с 1066 года, поженились принц Уильям , второй в очереди на британский престол, и Кэтрин Миддлтон — простолюдинка, с которой он познаком..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2011/weddind.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

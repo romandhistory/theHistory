@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Нападение в Керченском колледже" />
     <meta name="twitter:description" content="17 октября 2018 года студент Керченского политехнического колледжа Владислав Р. открыл огонь и произвёл взрыв в здании учебного заведения. Погибли 20 человек — студенты и сотрудники колледжа. Более 60 получили ранения. Р..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2018/kerch_kolledg.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

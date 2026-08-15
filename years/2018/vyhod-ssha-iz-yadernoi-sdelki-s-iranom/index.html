@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Выход США из ядерной сделки с Ираном" />
     <meta name="twitter:description" content="8 мая 2018 года Дональд Трамп объявил о выходе США из Совместного всеобъемлющего плана действий — ядерного соглашения с Ираном, подписанного в 2015 году при Обаме. США восстанавливали все санкции против Тегерана и вводил..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2018/usa&iran.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Крушение Boeing-737 в Перми" />
     <meta name="twitter:description" content="В ночь с 13 на 14 сентября 2008 года Boeing-737-500 авиакомпании «Аэрофлот-Норд» , выполнявший рейс Москва — Пермь, при повторном заходе на посадку упал на жилой квартал города. Все 88 человек на борту погибли. Расследов..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2008/boing737.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

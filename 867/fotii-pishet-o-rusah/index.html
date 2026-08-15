@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Фотий пишет о русах" />
     <meta name="twitter:description" content="В 867 году патриарх Фотий написал об этом прямо — в окружном послании восточным патриархам, одном из важнейших церковных документов эпохи. Среди народов, обратившихся к христианству, он назвал русов — тех самых, кто совс..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/867/fotiy.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

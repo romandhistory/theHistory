@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Оранжевая революция на Украине" />
     <meta name="twitter:description" content="21 ноября 2004 года ЦИК Украины объявил победителем второго тура президентских выборов Виктора Януковича — 49,46% против 46,61% у Виктора Ющенко . Данные немедленно разошлись с результатами экзит-поллов. Уже вечером на к..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2004/revolution.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

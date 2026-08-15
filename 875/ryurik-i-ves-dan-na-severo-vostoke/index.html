@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Рюрик и весь: дань на северо-востоке" />
     <meta name="twitter:description" content="Племя весь, жившее у Белого озера, платило дань Рюрику наравне с мерей и муромой — пушниной, добытой в густых северных лесах. К 875 году эта дань шла исправно, без нареканий с обеих сторон. Земли веси были дальними и тру..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/875/ves'.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

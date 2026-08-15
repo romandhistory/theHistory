@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть Мефодия, архиепископа Моравского" />
     <meta name="twitter:description" content="6 апреля 885 года умер Мефодий — архиепископ Моравский, создатель славянской письменности вместе с братом Кириллом , переводчик Библии на славянский язык. Незадолго до смерти он назначил своим преемником ученика Горазда..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/885/death_mefod.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

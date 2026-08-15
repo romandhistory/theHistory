@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Язаман аль-Хадим разбил византийцев у Тарса" />
     <meta name="twitter:description" content="В сентябре 883 года византийское войско под командованием Стиппиота численностью около ста тысяч человек двинулось к Тарсу, где сосредотачивались силы сирийских арабов. За этим походом стояла константинопольская интрига...." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/883/izaman.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

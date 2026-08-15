@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Россия досрочно погашает долг МВФ" />
     <meta name="twitter:description" content="31 января 2005 года Россия полностью погасила долг перед МВФ — 3,33 миллиарда долларов, подлежавших возврату по графику в 2005–2008 годах. Деньги взяли из Стабилизационного фонда. Об объявлении сообщил министр финансов К..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2005/IMF.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

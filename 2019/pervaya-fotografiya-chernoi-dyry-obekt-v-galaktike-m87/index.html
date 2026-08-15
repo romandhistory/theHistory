@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Первая фотография чёрной дыры — объект в галактике М87" />
     <meta name="twitter:description" content="10 апреля 2019 года телескоп Event Horizon Telescope опубликовал первое в истории изображение чёрной дыры — сверхмассивного объекта в центре галактики M87 , находящегося в 55 миллионах световых лет от Земли. Оранжево-кра..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2019/black_hole.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

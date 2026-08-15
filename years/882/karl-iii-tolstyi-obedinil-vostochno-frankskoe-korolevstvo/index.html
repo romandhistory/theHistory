@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Карл III Толстый объединил Восточно-Франкское королевство" />
     <meta name="twitter:description" content="В 882 году, после смерти брата Людовика Младшего , Карл III Толстый получил его владения — Саксонию и Тюрингию — и объединил под своей властью все земли восточных франков. Людовик Младший умер 20 января 882 года — наслед..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/882/karl_tolst.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

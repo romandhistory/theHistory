@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть Александра Солженицына" />
     <meta name="twitter:description" content="3 августа 2008 года на 90-м году жизни скончался Александр Солженицын . Сердечная недостаточность. Он умер в Москве — в городе, из которого был выслан в 1974 году и куда вернулся в 1994-м после двадцати лет эмиграции. Со..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2008/solgenich.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

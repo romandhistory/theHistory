@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Кризис в отношениях с Турцией" />
     <meta name="twitter:description" content="24 ноября 2015 года турецкие истребители F-16 сбили российский бомбардировщик Су-24 у сирийско-турецкой границы — Анкара заявила, что самолёт нарушил турецкое воздушное пространство на 17 секунд , несмотря на неоднократн..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2015/rf&turc.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

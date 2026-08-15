@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть Чжан Ичао, правителя Дуньхуана" />
     <meta name="twitter:description" content="В 872 году в Чанъане умер Чжан Ичао — человек, который четвертью века ранее вырвал Дуньхуан и весь коридор Хэси из рук тибетцев и вернул его под власть Тан. Путь начался в 848 году , когда Тибетская империя, охваченная г..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/872/chjan.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

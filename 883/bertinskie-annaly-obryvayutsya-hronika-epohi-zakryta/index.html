@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Бертинские анналы обрываются — хроника эпохи закрыта" />
     <meta name="twitter:description" content="В 883 году Бертинские анналы — главный нарративный источник по истории Западно-Франкского королевства за последние полвека — остались без продолжателя. Последняя запись датируется 882 годом . Гинкмар , архиепископ Реймсс..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/883/anally.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

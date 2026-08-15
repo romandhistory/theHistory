@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Закрытие самого продолжительного реалити-шоу «Дом-2»" />
     <meta name="twitter:description" content="29 марта 2021 года телеканал ТНТ выпустил финальный эпизод «Дома-2» — реалити-шоу, просуществовавшего в российском эфире 20 лет и 305 дней . Это один из самых продолжительных телевизионных проектов в мировой истории. Шоу..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2020/dom2.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

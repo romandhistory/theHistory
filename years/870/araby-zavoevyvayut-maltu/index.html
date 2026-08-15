@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Арабы завоёвывают Мальту" />
     <meta name="twitter:description" content="29 августа 870 года Мелите — древний город на месте нынешней Мдины — сдался аглабидскому войску после многомесячной осады. Так закончились три с лишним века византийского владения Мальтой. Первая попытка взять остров в 8..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/870/melite.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

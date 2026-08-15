@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Смерть Эгберта I Нортумбрийского, воцарение Риксиге" />
     <meta name="twitter:description" content="В 873 году умер Эгберт — человек, который шесть лет правил Нортумбрией милостью викингов, а последний год своей жизни провёл в изгнании, лишённый и этой сомнительной власти. Эгберт получил трон в 867 году — после того ка..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/873/agbert.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

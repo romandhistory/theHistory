@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Разрушительное землетрясение магнитудой в Мьянме | 2025 | theХистори" />
     <meta name="twitter:description" content="28 марта 2025 года в округе Сикайн в Мьянме произошло землетрясение магнитудой 7,7 — эпицентр находился вблизи Мандалая, второго по величине города страны. Это стало мощнейшим землетрясением в Мьянме с 1912 года . За гла..." />
     <meta name="twitter:image" content="https://thehistory.pro/img/2025.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

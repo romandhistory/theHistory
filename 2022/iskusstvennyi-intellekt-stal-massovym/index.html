@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Искусственный Интеллект стал массовым" />
     <meta name="twitter:description" content="30 ноября 2022 года компания OpenAI выпустила ChatGPT в открытый доступ. За пять дней сервис набрал миллион пользователей — быстрее, чем любой продукт в истории технологий до этого. За два месяца — сто миллионов . ChatGP..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2022/ai.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

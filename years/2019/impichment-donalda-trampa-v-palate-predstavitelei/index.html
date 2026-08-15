@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Импичмент Дональда Трампа в Палате представителей" />
     <meta name="twitter:description" content="18 декабря 2019 года Палата представителей США проголосовала за импичмент Дональда Трампа — по двум статьям: злоупотребление властью и воспрепятствование Конгрессу. Трамп стал третьим президентом в американской истории,..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2019/impichmTrump.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

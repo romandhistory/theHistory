@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Разграбление викингами Дорестада — последнее упоминание города в хрониках" />
     <meta name="twitter:description" content="В 863 году викинги разграбили Дорестад — и хроники больше не упоминают этот город. Не потому что он немедленно исчез с лица земли, а потому что исчезло то, что делало его городом. Дорестад в своё время был крупнейшим тор..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/863/dorestad.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

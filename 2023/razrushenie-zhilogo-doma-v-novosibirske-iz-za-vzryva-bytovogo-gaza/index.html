@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Разрушение жилого дома в Новосибирске из-за взрыва бытового газа" />
     <meta name="twitter:description" content="9 февраля 2023 года в 07:39 в пятиэтажном жилом доме на улице Линейной в Новосибирске произошёл взрыв бытового газа. Обрушился третий подъезд — частично затронуло и соседние. Спасатели разбирали завалы весь день. Погибли..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2023/vzrivgazavnovosibe.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

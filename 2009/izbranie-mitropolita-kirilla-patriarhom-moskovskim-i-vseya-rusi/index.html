@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Избрание митрополита Кирилла Патриархом Московским и всея Руси" />
     <meta name="twitter:description" content="27 января 2009 года в Храме Христа Спасителя открылся Поместный собор Русской православной церкви. 707 делегатов из более чем 60 стран собрались, чтобы избрать нового патриарха — после смерти Алексия II , скончавшегося в..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2009/patriarh.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

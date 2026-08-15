@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Зимовка Великой армии в Рептоне | 873 | theХистори" />
     <meta name="twitter:description" content="Осенью 873 года Великая языческая армия вошла в самое сердце Мерсии — Рептон , древний королевский и монастырский центр на берегу Трента, где покоились мерсийские короли прошлых веков. Здесь, на южном берегу реки, викинг..." />
     <meta name="twitter:image" content="https://thehistory.pro/img/873.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

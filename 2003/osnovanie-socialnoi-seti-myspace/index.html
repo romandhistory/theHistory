@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Основание социальной сети MySpace" />
     <meta name="twitter:description" content="1 августа 2003 года в Санта-Монике , Калифорния, была запущена социальная сеть MySpace . Её создали сотрудники маркетинговой компании eUniverse Том Андерсон и Крис ДеВольф . Первым пользователем и другом по умолчанию для..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2003/myspace.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

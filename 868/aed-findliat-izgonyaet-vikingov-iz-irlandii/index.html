@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Аэд Финдлиат изгоняет викингов из Ирландии" />
     <meta name="twitter:description" content="В 866 году Олав и его брат увели большую часть норманнских сил из Ирландии — в поход против пиктов. Аэд воспользовался моментом: он прошёлся по северу острова, сжигая и разрушая норманнские базы-лонгфорты. Победа была ст..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/868/findliat.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

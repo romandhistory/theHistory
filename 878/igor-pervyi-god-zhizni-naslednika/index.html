@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Игорь: первый год жизни наследника" />
     <meta name="twitter:description" content="Игорю в 878 году исполнился год — первый рубеж младенческой жизни, важный для эпохи с её высокой детской смертностью. Ребёнок рос на глазах не только родителей, но и всего новгородского двора. Знать и дружинники находили..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/878/igor'1.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

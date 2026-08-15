@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="SpaceX Dragon — первый коммерческий полёт к МКС" />
     <meta name="twitter:description" content="25 мая 2012 года, в 16:02 по Гринвичу, грузовой корабль Dragon компании SpaceX впервые в истории пристыковался к Международной космической станции. Частный аппарат подошёл к модулю «Гармония» , завершив путь, начатый тре..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2012/SpaceXDragon.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

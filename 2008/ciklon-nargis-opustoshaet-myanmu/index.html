@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Циклон «Наргис» опустошает Мьянму" />
     <meta name="twitter:description" content="2 мая 2008 года тропический циклон «Наргис» обрушился на побережье Мьянмы. Порывы ветра достигали 215 километров в час . Штормовая волна смела деревни в дельте реки Иравади — одном из самых густонаселённых сельскохозяйст..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2008/nargis.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

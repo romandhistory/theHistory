@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Северяне и хазары: старый данник ищет нового покровителя" />
     <meta name="twitter:description" content="Северяне платили дань Хазарскому каганату — отношения, тянувшиеся ещё с тех времён, когда хазарская власть простиралась широко и уверенно над славянскими землями лесостепи. К 884 году эта власть давно перестала быть тем,..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/884/sever&hazar.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

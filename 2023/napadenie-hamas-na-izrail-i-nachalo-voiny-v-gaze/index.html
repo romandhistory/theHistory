@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Нападение ХАМАС на Израиль и начало войны в Газе" />
     <meta name="twitter:description" content="7 октября 2023 года в 6:29 утра ХАМАС начал крупнейшее нападение на Израиль за всю историю конфликта. Более 3 000 боевиков прорвали заграждения вокруг Газы в 30 местах одновременно. По израильской территории было выпущен..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2023/hamasvsizra.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

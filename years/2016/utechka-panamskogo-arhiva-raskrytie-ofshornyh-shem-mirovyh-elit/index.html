@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Утечка «Панамского архива» — раскрытие офшорных схем мировых элит" />
     <meta name="twitter:description" content="3 апреля 2016 года международный консорциум журналистов-расследователей опубликовал результаты расследования по утечке документов панамской юридической компании Mossack Fonseca — 11,5 миллиона файлов , охватывающих почти..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2016/panam.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

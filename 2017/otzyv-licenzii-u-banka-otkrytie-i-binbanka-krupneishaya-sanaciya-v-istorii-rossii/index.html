@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Отзыв лицензий у банка «Открытие» и Бинбанка — крупнейшая санация в истории России." />
     <meta name="twitter:description" content="29 августа 2017 года Центробанк России объявил о санации банка «ФК Открытие» — крупнейшего частного банка страны на тот момент. Санация началась по новой схеме — через Фонд консолидации банковского сектора , подконтрольн..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2017/banki.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

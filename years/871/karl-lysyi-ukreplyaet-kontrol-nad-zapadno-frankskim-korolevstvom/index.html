@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Карл Лысый укрепляет контроль над Западно-Франкским королевством" />
     <meta name="twitter:description" content="В 871–872 годах Карл Лысый направил папе Адриану II два письма, в которых выступил с прямой защитой королевского суверенитета против вмешательства папства в государственные дела. Повод был конкретным. Папство при покойно..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/871/karl_lis.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

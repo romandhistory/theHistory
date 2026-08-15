@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Начало массовой вакцинации населения от COVID-19" />
     <meta name="twitter:description" content="5 декабря 2020 года в Москве стартовала массовая вакцинация населения «Спутником V» — первая в мире гражданская прививочная кампания с применением зарегистрированного препарата. Приоритет получили врачи, учителя и социал..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2020/vacinstart.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

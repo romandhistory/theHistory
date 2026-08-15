@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Назначение Петронаса командующим византийской армией в Пафлагонии" />
     <meta name="twitter:description" content="Назначение Петронаса командующим в Пафлагонии в 863 году было не рутинной кадровой перестановкой — оно стало прелюдией к одной из главных византийских побед столетия. Петронас был братом императрицы Феодоры и дядей Михаи..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/863/Petronas.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Первое крещение русов" />
     <meta name="twitter:description" content="Наиболее авторитетный источник о первом крещении русов — энциклическое письмо патриарха Фотия , датируемое концом 866 года. Фотий сообщал, что русы — тот самый народ, который семью годами ранее опустошил окрестности Конс..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/866/ruses.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

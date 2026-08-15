@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Восстание в Толедо против Омейядского эмирата" />
     <meta name="twitter:description" content="В 873 году Толедо снова поднялось против Кордовы — второе восстание за два года, питаемое не только политическим расчётом, но и глубокой этнической рознью внутри самого города. Толедо занимал особое положение в аль-Андал..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/873/toledo.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

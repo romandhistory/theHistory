@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Открытие XXXIII летних Олимпийских игр в Париже" />
     <meta name="twitter:description" content="26 июля 2024 года церемония открытия Олимпийских игр впервые в истории прошла не на стадионе, а на реке. Около 10 000 спортсменов из 206 стран проплыли на лодках по Сене — мимо Notre-Dame, Лувра и набережных, заполненных..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2024/paris24.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

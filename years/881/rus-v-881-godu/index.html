@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Русь в 881 году" />
     <meta name="twitter:description" content="881 год ощущался ровным — настолько ровным, что сама эта ровность начинала казаться подозрительной тем, кто умел замечать такие вещи. Два двора, два порядка, одна река между ними — привычная картина, знакомая уже второе..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/881/zatish'e.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

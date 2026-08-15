@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Вступление на престол аббасидского халифа аль-Мутазза" />
     <meta name="twitter:description" content="В январе 866 года халифом стал аль-Мутазз — и это был уже четвёртый правитель Аббасидского халифата за неполные десять лет . Не потому что халифы умирали своей смертью: их убивали тюркские гвардейцы, которые к этому врем..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/866/Mutaz.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

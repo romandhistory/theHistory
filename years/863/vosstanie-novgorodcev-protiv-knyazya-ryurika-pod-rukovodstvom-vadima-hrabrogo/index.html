@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Восстание новгородцев против князя Рюрика под руководством Вадима Храброго" />
     <meta name="twitter:description" content="«Повесть временных лет» упоминает Вадима Храброго коротко и без подробностей: новгородцы восстали против Рюрика, Вадим возглавил мятеж, Рюрик подавил восстание и убил Вадима. Всё. Больше летопись об этом человеке не гово..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/863/RurikvsVadim.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Гибель Ахмата Кадырова" />
     <meta name="twitter:description" content="9 мая 2004 года в 10:35 под центральной трибуной стадиона «Динамо» в Грозном сработало мощное взрывное устройство. Взрывчатку заранее замуровали в бетонную опору трибуны — обнаружить её при регулярных осмотрах не смогли...." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2004/ahmat.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

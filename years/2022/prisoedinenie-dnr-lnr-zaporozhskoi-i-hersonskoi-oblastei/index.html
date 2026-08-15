@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Присоединение ДНР, ЛНР, Запорожской и Херсонской областей" />
     <meta name="twitter:description" content="30 сентября 2022 года Владимир Путин подписал договоры о включении в состав России четырёх украинских регионов — Донецкой, Луганской, Запорожской и Херсонской областей . Церемония прошла в Георгиевском зале Кремля — торж..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2022/novieregioni.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Карл Толстый становится королём Италии" />
     <meta name="twitter:description" content="В 879 году Карл Толстый , младший сын Людовика Немецкого, стал королём Италии — после того как его старший брат Карломан Баварский тяжело заболел и отказался от итальянской короны в его пользу. Карломан занимал итальянск..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/879/karl_tolst.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

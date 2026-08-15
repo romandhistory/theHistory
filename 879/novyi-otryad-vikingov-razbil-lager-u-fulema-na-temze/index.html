@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Новый отряд викингов разбил лагерь у Фулема на Темзе" />
     <meta name="twitter:description" content="В 879 году, пока войско Гутрума уходило из Чиппенхэма в Сирренчестер по условиям Уэдморского мира, Англосаксонская хроника зафиксировала новое: «Собралась банда пиратов и расположилась у Фулема на Темзе» . Это был не Гут..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/879/vikingi.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

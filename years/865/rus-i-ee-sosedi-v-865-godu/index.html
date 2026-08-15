@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Русь и её соседи в 865 году" />
     <meta name="twitter:description" content="К 865 году варяжская Русь существовала около трёх лет — по историческим меркам младенческий возраст. Но мир вокруг не ждал, пока она повзрослеет. На западе Каролингская империя доживала последние десятилетия единства — р..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/865/kartavaragrus.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

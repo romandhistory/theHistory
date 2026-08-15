@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Адриан II одобряет славянскую литургию Кирилла и Мефодия" />
     <meta name="twitter:description" content="В начале 868 года братья Кирилл и Мефодий прибыли в Рим — и привезли с собой мощи святого Климента, обретённые Кириллом ещё в Херсонесе. Путь в Рим они выбрали не случайно. В Великой Моравии их обвиняло в ереси франкское..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/868/AdrII&KirMef.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

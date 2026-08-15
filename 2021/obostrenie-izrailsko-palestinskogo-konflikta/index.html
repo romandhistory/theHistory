@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Обострение израильско-палестинского конфликта" />
     <meta name="twitter:description" content="10 мая 2021 года ХАМАС начал массированный ракетный обстрел Израиля. За одиннадцать дней по израильской территории было выпущено более 4 300 ракет . Израиль ответил авиаударами по Газе. Перемирие вступило в силу 21 мая п..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2021/konflikt.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

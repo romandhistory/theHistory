@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Газовый ультиматум России Украине" />
     <meta name="twitter:description" content="Впервые газовый конфликт между Россией и Украиной вспыхнул в марте 2005 года — почти сразу после победы оранжевой революции. Летом «Газпром» потребовал поднять цену с 50 долларов до рыночных 160 долларов за тысячу кубоме..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2005/rf&ukr.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

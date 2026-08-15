@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Русь и слухи о Великой Моравии" />
     <meta name="twitter:description" content="После свержения Ростислава в 870 году Великоморавский проект, на который ещё недавно делали ставку и Рим, и Константинополь, постепенно терял силу. Святополк , занявший престол, вёл куда более компромиссную политику с фр..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/873/rus873.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

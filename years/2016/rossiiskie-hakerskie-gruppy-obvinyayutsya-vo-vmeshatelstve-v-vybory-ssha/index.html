@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Российские хакерские группы обвиняются во вмешательстве в выборы США" />
     <meta name="twitter:description" content="7 октября 2016 года администрация Обамы официально обвинила российское правительство в попытке вмешательства в выборы посредством взлома компьютеров Демократической партии и других организаций. Доклад подготовили офис ди..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2016/hackers.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

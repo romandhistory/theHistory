@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Шестое и крупнейшее ядерное испытание Северной Кореи" />
     <meta name="twitter:description" content="3 сентября 2017 года Северная Корея провела шестое и самое мощное в своей истории ядерное испытание. Сейсмологи зафиксировали взрыв магнитудой около 6,3 — оценочная мощность составила от 100 до 250 килотонн , что в неско..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2017/yadern_raketa.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

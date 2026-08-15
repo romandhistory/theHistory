@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Чечня — продолжение контртеррористических операций" />
     <meta name="twitter:description" content="2006 год в Чечне прошёл без крупных боёв — но и без тишины. Режим контртеррористической операции, введённый в 1999 году, продолжал действовать. Федеральные силы и структуры Кадырова проводили точечные операции против раз..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/2006/chechnia.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

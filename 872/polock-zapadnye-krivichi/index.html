@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Полоцк: западные кривичи" />
     <meta name="twitter:description" content="Полоцк, город западных кривичей на Западной Двине, входил в число земель, розданных Рюриком своим мужам ещё после смерти братьев. К 872 году это управление оставалось устойчивым. Кривичи занимали выгодное положение — на..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/872/polock.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

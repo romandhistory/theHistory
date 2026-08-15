@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Волжский путь и булгары: торговля востока" />
     <meta name="twitter:description" content="Волжский путь оставался вторым по значению направлением новгородской торговли — спокойным на фоне печенежских тревог южного маршрута. К 880 году восточная торговля с Булгаром продолжала расти без резких потрясений. Булга..." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/880/volg_put'.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;

@@ -17,6 +17,18 @@
     <meta name="twitter:title" content="Осада Ассельта" />
     <meta name="twitter:description" content="В июле 882 года Карл III Толстый собрал многочисленное войско и осадил укреплённый лагерь норманнов в Асселе на Маасе. Годфрид и Сигфрид строили этот лагерь с прошлой осени — земляные валы, причалы, укреплённый периметр...." />
     <meta name="twitter:image" content="https://thehistory.pro/cont/882/asselt.webp" />
+    
+    <script>
+        (function () {
+            const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
+            if (!match) return;
+            const year = match[1];
+            const slug = match[2] ? '/' + match[2] + '/' : '/';
+            const target = '/?route=' + encodeURIComponent('/' + year + slug);
+            window.location.replace(target);
+        })();
+    </script>
+    
     <style>
         :root {
             --bg: #0d1117;
