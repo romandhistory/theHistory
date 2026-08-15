@@ -25,12 +25,23 @@ def first_sentences(text, limit=220):
 
 def slugify(value):
     text = str(value or '').strip()
-    text = unicodedata.normalize('NFKD', text)
-    text = text.encode('ascii', 'ignore').decode('ascii')
-    text = re.sub(r'[^a-zA-Z0-9\s-]', '', text.lower())
-    text = re.sub(r'\s+', '-', text)
-    text = re.sub(r'-+', '-', text).strip('-')
-    return text or 'event'
+    if not text:
+        return 'event'
+
+    mapping = {
+        'а': 'a', 'б': 'b', 'в': 'v', 'г': 'g', 'д': 'd', 'е': 'e', 'ё': 'e', 'ж': 'zh', 'з': 'z',
+        'и': 'i', 'й': 'i', 'к': 'k', 'л': 'l', 'м': 'm', 'н': 'n', 'о': 'o', 'п': 'p', 'р': 'r',
+        'с': 's', 'т': 't', 'у': 'u', 'ф': 'f', 'х': 'h', 'ц': 'c', 'ч': 'ch', 'ш': 'sh', 'щ': 'shch',
+        'ы': 'y', 'э': 'e', 'ю': 'yu', 'я': 'ya', 'ъ': '', 'ь': ''
+    }
+
+    normalized = unicodedata.normalize('NFKD', text.lower())
+    translit = ''.join(mapping.get(ch, ch) for ch in normalized)
+    translit = translit.encode('ascii', 'ignore').decode('ascii')
+    translit = re.sub(r'[^a-z0-9\s-]', '', translit)
+    translit = re.sub(r'\s+', '-', translit)
+    translit = re.sub(r'-+', '-', translit).strip('-')
+    return translit or 'event'
 
 
 def build_year_page(slide, year_data, all_years):
@@ -38,16 +49,19 @@ def build_year_page(slide, year_data, all_years):
     year_label = slide.get('label', year_id)
     tabs = year_data.get('tabs', {})
     events = []
+    year_url = f'{BASE_URL}/{year_id}/'
+    legacy_year_url = f'{BASE_URL}/years/{year_id}/'
 
     for tab_name in ('world', 'russia'):
         tab = tabs.get(tab_name, {})
         for index, article in enumerate(tab.get('articles', []), 1):
             title = article.get('title') or article.get('button') or f'Событие {index}'
+            slug = slugify(title)
             events.append({
                 'title': title,
-                'slug': slugify(title),
+                'slug': slug,
                 'tab': tab_name,
-                'url': f'{BASE_URL}/years/{year_id}/{slugify(title)}/'
+                'url': f'{BASE_URL}/{year_id}/{slug}/'
             })
 
     if not events:
@@ -61,13 +75,13 @@ def build_year_page(slide, year_data, all_years):
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{escape(default_title)}</title>
     <meta name="description" content="{escape(description)}" />
-    <link rel="canonical" href="{BASE_URL}/years/{year_id}/" />
+    <link rel="canonical" href="{year_url}" />
     <link rel="icon" type="image/png" href="{BASE_URL}/img/logo1.png" />
     <meta property="og:title" content="{escape(default_title)}" />
     <meta property="og:description" content="{escape(description)}" />
     <meta property="og:image" content="{hero_image}" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="{BASE_URL}/years/{year_id}/" />
+    <meta property="og:url" content="{year_url}" />
 </head>
 <body style="font-family:Arial,sans-serif;background:#0d1117;color:#fff;padding:40px;">
     <h1>{escape(default_title)}</h1>
@@ -91,7 +105,7 @@ def build_year_page(slide, year_data, all_years):
     )
 
     year_links_html = ''.join(
-        f'<li style="margin:6px 0; list-style:none;"><a href="{BASE_URL}/years/{entry["id"]}/" style="color:#66d9ef; text-decoration:none;">{escape(entry["label"])}</a></li>'
+        f'<li style="margin:6px 0; list-style:none;"><a href="{BASE_URL}/{entry["id"]}/" style="color:#66d9ef; text-decoration:none;">{escape(entry["label"])}</a></li>'
         for entry in all_years if str(entry.get('id', '')) != str(year_id)
     )
 
@@ -102,14 +116,14 @@ def build_year_page(slide, year_data, all_years):
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{escape(primary_title)} | {year_label} | theХистори</title>
     <meta name="description" content="{escape(primary_description)}" />
-    <link rel="canonical" href="{BASE_URL}/years/{year_id}/" />
+    <link rel="canonical" href="{year_url}" />
     <link rel="icon" type="image/png" href="{BASE_URL}/img/logo1.png" />
     <link rel="apple-touch-icon" href="{BASE_URL}/img/logo1.png" />
     <meta property="og:title" content="{escape(primary_title)} | {year_label} | theХистори" />
     <meta property="og:description" content="{escape(primary_description)}" />
     <meta property="og:image" content="{hero_image}" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="{BASE_URL}/years/{year_id}/" />
+    <meta property="og:url" content="{year_url}" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="{escape(primary_title)} | {year_label} | theХистори" />
     <meta name="twitter:description" content="{escape(primary_description)}" />
@@ -120,7 +134,7 @@ def build_year_page(slide, year_data, all_years):
             "@type": "CollectionPage",
             "name": "{escape(year_label)} | theХистори",
             "description": "{escape(primary_description)}",
-            "url": "{BASE_URL}/years/{year_id}/",
+            "url": "{year_url}",
             "image": "{hero_image}",
             "publisher": {{
                 "@type": "Organization",
@@ -159,7 +173,7 @@ def build_event_page(slide, year_data, tab_name, article, article_index, all_yea
     image = article.get('image', {})
     image_src = image.get('src') if isinstance(image, dict) else None
     image_url = f'{BASE_URL}/' + str(image_src or slide.get('image', 'img/logo1.png')).replace('\\', '/')
-    page_url = f'{BASE_URL}/years/{year_id}/{slug}/'
+    page_url = f'{BASE_URL}/{year_id}/{slug}/'
 
     body_html = ''.join(article.get('body', []))
     section_label = {'world': 'Мировые события', 'russia': 'Россия'}.get(tab_name, 'Событие')
@@ -171,7 +185,7 @@ def build_event_page(slide, year_data, tab_name, article, article_index, all_yea
             event_title = event.get('title') or event.get('button') or f'Событие {idx}'
             related_events.append({
                 'title': event_title,
-                'url': f'{BASE_URL}/years/{year_id}/{slugify(event_title)}/'
+                'url': f'{BASE_URL}/{year_id}/{slugify(event_title)}/'
             })
 
     related_events_html = ''.join(
@@ -181,7 +195,7 @@ def build_event_page(slide, year_data, tab_name, article, article_index, all_yea
     )
 
     year_links_html = ''.join(
-        f'<li style="margin:6px 0; list-style:none;"><a href="{BASE_URL}/years/{entry["id"]}/" style="color:#66d9ef; text-decoration:none;">{escape(entry["label"])}</a></li>'
+        f'<li style="margin:6px 0; list-style:none;"><a href="{BASE_URL}/{entry["id"]}/" style="color:#66d9ef; text-decoration:none;">{escape(entry["label"])}</a></li>'
         for entry in all_years if str(entry.get('id', '')) != str(year_id)
     )
 
@@ -236,7 +250,7 @@ def build_event_page(slide, year_data, tab_name, article, article_index, all_yea
 </head>
 <body style="font-family:Arial,sans-serif;background:#0d1117;color:#fff;padding:40px;">
     <div style="max-width:980px;margin:0 auto;">
-        <p><a href="{BASE_URL}/years/{year_id}/" style="color:#66d9ef;">← К году {year_id}</a></p>
+        <p><a href="{BASE_URL}/{year_id}/" style="color:#66d9ef;">← К году {year_id}</a></p>
         <p style="text-transform:uppercase;letter-spacing:.12em;color:#66d9ef;font-size:12px;">{escape(section_label)}</p>
         <h1>{escape(title)}</h1>
         <img src="{image_url}" alt="{escape(title)}" style="width:100%;max-width:760px;border-radius:16px;display:block;margin:20px 0;" />
@@ -272,21 +286,30 @@ def generate_pages():
         with content_path.open('r', encoding='utf-8') as f:
             year_data = json.load(f)
 
-        year_dir = YEAR_OUTPUT_DIR / year_id
-        year_dir.mkdir(exist_ok=True)
-        (year_dir / 'index.html').write_text(build_year_page(slide, year_data, slides), encoding='utf-8')
+        legacy_year_dir = YEAR_OUTPUT_DIR / year_id
+        legacy_year_dir.mkdir(exist_ok=True)
+        year_page = build_year_page(slide, year_data, slides)
+        (legacy_year_dir / 'index.html').write_text(year_page, encoding='utf-8')
+
+        short_year_dir = ROOT_PATH / year_id
+        short_year_dir.mkdir(exist_ok=True)
+        (short_year_dir / 'index.html').write_text(year_page, encoding='utf-8')
 
         for tab_name in ('world', 'russia'):
             tab = year_data.get('tabs', {}).get(tab_name, {})
             for article_index, article in enumerate(tab.get('articles', []), 1):
                 title = article.get('title') or article.get('button') or f'Событие {article_index}'
                 slug = slugify(title)
-                event_dir = year_dir / slug
-                event_dir.mkdir(exist_ok=True)
-                (event_dir / 'index.html').write_text(
-                    build_event_page(slide, year_data, tab_name, article, article_index, slides),
-                    encoding='utf-8'
-                )
+
+                event_page = build_event_page(slide, year_data, tab_name, article, article_index, slides)
+
+                legacy_event_dir = legacy_year_dir / slug
+                legacy_event_dir.mkdir(exist_ok=True)
+                (legacy_event_dir / 'index.html').write_text(event_page, encoding='utf-8')
+
+                short_event_dir = short_year_dir / slug
+                short_event_dir.mkdir(exist_ok=True)
+                (short_event_dir / 'index.html').write_text(event_page, encoding='utf-8')
 
     print(f'Generated year and event pages in {YEAR_OUTPUT_DIR}')
 
