@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2009/">← К году 2009</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Конец эпохи поп-музыки</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2009/jackson.webp" alt="Конец эпохи поп-музыки" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2009/jackson.webp" alt="Конец эпохи поп-музыки" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>25 июня 2009 года в Лос-Анджелесе скончался <strong>Майкл Джексон</strong>. Ему было <strong>50 лет</strong>. Причина смерти — острое отравление пропофолом, анестетиком, который личный врач певца <strong>Конрад Мюррей</strong> применял как снотворное. Новость облетела мир за минуты и на несколько часов положила серверы Twitter и Wikipedia.</p><p>Джексон готовился к возвращению: серия из <strong>50 концертов</strong> <strong>This Is It</strong> в лондонском O2 Arena была раскуплена за четыре часа. Репетиции шли вплоть до последних дней. Смерть настигла его на пороге триумфа.</p><p>Прощание с певцом прошло <strong>7 июля</strong> на стадионе Staples Center в Лос-Анджелесе. Трансляцию смотрели, по оценкам, более <strong>миллиарда человек</strong> — один из самых массовых телевизионных просмотров в истории. Мюррея впоследствии осудили за непредумышленное убийство.</p><p>Продажи альбомов Джексона после смерти побили все рекорды: за несколько дней было продано более <strong>миллиона копий</strong>. Индустрия музыки в очередной раз убедилась в старой закономерности.</p><p><em>Джексон прожил жизнь настолько публичную, что его смерть тоже стала коллективным переживанием. Весь мир скорбел — и каждый по своему Майклу.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

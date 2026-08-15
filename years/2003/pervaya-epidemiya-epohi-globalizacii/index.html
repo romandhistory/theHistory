@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2003/">← К году 2003</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Первая эпидемия эпохи глобализации</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2003/pnevmon.webp" alt="Первая эпидемия эпохи глобализации" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2003/pnevmon.webp" alt="Первая эпидемия эпохи глобализации" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>Атипичная пневмония впервые была обнаружена в китайской провинции <strong>Гуандун</strong> в ноябре 2002 года. Китай поначалу скрывал масштаб вспышки. 21 февраля 2003 года врач из материковой части Китая приехал в <strong>Гонконг</strong> на свадьбу — и запустил цепочку заражений по всему миру. Болезнь разлетелась по авиамаршрутам.</p><p><strong>ВОЗ</strong> зафиксировала 8436 случаев заражения в 30 странах мира, погибло около 800 человек. Летальность достигала 10% — в разы выше сезонного гриппа. <strong>Сингапур</strong>, <strong>Канада</strong>, <strong>Тайвань</strong> и <strong>Гонконг</strong> вводили карантины, закрывали больницы, останавливали авиарейсы. <strong>Торонто</strong> стал первым западным городом с массовым карантином со времён Второй мировой войны.</p><p>Эпидемия обнажила системную уязвимость: в эпоху ежедневных авиаперелётов инфекция из одного города за считанные дни достигает любой точки планеты. ВОЗ впервые применила механизм глобального предупреждения — и он сработал.</p><p>К июлю 2003 года вспышка была локализована. Скорость реакции международных структур оказалась неожиданно высокой — при условии, что Китай наконец начал делиться данными.</p><p><em>Мир справился — и сделал выводы. Насколько прочно — покажет будущее.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

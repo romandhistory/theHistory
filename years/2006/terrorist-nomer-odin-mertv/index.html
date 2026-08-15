@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2006/">← К году 2006</a>
             <p class="meta-tag">Россия</p>
             <h1>Террорист номер один мёртв</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2006/basaev.webp" alt="Террорист номер один мёртв" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2006/basaev.webp" alt="Террорист номер один мёртв" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В ночь с 9 на 10 июля 2006 года в Ингушетии, в районе села Экажево, взорвался грузовик КамАЗ с оружием и боеприпасами. Среди погибших оказался <strong>Шамиль Басаев</strong> — человек, которого Россия разыскивала больше десяти лет. ФСБ доложила об операции лично <strong>Владимиру Путину</strong>.</p><p>Басаев был организатором крупнейших терактов в истории страны: захват больницы в Будённовске в 1995-м, теракт на Дубровке в 2002-м, школа в Беслане в 2004-м. На его счету тысячи жертв. Федеральные силы несколько раз объявили о его гибели — он оказывался живым. На этот раз сомнений не осталось.</p><p>Обстоятельства операции засекречены до сих пор. Версии расходились: одни говорили о спецоперации ФСБ, другие — о случайном взрыве собственного груза.</p><p>Запад приветствовал новость. Евросоюз, ОБСЕ и <strong>Джордж Буш</strong> назвали Басаева <em>«террористом наихудшего сорта»</em>.</p><p><em>Смерть Басаева не остановила подполье. Но символически — закрыла целую эпоху.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2008/">← К году 2008</a>
             <p class="meta-tag">Мировые события</p>
             <h1>День, когда рухнул Lehman Brothers</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2008/crisis.webp" alt="День, когда рухнул Lehman Brothers" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2008/crisis.webp" alt="День, когда рухнул Lehman Brothers" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>15 сентября 2008 года инвестиционный банк <strong>Lehman Brothers</strong> — четвёртый по величине в США — объявил о банкротстве. Долги составляли <strong>613 миллиардов долларов</strong>. Это стало спусковым крючком: фондовые рынки по всему миру обвалились в течение нескольких часов. Началась Великая рецессия — крупнейший финансовый кризис со времён Великой депрессии 1930-х.</p><p>Корни уходили глубже. Годами американские банки выдавали ипотечные кредиты людям, которые не могли их обслуживать, упаковывали эти долги в ценные бумаги и продавали по всему миру. Когда пузырь лопнул, оказалось, что токсичными активами пропитана вся мировая финансовая система.</p><p>Следом за Lehman Brothers в критическом положении оказались <strong>AIG</strong>, <strong>Merrill Lynch</strong>, <strong>Fannie Mae</strong>, <strong>Freddie Mac</strong>. Правительство США влило в систему сотни миллиардов долларов, фактически национализировав ряд финансовых институтов — беспрецедентный шаг для страны, считавшей себя эталоном свободного рынка.</p><p>Кризис добрался до каждой страны — через банки, торговлю и доверие. Мир вошёл в рецессию синхронно.</p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

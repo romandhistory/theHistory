@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2008/">← К году 2008</a>
             <p class="meta-tag">Россия</p>
             <h1>Рекорд, которому не радовались</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2008/obval.webp" alt="Рекорд, которому не радовались" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2008/obval.webp" alt="Рекорд, которому не радовались" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>16–17 сентября 2008 года российские биржи зафиксировали катастрофическое падение вслед за крахом <strong>Lehman Brothers</strong>. <strong>17 сентября</strong> торги на ММВБ и РТС были приостановлены — впервые в истории российского рынка. Потери по индексу ММВБ к тому моменту достигали <strong>10%</strong>.</p><p>Это было только начало. <strong>6 октября</strong> индекс РТС рухнул за один день на <strong>19,1%</strong> — абсолютный рекорд за всю историю торгов, превысивший даже потери кризиса 1997–1998 годов. С начала августа по начало октября капитализация российского рынка сократилась вдвое — на <strong>51,7%</strong>.</p><p>Торги останавливали несколько раз. Регулятор ввёл автоматические паузы при падении индекса на <strong>5%</strong> и <strong>10%</strong>. Акции Сбербанка, «Газпрома» и других голубых фишек теряли треть стоимости за считанные сессии.</p><p>Государство бросило на поддержку рынка сотни миллиардов рублей — через ВЭБ и госбанки скупались акции, вливалась ликвидность. Обвал удалось притормозить, но не остановить.</p><p><em>Россия входила в кризис с рекордными резервами — и теряла их с рекордной скоростью.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

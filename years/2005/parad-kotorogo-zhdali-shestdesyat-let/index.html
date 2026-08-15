@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2005/">← К году 2005</a>
             <p class="meta-tag">Россия</p>
             <h1>Парад, которого ждали шестьдесят лет</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2005/winner.webp" alt="Парад, которого ждали шестьдесят лет" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2005/winner.webp" alt="Парад, которого ждали шестьдесят лет" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>9 мая 2005 года <strong>Москва</strong> принимала более пятидесяти мировых лидеров — крупнейший дипломатический съезд в истории послесоветской России. <strong>Джордж Буш</strong> стоял рядом с <strong>Путиным</strong> на трибуне. <strong>Герхард Шрёдер</strong> приехал во главе немецкой делегации, в составе которой были бывшие военнослужащие вермахта.</p><p>Кульминацией парада стал проезд 2600 ветеранов на 130 автомобилях, стилизованных под «полуторки» 1940-х годов. Военная техника была представлена скромно — акцент сделали на людях. Мавзолей Ленина впервые задрапировали на время парада.</p><p>Юбилей отмечали с осознанием: ветеранов становится катастрофически мало. К 2005 году большинству из них было за восемьдесят — для многих этот парад был последним.</p><p>Россия использовала юбилей как дипломатическую площадку. Буш приехал — и уехал в <strong>Тбилиси</strong> и <strong>Ригу</strong>, где говорил о советской оккупации Прибалтики. Праздник закончился дипломатическим раздражением.</p><p><em>Победа объединяла — и одновременно делила. Так было шестьдесят лет назад. Так оставалось и теперь.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

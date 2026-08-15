@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2010/">← К году 2010</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Фильтр на реальность</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2010/insta.webp" alt="Фильтр на реальность" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2010/insta.webp" alt="Фильтр на реальность" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>6 октября 2010 года в App Store появилось приложение <strong>Instagram</strong>. Его создали <strong>Кевин Систром</strong> и <strong>Майк Кригер</strong> — двое разработчиков, переделавших провальный стартап для путешественников Burbn в простой фотосервис с фильтрами. За первые сутки приложение скачали <strong>25 тысяч человек</strong>. За первую неделю — <strong>миллион</strong>.</p><p>Идея была намеренно узкой: только фотографии, только квадратный формат, только мобильный телефон. Никакого текста, никаких ссылок, никакой лишней функциональности. Фильтры превращали посредственные снимки в нечто похожее на художественные — и именно это зацепило аудиторию.</p><p>Приложение вышло исключительно для <strong>iPhone</strong>. Пользователи Android ждали почти два года. Это была осознанная стратегия: сначала глубина проникновения в одну платформу, потом масштаб.</p><p><em>Instagram мгновенно изменил язык визуальной коммуникации: еда, путешествия, селфи, закаты — всё это приобрело единый эстетический код. Любительская фотография перестала быть любительской на вид.</em></p><p>(организация, запрещенная в России)</p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

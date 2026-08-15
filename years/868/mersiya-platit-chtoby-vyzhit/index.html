@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/868/">← К году 868</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Мерсия платит, чтобы выжить</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/868/Notingem.webp" alt="Мерсия платит, чтобы выжить" />
+            <img class="hero-image" src="https://thehistory.pro/cont/868/Notingem.webp" alt="Мерсия платит, чтобы выжить" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В 868 году <strong>Великое языческое войско</strong> повернуло на юг и захватило <strong>Ноттингем</strong> — укреплённый город в северо-западной Мерсии. Король Мерсии <strong>Бургред</strong>, давний союзник Уэссекса, немедленно обратился за помощью к королю <strong>Этельреду</strong>.</p><p>Союзные армии Мерсии и Уэссекса осадили город — но столкнулись с непривычной задачей. Англосаксонские войска умели сражаться в открытом поле, а не штурмовать укрепления. Атаковать стены напрямую они не могли, держать длительную осаду — тоже.</p><p>Развязка была бесславной: не добившись решительной победы, мерсийцы предпочли откупиться. Викинги приняли дань и ушли — осенью 868-го вернулись в Йорк на зимовку.</p><p>В осаде участвовал и молодой <strong>Альфред</strong> — младший брат Этельреда, которому в тот год исполнилось около двадцати лет. Он наблюдал, как два королевства оказались бессильны перед армией, засевшей за стенами.</p><p><em>В этот раз Мерсия купила мир...</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

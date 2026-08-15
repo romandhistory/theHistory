@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/869/">← К году 869</a>
             <p class="meta-tag">Мировые события</p>
             <h1>14 февраля 869 года</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/869/smert'_Kir.webp" alt="14 февраля 869 года" />
+            <img class="hero-image" src="https://thehistory.pro/cont/869/smert'_Kir.webp" alt="14 февраля 869 года" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>За пятьдесят дней до смерти <strong>Константин</strong> постригся в монахи и принял имя <strong>Кирилл</strong>. Он давно болел — путешествие из Моравии через Венецию в Рим далось тяжело. В феврале 869 года ему было около сорока двух лет.</p><p>Братья прибыли в Рим с реликвиями святого Климента и миссией, которую немецкое духовенство годами пыталось уничтожить. <strong>Адриан II</strong> их принял, одобрил славянскую литургию и рукоположил обоих братьев. Константин знал, что домой не вернётся.</p><p>Он умер <strong>14 февраля 869 года</strong> в Риме. Незадолго до смерти сказал брату: <em>«Мы с тобой как два вола — вели одну борозду. Я падаю на поле. Ты не оставляй учения»</em>.</p><p>Константинополь дал ему образование и карьеру. Хазары, арабы, моравцы — каждому народу он нёс слово на его языке. Алфавит, созданный для одной миссии в одном княжестве, уже переживал своего создателя.</p><p>Рим похоронил его в базилике <strong>Сан-Клементе</strong> — там, где покоились реликвии святого Климента, которые братья привезли с собой.</p><p><em>Мефодий продолжит один...</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

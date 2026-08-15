@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2006/">← К году 2006</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Тысяча человек в ночном море</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2006/salam98.webp" alt="Тысяча человек в ночном море" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2006/salam98.webp" alt="Тысяча человек в ночном море" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>3 февраля 2006 года египетский паром <strong>«Салям 98»</strong> вышел из саудовского порта Дуба и направился в египетскую Сафагу. На борту находились <strong>1415 человек</strong> — паломники, возвращавшиеся из Мекки, и египетские рабочие. До рассвета паром не дошёл.</p><p>В середине ночи в машинном отделении вспыхнул пожар. Огонь распространился быстро — судно накренилось и перевернулось. Связь с берегом была потеряна, сигнал бедствия не подан. Спасатели узнали о катастрофе с большим опозданием. Из <strong>1415 человек</strong> спаслись только <strong>387</strong>. Более <strong>тысячи</strong> погибли.</p><p>Расследование показало: паром был перегружен, противопожарное оборудование не работало должным образом, экипаж действовал с опозданием. Владелец судна поначалу отрицал масштаб трагедии — пытался преуменьшить число пассажиров на борту.</p><p>Египетские власти арестовали владельца компании. Катастрофа стала крупнейшей морской трагедией в истории страны.</p><p><em>Пароходные рейсы между Саудовской Аравией и Египтом — обычный путь для миллионов паломников и рабочих. «Салям 98» совершал этот маршрут сотни раз.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/863/">← К году 863</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Лотарь II и каролингский передел</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/863/lotarII.webp" alt="Лотарь II и каролингский передел" />
+            <img class="hero-image" src="https://thehistory.pro/cont/863/lotarII.webp" alt="Лотарь II и каролингский передел" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p><strong>Лотарь II</strong> был королём <strong>Лотарингии</strong> — срединной полосы между Западно-Франкским и Восточно-Франкским королевствами, унаследованной от отца <strong>Лотаря I</strong>. Территория стратегически значимая, политически уязвимая: два могущественных дяди — <strong>Карл Лысый</strong> на западе и <strong>Людовик Немецкий</strong> на востоке — смотрели на неё c нескрываемым интересом.</p><p>863 год застал Лотаря II в крайне неудобном положении. Его бракоразводный процесс с королевой <strong>Теутбергой</strong>, которую он хотел отослать ради любовницы <strong>Вальдрады</strong>, превратился в общеевропейский скандал. Папа <strong>Николай I</strong> встал на сторону Теутберги и давил на Лотаря с нарастающей жёсткостью. В такой ситуации территориальные манёвры были способом искать союзников и покупать лояльность.</p><p>Смерть <strong>Карла Прованского</strong> в том же году открыла передел территорий к югу от Лотарингии. Бургундия и альпийские земли внезапно оказались в зоне конкурирующих претензий. Лотарь имел географическое преимущество — его владения граничили с этими территориями напрямую — но не имел политического веса, чтобы диктовать условия.</p><p><em>Каролингская политика 863 года была игрой слабых против слабых: каждый из наследников великой империи был недостаточно силён для решающего удара, но достаточно активен, чтобы не упустить случай.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

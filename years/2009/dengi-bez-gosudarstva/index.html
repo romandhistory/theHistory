@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2009/">← К году 2009</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Деньги без государства</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2009/bitcoin.webp" alt="Деньги без государства" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2009/bitcoin.webp" alt="Деньги без государства" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>3 января 2009 года неизвестный под псевдонимом <strong>Сатоши Накамото</strong> запустил сеть <strong>Bitcoin</strong> и добыл первый блок — <strong>«генезис-блок»</strong>. В него была вшита газетная строка из The Times того же дня: заголовок о возможной второй волне банковского кризиса. Намёк был очевиден.</p><p>Идея появилась раньше: в октябре 2008 года Накамото опубликовал белую книгу — девятистраничный технический документ с описанием системы электронных платежей без банков и посредников. Основа — <strong>блокчейн</strong>: цепочка блоков с записями всех транзакций, которую невозможно подделать в одностороннем порядке.</p><p>В первые месяцы Bitcoin существовал исключительно как эксперимент среди криптографов. Монеты не стоили ничего. <strong>12 января 2009 года</strong> Накамото отправил <strong>10 биткоинов</strong> разработчику <strong>Хэлу Финни</strong> — первая транзакция в истории новой валюты.</p><p>Система задумывалась как ответ на кризис 2008 года: деньги, которые нельзя напечатать, банк, который нельзя обанкротить, перевод, который нельзя заблокировать.</p><p><em>Кто скрывался за псевдонимом Сатоши Накамото — не установлено до сих пор.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

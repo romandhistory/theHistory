@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2007/">← К году 2007</a>
             <p class="meta-tag">Россия</p>
             <h1>Парламент без оппозиции</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2007/vybory.webp" alt="Парламент без оппозиции" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2007/vybory.webp" alt="Парламент без оппозиции" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>2 декабря 2007 года прошли выборы в Государственную думу пятого созыва. <strong>«Единая Россия»</strong> получила <strong>64,3%</strong> голосов и <strong>315 мандатов</strong> из 450 — конституционное большинство, достаточное для единоличного принятия любых решений без учёта позиции других фракций.</p><p>Барьер в <strong>7%</strong> преодолели ещё три партии: <strong>КПРФ</strong> (11,6%, 57 мест), <strong>ЛДПР</strong> (8,1%, 40 мест) и <strong>«Справедливая Россия»</strong> (7,7%, 38 мест). «Яблоко», СПС и другие либеральные партии в Думу не прошли — их политическое существование фактически закончилось.</p><p>Кампанию возглавлял лично <strong>Владимир Путин</strong> — «Единая Россия» шла под его именем, хотя он формально не являлся членом партии. Почти все региональные списки возглавляли губернаторы. В Чечне партия набрала более <strong>99%</strong> голосов — ЦИК не нашёл в этом ничего экстраординарного.</p><p>Наблюдатели от ОБСЕ и ПАСЕ зафиксировали многочисленные нарушения и отказались признать выборы свободными. Наблюдатели от СНГ и ШОС оценили их как демократические.</p><p><em>Новая Дума была предсказуемой. Вопрос о том, нужна ли ей оппозиция, больше не обсуждался вслух.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

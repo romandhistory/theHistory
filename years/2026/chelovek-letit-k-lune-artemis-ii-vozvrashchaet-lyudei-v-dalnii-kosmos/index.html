@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2026/">← К году 2026</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Человек летит к Луне: Artemis II возвращает людей в дальний космос</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2026/artemisII.webp" alt="Человек летит к Луне: Artemis II возвращает людей в дальний космос" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2026/artemisII.webp" alt="Человек летит к Луне: Artemis II возвращает людей в дальний космос" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>2 апреля 2026 года ракета <strong>Space Launch System</strong> с кораблём <strong>Orion</strong> стартовала с площадки LC-39B Космического центра Кеннеди во Флориде. Это первый пилотируемый полёт к Луне за <strong>54 года</strong> — со времён «Аполлона-17» в декабре 1972 года.</p><p>На борту — командир <strong>Рид Вайзман</strong>, пилот <strong>Виктор Гловер</strong>, специалисты миссии <strong>Кристина Кох</strong> и <strong>Джереми Хансен</strong> из Канадского космического агентства. Хансен стал первым канадцем, покинувшим околоземную орбиту.</p><p>Миссия продолжалась около <strong>десяти дней</strong>. Orion выполнил облёт Луны без посадки — задача состояла в проверке систем жизнеобеспечения, навигации и связи в условиях дальнего космоса. Artemis II официально превзошла рекорд дальности пилотируемого полёта, установленный экипажем «Аполлона-13» в 1970 году. Экипаж восстановил связь с центром управления после <strong>40-минутной паузы</strong> — когда корабль находился в радиотени за обратной стороной Луны.</p><p>Приводнение состоялось <strong>10 апреля 2026 года</strong>. Высадка на Луну перенесена на конец десятилетия — ориентировочно <strong>2028 год</strong>. Artemis II стала генеральной репетицией перед этим шагом.</p><p><em>Пятьдесят четыре года люди не улетали дальше околоземной орбиты. Четыре астронавта облетели Луну — и вернулись, чтобы следующие могли на ней остаться.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

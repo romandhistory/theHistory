@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/866/">← К году 866</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Зерно, которое пролежало сто лет</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/866/ruses.webp" alt="Зерно, которое пролежало сто лет" />
+            <img class="hero-image" src="https://thehistory.pro/cont/866/ruses.webp" alt="Зерно, которое пролежало сто лет" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>Наиболее авторитетный источник о первом крещении русов — энциклическое письмо патриарха <strong>Фотия</strong>, датируемое концом 866 года. Фотий сообщал, что русы — тот самый народ, который семью годами ранее опустошил окрестности Константинополя — прислали посольство и попросили епископа.</p><p>Контекст был недавним и болезненным. После набега русов на Константинополь в <strong>860 году</strong> Византия воспринимала их как серьёзную угрозу с севера. Теперь эта угроза просила о крещении — и Константинополь не упустил момент. По одной из версий, русские послы были потрясены явленным в городе чудом и сами обратились к Фотию с просьбой прислать к ним наставника в вере.</p><p>Крещение не стало массовым — оно затронуло княжескую элиту и быстро угасло. Когда в <strong>988–989 годах</strong> <strong>Владимир</strong> крестил Киевскую Русь, это первое крещение, судя по всему, было уже забыто.</p><p><em>Но прецедент был создан: Константинополь впервые протянул нить к тому народу, который через столетие станет главным наследником его цивилизации. Зерно упало в землю — и пролежало в ней сто двадцать лет.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

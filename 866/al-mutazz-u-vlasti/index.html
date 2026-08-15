@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/866/">← К году 866</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Аль-Мутазз у власти</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/866/Mutaz.webp" alt="Аль-Мутазз у власти" />
+            <img class="hero-image" src="https://thehistory.pro/cont/866/Mutaz.webp" alt="Аль-Мутазз у власти" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В январе 866 года халифом стал <strong>аль-Мутазз</strong> — и это был уже четвёртый правитель Аббасидского халифата за неполные <strong>десять лет</strong>. Не потому что халифы умирали своей смертью: их убивали тюркские гвардейцы, которые к этому времени полностью контролировали двор в <strong>Самарре</strong>.</p><p>Аль-Мутазз взошёл на трон не волей семьи и не по праву старшинства. Его поставили <strong>тюрки</strong> — те же, кто незадолго до этого убили его предшественника <strong>аль-Мунтасира</strong> и отстранили от власти его отца <strong>аль-Мутаваккиля</strong>, зарезанного ещё в 861-м. Халиф был нужен гвардии как фигура легитимности, не более.</p><p>Этот период — <strong>861–870 годы</strong> — арабские историки назовут <strong>«анархией в Самарре»</strong>. Политическая машина Аббасидов, созданная как централизованная теократическая империя, превратилась в заложника собственной наёмной армии. Халиф царствовал, тюркские военачальники правили.</p><p><em>Халифат формально просуществует ещё четыре века, но верховная власть в нём никогда не вернётся к тому, чем была при первых Аббасидах — реальной и неоспоримой.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

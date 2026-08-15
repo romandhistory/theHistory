@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2003/">← К году 2003</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Двухтысячелетний город исчез за двадцать секунд</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2003/bam.webp" alt="Двухтысячелетний город исчез за двадцать секунд" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2003/bam.webp" alt="Двухтысячелетний город исчез за двадцать секунд" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>26 декабря 2003 года в 5:26 утра по иранскому времени земля под городом <strong>Бам</strong> на юго-востоке Ирана содрогнулась. Магнитуда — 6,6, эпицентр — в 10 километрах от центра города. Большинство жителей спали.</p><p>Погибли не менее 26 тысяч человек, 30 тысяч получили ранения. До 90% строений города были разрушены. Бам — древний торговый центр на Великом шёлковом пути с двухтысячелетней историей — лежал в руинах. Знаменитая глинобитная цитадель <strong>Арг-э-Бам</strong>, одно из крупнейших земляных сооружений мира, рассыпалась в прах.</p><p>Причиной чудовищных разрушений стало строительство из сырцового кирпича — традиционного материала региона, совершенно не приспособленного к сейсмической нагрузке. Дома складывались как карточные домики, погребая под собой спящих людей.</p><p>Международная помощь пришла быстро: спасательные команды из десятков стран, включая <strong>Россию</strong> и <strong>США</strong>, работали бок о бок — несмотря на напряжённость в двусторонних отношениях.</p><p><em>Иран — одна из самых сейсмоопасных стран мира. Бам заплатил за это своей историей.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

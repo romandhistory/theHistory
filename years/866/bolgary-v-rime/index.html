@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/866/">← К году 866</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Болгары в Риме</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/866/bolgposl.webp" alt="Болгары в Риме" />
+            <img class="hero-image" src="https://thehistory.pro/cont/866/bolgposl.webp" alt="Болгары в Риме" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>Осенью 866 года в Риме открылся церковный собор, на котором появились послы хана <strong>Бориса I</strong>. Их присутствие было красноречивее любых слов: Болгария публично заявляла о церковной ориентации на Рим в обход Константинополя.</p><p>Послы привезли список вопросов — бытовых, юридических, литургических. Можно ли воевать в воскресенье? Как правильно поститься? Нужно ли перекрещивать тех, кого крестили греки? За этой бытовой конкретикой стоял один политический вопрос: на каких условиях Болгария входит в латинский христианский мир?</p><p>Папа <strong>Николай I</strong> воспользовался моментом максимально. Его ответы — те самые <strong>Responsa Nicolai</strong> — составили обширный документ, адресованный лично Борису. Николай писал мягко, убеждал, а не давил, и принципиально избегал греческой модели церковного контроля над государством. Рим предлагал христианство без удавки.</p><p>Визит болгарских послов стал пиком римско-болгарского сближения — и одновременно его потолком. Николай I так и не решился дать Болгарии собственного епископа, опасаясь окончательно разорвать с Константинополем. <em>Борис сделал выводы.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

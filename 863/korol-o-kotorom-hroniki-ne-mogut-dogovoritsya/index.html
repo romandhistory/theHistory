@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/863/">← К году 863</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Король, о котором хроники не могут договориться</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/863/OsbertVSElla.webp" alt="Король, о котором хроники не могут договориться" />
+            <img class="hero-image" src="https://thehistory.pro/cont/863/OsbertVSElla.webp" alt="Король, о котором хроники не могут договориться" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В 863 году власть в Нортумбрии оказалась расколота между двумя королями — <strong>Осбертом</strong>, правившим с 848 года, и <strong>Эллой</strong>, чьё появление на престоле хронисты описывают по-разному.</p><p>Большинство свидетельств называют Эллу человеком не королевской крови, тираном, отстранившим законного правителя силой. Симеон Даремский, писавший два века спустя, утверждает обратное: сам Осберт объявил Эллу братом и соправителем, назначив его наследником.</p><p>Проверить, какая из версий верна, невозможно — современники не оставили согласованного рассказа о том, что произошло в Йорке в этом году. Одно и то же событие в разных хрониках выглядит то как узурпация, то как законная передача власти.</p><p>Достоверно одно: с 863 года Нортумбрия жила с двумя претендентами на один престол одновременно. Ни один из них не смог вытеснить другого окончательно.</p><p><em>Королевство, расколотое между Осбертом и Эллой, вступило в раздор в тот самый момент, когда единство ему было нужнее всего — но об этом в 863 году в Йорке ещё никто не задумывался.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

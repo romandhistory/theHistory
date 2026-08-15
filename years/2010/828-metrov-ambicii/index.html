@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2010/">← К году 2010</a>
             <p class="meta-tag">Мировые события</p>
             <h1>828 метров амбиций</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2010/zdanie.webp" alt="828 метров амбиций" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2010/zdanie.webp" alt="828 метров амбиций" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>4 января 2010 года в Дубае открылся <strong>Бурдж-Халифа</strong> — самое высокое сооружение в истории человечества. <strong>828 метров</strong>, <strong>163 этажа</strong>, шпиль длиной <strong>180 метров</strong>, видный за <strong>95 километров</strong>. Точная высота до последнего дня держалась в секрете — чтобы конкуренты не успели скорректировать собственные проекты.</p><p>На церемонии открытия небоскрёб сменил название: до этого момента он был известен как <strong>«Бурдж-Дубай»</strong>. Правитель эмирата шейх Мохаммед переименовал его в честь президента ОАЭ шейха Халифы — того самого, чей Абу-Даби выдал Дубаю кредит для завершения стройки в разгар финансового кризиса. Благодарность оказалась монументальной.</p><p>Строительство потребовало инженерных решений, которых раньше не существовало. Бетон заливали только ночью и добавляли в смесь лёд — дневная жара в <strong>+50°C</strong> делала работу с раствором невозможной. Для фундамента в песчаном грунте забили около <strong>200 свай</strong> глубиной до <strong>50 метров</strong>. Специально для башни разработали новые лифты — ни один существующий не мог подниматься выше <strong>450 метров</strong>.</p><p>Внутри разместились отель Armani, апартаменты, офисы, рестораны и смотровые площадки. Одновременно в здании могут находиться <strong>30 тысяч человек</strong>.</p><p><em>Бурдж-Халифа строился как символ новой экономики Дубая — не нефтяной, а туристической и финансовой. Самое высокое здание мира должно было доказать: деньги теперь делают не только из нефти, но и из высоты.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

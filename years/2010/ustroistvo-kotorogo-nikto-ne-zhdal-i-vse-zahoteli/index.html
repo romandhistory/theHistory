@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2010/">← К году 2010</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Устройство, которого никто не ждал — и все захотели</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2010/ipad.webp" alt="Устройство, которого никто не ждал — и все захотели" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2010/ipad.webp" alt="Устройство, которого никто не ждал — и все захотели" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>27 января 2010 года <strong>Стив Джобс</strong> вышел на сцену в Сан-Франциско и достал из конверта планшет. <em>«Самый важный продукт, который я когда-либо представлял»</em>, — сказал он. Скептики к тому моменту уже окрестили <strong>iPad</strong> <em>«большим iPod Touch»</em> и предрекали провал.</p><p>Продажи стартовали <strong>3 апреля</strong>. За первые <strong>28 дней</strong> разошлось более <strong>миллиона устройств</strong> — быстрее, чем любой предыдущий продукт Apple. К концу года компания продала <strong>15 миллионов</strong> iPad.</p><p>Планшет не изобрёл новую категорию — попытки создать подобные устройства предпринимались с 1990-х. Но именно Apple сделала их массовыми: простой интерфейс, длинная жизнь батареи, магазин приложений. Газеты, журналы, издатели учебников немедленно увидели в iPad спасательный круг для умирающей печатной прессы.</p><p><em>Рынок персональных компьютеров получил конкурента, которого не ожидал. Эпоха планшетов началась.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

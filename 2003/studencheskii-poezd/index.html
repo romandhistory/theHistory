@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2003/">← К году 2003</a>
             <p class="meta-tag">Россия</p>
             <h1>Студенческий поезд</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2003/esentuki.webp" alt="Студенческий поезд" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2003/esentuki.webp" alt="Студенческий поезд" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>5 декабря 2003 года в 7:42 пригородная электричка № 6309 маршрута <strong>Кисловодск — Минеральные Воды</strong> подъезжала к <strong>Ессентукам</strong>. В народе её называли студенческой: вагоны были забиты молодёжью, спешившей к девяти утра на занятия в Пятигорск. За 400 метров до станции второй вагон разнесло взрывом.</p><p>Крышу вагона подбросило вверх, она ударилась о столб и обрушилась обратно. Тела пассажиров разлетелись на десятки метров. Погибли 44 человека, более 200 получили ранения. Среди жертв — дети. Следом за первым декабрьским взрывом пришло напоминание: этот маршрут уже атаковали 3 сентября того же года — тогда погибли семеро.</p><p>Ответственность взял <strong>Шамиль Басаев</strong>. Следствие установило группу из нескольких человек — двое успели выпрыгнуть из вагона до взрыва, один погиб вместе с пассажирами.</p><p>8 декабря Ставропольский край объявил день траура. <strong>Владимир Путин</strong> поручил усилить охрану на транспорте.</p><p><em>Электричка шла по курортному региону — туда, где люди привыкли думать о здоровье, а не о войне. Война пришла сама.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

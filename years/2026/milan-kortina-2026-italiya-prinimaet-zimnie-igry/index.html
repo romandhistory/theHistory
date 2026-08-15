@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2026/">← К году 2026</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Милан-Кортина 2026: Италия принимает зимние Игры</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2026/milano&cortiana.webp" alt="Милан-Кортина 2026: Италия принимает зимние Игры" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2026/milano&cortiana.webp" alt="Милан-Кортина 2026: Италия принимает зимние Игры" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>С 6 по 22 февраля 2026 года в Италии прошли зимние Олимпийские игры — соревнования распределились между <strong>Миланом</strong>, <strong>Кортиной-д'Ампеццо</strong> и рядом других площадок. Были разыграны <strong>116 комплектов медалей</strong>.</p><p>Россия и Беларусь снова выступали в ограниченном нейтральном формате — без флага и гимна, как и на двух предыдущих Олимпиадах. Политический контекст никуда не делся: военная операция в Украине шла четвёртый год.</p><p>Главным спортивным событием Игр стал хоккей. Финал мужского турнира между <strong>Канадой</strong> и <strong>США</strong> вошёл в историю как один из лучших матчей между национальными командами — Канада победила в овертайме. В женском турнире победила сборная США. Капитан канадской сборной <strong>Мари-Филип Пулен</strong> стала самой результативной хоккеисткой в истории Олимпийских игр — <strong>20 заброшенных шайб</strong>.</p><p>Среди других ярких эпизодов — сенсационная победа немца <strong>Филиппа Раймунда</strong> в прыжках с трамплина и золото швейцарки <strong>Матильды Гремо</strong> в слоупстайле у женщин.</p><p>Италия принимала зимние Игры во второй раз после Турина-2006 — и первый раз в формате двух городов одновременно. Церемония закрытия прошла в Вероне.</p><p><em>Милан-Кортина запомнится прежде всего хоккейным финалом — и тем, что зимняя Олимпиада впервые прошла на фоне войны на Ближнем Востоке, объявленной за несколько дней до её начала.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

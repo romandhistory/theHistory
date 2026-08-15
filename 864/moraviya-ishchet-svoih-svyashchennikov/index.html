@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/864/">← К году 864</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Моравия ищет своих священников</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/864/rostislav.webp" alt="Моравия ищет своих священников" />
+            <img class="hero-image" src="https://thehistory.pro/cont/864/rostislav.webp" alt="Моравия ищет своих священников" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p><strong>Ростислав</strong> стремился ограничить деятельность франкских миссионеров в своих землях. Сначала он обратился в Рим — безуспешно. Затем, около <strong>862 года</strong>, послал за «учителями» в Константинополь, особо оговорив нужду в людях, способных работать на славянском языке.</p><p>Причина была проста. Франкские епископы смотрели на Моравию как на территорию, законно входящую в их юрисдикцию — то есть церковная зависимость прямо конвертировалась в политическую. Ростислав поддержал <strong>Кирилла и Мефодия</strong> не столько из религиозных, сколько из политических побуждений: Константинополь был нужен ему как противовес франкскому давлению.</p><p>В 864 году <strong>Людовик Немецкий</strong> всё же загнал Ростислава в крепость и вырвал клятву верности — но сломить его окончательно не смог. Славянская миссия продолжала работать. <strong>Кирилл и Мефодий</strong> переводили литургические тексты, готовили местных священников, выстраивали то, чего у Моравии ещё не было: церковь, говорящую с народом на его языке.</p><p><em>Независимость, которую не удалось отстоять мечом, строилась алфавитом.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

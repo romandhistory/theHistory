@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/862/">← К году 862</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Трон, обошедший одно поколение и вернувшийся к сыну</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/862/konstantinI.webp" alt="Трон, обошедший одно поколение и вернувшийся к сыну" />
+            <img class="hero-image" src="https://thehistory.pro/cont/862/konstantinI.webp" alt="Трон, обошедший одно поколение и вернувшийся к сыну" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>13 апреля 862 года умер <strong>Дональд I</strong>, король Альбы. Престол унаследовал его племянник <strong>Константин</strong>, сын покойного короля <strong>Кеннета I</strong>.</p><p>В королевстве скотов действовал обычай <strong>танистри</strong>: власть переходила не от отца к сыну напрямую, а к следующему по старшинству мужчине рода. Именно поэтому после смерти Кеннета I в 858 году корону получил не его сын, а младший брат Дональд.</p><p>Дональд правил четыре года. Умер он во дворце Киннбеллатор — месте, точное расположение которого поздние хронисты уже не могли указать с уверенностью.</p><p>Константину было около <strong>двадцати шести лет</strong>. В ирландских анналах, современных его правлению, его называли не королём Альбы, а королём пиктов — само имя <strong>«Альба»</strong> для этих земель ещё не закрепилось в языке современников.</p><p><em>Обычай танистри однажды забрал у Константина трон отца в пользу дяди. Смерть того же дяди вернула этот трон сыну — редкий случай, когда порядок престолонаследия сработал по кругу, а не по прямой линии.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

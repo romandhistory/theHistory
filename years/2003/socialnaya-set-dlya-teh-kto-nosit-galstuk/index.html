@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2003/">← К году 2003</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Социальная сеть для тех, кто носит галстук</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2003/link.webp" alt="Социальная сеть для тех, кто носит галстук" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2003/link.webp" alt="Социальная сеть для тех, кто носит галстук" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>5 мая 2003 года <strong>Рид Хоффман</strong> и пятеро партнёров запустили <strong>LinkedIn</strong>. В первый месяц зарегистрировались около 4500 пользователей. Идея была простой: профессиональный профиль в интернете — резюме, опыт, навыки — и связи с коллегами и партнёрами по отрасли.</p><p>LinkedIn появился в момент, когда интернет ещё ассоциировался с развлечениями и новостями, но не с профессиональной жизнью. Хоффман сделал ставку на деловую аудиторию — людей, которым нужны не друзья, а контакты. Логика была проста: у каждого человека есть профессиональная репутация, и она должна быть видна нужным людям.</p><p>Первое время сеть росла медленно. Монетизации не было, бизнес-модель оставалась туманной. Венчурные инвесторы вкладывались в расчёте на будущее — рынок онлайн-рекрутинга казался огромным.</p><p>Отличие от других соцсетей было принципиальным: реальное имя, реальная должность, реальный опыт. Анонимность здесь была неуместна — люди приходили строить репутацию, а не прятаться.</p><p><em>Деловой интернет получил свою площадку.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

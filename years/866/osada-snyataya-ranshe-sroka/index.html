@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/866/">← К году 866</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Осада, снятая раньше срока</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/866/LudovikII.webp" alt="Осада, снятая раньше срока" />
+            <img class="hero-image" src="https://thehistory.pro/cont/866/LudovikII.webp" alt="Осада, снятая раньше срока" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В 866 году император <strong>Людовик II</strong> выступил в новый поход против арабского эмирата в <strong>Бари</strong> — гнезда сарацинских набегов на Беневент и Салерно.</p><p>Толчком послужили жалобы аббатов Монтекассино и Сан-Винченцо: их монастыри страдали от арабских рейдов из Бари не первый год. Правитель города, опиравшийся на два десятка окрестных крепостей, тем временем добивался инвеституры от самого багдадского халифа — искал себе законности не у соседей, а у Багдада.</p><p>Людовик подступил к стенам Бари и простоял под ними некоторое время. Взять город с ходу не вышло. Осаду пришлось снять, войско — отвести назад.</p><p>Это был не первый его опыт войны с сарацинами. Двадцать лет назад, в 846 году, он же безуспешно пытался защитить от их набега сам Рим — тогда пришлось отступить и оставить город на разграбление, пока сарацин не изгнали без него.</p><p><em>Бари в 866 году устоял. Император вернулся ни с чем — но не в первый раз и, судя по упрямству, с каким он раз за разом возвращался к этой цели, явно не в последний.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/865/">← К году 865</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Мир между братьями, скреплённый чужой обидой</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/865/karl&ludovik.webp" alt="Мир между братьями, скреплённый чужой обидой" />
+            <img class="hero-image" src="https://thehistory.pro/cont/865/karl&ludovik.webp" alt="Мир между братьями, скреплённый чужой обидой" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В 865 году <strong>Карл Лысый</strong> и <strong>Людовик Немецкий</strong> встретились близ Туля и подтвердили мир, заключённый пятью годами раньше в Кобленце.</p><p>Согласия между братьями было немного. Людовик поддерживал племянника <strong>Лотаря II</strong> в его стремлении развестись с женой <strong>Теутбергой</strong> ради <strong>Вальдрады</strong> — за это Лотарь обещал ему Эльзас. Карл развод не одобрял.</p><p>На встрече в Туле дело едва не сорвалось из-за личной обиды Карла. Он объявил, что не желает иметь дела с Лотарем, пока тот держит при себе людей отлучённых от церкви — среди них <strong>Балдуина</strong>, который несколькими годами раньше похитил и взял в жёны дочь самого Карла.</p><p>Советники Людовика и Лотаря пытались не допустить огласки этих претензий перед народом. Карл настоял на своём и рассказал всё как есть.</p><p><em>Расстались братья, не решив главного, но договорившись о новой встрече в октябре — на границе Мозомагского и Вузьенского графств. Личная вражда отступила перед необходимостью: у обоих братьев был общий интерес к землям племянника, у которого так и не было законного наследника.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

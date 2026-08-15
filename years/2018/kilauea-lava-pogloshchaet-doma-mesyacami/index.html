@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2018/">← К году 2018</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Килауэа: лава поглощает дома месяцами</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2018/kilauea.webp" alt="Килауэа: лава поглощает дома месяцами" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2018/kilauea.webp" alt="Килауэа: лава поглощает дома месяцами" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>3 мая 2018 года вулкан <strong>Килауэа</strong> на острове Гавайи вступил в новую активную фазу — открылись новые трещины в жилом районе Лейлани Эстейтс. Извержение продолжалось более четырёх месяцев и стало одним из наиболее разрушительных в современной истории острова.</p><p>Килауэа извергается практически непрерывно с <strong>1983 года</strong> — но майская активизация отличалась масштабом и характером. Лавовые потоки из <strong>24 трещин</strong> уничтожили более <strong>700 домов</strong>, покрыли около <strong>14 квадратных километров</strong> территории и добавили к острову новый участок суши площадью около <strong>3,5 квадратных километра</strong> — лава стекала в океан и застывала. Около <strong>2 500 человек</strong> были эвакуированы.</p><p>В мае взрывное извержение на вершине кратера <strong>Халемаумау</strong> выбросило столб пепла на высоту около <strong>9 километров</strong>. Пепел и вулканические газы — в частности, двуокись серы — создали серьёзную угрозу для здоровья жителей. Геотермальная электростанция Puna оказалась в зоне лавовых потоков — её персонал эвакуировали, станция была остановлена.</p><p>Килауэа — один из наиболее активных вулканов планеты, священная гора для коренных гавайцев. Лава уничтожала дома, которые люди строили десятилетиями, зная о рисках — потому что жить рядом с вулканом и означало жить на Гавайях.</p><p><em>Остров потерял сотни домов — и приобрёл новую землю. Вулкан давал и забирал одновременно.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

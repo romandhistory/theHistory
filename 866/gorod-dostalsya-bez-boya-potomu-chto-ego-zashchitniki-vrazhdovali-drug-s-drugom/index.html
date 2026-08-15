@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/866/">← К году 866</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Город достался без боя, потому что его защитники враждовали друг с другом</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/866/york866.webp" alt="Город достался без боя, потому что его защитники враждовали друг с другом" />
+            <img class="hero-image" src="https://thehistory.pro/cont/866/york866.webp" alt="Город достался без боя, потому что его защитники враждовали друг с другом" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>1 ноября 866 года, в День Всех Святых, войско викингов вошло в <strong>Йорк</strong>. Город, третий год расколотый противостоянием двух королей — <strong>Осберта</strong> и <strong>Эллы</strong>, — не оказал почти никакого сопротивления.</p><p>Пришедшие с юга воины провели предыдущую зиму в Восточной Англии, где получили от местного короля <strong>Эдмунда</strong> коней в обмен на мир. Пешая армия стала конной — и этой осенью двинулась на север.</p><p>Праздник в христианском календаре пришельцев не остановил. Пока нортумбрийцы отмечали День Всех Святых, а не готовились к обороне, войско вошло в город почти беспрепятственно. Оба короля — и Осберт, и Элла — бежали, так и не успев соединить силы против общего врага.</p><p>Сага позднейших веков назовёт вождём похода <strong>Ивара Бескостного</strong> и объяснит его ярость местью за отца, <strong>Рагнара Лодброка</strong>, будто бы казнённого некогда Эллой. Современные событию хроники о такой мести молчат — это уже позднейшее сказание, наложенное на голые факты завоевания.</p><p><em>Три года Осберт и Элла не могли поделить один престол. Того часа, когда престол стоило защищать общими силами, они дождались слишком поздно — а город к тому времени уже был не их.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

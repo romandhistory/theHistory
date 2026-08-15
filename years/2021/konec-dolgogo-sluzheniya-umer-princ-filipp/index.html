@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2021/">← К году 2021</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Конец долгого служения: умер принц Филипп</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2021/fillip.webp" alt="Конец долгого служения: умер принц Филипп" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2021/fillip.webp" alt="Конец долгого служения: умер принц Филипп" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>9 апреля 2021 года в Виндзорском замке скончался принц <strong>Филипп, герцог Эдинбургский</strong>. Ему было <strong>99 лет</strong>. Букингемский дворец сообщил, что смерть наступила мирно, в первой половине дня.</p><p>Филипп был супругом <strong>Елизаветы II</strong> на протяжении <strong>73 лет</strong> — дольше, чем любой другой королевский консорт в британской истории. Грек по происхождению, принц датского и греческого королевских домов, он отказался от иностранных титулов ради брака с будущей королевой и принял британское подданство. В <strong>1947 году</strong>, когда они поженились, страна ещё не оправилась от войны — и свадьба стала одним из первых поводов для общенационального торжества.</p><p>Роль консорта — быть рядом, но не впереди — Филипп исполнял с очевидным внутренним напряжением. Военно-морской офицер с боевым опытом Второй мировой, человек с острым умом и резкими суждениями, он посвятил десятилетия благотворительности и программе <strong>Duke of Edinburgh's Award</strong> — молодёжной инициативе, охватившей миллионы участников в <strong>140 странах</strong>.</p><p>Публично он был известен прямолинейностью на грани бестактности. В частной жизни — по свидетельствам тех, кто был рядом — именно он удерживал королевскую семью от внутреннего распада в трудные десятилетия.</p><p><em>Филипп не дожил до своего столетия <strong>восемьдесят дней</strong>. Елизавета II пережила его на полтора года.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

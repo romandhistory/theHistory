@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2008/">← К году 2008</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Китай заявляет о себе миру</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2008/olimp.webp" alt="Китай заявляет о себе миру" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2008/olimp.webp" alt="Китай заявляет о себе миру" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>С 8 по 24 августа 2008 года Пекин принимал XXIX летние Олимпийские игры. <strong>204 страны</strong>, более <strong>10 тысяч спортсменов</strong>, <strong>302 комплекта наград</strong>. Церемония открытия на стадионе <strong>«Птичье гнездо»</strong> поразила планету: <strong>15 тысяч артистов</strong>, хореография немыслимой точности, фейерверк над городом. Китай потратил на Игры около <strong>40 миллиардов долларов</strong> — рекорд в истории Олимпиад.</p><p>Хозяева доминировали в медальном зачёте: <strong>51 золото</strong>, первое место. США — вторые, Россия — третья с <strong>23 золотыми медалями</strong>. Главным героем Игр стал американский пловец <strong>Майкл Фелпс</strong>, выигравший <strong>восемь золотых медалей</strong> за одну Олимпиаду — абсолютный рекорд.</p><p>Факел проносили по маршруту через весь мир — и повсюду его встречали протесты в связи с положением в Тибете. В самом Пекине власти жёстко контролировали любые публичные акции. Международная критика разбивалась о стену официального молчания.</p><p>Россия заняла третье место — формально успех, но худший результат в летней истории национальной команды. Пресса фиксировала: советский резерв окончательно исчерпан.</p><p><em>Пекин использовал Олимпиаду как заявку на новый статус. Игры прошли — и мир увидел Китай другим.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

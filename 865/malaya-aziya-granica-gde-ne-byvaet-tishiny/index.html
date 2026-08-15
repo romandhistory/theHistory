@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/865/">← К году 865</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Малая Азия: граница, где не бывает тишины</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/865/arabianwar.webp" alt="Малая Азия: граница, где не бывает тишины" />
+            <img class="hero-image" src="https://thehistory.pro/cont/865/arabianwar.webp" alt="Малая Азия: граница, где не бывает тишины" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>После разгрома при Лалакаоне в <strong>863 году</strong> и гибели эмира <strong>Умара аль-Акты</strong> арабские набеги на византийские фемы не прекратились — они лишь потеряли единое командование.</p><p>Со времён арабских завоеваний VII века Византийская империя рейды в Малую Азию не прекращались ни на одно десятилетие. Граница между халифатом и империей была линией постоянного взаимного изматывания. Аббасидский халифат начал слабеть в <strong>840-е годы</strong>, что дало Византии временное преимущество — но набеги 860-го снова опустошили византийскую территорию.</p><p>К 865-му инициатива перешла к Константинополю: победа при Лалакаоне открыла возможность для контрнаступления, и византийские войска сами переходили границу. 
                                 </p><p><em>Пограничная война не имела победителей — она просто продолжалась, год за годом, сжигая деревни по обе стороны.</em></p></div>
         </div>

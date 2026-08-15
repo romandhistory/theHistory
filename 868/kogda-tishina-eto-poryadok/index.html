@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/868/">← К году 868</a>
             <p class="meta-tag">Россия</p>
             <h1>Когда тишина — это порядок</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/868/novgorod868.webp" alt="Когда тишина — это порядок" />
+            <img class="hero-image" src="https://thehistory.pro/cont/868/novgorod868.webp" alt="Когда тишина — это порядок" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p><strong>Рюрик</strong> в 868 году не воевал, не подавлял восстаний и не расширял владений. Летопись об этом годе молчит — и это лучшая характеристика состояния севера.</p><p>Шестой год правления — это уже не становление, это рутина. Полюдье осенью, торговля весной, варяжские наместники на местах, дань поступает регулярно. Племена севера — словене, кривичи, чудь, меря — встроены в систему достаточно прочно, чтобы не думать о мятеже. Новгород растёт медленно, но уверенно.</p><p>Рюрик к этому времени был уже немолодым человеком — по меркам IX века за сорок считалось зрелым возрастом. Сын <strong>Игорь</strong> был ещё мал. Вопрос наследования где-то на горизонте — но пока не срочный.</p><p>Север в 868 году был именно таким государством, каким должно быть молодое государство после бурных первых лет: скучным, предсказуемым и работающим. Скандалов нет, войн нет, кризисов нет.</p><p><em>Историки любят яркие события — перевороты, походы, катастрофы. Но настоящая работа государства происходит в тихие годы, когда князь объезжает земли, судит споры и собирает дань. 868-й был именно таким годом — и Рюрик прожил его именно так.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

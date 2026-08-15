@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2004/">← К году 2004</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Почта, которая изменила правила</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2004/gmail.webp" alt="Почта, которая изменила правила" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2004/gmail.webp" alt="Почта, которая изменила правила" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>1 апреля 2004 года <strong>Google</strong> объявила о запуске <strong>Gmail</strong>. Дата была выбрана намеренно — многие восприняли анонс как первоапрельскую шутку. Повод для скептицизма был: Google обещал бесплатный почтовый ящик объёмом 1 гигабайт. В то время <strong>Yahoo</strong> и <strong>Hotmail</strong> давали по 4–6 мегабайт.</p><p>Гигабайт изменил логику работы с почтой: письма больше не нужно было удалять, чтобы освободить место. Google предложил хранить всё и искать нужное через поиск — по аналогии с веб-поиском. Папки заменили ярлыки, письма объединились в цепочки. Интерфейс работал быстрее конкурентов за счёт технологии AJAX.</p><p>Первый год Gmail работал только по приглашениям — каждый пользователь получал несколько инвайтов для друзей. Дефицит создал ажиотаж: приглашения продавали на <strong>eBay</strong> за десятки долларов. Стратегия превратила почтовый сервис в объект желания.</p><p>Конкуренты ответили быстро: Yahoo увеличил бесплатное хранилище до 100 мегабайт, затем до гигабайта. Hotmail последовал за ним.</p><p><em>Gmail поднял планку для всей индустрии — и опустил её обратно никто не смог.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

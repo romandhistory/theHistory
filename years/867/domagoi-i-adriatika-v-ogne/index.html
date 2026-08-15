@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/867/">← К году 867</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Домагой и Адриатика в огне</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/867/domagoivspirats.webp" alt="Домагой и Адриатика в огне" />
+            <img class="hero-image" src="https://thehistory.pro/cont/867/domagoivspirats.webp" alt="Домагой и Адриатика в огне" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В 866 году арабский флот терзал далматинское побережье — Будва, Рисан, Котор пали под ударами. Арабы держали Бари и Таренто на итальянском берегу и чувствовали себя хозяевами Адриатики.</p><p><strong>Домагой</strong> оказался в положении, при котором у него было слишком много врагов одновременно. Венецианский хронист начала XI века назвал его <em>«худшим из славянских князей»</em> — именно за бесконечные войны с арабами и Венецией. В 865-м он вынужден был замириться с Венецией, в 866-м арабы жгли его берега.</p><p>В 865–867 годах хорватские корабли активно действовали на Адриатике, перехватывая венецианские торговые пути и противодействуя арабским рейдам. Домагой воевал не потому, что хотел — а потому что море не давало выбора.</p><p><em>Домагой не отразил арабов в одном сражении — он просто не уступил им моря, пока все соседи искали компромисс.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

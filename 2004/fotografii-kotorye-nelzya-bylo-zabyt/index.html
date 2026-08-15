@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2004/">← К году 2004</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Фотографии, которые нельзя было забыть</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2004/turma.webp" alt="Фотографии, которые нельзя было забыть" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2004/turma.webp" alt="Фотографии, которые нельзя было забыть" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>28 апреля 2004 года американский канал <strong>CBS</strong> показал несколько снимков из тюрьмы <strong>Абу-Грейб</strong> под Багдадом. На фотографиях — американские военнослужащие рядом с обнажёнными и унижаемыми иракскими заключёнными. Несколько дней спустя журнал <strong>The New Yorker</strong> опубликовал расширенную подборку. Разразился крупнейший скандал за всё время иракской войны.</p><p>Пытки включали избиения, сексуальное насилие, издевательства с использованием собак. Военные фотографировали происходящее сами — на личные камеры. Один из снимков попал в фотоателье, фотограф вызвал полицию. Следствие шло тихо, пока CBS не получил материалы.</p><p>Руководство вооружённых сил США признало нарушения Женевской конвенции. <strong>Буш</strong> публично извинился. Военный трибунал осудил нескольких охранников, комендант тюрьмы была разжалована. Высокопоставленных чиновников к ответственности так и не привлекли.</p><p>Спецдокладчик <strong>ООН</strong> констатировал: публикация фотографий «нарушила табу вокруг того, что делают страны, взявшиеся нести демократию другим».</p><p><em>Абу-Грейб при Саддаме был символом диктатуры. После американских фотографий он стал символом чего-то другого.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

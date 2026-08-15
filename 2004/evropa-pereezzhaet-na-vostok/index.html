@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2004/">← К году 2004</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Европа переезжает на восток</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2004/nato.webp" alt="Европа переезжает на восток" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2004/nato.webp" alt="Европа переезжает на восток" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>29 марта 2004 года <strong>НАТО</strong> приняло сразу семь новых членов: <strong>Болгарию</strong>, <strong>Румынию</strong>, <strong>Словакию</strong>, <strong>Словению</strong>, <strong>Эстонию</strong>, <strong>Латвию</strong> и <strong>Литву</strong>. 2 апреля в штаб-квартире альянса в Брюсселе прошла церемония поднятия флагов. Три бывшие советские республики — страны Балтии — оказались внутри военного блока, созданного против <strong>СССР</strong>.</p><p>1 мая 2004 года <strong>Европейский союз</strong> принял десять новых членов: <strong>Польшу</strong>, <strong>Чехию</strong>, <strong>Венгрию</strong>, <strong>Словакию</strong>, <strong>Словению</strong>, <strong>Эстонию</strong>, <strong>Латвию</strong>, <strong>Литву</strong>, <strong>Кипр</strong> и <strong>Мальту</strong>. Крупнейшее единовременное расширение в истории организации. За одну ночь ЕС вырос с 15 до 25 государств.</p><p>Для Центральной и Восточной Европы это был триумф трансформации — пятнадцать лет спустя после падения Берлинской стены регион получил то, к чему стремился. Для России — тревожный сигнал: буфер советской эпохи исчезал, граница НАТО приближалась к Пскову и Смоленску.</p><p><strong>Владимир Путин</strong> реагировал сдержанно. Публично — принимал как данность. Приватно, по свидетельствам дипломатов, — с нарастающим раздражением.</p><p><em>Карта Европы изменилась за одну весну. Последствия этой перемены предстояло осознать позже.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

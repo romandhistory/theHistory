@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/864/">← К году 864</a>
             <p class="meta-tag">Россия</p>
             <h1>Две столицы одной реки</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/864/novgor&kiev.webp" alt="Две столицы одной реки" />
+            <img class="hero-image" src="https://thehistory.pro/cont/864/novgor&kiev.webp" alt="Две столицы одной реки" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>К концу 864 года контуры варяжской Руси обозначились достаточно отчётливо, чтобы говорить о системе. Не государстве — системе. Разница принципиальная.</p><p>На севере <strong>Рюрик</strong> выстроил административную сеть: <strong>Новгород, Ладога, Белоозеро, Изборск</strong> — узлы, связанные полюдьем, варяжскими наместниками и контролем над торговыми путями. Власть здесь держалась на личном присутствии князя и силе дружины. Племена платили — не потому что любили, а потому что понимали: не заплатишь, приедут снова.</p><p>На юге <strong>Аскольд</strong> строил иначе. Киев смотрел на Константинополь — торговля с Византией давала ресурсы, дипломатия открывала возможности. Южная система была более открытой, более подвижной и более космополитичной: греческие купцы, хазарские торговцы, степные соседи — Киев в 864 году был перекрёстком, а не крепостью.</p><p>Два центра не конкурировали открыто — между Новгородом и Киевом было слишком много расстояния и слишком мало поводов для прямого столкновения. Но они строили разные модели власти на одной реке — и это различие со временем должно было стать проблемой.</p><p><em>В 864 году Русь была двуглавой — и обе головы смотрели в разные стороны.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

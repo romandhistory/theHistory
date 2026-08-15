@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2025/">← К году 2025</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Кража века: ограбление Лувра среди бела дня</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2025/ograblenieluvra.webp" alt="Кража века: ограбление Лувра среди бела дня" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2025/ograblenieluvra.webp" alt="Кража века: ограбление Лувра среди бела дня" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>19 октября 2025 года около 9:30 утра — через полчаса после открытия музея — четверо грабителей в костюмах технических работников Лувра подъехали к зданию на скутерах, приставили к стене раздвижную лестницу, выбили окно и ворвались в галерею Аполлона. Злоумышленники вскрыли стеклянные витрины Королевской сокровищницы, забрали экспонаты и выбрались наружу — не обращая внимания на сработавшую сигнализацию и многочисленных свидетелей.</p><p>Похищены <strong>девять ювелирных изделий</strong> из коллекции Наполеона Бонапарта и императрицы Жозефины. Среди них — Рука правосудия, корона Карла Великого со <strong>161 крупным алмазом</strong>, брошь Святого Людовика. Крупнейший бриллиант коллекции «Регент» весом <strong>140 карат</strong> похищен не был.</p><p>При побеге грабители выронили повреждённую корону императрицы Евгении — украшенную золотыми орлами, <strong>1354 бриллиантами</strong> и <strong>56 изумрудами</strong>. Лувр был закрыт на весь день. Это первая кража произведений искусства из музея в XXI веке.</p><p>29 октября по делу задержали ещё <strong>пятерых подозреваемых</strong>.</p><p><em>Грабители вошли в один из самых охраняемых музеев мира через строительные леса — и ушли через окно с сокровищами Наполеона. Дерзость исполнения была такова, что первые свидетели принимали происходящее за съёмки кино.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

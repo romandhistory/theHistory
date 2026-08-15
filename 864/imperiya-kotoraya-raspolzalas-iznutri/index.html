@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/864/">← К году 864</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Империя, которая расползалась изнутри</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/864/raspadimperii.webp" alt="Империя, которая расползалась изнутри" />
+            <img class="hero-image" src="https://thehistory.pro/cont/864/raspadimperii.webp" alt="Империя, которая расползалась изнутри" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>864 год — не дата катастрофы, но показательный срез. <strong>Людовик Немецкий</strong> в том же году официально распределил свои земли между сыновьями: Бавария и Восточная марка — <strong>Карломану</strong>, Саксония и Франкония — <strong>Людовику Младшему</strong>, Алемания — <strong>Карлу II</strong>. Империя делилась уже не между королями, а внутри королевств.</p><p>На западе картина не лучше. Аквитания оставалась очагом смуты: до 864 года <strong>Пипин II</strong> сохранял там сторонников, и <strong>Карл Лысый</strong> был вынужден умиротворять магнатов, сажая на аквитанский трон собственных сыновей. Проблемы Аквитании были неотделимы от общего брожения среди знати, стремившейся держать регионального короля под своим контролем.</p><p>Механизм распада был прост. Магнаты считали себя франками — никакого сепаратизма в духе национализма не было. Но отсутствие сильного центра вынуждало их опираться на собственные земли и собственные армии. Викинги, которых королевская власть не могла остановить, лишь ускоряли этот процесс: кто защищал землю, тот и собирал вокруг себя людей.</p><p><em>Империя Карла Великого не рухнула — она медленно перетекала в руки тех, кто стоял на месте.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

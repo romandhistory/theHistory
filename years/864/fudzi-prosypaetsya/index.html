@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/864/">← К году 864</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Фудзи просыпается</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/864/fudzi.webp" alt="Фудзи просыпается" />
+            <img class="hero-image" src="https://thehistory.pro/cont/864/fudzi.webp" alt="Фудзи просыпается" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>Извержение 864 года — шестого года эры <strong>Дзёган</strong> — стало вторым крупным извержением Фудзи в исторически задокументированное время и самым разрушительным из всех последующих. Хроники эпохи описывают горящие растения, камни, падающие как дождь, и озёра, шипящие от пара.</p><p>Извержение было эффузивным — без взрывов, но с колоссальными потоками лавы, продолжавшимися с <strong>864 по 866 год</strong>. Лава хлынула с западного склона, залила огромную равнину и поглотила большую часть озера <strong>Сэноуми</strong>. То, что осталось от некогда огромного водоёма — нынешние озёра <strong>Сайко и Сёдзико</strong>. На застывшей лаве со временем вырастет лес <strong>Аокигахара</strong>.</p><p>Императорский двор воспринял катастрофу как знак: святилище у южного подножия Фудзи не справлялось со своими обязанностями. Был издан приказ построить новое святилище в провинции Кай — для умиротворения <strong>Асама-но Ками</strong>, божества вулкана.</p><p>После извержения правительство императора <strong>Сэйва</strong> направило к подножию Фудзи буддийских монахов — читать сутры, чтобы удержать вулкан от новых бесчинств.</p><p><em>Лава создала ландшафт, который Япония считает своим символом. Лес над бездной, озёра у подножия священной горы — всё это последствия одной ночи 864 года.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

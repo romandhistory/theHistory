@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2009/">← К году 2009</a>
             <p class="meta-tag">Россия</p>
             <h1>284-й километр</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2009/nevsk.webp" alt="284-й километр" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2009/nevsk.webp" alt="284-й километр" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>27 ноября 2009 года в 21:35 на <strong>284-м километре</strong> Октябрьской железной дороги, на границе Тверской и Новгородской областей, под локомотивом <strong>«Невского экспресса»</strong> сработало самодельное устройство мощностью <strong>семь килограммов</strong> в тротиловом эквиваленте. Поезд шёл из Москвы в Санкт-Петербург со скоростью <strong>190 километров в час</strong>. Первые девять вагонов миновали воронку — три хвостовых завалились набок. Погибли <strong>28 человек</strong>, <strong>132</strong> получили ранения.</p><p>Большинство жертв ехали в последнем вагоне. Именно он оторвался от состава, снёс опоры линий электропередачи и встал вертикально в темноте среди поля. Помощь добралась до места только через полтора-два часа — ближайших дорог не было.</p><p>На следующий день, пока место крушения осматривал глава Следственного комитета <strong>Бастрыкин</strong>, сработало второе устройство — заложенное заранее. Жертв не было.</p><p>Ответственность взял на себя <strong>Доку У.</strong> Организатором теракта следствие установило идеолога подполья <strong>Александра Т.</strong>, известного как <strong>Саид Б.</strong></p><p><em>Это был второй теракт на «Невском экспрессе» — первый произошёл в 2007 году. Те же пути, та же трасса, те же пассажиры, не подозревавшие об этом.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

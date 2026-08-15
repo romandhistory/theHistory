@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2023/">← К году 2023</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Термометр зашкалил: 2023 год стал самым жарким в истории</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2023/zarkyijuly.webp" alt="Термометр зашкалил: 2023 год стал самым жарким в истории" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2023/zarkyijuly.webp" alt="Термометр зашкалил: 2023 год стал самым жарким в истории" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>По данным европейского климатического сервиса <strong>Copernicus</strong>, среднегодовая температура поверхности Земли в 2023 году составила <strong>14,98 градуса Цельсия</strong> — побив предыдущий рекорд 2016 года со значительным отрывом.</p><p>Рекорды падали семь месяцев подряд — <strong>июнь, июль, август, сентябрь, октябрь, ноябрь и декабрь</strong> стали самыми жаркими за всю историю наблюдений для каждого из этих месяцев. В ноябре впервые были зафиксированы два дня, когда температура превысила доиндустриальный уровень более чем на <strong>два градуса</strong>.</p><p>Причин было две — и обе известны. Выбросы парниковых газов от сжигания ископаемого топлива и мощный <strong>Эль-Ниньо</strong> над восточной частью Тихого океана совместно подтолкнули температуры к рекордным значениям. Эль-Ниньо — явление природное и циклическое. Парниковые газы — нет.</p><p>Заместитель директора Copernicus <strong>Саманта Бёрджесс</strong> заявила, что температуры 2023 года, вероятно, были выше, чем в любой период за последние <strong>100 000 лет</strong>. Морские волны тепла охватили Мексиканский залив и Северную Атлантику, установив рекорды температуры океанской поверхности.</p><p>Практические последствия были немедленными: лесные пожары в <strong>Канаде</strong> уничтожили рекордные площади, <strong>Греция и Южная Европа</strong> горели всё лето, экстремальная жара убивала людей от <strong>Индии до Испании</strong>.</p><p><em>Каждый новый температурный рекорд перестаёт быть аномалией — и становится новой нормой.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/867/">← К году 867</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Конюх на троне</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/867/VasilyiI.webp" alt="Конюх на троне" />
+            <img class="hero-image" src="https://thehistory.pro/cont/867/VasilyiI.webp" alt="Конюх на троне" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В ночь с 23 на 24 сентября 867 года <strong>Василий</strong> пригласил <strong>Михаила III</strong> на пир. Пока император пил, Василий вышел из зала — и заранее вскрыл замки в его покоях. Вернувшись с восемью сообщниками, он убил императора, отрубив ему обе руки перед смертью.</p><p>Михаил сам создал своего убийцу. Крестьянин из Македонии, Василий привлёк внимание императора физической силой и умением обращаться с лошадьми — и за несколько лет прошёл путь от конюха до соправителя. По дороге он убил кесаря <strong>Варду</strong> — с одобрения самого Михаила — и занял его место. Когда Михаил начал приближать нового фаворита, Василий решил не ждать развязки.</p><p>Убийство было стремительным и точным. Василий занял трон без гражданской войны. <strong>Македонская династия</strong>, основанная в ту ночь, просуществует до <strong>1056 года</strong> — почти два века.</p><p>Историк XI века <strong>Пселл</strong> написал о его роде: <em>«благословлён Богом более, чем любая другая известная мне семья — хотя и укоренён в убийстве и кровопролитии»</em>.</p><p><em>Человек без образования, без рода, без военного опыта основал одну из самых блестящих династий средневекового мира. Трон он взял ножом — и удержал умом.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

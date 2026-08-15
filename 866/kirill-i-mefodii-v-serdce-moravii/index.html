@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/866/">← К году 866</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Кирилл и Мефодий в сердце Моравии</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/866/KiriMef.webp" alt="Кирилл и Мефодий в сердце Моравии" />
+            <img class="hero-image" src="https://thehistory.pro/cont/866/KiriMef.webp" alt="Кирилл и Мефодий в сердце Моравии" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В 866 году солунские братья <strong>Кирилл</strong> и <strong>Мефодий</strong> работали в <strong>Блатнограде</strong> — столице Паннонского княжества, при дворе князя <strong>Коцела</strong>. Это был второй этап их миссии: Моравию они уже охватили, теперь продвигались западнее, в земли между Дравой и Балатоном.</p><p>Коцел принял их с энтузиазмом. Он сам учился у Кирилла славянской грамоте и отправил с братьями около <strong>пятидесяти учеников</strong> — на выучку и рукоположение. Блатноград стал точкой, где кирилло-мефодиевский проект обрёл политическую поддержку за пределами Моравии.</p><p>Контекст делал миссию взрывоопасной. Паннония находилась в зоне влияния <strong>Зальцбургского архиепископства</strong>, немецкое духовенство считало эти земли своими и категорически возражало против славянской литургии. Богослужение на варварском языке вместо латыни выглядело для Рима и Франкской церкви не просто новшеством — вызовом всему сложившемуся порядку.</p><p><em>Блатноград останется в этой истории как тихий, но важный перевалочный пункт: здесь миссия переросла Моравию и стала общеславянским проектом.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

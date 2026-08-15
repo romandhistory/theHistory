@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2003/">← К году 2003</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Война без мандата ООН</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2003/usa&irak.webp" alt="Война без мандата ООН" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2003/usa&irak.webp" alt="Война без мандата ООН" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В ночь с 19 на 20 марта 2003 года американо-британские войска без санкции <strong>ООН</strong> начали военную операцию против Ирака. Официальное название — «Иракская свобода». Поводом послужили заявления разведки о наличии у <strong>Саддама Хусейна</strong> оружия массового уничтожения и связях режима с «Аль-Каидой».</p><p>Военные действия против иракской армии начались 20 марта и закончились 9 апреля, когда американские войска заняли <strong>Багдад</strong>. Статуя Саддама на площади Фирдос рухнула под прямой трансляцией мировых телеканалов. 1 мая <strong>Буш</strong> объявил о завершении активных боевых действий с палубы авианосца «Авраам Линкольн».</p><p>Против войны выступили <strong>Франция</strong>, <strong>Германия</strong> и <strong>Россия</strong> — редкий случай единства в Совете Безопасности ООН против американской инициативы. По всему миру прокатились крупнейшие антивоенные демонстрации в истории — только 15 февраля на улицы вышли от 6 до 10 миллионов человек в 60 странах.</p><p>Оружия массового уничтожения найдено не было. Этот факт стал главным историческим приговором всей операции.</p><p><em>Саддам бежал. Ирак погружался в хаос — медленно и необратимо.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

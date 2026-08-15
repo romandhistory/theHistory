@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/866/">← К году 866</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Омейяды на марше</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/866/pohods.webp" alt="Омейяды на марше" />
+            <img class="hero-image" src="https://thehistory.pro/cont/866/pohods.webp" alt="Омейяды на марше" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В 866 году <strong>Кордовский эмират</strong> вёл войну сразу на нескольких направлениях. <strong>Мухаммад I</strong> провёл в общей сложности десять походов против христианских королевств севера — но главная угроза его власти исходила не оттуда.</p><p>Внутри эмирата зрел системный кризис. Мухаммад провёл большую часть своего правления, подавляя восстания <strong>мулади</strong> и <strong>мосарабов</strong> — испанских неофитов ислама и христиан под арабским управлением. В Толедо и Мериде полыхали мятежи, которые эмир давил годами. Военные походы на север были отчасти способом канализировать энергию армии и демонстрировать силу там, где победить было проще.</p><p>В 865 году северные походы вёл сын Мухаммада <strong>аль-Мунзир</strong>: он атаковал Астурию в долине Дуэро и разгромил графа Кастилии <strong>Родриго</strong> у Бургоса. Астурийское королевство при <strong>Ордоньо I</strong> и молодом <strong>Альфонсо III</strong> постепенно превращалось в серьёзного противника — граница двигалась, оспаривалась, прощупывалась набегами с обеих сторон.</p><p>Парадокс Мухаммада I в том, что его эмират был достаточно силён для внешних походов — и недостаточно устойчив для внутреннего мира. Кордовский халифат достигнет блеска через столетие — при <strong>Абд ар-Рахмане III</strong>, который наконец замирит внутренних противников. В 866-м до этого блеска было ещё далеко.</p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

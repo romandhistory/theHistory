@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2009/">← К году 2009</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Двадцать два дня над Газой</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2009/lit_svinec.webp" alt="Двадцать два дня над Газой" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2009/lit_svinec.webp" alt="Двадцать два дня над Газой" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>27 декабря 2008 года Израиль начал военную операцию в секторе Газа — первую масштабную после вывода войск в 2005 году. Поводом стало возобновление ракетных обстрелов ХАМАС после истечения перемирия. За неделю авиационных ударов по сектору <strong>3 января 2009-го</strong> последовала наземная операция.</p><p>Операция длилась <strong>22 дня</strong> и завершилась <strong>18 января</strong>. По данным ООН, погибло от <strong>1166 до 1400 палестинцев</strong>, среди них — несколько сотен мирных жителей и не менее <strong>300 детей</strong>. Потери Израиля — <strong>13 человек</strong>. Около <strong>4 тысяч домов</strong> в Газе было разрушено, <strong>50 тысяч жителей</strong> остались без крова.</p><p>Формальная цель — уничтожение ракетного арсенала ХАМАС — достигнута не была. Израиль ликвидировал сотни туннелей и нанёс серьёзный урон инфраструктуре движения, однако пуски ракет возобновились уже после окончания операции.</p><p>Мировая реакция разделилась. Одни страны признали право Израиля на самооборону. Другие осудили непропорциональное применение силы и потребовали международного расследования.</p><p><em>Комиссия ООН под руководством <strong>Ричарда Голдстоуна</strong> впоследствии зафиксировала нарушения международного гуманитарного права с обеих сторон.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2011/">← К году 2011</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Один выстрел в Тоттенхэме поджигает пол-Англии</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2011/protests.webp" alt="Один выстрел в Тоттенхэме поджигает пол-Англии" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2011/protests.webp" alt="Один выстрел в Тоттенхэме поджигает пол-Англии" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>4 августа 2011 года лондонская полиция застрелила 29-летнего <strong>Марка Даггана</strong> при попытке задержания — завязалась перестрелка, один полицейский был ранен. Два дня спустя у полицейского участка в Тоттенхэме собралась мирная толпа с требованием честного расследования — но на третий день акция переросла в погромы, уже не связанные с самим Дагганом.</p><p>Волна расходилась стремительно: за считаные дни беспорядки перекинулись с Лондона на Бирмингем, Ливерпуль, Манчестер и Бристоль. Мародёры — среди них замечали детей <strong>7–12 лет</strong> — громили магазины и поджигали здания; в Кройдоне огонь от одного мебельного магазина перекинулся на соседние дома. Полиции банально не хватало сил.</p><p>Жертв было <strong>пятеро</strong>: один человек скончался от ранений в Кройдоне, ещё трое погибли под Бирмингемом, сбитые машиной при попытке защитить свой район. <strong>Кэмерон</strong> прервал отпуск, парламент собрали на внеочередную сессию, полицию в Лондоне утроили до <strong>16 тысяч человек</strong>. Порядок восстановили к <strong>11 августа</strong> — ценой нескольких тысяч арестов по всей стране.</p><p><em>Объяснение участников оказалось честнее любой официальной версии: не политика, не Дагган — просто «мы показали полиции, что можем».</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/870/">← К году 870</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Хальфдан выбирает Уэссекс</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/870/redding.webp" alt="Хальфдан выбирает Уэссекс" />
+            <img class="hero-image" src="https://thehistory.pro/cont/870/redding.webp" alt="Хальфдан выбирает Уэссекс" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>Около 28 декабря 870 года <strong>Великая армия</strong> под предводительством <strong>Хальфдана Рагнарссона</strong> достигла <strong>Рединга</strong> — города на слиянии Темзы и Кеннета. Северная и Восточная Англия уже покорены, Мерсия откупилась данью. Из четырёх англосаксонских королевств независимым оставалось только Уэссекс.</p><p>Место было выбрано продуманно. Рединг защищали с двух сторон сами реки — викинги достроили вал и ров с третьей стороны и получили укреплённый лагерь, удобный для подхода новых сил и снабжения по воде.</p><p>Спустя три дня, <strong>31 декабря</strong>, армия отправила крупный отряд за фуражом — и наткнулась на ополчение Беркшира под командованием элдормена <strong>Этельвульфа</strong>. Стычка у Энглфилда обернулась поражением для викингов: несколько их предводителей погибли в бою, оставшиеся отступили обратно за стены Рединга.</p><p>Король Уэссекса <strong>Этельред</strong> и его младший брат <strong>Альфред</strong> готовили ответ. Накопленный опыт северных королевств не оставлял сомнений в цене промедления: захват ключевого города, поражение в поле, гибель короля — таким было обычное течение этой войны. Уэссексу предстояло стать первым королевством, попытавшимся сломать этот сценарий.</p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

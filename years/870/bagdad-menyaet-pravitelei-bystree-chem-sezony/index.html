@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/870/">← К году 870</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Багдад меняет правителей быстрее, чем сезоны</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/870/halif.webp" alt="Багдад меняет правителей быстрее, чем сезоны" />
+            <img class="hero-image" src="https://thehistory.pro/cont/870/halif.webp" alt="Багдад меняет правителей быстрее, чем сезоны" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>29 января 870 года в Самарре был убит <strong>Салих ибн Васиф</strong> — тюркский военачальник, один из тех, кто шесть лет назад привёл к власти аль-Мустаина, а затем сверг его. Убийство не остановило кровопролитие — оно его продолжило.</p><p>На троне в это время сидел <strong>аль-Мухтади</strong>, провозглашённый халифом после казни аль-Мутазза. Он попытался править твёрдой рукой, опираясь на одну тюркскую фракцию против другой — и проиграл. 21 июня 870 года восставшие гвардейцы низложили его и убили.</p><p>Преемником стал <strong>аль-Мутамид</strong> — десятый аббасидский халиф за чуть более десяти лет такой нестабильности. Но в этот раз произошло нечто новое: брат халифа, <strong>Абу Ахмад аль-Муваффак</strong>, был срочно вызван из ссылки в Мекке и фактически взял управление государством в свои руки, оставив брату только церемониальный титул.</p><p><em>Четверо халифов за девять лет — Самарра не успевала менять знамёна на стенах дворца. Но именно при аль-Мутамиде, формально правившем дольше всех своих предшественников, империей будет управлять не он сам.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

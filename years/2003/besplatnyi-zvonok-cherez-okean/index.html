@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2003/">← К году 2003</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Бесплатный звонок через океан</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2003/skype.webp" alt="Бесплатный звонок через океан" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2003/skype.webp" alt="Бесплатный звонок через океан" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В августе 2003 года эстонские разработчики <strong>Яан Таллинн</strong>, <strong>Прийт Казесалу</strong> и <strong>Тоомас Сыйнметс</strong> совместно с датчанином <strong>Янусом Фриисом</strong> и шведом <strong>Никласом Зеннстрёмом</strong> запустили <strong>Skype</strong>. Программа позволяла звонить через интернет бесплатно — компьютер к компьютеру, в любую точку мира.</p><p>Идея лежала на поверхности, но реализация требовала инженерного прорыва. Skype использовал технологию peer-to-peer — те же принципы, что и файлообменник <strong>Kazaa</strong>, который создали те же Фриис и Зеннстрём. Вместо файлов по сети передавался голос — чисто, стабильно, без задержек.</p><p>Для пользователей 2003 года это было невероятно. Международный звонок стоил дорого — телефонные компании зарабатывали на расстоянии. Skype убивал это расстояние одним кликом.</p><p>За первый год программу скачали более миллиона раз. Студенты, эмигранты, путешественники — все, кому было дорого общаться с близкими на другом конце земли.</p><p><em>Телефонные компании почувствовали угрозу сразу. Но запретить бесплатный звонок было невозможно.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

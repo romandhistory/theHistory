@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2008/">← К году 2008</a>
             <p class="meta-tag">Россия</p>
             <h1>Преемник</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2008/medved.webp" alt="Преемник" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2008/medved.webp" alt="Преемник" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>2 марта 2008 года <strong>Дмитрий Медведев</strong> победил на президентских выборах, набрав <strong>70,28%</strong> голосов. Явка составила <strong>69,7%</strong>. Конкуренты — Зюганов, Жириновский и Богданов — набрали в сумме меньше <strong>30%</strong>. Западные наблюдатели фиксировали нарушения, российские власти результаты не оспаривали.</p><p>Медведев был открыто поддержан <strong>Путиным</strong> ещё в декабре 2007 года. 43-летний юрист, выходец из Санкт-Петербурга, до этого возглавлял администрацию президента и совет директоров <strong>«Газпрома»</strong>. Публично он говорил о свободе, верховенстве права и модернизации — тоне, заметно отличавшемся от путинского.</p><p><strong>7 мая</strong> состоялась инаугурация. Владимир Путин в тот же день был назначен премьер-министром. Конфигурация власти, которую немедленно окрестили <em>«тандемом»</em>, не имела прецедентов в новейшей российской истории.</p><p>Вопрос о том, кто реально управляет страной, занял политологов и журналистов надолго. Медведев подписывал законы и встречался с лидерами государств. Путин руководил правительством.</p><p><em>Россия получила нового президента. Изменилось ли что-то по существу — каждый решал для себя сам.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

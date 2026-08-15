@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/866/">← К году 866</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Альфонсо III удерживает трон</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/866/AlfonsoIII.webp" alt="Альфонсо III удерживает трон" />
+            <img class="hero-image" src="https://thehistory.pro/cont/866/AlfonsoIII.webp" alt="Альфонсо III удерживает трон" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p><strong>Альфонсо III</strong> стал королём Астурии в <strong>четырнадцать лет</strong> — и почти сразу столкнулся с мятежом. Граф <strong>Фруэла</strong> поднял восстание, захватил Овьедо и вынудил юного короля бежать. Власть удалось вернуть быстро: опираясь на лояльную знать, Альфонсо подавил мятеж, Фруэла был казнён.</p><p>Второй заговор — графа <strong>Эйло</strong> — последовал вскоре. Та же схема: попытка использовать молодость и неопытность короля, та же развязка. Альфонсо снова устоял.</p><p>Для истории Реконкисты эти эпизоды важнее, чем кажутся. Астурия середины IX века — маленькое горное королевство, зажатое между Кантабрийским хребтом и мусульманским югом. Внутренняя нестабильность здесь означала не просто смену династии, а угрозу самому существованию христианского севера Иберии. Каждый удавшийся мятеж мог обнулить весь накопленный политический ресурс.</p><p>Альфонсо III процарствует <strong>пятьдесят лет</strong> и получит прозвище <strong>Великий</strong>. Он расширит королевство до Дуэро, отстроит города и заложит хроники, которые свяжут Астурию с вестготским прошлым. <em>Всё это началось с умения в четырнадцать лет не потерять трон.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

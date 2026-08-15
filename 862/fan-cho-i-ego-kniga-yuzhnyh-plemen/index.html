@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/862/">← К году 862</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Фань Чо и его «Книга южных племён»</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/862/fanjo.webp" alt="Фань Чо и его «Книга южных племён»" />
+            <img class="hero-image" src="https://thehistory.pro/cont/862/fanjo.webp" alt="Фань Чо и его «Книга южных племён»" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В 862 году танский чиновник <strong>Фань Чо</strong> завершил трактат <strong>«Мань шу»</strong> — <strong>«Книгу южных племён»</strong>. Он писал по личному опыту: несколько лет провёл на южных границах империи, в зоне контакта Китая с царством <strong>Наньчжао</strong> — государством народа бай в нынешней провинции Юньнань.</p><p>Трактат не был кабинетной компиляцией. Фань Чо фиксировал то, что видел: географию, военные маршруты, административное устройство Наньчжао, обычаи местных племён, торговые пути. Китайская бюрократическая традиция умела производить такие тексты — точные, детальные, написанные людьми, которые понимали практическую ценность информации.</p><p>Контекст делал трактат особенно актуальным. Наньчжао в IX веке было не периферийным вождеством, а серьёзной региональной державой, которая <strong>трижды захватывала Чэнду</strong> и регулярно угрожала танским позициям на юго-западе. Знать противника было вопросом выживания, а не академического интереса.</p><p><em>«Мань шу» пережила и Фань Чо, и династию Тан, рухнувшую в <strong>907 году</strong>. Сегодня это один из главных источников по истории Наньчжао и народов Юго-Западного Китая эпохи, от которой мало что сохранилось. Чиновник, добросовестно описавший чужую страну, сделал для её истории больше, чем все завоеватели, которые через неё прошли.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

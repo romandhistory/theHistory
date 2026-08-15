@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2006/">← К году 2006</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Пять утра в Джокьякарте</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2006/iava.webp" alt="Пять утра в Джокьякарте" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2006/iava.webp" alt="Пять утра в Джокьякарте" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>27 мая 2006 года в 05:53 по местному времени в центральной части острова Ява произошло разрушительное землетрясение магнитудой <strong>5,9</strong>. Эпицентр находился в <strong>37 километрах</strong> к югу от Джокьякарты. Большинство жителей ещё спали.</p><p>Погибли более <strong>пяти тысяч человек</strong>, свыше <strong>20 тысяч</strong> получили ранения, разрушено более <strong>35 тысяч зданий</strong>. От <strong>100 до 200 тысяч</strong> жителей лишились крова. Провинция Бантул пострадала сильнее всего — здесь обрушилась почти половина строений.</p><p>Большинство домов в районе строились из кирпича без армирования — они складывались под первым же серьёзным толчком. За двое суток сейсмологи зафиксировали более <strong>450 афтершоков</strong>. Параллельно активизировался расположенный неподалёку вулкан Мерапи — у жителей не было ни времени, ни сил справляться с двумя угрозами одновременно.</p><p>Индонезия ввела режим чрезвычайного положения и обратилась за международной помощью. Помощь пришла быстро — мир ещё помнил цунами 2004 года.</p><p><em>Ява в тот год напомнила: для Индонезии катастрофа — не исключение, а постоянный фон существования.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

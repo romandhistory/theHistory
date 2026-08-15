@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2004/">← К году 2004</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Волна, которую не ждали</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2004/cunami.webp" alt="Волна, которую не ждали" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2004/cunami.webp" alt="Волна, которую не ждали" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>26 декабря 2004 года в 07:58 по местному времени подводное землетрясение магнитудой 9,1–9,3 у берегов <strong>Суматры</strong> вызвало цунами — самое смертоносное в современной истории. Волна высотой до 30 метров в зоне заплеска понеслась по всему Индийскому океану со скоростью 720 километров в час.</p><p>Погибло от 225 до 300 тысяч человек в <strong>Индонезии</strong>, <strong>Шри-Ланке</strong>, <strong>Таиланде</strong>, <strong>Индии</strong> и десятках других стран. Среди жертв — тысячи европейских туристов, встречавших Рождество на пляжах Таиланда и Шри-Ланки. Многие вышли смотреть на отступившее море — и не успели убежать.</p><p>Катастрофа обнажила отсутствие системы предупреждения в Индийском океане — в Тихом она существовала с 1960-х. Первые предупреждения пришли слишком поздно или не пришли вовсе. В Таиланде местные рыбаки и слон с туристами на спине почувствовали опасность раньше любых приборов.</p><p>Международная помощь составила более 14 миллиардов долларов — крупнейшая гуманитарная операция в истории. Однако координация в первые дни была хаотичной: грузы скапливались в аэропортах, пока деревни оставались отрезанными.</p><p><em>День после Рождества 2004-го вошёл в историю как одна из величайших природных трагедий человечества.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2007/">← К году 2007</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Одиннадцать минут</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2007/tech.webp" alt="Одиннадцать минут" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2007/tech.webp" alt="Одиннадцать минут" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>16 апреля 2007 года студент <strong>Чо Х.</strong> открыл огонь на территории кампуса Политехнического университета Вирджинии. За одиннадцать минут он убил <strong>32 человека</strong> и ранил <strong>25</strong> — самый массовый расстрел в истории американских университетов.</p><p>Стрельба шла в два этапа. Сначала — в студенческом общежитии в 6:45 утра. Затем, почти через два часа, — в учебном корпусе <strong>«Норрис-холл»</strong>. За это время администрация университета успела разослать предупреждение по электронной почте. Многие его не прочитали.</p><p>Чо Х. был болезненно замкнутым студентом с аффективными расстройствами. Преподаватели замечали тревожные сигналы в его текстах, психиатры прописывали лечение. Система не сработала. Перед нападением он отправил на телеканал NBC пакет с видеозаписью — манифест человека, переполненного ненавистью и обидой.</p><p><strong>Буш</strong> обратился к нации на следующее утро. Конгресс возобновил дебаты о контроле над оружием — безрезультатно.</p><p><em>Тридцать два камня встали полукругом на лужайке кампуса. По одному за каждого погибшего.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

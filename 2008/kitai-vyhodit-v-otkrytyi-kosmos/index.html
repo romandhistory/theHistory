@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2008/">← К году 2008</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Китай выходит в открытый космос</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2008/shenzhou_7.webp" alt="Китай выходит в открытый космос" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2008/shenzhou_7.webp" alt="Китай выходит в открытый космос" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>25 сентября 2008 года с космодрома Цзюцюань стартовал <strong>«Шэньчжоу-7»</strong> — третий пилотируемый корабль Китая. На борту три тайконавта: <strong>Чжай Чжиган</strong>, <strong>Лю Бомин</strong> и <strong>Цзин Хайпэн</strong>. Полёт длился чуть менее трёх суток.</p><p><strong>27 сентября</strong> в 16:45 по пекинскому времени Чжай Чжиган открыл люк и вышел в открытый космос — первый китаец за бортом корабля. В руке он держал небольшой флаг КНР. Трансляция шла в прямом эфире по национальному телевидению. Выход планировался на <strong>20–40 минут</strong>, но был сокращён до <strong>15 минут</strong> из-за ложного сигнала пожарной тревоги на борту.</p><p>Скафандр <strong>«Фэйтянь»</strong> для выхода в открытый космос Китай разработал самостоятельно — важный символ технологической независимости. Россия в своё время предлагала адаптировать скафандр <strong>«Орлан»</strong>, однако Пекин выбрал собственный путь.</p><p>Миссия стала третьей ступенью китайской космической программы: сначала человек в космосе, затем экипаж из нескольких человек, теперь — выход в открытый космос. Следующий этап — стыковка и орбитальная станция.</p><p><em>Китай уверенно двигался к статусу полноценной космической державы — шаг за шагом, без спешки и без чужой помощи.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

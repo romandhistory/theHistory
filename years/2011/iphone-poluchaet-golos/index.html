@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2011/">← К году 2011</a>
             <p class="meta-tag">Мировые события</p>
             <h1>iPhone получает голос</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2011/siri.webp" alt="iPhone получает голос" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2011/siri.webp" alt="iPhone получает голос" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>4 октября 2011 года <strong>Apple</strong> представила <strong>iPhone 4S</strong> — внешне почти неотличимый от предыдущей модели, но с двухъядерным процессором <strong>A5</strong> и главной новинкой презентации: голосовым помощником <strong>Siri</strong>, реагирующим на долгое нажатие кнопки Home. Публика ждала iPhone 5, и разочарование было заметным: акции Apple после презентации просели, а новое имя <em>«4S»</em> вызвало волну шуток в интернете.</p><p>Siri умела на удивление много для 2011 года: звонить контактам, диктовать и зачитывать сообщения, ставить напоминания, искать в интернете и отвечать на вопросы обычным разговорным языком — без специальных команд активации, привычных для прежних голосовых систем. Технология выросла из исследовательского проекта при участии Стэнфордского института SRI, который Apple купила ещё в 2010 году, а голосом помощницы стала запись профессиональной дикторши, много лет не подозревавшей, кому именно принадлежит её голос.</p><p>Продажи стартовали <strong>14 октября</strong> — в первый же день заказали <strong>свыше миллиона устройств</strong>, на <strong>400 тысяч</strong> больше, чем у предыдущей модели в аналогичный период. Компании удалось то, что обычно не удаётся никому: продать <em>«тот же телефон»</em> рекордным тиражом, просто научив его разговаривать.</p><p><em>Смартфон, который критики поспешили назвать разочарованием года, обернулся самым быстро раскупаемым iPhone в истории компании на тот момент — доказав, что иногда революцию делает не новый корпус, а новый голос внутри старого.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/865/">← К году 865</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Тан отвоёвывает юг</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/865/imperiaTan.webp" alt="Тан отвоёвывает юг" />
+            <img class="hero-image" src="https://thehistory.pro/cont/865/imperiaTan.webp" alt="Тан отвоёвывает юг" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>К середине 860-х годов главной угрозой для Танской империи на юге было царство <strong>Наньчжао</strong> — государство на территории нынешней Юньнани, которое за предыдущее десятилетие захватило Аннам и нанесло Тану несколько болезненных поражений.</p><p>В сентябре 865 года полководец <strong>Гао Пянь</strong> застал врасплох армию Наньчжао численностью <strong>пятьдесят тысяч человек</strong> во время сбора риса в деревнях. Гао захватил огромные запасы зерна и использовал их для снабжения собственных войск.</p><p>Это был перелом. Тан начал контрнаступление ещё в 864 году под командованием Гао Пяня — военачальника, сделавшего себе имя в боях с тюрками и тангутами на севере. Несмотря на придворные интриги, приведшие к его временному отзыву, к началу 866 года <strong>двенадцать тысяч его солдат</strong> разгромили свежую армию Наньчжао и погнали её обратно в горы.</p><p>Победа Гао Пяня была редкостью на фоне общего упадка: центральная власть слабела, провинциальные военные губернаторы — <strong>цзедуши</strong> — действовали всё более самостоятельно, а крестьянские восстания тлели по всей империи.</p><p><em>Тан ещё держался. Но каждая победа давалась всё большей ценой.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

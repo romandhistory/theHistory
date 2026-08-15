@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2009/">← К году 2009</a>
             <p class="meta-tag">Россия</p>
             <h1>3 часа 45 минут до Петербурга</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2009/sapsan.webp" alt="3 часа 45 минут до Петербурга" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2009/sapsan.webp" alt="3 часа 45 минут до Петербурга" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>17 декабря 2009 года в 19:00 с Ленинградского вокзала Москвы отправился первый коммерческий рейс <strong>«Сапсана»</strong>. Совместный проект Российских железных дорог и немецкого концерна <strong>Siemens</strong> — поезд серии Velaro RUS, адаптированный к российскому климату и широкой колее. Контракт на восемь составов стоимостью <strong>276 миллионов евро</strong> был подписан ещё в 2006 году.</p><p>До «Сапсана» дорога из Москвы в Санкт-Петербург занимала от четырёх с половиной до восьми часов. Теперь — <strong>3 часа 45 минут</strong>. Среднее время поездки самолётом с учётом дороги до аэропорта и регистрации — не менее пяти часов. «Сапсан» стал конкурентом авиации на одном из самых загруженных маршрутов страны.</p><p>Поезд вышел на линию всего через три недели после теракта на <strong>«Невском экспрессе»</strong>: в ту ноябрьскую ночь именно «Сапсан» доставил спасателей к месту крушения и эвакуировал пострадавших. Символическое совпадение не осталось незамеченным.</p><p>У запуска была и обратная сторона: ради скоростного коридора отменили несколько пригородных электричек, интервалы движения для жителей Тверской и Новгородской областей увеличились до нескольких часов.</p><p><em>Поезд назвали в честь самого быстрого сокола в мире. Прозвище в народе получил другое — <strong>«Белая смерть»</strong>.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

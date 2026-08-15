@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2008/">← К году 2008</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Индийское 11 сентября</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2008/mumbai.webp" alt="Индийское 11 сентября" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2008/mumbai.webp" alt="Индийское 11 сентября" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>26 ноября 2008 года около 20:10 к берегу Мумбаи причалила лодка. Десять молодых людей с автоматами Калашникова и гранатами разошлись по городу — и одновременно открыли огонь в <strong>семи точках</strong>: в кафе, на железнодорожном вокзале, в двух роскошных отелях и в еврейском культурном центре. Атака длилась <strong>трое суток</strong>.</p><p>Погибли <strong>166 человек</strong>, более <strong>300</strong> ранены. Среди жертв — граждане десятков стран. Отель <strong>Taj Mahal Palace</strong> горел. Индийский спецназ штурмовал здания в прямом эфире — весь мир смотрел трансляцию. Девять террористов были убиты, один — взят живым. Им оказался 21-летний пакистанец <strong>Аджмал К.</strong></p><p>Следствие установило: теракты организовала пакистанская группировка <strong>«Лашкар-э-Тайба»</strong>. Индия потребовала от Пакистана выдачи организаторов. Исламабад отреагировал уклончиво — отношения между двумя ядерными державами резко обострились.</p><p>Индийские СМИ немедленно назвали произошедшее <em>«индийским 11 сентября»</em>. Масштаб, дерзость, прямой эфир — параллель была очевидна.</p><p><em>Мумбаи похоронил своих и вернулся к жизни. Но вопрос об ответственности Пакистана остался без ответа.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

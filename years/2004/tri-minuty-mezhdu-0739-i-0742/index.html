@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2004/">← К году 2004</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Три минуты между 07:39 и 07:42</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2004/madrid_m.webp" alt="Три минуты между 07:39 и 07:42" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2004/madrid_m.webp" alt="Три минуты между 07:39 и 07:42" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>Утром 11 марта 2004 года в промежутке между 07:39 и 07:42 в четырёх пригородных поездах, въезжавших на мадридский вокзал <strong>«Аточа»</strong>, взорвалось десять бомб. Погибли 193 человека, ранены около 2050. Крупнейший джихадистский теракт в истории Европы.</p><p>Теракты были организованы за три дня до парламентских выборов в Испании. Поначалу власти возложили ответственность на баскских сепаратистов <strong>ЭТА</strong> — версия, выгодная правящей Народной партии. Когда выяснилась причастность исламистской сети, связанной с «Аль-Каидой», общество восприняло это как попытку манипуляции.</p><p>Выборы прошли 14 марта. Победила оппозиционная Социалистическая партия — правительство <strong>Аснара</strong>, поддержавшего войну в Ираке вопреки большинству испанцев, потерпело поражение. Новый премьер <strong>Сапатеро</strong> объявил о выводе войск из Ирака.</p><p>Дата теракта была выбрана намеренно: ровно 911 дней спустя после 11 сентября 2001 года.</p><p><em>Испания была поражена в самое сердце — и ответила на это не войной, а избирательным бюллетенем.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

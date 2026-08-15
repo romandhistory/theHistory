@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2009/">← К году 2009</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Google идёт на войну</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2009/android.webp" alt="Google идёт на войну" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2009/android.webp" alt="Google идёт на войну" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>26 октября 2009 года <strong>Google</strong> выпустила <strong>Android 2.0</strong> — кодовое название <strong>Eclair</strong>. Первым смартфоном на новой платформе стал <strong>Motorola Droid</strong>, вышедший в США <strong>6 ноября</strong>. Реклама была подчёркнуто агрессивной: <em>«iDon't»</em> — прямой выпад в сторону Apple.</p><p>Android 2.0 принёс то, чего не хватало предыдущим версиям: поддержку нескольких аккаунтов Google, обновлённый браузер, встроенную навигацию с голосовым управлением и улучшенную камеру. Главным же было другое — система наконец стала по-настоящему конкурентоспособной.</p><p>До этого момента iPhone фактически единолично задавал стандарты смартфонного рынка. Android существовал с 2008 года, но воспринимался как догоняющий. Версия 2.0 изменила расстановку сил: производители получили зрелую платформу, которую можно было ставить на массовые устройства.</p><p>Открытость Android оказалась главным козырем. Десятки производителей могли использовать систему бесплатно — и использовали. Количество Android-устройств начало расти стремительно.</p><p><em>Война за мобильный рынок перестала быть односторонней.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2025/">← К году 2025</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Джакарта обгоняет Токио: смена лидера за четверть века</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2025/jakarta.webp" alt="Джакарта обгоняет Токио: смена лидера за четверть века" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2025/jakarta.webp" alt="Джакарта обгоняет Токио: смена лидера за четверть века" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В ноябре 2025 года доклад ООН «Перспективы мировой урбанизации 2025» зафиксировал смену лидера в рейтинге крупнейших городов мира. <strong>Токио</strong>, возглавлявший список с 2000 года, впервые уступил первое место.</p><p>По оценке ООН, в <strong>Джакарте</strong> живут <strong>42 миллиона человек</strong>. На втором месте — столица Бангладеш <strong>Дакка</strong> с <strong>36,5 миллиона</strong>. Токио с тремя соседними префектурами насчитывает <strong>33 миллиона жителей</strong> и опустился на третью позицию.</p><p>Представители ООН пояснили: смена мест в рейтинге связана в том числе с новой методологией, которая более последовательно классифицирует городские и сельские районы — и даёт более точную картину урбанизации. Иными словами, Джакарта не резко выросла — её просто наконец точнее посчитали.</p><p>Число мегаполисов с населением не менее 10 миллионов человек выросло с <strong>восьми</strong> в 1975 году до <strong>33</strong> в 2025-м. Более половины из них — азиатские города.</p><p><em>Токио стареет и сокращается — Япония десятилетиями борется с депопуляцией. Джакарта растёт, несмотря на то что Индонезия переносит свою столицу в новый город Нусантара на Борнео. Парадокс: город, который официально перестаёт быть главным, становится самым населённым на планете.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

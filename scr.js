@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     let currentYearId = null;
     const yearCache = {};
     const sliderViewport = document.querySelector('.tranding-slider');
+    const FALLBACK_IMAGE = '/img/logo1.png';
     let sliderScale = 1;
     const minSliderScale = 0.4;
     const sliderScaleStep = 0.08;
@@ -37,20 +38,33 @@ document.addEventListener('DOMContentLoaded', async function () {
             }
         }
 
-        handleDeepLink(true);
+        const currentPath = window.location.pathname;
+        const isYearStaticRoute = /^\/\d+(?:\/[^/]+)?\/?$/.test(currentPath);
+        if (!isYearStaticRoute) {
+            handleDeepLink(true);
+        }
         window.addEventListener('hashchange', function () { handleDeepLink(true); });
         window.addEventListener('popstate', handlePopState);
     } catch (error) {
         console.error('Не удалось загрузить data/slides.json. Запустите через Live Server.', error);
     }
 
+    function normalizeImageSource(src) {
+        const raw = String(src || '').trim();
+        if (!raw || raw === '--') return FALLBACK_IMAGE;
+        if (/^(https?:)?\/\//i.test(raw) || raw.startsWith('data:') || raw.startsWith('blob:')) return raw;
+        if (raw.startsWith('/')) return raw;
+        return '/' + raw.replace('\\', '/').replace(/^\.\//, '');
+    }
+
     function renderSlides(slides) {
         slidesRoot.innerHTML = slides.map(function (slide) {
             const lockedClass = slide.locked ? ' no-click' : '';
             const lockIcon = slide.locked ? '<span class="lock-icon">&#x1F512;</span>' : '';
+            const imageSrc = normalizeImageSource(slide.image);
             return (
                 '<div class="swiper-slide tranding-slide' + lockedClass + '" data-year-id="' + slide.id + '" data-tag="' + slide.tag + '">' +
-                '<img loading="lazy" src="' + slide.image + '" alt="' + escapeAttr(slide.label) + '">' +
+                '<img loading="lazy" src="' + imageSrc + '" alt="' + escapeAttr(slide.label) + '" onerror="this.onerror=null;this.src=\'' + FALLBACK_IMAGE + '\';">' +
                 '<div class="tranding-slide-content">' +
                 '<div class="tranding-slide-content-bottom">' +
                 '<h2 class="event-name">' + escapeHtml(slide.label) + '</h2>' +
@@ -443,8 +457,9 @@ document.addEventListener('DOMContentLoaded', async function () {
             html += linksHtml;
             html += '</div>';
             if (article.image) {
-                html += '<div class="content-image"><img loading="lazy" src="' + article.image.src +
-                    '" alt="' + escapeAttr(article.image.alt) + '"></div>';
+                const imageSrc = normalizeImageSource(article.image.src);
+                html += '<div class="content-image"><img loading="lazy" src="' + imageSrc +
+                    '" alt="' + escapeAttr(article.image.alt) + '" onerror="this.onerror=null;this.src=\'' + FALLBACK_IMAGE + '\';"></div>';
             }
             html += '</div>';
         } else {
@@ -523,8 +538,9 @@ document.addEventListener('DOMContentLoaded', async function () {
         gallery.forEach(function (item) {
             const sizeClass = item.size && !isMobile ? ' photo-card--' + item.size : '';
             const caption = item.caption ? item.caption : item.alt ? item.alt : '';
-            html += '<div class="photo-card' + sizeClass + '"><img loading="lazy" src="' + item.src +
-                '" alt="' + escapeAttr(item.alt) + '">';
+            const imageSrc = normalizeImageSource(item.src);
+            html += '<div class="photo-card' + sizeClass + '"><img loading="lazy" src="' + imageSrc +
+                '" alt="' + escapeAttr(item.alt) + '" onerror="this.onerror=null;this.src=\'' + FALLBACK_IMAGE + '\';">';
             if (caption) {
                 html += '<div class="photo-caption">' + escapeHtml(caption) + '</div>';
             }
@@ -573,7 +589,16 @@ document.addEventListener('DOMContentLoaded', async function () {
         document.body.style.overflow = '';
         currentYearId = null;
         document.title = 'theХистори';
+
+        const isYearDeepLink = /^\/\d+(?:\/[^/]+)?\/?$/.test(window.location.pathname);
         const cleanedUrl = window.location.pathname + window.location.search;
+
+        if (isYearDeepLink) {
+            history.pushState({ deepLink: false }, '', '/');
+            window.location.assign('/');
+            return;
+        }
+
         if (pushHistory === true) {
             history.pushState({ deepLink: false }, '', cleanedUrl);
         } else {
@@ -613,8 +638,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         const article = getTabData(data, tabNum)?.articles?.[articleIndex - 1];
         if (!article) return null;
 
-        const title = article.title || article.button || 'event';
-        return slugifyPathText(title);
+        const slugSource = article.button || article.title || 'event';
+        return slugifyPathText(slugSource);
     }
 
     function updateDeepLink(yearId, tabNum, articleIndex, replaceStateFlag) {
@@ -653,8 +678,8 @@ document.addEventListener('DOMContentLoaded', async function () {
                         (data.tabs.russia && data.tabs.russia.articles ? data.tabs.russia.articles : [])
                     );
                     const matchIndex = allArticles.findIndex(function (article) {
-                        const title = article.title || article.button || '';
-                        return slugifyPathText(title) === articleSlug;
+                        const buttonText = article.button || article.title || '';
+                        return slugifyPathText(buttonText) === articleSlug;
                     });
                     if (matchIndex >= 0) {
                         articleIndex = matchIndex + 1;
@@ -708,8 +733,8 @@ document.addEventListener('DOMContentLoaded', async function () {
                             (data.tabs.russia && data.tabs.russia.articles ? data.tabs.russia.articles : [])
                         );
                         const matchIndex = allArticles.findIndex(function (articleData) {
-                            const title = articleData.title || articleData.button || '';
-                            return slugifyPathText(title) === secondSegment;
+                            const buttonText = articleData.button || articleData.title || '';
+                            return slugifyPathText(buttonText) === secondSegment;
                         });
 
                         if (matchIndex >= 0) {
@@ -784,7 +809,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         const article = getTabData(data, tabNum)?.articles?.[articleIndex - 1];
         if (!article) return targetPath;
 
-        const slug = slugifyPathText(article.title || article.button || 'event');
+        const slug = slugifyPathText(article.button || article.title || 'event');
         return targetPath + slug + '/';
     }
 

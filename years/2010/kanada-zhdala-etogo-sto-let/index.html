@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2010/">← К году 2010</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Канада ждала этого сто лет</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2010/olymp.webp" alt="Канада ждала этого сто лет" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2010/olymp.webp" alt="Канада ждала этого сто лет" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>С 12 по 28 февраля 2010 года Ванкувер принимал XXI зимние Олимпийские игры. <strong>82 страны</strong>, <strong>86 комплектов медалей</strong> в 15 видах спорта. Церемония открытия на стадионе «Би-Си Плэйс» была омрачена трагедией: накануне во время тренировки погиб грузинский саночник <strong>Нодар Кумариташвили</strong>.</p><p>Хозяйка Игр Канада выиграла медальный зачёт с <strong>14 золотыми медалями</strong> — рекорд для одной страны на зимних Олимпиадах. Финальную точку поставил хоккейный турнир: канадцы в овертайме победили США и зажгли страну.</p><p>Россия выступила провально — <strong>3 золота</strong>, <strong>11-е место</strong>. Худший результат в истории советских и российских команд на зимних Играх. Конькобежец <strong>Иван Скобрев</strong>, завоевавший серебро и бронзу, стал знаменосцем на закрытии — символичная деталь: лучший из немногих.</p><p><em>На церемонии закрытия флаг передали Сочи. Россия зафиксировала провал и начала готовиться к реваншу на домашнем льду.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

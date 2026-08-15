@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2010/">← К году 2010</a>
             <p class="meta-tag">Мировые события</p>
             <h1>700 метров вниз и 69 дней назад</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2010/chili.webp" alt="700 метров вниз и 69 дней назад" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2010/chili.webp" alt="700 метров вниз и 69 дней назад" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>5 августа 2010 года на медно-золотой шахте <strong>Сан-Хосе</strong> в пустыне Атакама, в 45 километрах от Копьяпо, обрушилась порода. <strong>Тридцать три горняка</strong> оказались замурованными на глубине <strong>700 метров</strong>, в пяти километрах от входа. Первые <strong>17 дней</strong> никто не знал, живы ли они.</p><p><strong>22 августа</strong> буровой зонд нашёл убежище. Когда его подняли на поверхность, на конце была прикреплена записка: <em>«Мы живы и находимся в убежище. Нас 33»</em>. Через скважину горнякам начали передавать воду, еду, медикаменты и телефонную связь с семьями.</p><p>Операция по подъёму началась <strong>12 октября</strong> и длилась <strong>22 часа 37 минут</strong>. Горняков поднимали по одному в капсуле <strong>«Феникс»</strong> диаметром полметра, выкрашенной в цвета чилийского флага. Последним на поверхность вышел начальник смены <strong>Луис Урсуа</strong> — как капитан, покидающий корабль последним. Их встречал президент страны <strong>Себастьян Пиньера</strong>.</p><p>За спасательной операцией в прямом эфире наблюдал весь мир — у шахты дежурили более <strong>полутора тысяч журналистов</strong>. Стоимость операции составила <strong>22 миллиона долларов</strong>.</p><p><em>Чудо, однако, имело привкус горечи: шахта Сан-Хосе работала с грубыми нарушениями безопасности, владельцы компании так и не понесли реальной ответственности. Героев встретили как национальные символы — но не как работников, которым государство задолжало нечто большее, чем аплодисменты.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

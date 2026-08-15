@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/871/">← К году 871</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Терновник на холме</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/871/ashdawn.webp" alt="Терновник на холме" />
+            <img class="hero-image" src="https://thehistory.pro/cont/871/ashdawn.webp" alt="Терновник на холме" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>8 января 871 года, через четыре дня после поражения у Рединга, саксы и викинги встретились на меловых холмах Беркшира — у одинокого терновника, который стал ориентиром для всей последующей хроники битвы.</p><p>Войска Уэссекса вели король <strong>Этельред</strong> и его младший брат <strong>Альфред</strong>, викингов — короли <strong>Багсек</strong> и <strong>Хальфдан</strong>. Обе армии разделились на два крыла. Этельред хотел дождаться окончания утренней мессы прежде, чем вступить в бой; Альфред, не дожидаясь брата, повёл свою часть войска в атаку первым.</p><p>Альфреду было около двадцати двух лет, королём он пока не был — но именно его стремительный удар вверх по склону, без промедления, начал сражение. Битва разгорелась вокруг невысокого терновника и завершилась победой западных саксов.</p><p>Потери врага были серьёзными. В бою погибли король <strong>Багсек</strong> и пятеро ярлов — Сидрок Старый, Сидрок Младший, Осберн, Френа и Гарольд. Саксы преследовали отступающих викингов до самой ночи, продолжая рубить бегущих.</p><p>Это была первая победа Уэссекса над Великим языческим войском за шесть лет его опустошительного похода по Англии. Северные королевства такого дня не видели.</p><p><em>Но радость будет недолгой. Победа обернулась двумя последующими поражениями — у Бейзинга и Мертона. Война только начинается.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

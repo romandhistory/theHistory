@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2003/">← К году 2003</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Нью-Йорк в темноте</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2003/blackout.webp" alt="Нью-Йорк в темноте" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2003/blackout.webp" alt="Нью-Йорк в темноте" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>14 августа 2003 года в восьми американских штатах и двух канадских провинциях прекратилась подача электроэнергии. Без электричества остались более 55 миллионов человек. Крупнейшее отключение в истории мировой энергетики.</p><p>Цепочка событий началась в <strong>Огайо</strong>: линии электропередачи в <strong>Кливленде</strong> нагрелись, провисли из-за теплового расширения и коснулись деревьев. Произошло замыкание, сработала защита. Из-за ошибки в компьютерной системе другие центры управления не были извещены — и началось каскадное отключение около 100 других электростанций.</p><p>Нью-Йорк погрузился во тьму в час пик. Встало метро, аэропорты прекратили работу, светофоры погасли. Миллионы людей шли пешком через мост и по улицам — как после 11 сентября 2001 года, только без теракта. Горожане выходили на улицы с фонариками, торговцы раздавали мороженое — оно всё равно таяло.</p><p>Финансовый ущерб составил не менее 6 миллиардов долларов. Было отключено 263 электростанции, включая 10 атомных.</p><p><em>Расследование показало: причиной масштаба катастрофы стала не молния и не теракт — а устаревшее оборудование, программный сбой и отсутствие координации между операторами сетей.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

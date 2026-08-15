@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2006/">← К году 2006</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Девять стало восемь</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2006/pluton.webp" alt="Девять стало восемь" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2006/pluton.webp" alt="Девять стало восемь" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>24 августа 2006 года Международный астрономический союз на своём генеральном собрании в Праге проголосовал за новое определение планеты. За резолюцию проголосовали <strong>424 астронома</strong> из примерно <strong>10 тысяч членов</strong> организации. <strong>Плутон</strong> под новые критерии не подпадал — и был переведён в категорию <em>«карликовых планет»</em>.</p><p>Согласно принятому определению, планета должна вращаться вокруг Солнца, иметь достаточную массу для сферической формы и — ключевое условие — расчистить окрестности своей орбиты от других тел. Плутон делит орбиту с множеством объектов пояса Койпера. Критерий не соблюдён.</p><p>Открытый в <strong>1930 году</strong> американским астрономом <strong>Клайдом Томбо</strong>, Плутон <strong>76 лет</strong> считался девятой планетой Солнечной системы. Школьные учебники по всему миру устарели в один день. Производители глобусов и моделей Солнечной системы подсчитывали убытки.</p><p>Решение вызвало споры немедленно. Тысячи людей подписывали петиции в защиту Плутона. Штат Нью-Мексико принял резолюцию, по которой Плутон оставался планетой — по крайней мере, в пределах штата.</p><p><em>Плутон не изменился. Изменилось то, как люди решили его называть.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

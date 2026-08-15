@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/870/">← К году 870</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Граница ислама снова сдвигается на восток</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/870/Yakub.webp" alt="Граница ислама снова сдвигается на восток" />
+            <img class="hero-image" src="https://thehistory.pro/cont/870/Yakub.webp" alt="Граница ислама снова сдвигается на восток" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В 870 году <strong>Якуб ибн аль-Лейс</strong>, основатель недавно возникшей династии <strong>Саффаридов</strong>, подошёл к Кабулу — и положил конец многовековому правлению тюркских шахов в этом регионе.</p><p>Предыстория шла издалека. Ещё в 815 году Аббасидский халиф <strong>аль-Мамун</strong> разгромил кабульскую ветвь тюрко-шахов, вынудив их формально принять ислам и платить тяжёлую дань. Власть тюркских правителей слабела десятилетиями — но южная ветвь, зунбилы, держалась в Забулистане. Якуб разбил их войско при Рухкхадже, и сын разбитого правителя бежал в Кабул — туда же, куда теперь двинулась армия Саффаридов.</p><p>Якуб привёз в Багдад аббасидскому халифу <strong>аль-Мутамиду</strong> трофеи из Кабула — идолов и слонов, демонстрируя халифу масштаб своей победы на дальней восточной окраине исламского мира.</p><p>Брахманская династия <strong>Хинду-Шахи</strong>, правившая Кабульской долиной уже несколько десятилетий, потеряла столицу — но не исчезла.</p><p><em>Кабул сменил хозяина. Граница ислама на востоке снова сдвинулась.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

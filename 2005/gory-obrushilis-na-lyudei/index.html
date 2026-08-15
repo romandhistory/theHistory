@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2005/">← К году 2005</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Горы обрушились на людей</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2005/kashmir.webp" alt="Горы обрушились на людей" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2005/kashmir.webp" alt="Горы обрушились на людей" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>8 октября 2005 года в 8:50 утра земля под Кашмиром содрогнулась. Магнитуда — <strong>7,6</strong>, эпицентр — вблизи города Музаффарабад в пакистанской части региона. Толчки ощутили в Индии, Пакистане и Афганистане — за тысячу километров от эпицентра.</p><p>Погибли более <strong>75 тысяч человек</strong>. Большинство жертв — в горных деревнях, где дома строились без какого-либо расчёта на сейсмическую нагрузку. Вдоль стокилометровой трещины в земле были разрушены практически все сооружения. Оползни отрезали сотни населённых пунктов от внешнего мира.</p><p>Спасательная операция упиралась в горный рельеф. Дороги исчезли под обломками, вертолёты не справлялись с объёмом работы. Приближалась зима — в горах это означало смерть для тех, кто остался без крова.</p><p>Международная помощь пришла быстро: США, Китай, Индия и Евросоюз направили средства и спасателей. Впервые Пакистан и Индия совместно открыли несколько контрольно-пропускных пунктов в Кашмире для переброски грузов.</p><p><em>Землетрясение убило больше людей, чем любой конфликт в этом регионе за последние годы.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

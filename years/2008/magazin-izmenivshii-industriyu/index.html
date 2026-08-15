@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2008/">← К году 2008</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Магазин, изменивший индустрию</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2008/app-store.webp" alt="Магазин, изменивший индустрию" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2008/app-store.webp" alt="Магазин, изменивший индустрию" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>10 июля 2008 года <strong>Apple</strong> открыла <strong>App Store</strong> — магазин приложений для iPhone. В первый день было доступно <strong>500 программ</strong>, половина из них — бесплатно. За сутки пользователи скачали <strong>10 миллионов приложений</strong>.</p><p>До App Store программное обеспечение для телефонов распространялось хаотично: через WAP-сайты, Bluetooth, операторские порталы. Единой платформы не существовало. Apple создала закрытую экосистему с простой схемой: разработчик получает <strong>70%</strong> выручки, Apple — <strong>30%</strong>. Условия казались жёсткими, но альтернативы не было — и разработчики выстроились в очередь.</p><p>К концу 2008 года в магазине было уже <strong>10 тысяч приложений</strong>, суммарное число загрузок перевалило за <strong>300 миллионов</strong>. Появились первые миллионеры, заработавшие на приложениях в одиночку или небольшой командой.</p><p>App Store породил новую индустрию и новую профессию. Независимый разработчик с ноутбуком получил прямой доступ к сотням миллионов покупателей.</p><p><em>Google открыл <strong>Android Market</strong> тремя месяцами позже. Война платформ началась.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

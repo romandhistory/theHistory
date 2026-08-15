@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2003/">← К году 2003</a>
             <p class="meta-tag">Россия</p>
             <h1>Все флаги в гости к нам</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2003/piter.webp" alt="Все флаги в гости к нам" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2003/piter.webp" alt="Все флаги в гости к нам" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>С 27 мая по 1 июня 2003 года <strong>Санкт-Петербург</strong> праздновал своё трёхсотлетие. В торжествах приняли участие представители около 80 государств. На праздник одновременно съехались 46 первых лиц — саммиты <strong>СНГ</strong>, <strong>Евросоюза</strong> и <strong>«Большой восьмёрки»</strong> прошли в дни юбилея.</p><p>Празднование началось у Медного всадника — памятника основателю города. К юбилею была воссоздана Янтарная комната, открыты новые парки и храмы. Константиновский дворец в Стрельне после масштабной реконструкции превратился в «морскую резиденцию президента» — именно там принимали иностранных гостей.</p><p>Для <strong>Владимира Путина</strong> юбилей был личным — он родился и вырос в Ленинграде. Город его детства принимал весь мир. На праздник прилетел <strong>Пол Маккартни</strong> и дал исторический концерт на Красной площади.</p><p>На улучшение погоды казна выделила 26 миллионов рублей. Погода не послушалась — но праздник всё равно удался.</p><p><em>Петербург в тот июнь стал на несколько дней неофициальной столицей мира. Город это заслужил.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

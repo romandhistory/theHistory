@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2008/">← К году 2008</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Электромобиль, который никто не ждал</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2008/tesla_Road.webp" alt="Электромобиль, который никто не ждал" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2008/tesla_Road.webp" alt="Электромобиль, который никто не ждал" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>17 марта 2008 года <strong>Tesla Motors</strong> объявила о начале серийного производства <strong>Roadster</strong> — первого в мире лицензированного электромобиля на литий-ионных аккумуляторах. Реальные поставки покупателям начались несколько месяцев спустя. Цена — <strong>110 тысяч долларов</strong>.</p><p>Автомобиль разгонялся до 100 километров в час за <strong>3,9 секунды</strong> и проезжал на одном заряде около <strong>390 километров</strong>. Для электромобиля 2008 года это были фантастические цифры. Кузов строился на основе британского <strong>Lotus Elise</strong>, электрическую начинку разрабатывала Tesla с нуля.</p><p>Компания была основана в 2003 году и к моменту выхода Roadster едва держалась на плаву — деньги заканчивались, производство срывалось, сроки переносились. <strong>Илон Маск</strong>, войдя в совет директоров в 2004-м и вложив собственные средства, к 2008 году фактически спас компанию от закрытия.</p><p>Скептиков хватало. Инфраструктуры зарядки не существовало, за первый год продали лишь несколько сотен машин, а крупные автоконцерны электромобили всерьёз не воспринимали.</p><p><em>Но Roadster доказал главное: электрический автомобиль может быть быстрым, красивым и желанным.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

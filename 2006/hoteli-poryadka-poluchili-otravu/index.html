@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2006/">← К году 2006</a>
             <p class="meta-tag">Россия</p>
             <h1>Хотели порядка — получили отраву</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2006/alco.webp" alt="Хотели порядка — получили отраву" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2006/alco.webp" alt="Хотели порядка — получили отраву" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В 2006 году государство взялось навести порядок на алкогольном рынке. Ввели <strong>Единую государственную автоматизированную информационную систему</strong> — <strong>ЕГАИС</strong> — для контроля производства и оборота спиртного. Одновременно ужесточили лицензирование, подняли акцизы и начали массово изымать нелегальную продукцию.</p><p>Система дала сбой немедленно. ЕГАИС оказалась технически не готова — заводы не могли подключиться, торговые сети не могли получить продукцию. Весной 2006-го полки магазинов опустели: легальное спиртное исчезло, а нелегальное процветало как никогда.</p><p>На место дешёвой водки пришёл суррогат. Люди переключались на технические жидкости, лосьоны, спиртосодержащие настойки — всё, что продавалось без акцизных марок. Росздравнадзор в сентябре того же года внёс ряд таких препаратов в список суррогатов, употребляемых вместо алкоголя.</p><p>Статистика смертности от отравлений в 2006 году резко выросла. Регионы фиксировали вспышки одну за другой.</p><p><em>Реформу объявили успехом. Похоронные бюро отчитывались иначе.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

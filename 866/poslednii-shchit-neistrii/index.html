@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/866/">← К году 866</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Последний щит Нейстрии</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/866/voinyvsvikingov.webp" alt="Последний щит Нейстрии" />
+            <img class="hero-image" src="https://thehistory.pro/cont/866/voinyvsvikingov.webp" alt="Последний щит Нейстрии" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>2 июля 866 года при Брисарте столкнулись западные франки и объединённое войско бретонцев с датскими викингами. <strong>Роберт Сильный</strong>, маркграф Нейстрии, погиб в этом бою.</p><p>Обстоятельства его смерти были показательны. Роберт перехватил датский отряд, укрывшийся в церкви Брисарта, и начал осаду — но снял доспехи в летнюю жару. Когда викинги сделали вылазку, он принял удар незащищённым. Человек, побеждавший норманнов десять лет, погиб из-за минуты беспечности.</p><p>За плечами у него было всё: примирение с <strong>Карлом Лысым</strong> в 861-м, командование землями между Сеной и Луарой, захват двенадцати вражеских кораблей в 862-м, ранение в 864-м — и каждый раз он возвращался. Его противниками при Брисарте были <strong>Гастинг</strong> и бретонский король <strong>Саломон</strong> — коалиция, с которой до него никто не справлялся.</p><p>Роберт не оставил королевства, не основал династии при жизни. Но его сыновья <strong>Эд</strong> и <strong>Роберт</strong> станут королями Франции, а потомки — <strong>Капетингами</strong>.</p><p><em>Нейстрия потеряла лучшего своего воина. Европа получила династию, которая будет править Францией триста лет.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

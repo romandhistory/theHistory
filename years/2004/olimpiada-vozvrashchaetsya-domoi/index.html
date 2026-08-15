@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2004/">← К году 2004</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Олимпиада возвращается домой</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2004/olymp.webp" alt="Олимпиада возвращается домой" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2004/olymp.webp" alt="Олимпиада возвращается домой" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>С 13 по 29 августа 2004 года <strong>Афины</strong> принимали XXVIII летние Олимпийские игры. Ровно 108 лет спустя после первых современных Олимпийских игр 1896 года — тоже греческих. 10 625 спортсменов из 201 страны, 301 комплект медалей в 28 видах спорта.</p><p>Греция готовилась с трудом: стройки затягивались, <strong>МОК</strong> публично выражал обеспокоенность. Объекты сдали в последний момент — но сдали. Церемония открытия на стадионе «Панатинаикос» с факелоносцами в воде стала одной из самых красивых в истории Олимпиад.</p><p><strong>США</strong> выиграли медальный зачёт — 36 золотых. <strong>Россия</strong> заняла третье место с 28 золотыми медалями в 11 видах спорта: борьба, гимнастика, тяжёлая атлетика, фехтование. Результат достойный — хотя критики отмечали, что советский потенциал продолжает таять.</p><p>Греческий бегун <strong>Стергиос Димитриадис</strong> пробежал марафон по историческому маршруту от Марафона до Афин — тому самому, по которому легендарный гонец принёс весть о победе над персами.</p><p><em>Олимпиада вернулась на родину. И прощалась с ней красиво.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

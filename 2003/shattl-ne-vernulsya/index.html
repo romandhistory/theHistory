@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2003/">← К году 2003</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Шаттл не вернулся</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2003/shatl.webp" alt="Шаттл не вернулся" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2003/shatl.webp" alt="Шаттл не вернулся" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>1 февраля 2003 года шаттл <strong>Columbia</strong> разрушился в плотных слоях атмосферы при сходе с орбиты. Причиной стал дефект в термозащитном покрытии на передней кромке крыла — он образовался от удара куска пены теплоизоляции топливного бака ещё при старте 16 января. Все семь членов экипажа погибли.</p><p>Обломки Columbia и останки астронавтов рассеялись над <strong>Техасом</strong> и <strong>Луизианой</strong> на протяжении сотен километров. Жители городков выходили во дворы и видели огненные следы в небе — не понимая сначала, что происходит. Сигнал связи с экипажем пропал в 8:59 утра.</p><p>Трагедия обнажила системную проблему: инженеры <strong>НАСА</strong> ещё во время полёта знали об ударе пены и поднимали вопрос о возможных повреждениях. Их предупреждения были проигнорированы руководством. Расследование показало: культура безопасности в агентстве деградировала после «Челленджера».</p><p><strong>Буш</strong> назвал 1 февраля трагическим днём для семей астронавтов и всей нации. Над Белым домом и Капитолием приспустили флаги.</p><p><em>Флот шаттлов был остановлен. Единственной дорогой на МКС остался российский «Союз».</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2005/">← К году 2005</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Британское 11 сентября</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2005/terakty.webp" alt="Британское 11 сентября" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2005/terakty.webp" alt="Британское 11 сентября" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>7 июля 2005 года в 8:50 утра с промежутком в 50 секунд были взорваны три поезда Лондонского метрополитена. Почти час спустя четвёртый взрыв прогремел в автобусе на Тэвисток-сквер. Погибли <strong>52 человека</strong>, ранены около <strong>700</strong>. Четыре террориста-смертника привели устройства в действие сами.</p><p>День был выбран намеренно: накануне Лондон праздновал победу в борьбе за право принять Олимпиаду 2012 года. Город ликовал — и проснулся в ужасе.</p><p>Все четверо исполнителей приехали из Лидса на электричке, в 8:20 вышли на <strong>«Кингс-Кросс»</strong> и разошлись по разным линиям. Британские граждане, рождённые или выросшие в Великобритании, — не иностранцы, не нелегалы. Это потрясло страну не меньше самих взрывов.</p><p>Транспортная система Лондона встала на сутки. Тысячи людей шли пешком через весь город. Связь перегрузилась — люди часами не могли дозвониться до близких.</p><p><em><strong>Блэр</strong> прервал саммит G8 в Глениглсе и вернулся в Лондон. <em>«Они пытались запугать нас, — сказал он. — Они не смогут».</em></em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

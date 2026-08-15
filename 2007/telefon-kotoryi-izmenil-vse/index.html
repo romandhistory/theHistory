@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2007/">← К году 2007</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Телефон, который изменил всё</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2007/jobs.webp" alt="Телефон, который изменил всё" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2007/jobs.webp" alt="Телефон, который изменил всё" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>9 января 2007 года на конференции Macworld в Сан-Франциско <strong>Стив Джобс</strong> вышел на сцену и произнёс: <em>«Сегодня Apple изобретает телефон заново»</em>. Зал не сразу понял, что происходит. Джобс держал паузу — и достал из кармана тонкий прямоугольник без кнопок.</p><p><strong>iPhone</strong> объединял три устройства: телефон, iPod и интернет-браузер. Сенсорный экран занимал почти всю переднюю панель. Никакой физической клавиатуры — только стекло. Конкуренты крутили пальцем у виска: без кнопок телефон не продашь.</p><p>Продажи стартовали <strong>29 июня</strong> в США. Люди ночевали у магазинов Apple. За первые выходные было продано <strong>270 тысяч устройств</strong>. Цена — от <strong>499 долларов</strong> — не остановила никого.</p><p><strong>Nokia</strong>, <strong>Motorola</strong>, <strong>BlackBerry</strong> смотрели на презентацию с профессиональным скептицизмом. Каждая из компаний занимала прочные позиции на рынке — и не видела в красивом гаджете без кнопок реальной угрозы своему бизнесу.</p><p><em>2007 год заканчивался так же, как начался: Apple продавала телефон, остальные — сомневались. Рынок пока не вынес вердикта.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

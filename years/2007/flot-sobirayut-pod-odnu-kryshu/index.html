@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2007/">← К году 2007</a>
             <p class="meta-tag">Россия</p>
             <h1>Флот собирают под одну крышу</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2007/osk.webp" alt="Флот собирают под одну крышу" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2007/osk.webp" alt="Флот собирают под одну крышу" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>21 марта 2007 года <strong>Путин</strong> подписал указ № 394 о создании <strong>Объединённой судостроительной корпорации</strong>. В ОСК вошли около <strong>80%</strong> производственных мощностей российского судостроения — верфи, конструкторские бюро, научно-исследовательские центры от Калининграда до Хабаровска, от Мурманска до Астрахани. <strong>100% акций</strong> остались в федеральной собственности.</p><p>Отрасль досталась государству в плачевном состоянии. Советское судостроение некогда занимало второе место в мире — к 2007 году большинство предприятий влачили жалкое существование без заказов и инвестиций. Многие находились в предбанкротном состоянии.</p><p>Логика была та же, что и при создании <strong>«Ростехнологий»</strong> и других госкорпораций: консолидация разрозненных активов под единым управлением как условие выживания стратегической отрасли. Военное и гражданское кораблестроение объединили в один холдинг.</p><p>Первым президентом ОСК стал <strong>Юрий Яров</strong> — опытный чиновник без специального судостроительного профиля.</p><p><em>Государство возвращалось в промышленность волна за волной. ОСК стала очередной — и далеко не последней.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2008/">← К году 2008</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Америка голосует за перемены</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2008/obama.webp" alt="Америка голосует за перемены" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2008/obama.webp" alt="Америка голосует за перемены" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>4 ноября 2008 года <strong>Барак Обама</strong> победил на президентских выборах в США, набрав <strong>365 голосов выборщиков</strong> против <strong>173</strong> у республиканца <strong>Джона Маккейна</strong>. За него проголосовали <strong>52,9%</strong> избирателей — наибольший результат для кандидата от Демократической партии с 1964 года.</p><p>Обама стал первым афроамериканским президентом в истории страны. Когда телеканалы объявили результаты, на улицы городов вышли тысячи людей — в Чикаго, Нью-Йорке, Вашингтоне. Многие плакали. <strong>Мартин Лютер Кинг</strong> был убит сорок лет назад; теперь его страна избрала чернокожего президента.</p><p>Кампания Обамы переписала правила политической борьбы. Его штаб собрал рекордные <strong>750 миллионов долларов</strong> пожертвований — преимущественно через интернет, небольшими суммами от миллионов рядовых граждан. Лозунг <em>«Yes, we can»</em> стал символом эпохи.</p><p>Маккейн проиграл достойно: в своей речи он поздравил соперника и призвал страну к единству.</p><p><em>Мир встретил избрание Обамы с энтузиазмом, какого американские выборы не вызывали давно. От него ждали многого — и именно поэтому разочарования тоже не заставят себя ждать.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

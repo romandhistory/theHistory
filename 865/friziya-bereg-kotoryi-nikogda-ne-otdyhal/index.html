@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/865/">← К году 865</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Фризия: берег, который никогда не отдыхал</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/865/vikinginafrizii.webp" alt="Фризия: берег, который никогда не отдыхал" />
+            <img class="hero-image" src="https://thehistory.pro/cont/865/vikinginafrizii.webp" alt="Фризия: берег, который никогда не отдыхал" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>Фризское побережье в 860-е годы не знало мира. Даны грабили восточную и западную Фризию на протяжении десятилетий — <strong>«Анналы Ксантена»</strong> фиксируют набеги в 863-м, <strong>«Анналы Фульды»</strong> подробно описывают разорение Утрехта в 881–882 годах. 865-й был частью этого непрерывного давления — без крупных сражений, но и без передышки.</p><p>Механизм был отработан до автоматизма: драккары входили в устья рек, грабили прибрежные поселения и уходили до того, как успевало собраться ополчение. Фризы несли потери постоянно — но иногда давали отпор: в один из таких годов более <strong>двенадцати тысяч нападавших</strong> были убиты местными жителями.</p><p><em>Фризия была воротами в сердце Каролингской империи. Пока эти ворота оставались открытыми, север Европы не мог чувствовать себя в безопасности.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

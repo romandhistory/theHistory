@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2004/">← К году 2004</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Первый геноцид XXI века</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2004/darfur.webp" alt="Первый геноцид XXI века" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2004/darfur.webp" alt="Первый геноцид XXI века" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>Конфликт в западном суданском регионе <strong>Дарфур</strong> разгорелся ещё в 2003-м, но мировое внимание привлёк в 2004 году. К весне тысячи чернокожих жителей были убиты, около миллиона покинули дома. Проправительственные арабские формирования <strong>«Джанджавид»</strong> сжигали деревни, убивали мужчин, насиловали женщин — методично и безнаказанно.</p><p>В июле регион посетили генсек ООН <strong>Кофи Аннан</strong> и госсекретарь США <strong>Колин Пауэлл</strong>. 13 сентября Пауэлл официально назвал происходящее геноцидом — первый раз в истории, когда действующий американский чиновник употребил это слово в отношении продолжающегося конфликта. Конгресс США принял аналогичную резолюцию.</p><p>Слова не повлекли действий. Судан отвергал обвинения. <strong>Китай</strong> и <strong>Россия</strong> блокировали жёсткие резолюции в Совете Безопасности ООН, ссылаясь на принцип невмешательства во внутренние дела. Африканский союз направил небольшой контингент наблюдателей — без полномочий и без ресурсов.</p><p>Наблюдатели сравнивали действия «Джанджавид» с резнёй в <strong>Руанде</strong>. Параллель была очевидна — и столь же очевидно игнорировалась.</p><p><em>Мир знал. Мир смотрел. Мир не остановил.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

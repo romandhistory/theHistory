@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2022/">← К году 2022</a>
             <p class="meta-tag">Мировые события</p>
             <h1>«Тяньгун»: Китай строит собственный дом на орбите</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2022/kosmstan.webp" alt="«Тяньгун»: Китай строит собственный дом на орбите" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2022/kosmstan.webp" alt="«Тяньгун»: Китай строит собственный дом на орбите" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>31 октября 2022 года Китай вывел на орбиту лабораторный модуль <strong>«Мэнтянь»</strong> — последний из трёх ключевых элементов космической станции <strong>«Тяньгун»</strong>. Станция была собрана в штатной конфигурации: центральный модуль <strong>«Тяньхэ»</strong> и два лабораторных — <strong>«Вэньтянь»</strong> и <strong>«Мэнтянь»</strong>. Китай стал <strong>второй страной в мире</strong> после России, самостоятельно построившей и эксплуатирующей орбитальную станцию.</p><p>Путь занял десятилетия. Китай трижды подавал заявки на участие в программе <strong>МКС</strong> — и трижды получал отказ, прежде всего из-за позиции США, запрещавших NASA сотрудничество с китайской космической программой по соображениям национальной безопасности. В ответ Пекин решил строить собственную станцию. Первый модуль «Тяньхэ» был запущен в апреле <strong>2021 года</strong>.</p><p>«Тяньгун» рассчитан на экипаж из <strong>трёх человек</strong> и постоянно обитаем с июня 2021 года. Станция меньше МКС — около <strong>110 тонн</strong> против <strong>420</strong> — но оснащена современным научным оборудованием и рассчитана на эксплуатацию минимум до <strong>2035 года</strong>. Китай открыл станцию для международных экспериментов — заявки подали несколько десятков стран.</p><p>МКС, построенная в логике постхолодновойнового сотрудничества, стремительно стареет и будет сведена с орбиты около <strong>2030 года</strong>. «Тяньгун» может оказаться единственной обитаемой станцией на низкой орбите — если США и партнёры не успеют с заменой.</p><p><em>Китай не попал на МКС — и построил свою.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

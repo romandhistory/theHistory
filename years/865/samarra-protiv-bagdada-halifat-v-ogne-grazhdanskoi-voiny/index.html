@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/865/">← К году 865</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Самарра против Багдада: халифат в огне гражданской войны</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/865/halifMutazz.webp" alt="Самарра против Багдада: халифат в огне гражданской войны" />
+            <img class="hero-image" src="https://thehistory.pro/cont/865/halifMutazz.webp" alt="Самарра против Багдада: халифат в огне гражданской войны" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В феврале 865 года <strong>аль-Мустаин</strong> бежал из Самарры в Багдад вместе с тюркскими военачальниками <strong>Васифом</strong> и <strong>Бугой Младшим</strong>. Оставшаяся в Самарре тюркская военная верхушка немедленно извлекла <strong>аль-Мутазза</strong> из тюрьмы и провозгласила его халифом. Армия нового халифа под командованием его брата <strong>Абу Ахмада</strong> двинулась на Багдад.</p><p>Осада длилась почти год. С одной стороны — Самарра с тюркской гвардией и аль-Мутаззом. С другой — Багдад с семьёй Тахиридов, арабскими военными фракциями и горожанами, вставшими на сторону аль-Мустаина.</p><p>Развязка оказалась предсказуемой. Аль-Мустаин был брошен сторонниками и вынужден отречься. Несмотря на обещание сохранить ему жизнь, он был казнён вскоре после капитуляции.</p><p>Итогом войны стала полная победа тюркского военного истеблишмента. Арабские фракции и жители Багдада оказались полностью отстранены от власти.</p><p><em>Аль-Мутазз получил трон — но не власть. Власть по-прежнему принадлежала тем, кто его освободил из тюрьмы и посадил на него.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

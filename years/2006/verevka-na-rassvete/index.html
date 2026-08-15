@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2006/">← К году 2006</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Верёвка на рассвете</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2006/husein.webp" alt="Верёвка на рассвете" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2006/husein.webp" alt="Верёвка на рассвете" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>30 декабря 2006 года в 6 часов утра по багдадскому времени <strong>Саддам Хусейн</strong> был казнён через повешение. Казнь состоялась в день начала праздника Курбан-байрам. <strong>5 ноября</strong> того же года Высший уголовный трибунал Ирака признал его виновным в убийстве 148 шиитов в местечке Эд-Дуджейль в 1982 году.</p><p>Видеозапись казни, снятая на мобильный телефон кем-то из присутствовавших, оказалась в интернете в считанные часы. На записи слышно, как охранники оскорбляют Хусейна перед смертью. <strong>Буш</strong> назвал казнь <em>«важной вехой»</em> — <strong>Путин</strong> охарактеризовал её как <em>«варварскую»</em>.</p><p>Реакция мирового сообщества разделилась. МИД России предупредил: <em>«Поспешная жестокая экзекуция ещё больше углубит раскол в иракском обществе. Вместо национального примирения народ Ирака рискует получить очередной виток братоубийственного конфликта»</em>.</p><p>Предупреждение оказалось пророческим. В день казни в шиитском Куфе вспыхнули беспорядки — суннитские и шиитские кварталы снова обменивались выстрелами.</p><p><em>Человек, державший страну в кулаке 24 года, умер на верёвке. Ирак не стал от этого спокойнее.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

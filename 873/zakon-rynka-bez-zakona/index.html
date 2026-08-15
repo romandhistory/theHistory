@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/873/">← К году 873</a>
             <p class="meta-tag">Россия</p>
             <h1>Закон рынка без закона</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/873/rinok.webp" alt="Закон рынка без закона" />
+            <img class="hero-image" src="https://thehistory.pro/cont/873/rinok.webp" alt="Закон рынка без закона" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>Формального свода правил новгородской торговли не существовало — но порядок держался крепче любого писаного закона. Купцы, ремесленники, приезжие гости знали правила на память, потому что нарушение грозило потерей репутации, а с ней и дела.</p><p>Место торга у реки было постоянным — сюда стекались и местные, и заезжие. Споры о качестве товара или обмане решались через старейшин или дружинников князя, без долгих разбирательств.</p><p>Такая система работала благодаря повторяемости: одни и те же купцы возвращались сезон за сезоном, и репутация значила больше единичной выгоды.</p><p><em>Новгородский торг 873 года не нуждался в письменном законе — обычай справлялся с этой ролью не хуже.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

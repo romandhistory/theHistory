@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2022/">← К году 2022</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Ювалди: дети в классе, стрелок внутри</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2022/uvaldeschool.webp" alt="Ювалди: дети в классе, стрелок внутри" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2022/uvaldeschool.webp" alt="Ювалди: дети в классе, стрелок внутри" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>24 мая 2022 года 18-летний <strong>Сальвадор Р</strong> вошёл в начальную школу Роб Элементари в Увалди, штат Техас, и открыл огонь. Погибли <strong>19 детей и двое учителей</strong>. Это второй по числу жертв расстрел в американской школе после Сэнди-Хук в 2012 году.</p><p>Р стрелял в двух четвёртых классах на протяжении более часа. Полиция находилась в здании — и не входила в классы <strong>77 минут</strong>, пока внутри продолжалось убийство. Следствие установило: офицеры ждали снаряжения и старшего командира, пока дети звонили в 911 из-за закрытых дверей. Пограничник в итоге вошёл без приказа и застрелил стрелка.</p><p>Бездействие полиции стало отдельным скандалом. Начальник школьной полиции <strong>Пит А</strong>, принимавший решения на месте, был уволен и впоследствии обвинён. Техасские власти несколько раз меняли официальную версию событий.</p><p>Увалди произошёл через десять дней после расстрела в супермаркете в <strong>Буффало</strong>, где белый националист убил десятерых афроамериканцев. Конгресс принял двухпартийный закон об ужесточении проверок для молодых покупателей оружия — первое федеральное оружейное законодательство за почти тридцать лет, скромное по меркам масштаба проблемы.</p><p><em>Америка снова хоронила детей — и снова не смогла договориться о том, что с этим делать.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

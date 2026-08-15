@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/862/">← К году 862</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Два флота на Бретани — и Роберт Сильный их встречает</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/862/Robert.webp" alt="Два флота на Бретани — и Роберт Сильный их встречает" />
+            <img class="hero-image" src="https://thehistory.pro/cont/862/Robert.webp" alt="Два флота на Бретани — и Роберт Сильный их встречает" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В 862 году два викингских флота сошлись у берегов Бретани: один только что был выдворен <strong>Карлом Лысым</strong> с Сены, второй возвращался с Средиземноморской экспедиции. <strong>Саломан</strong>, король Бретани, нанял средиземноморский флот для опустошения долины Луары в Нейстрии. <strong>Роберт</strong> захватил <strong>двенадцать их кораблей</strong>, перебив всех на борту, кроме немногих успевших бежать.</p><p>Это было первое крупное столкновение Роберта с норманнами — и первый его задокументированный военный успех в новой роли. Примирившись с Карлом Лысым в 861 году, он был поставлен защищать земли между Сеной и Луарой — и немедленно доказал, что назначение было верным.</p><p><em>Двенадцать захваченных кораблей — это не просто победа. Это заявка на то, что у Западно-Франкского королевства наконец появился человек, способный не откупаться от норманнов, а бить их.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/886/">← К году 886</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Император пришёл с армией — и заплатил</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/886/karl&vik.webp" alt="Император пришёл с армией — и заплатил" />
+            <img class="hero-image" src="https://thehistory.pro/cont/886/karl&vik.webp" alt="Император пришёл с армией — и заплатил" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В октябре 886 года <strong>Карл III Толстый</strong> наконец прибыл с армией под <strong>Париж</strong> — через год после начала осады. Норманны были окружены на Монмартре. Уничтожить их не составляло труда.</p><p>Карл выбрал другое. Он выплатил семьсот фунтов серебра — и разрешил оставшимся викингам пройти вверх по Сене в Бургундию, где те разорили страну до весны.</p><p><strong>Зигфрид</strong> ушёл ещё раньше — в апреле, взяв шестьдесят фунтов за снятие своей части осады. Граф <strong>Эд</strong> держал город почти год с горсткой людей, пока Карл ехал из Италии через Альпы. <strong>Генрих Франконский</strong>, которого Карл послал с авангардом, погиб в августе.</p><p>Когда армия наконец пришла — не было ни штурма, ни сражения. Только дань и пропуск на восток. Одо, граф Парижа, отстоявший город, был унижён вместе с ним: его оборона обесценилась в тот момент, когда Карл достал кошелёк.</p><p><em>Год осады Парижа обнажил то, что придворные давно знали и не говорили вслух: у Каролингской империи снова один правитель — и он не способен её защитить.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

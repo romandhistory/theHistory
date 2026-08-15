@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2009/">← К году 2009</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Первая пандемия века</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2009/svin_grip.webp" alt="Первая пандемия века" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2009/svin_grip.webp" alt="Первая пандемия века" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В апреле 2009 года в Мексике зафиксировали вспышку нового штамма гриппа — <strong>H1N1</strong>, быстро прозванного <em>«свиным»</em>. Вирус распространился стремительно: уже в июне ВОЗ объявила пандемию — первую за 41 год. К тому моменту случаи заражения были зафиксированы в <strong>74 странах</strong>.</p><p>Новый штамм оказался необычным: в отличие от сезонного гриппа, он поражал прежде всего молодых и людей среднего возраста, а не пожилых. Иммунитета к нему у большинства населения планеты не было. Больницы в ряде стран работали на пределе, правительства экстренно закупали противовирусные препараты.</p><p>Россия закрыла импорт мексиканской свинины, десятки стран ввели температурный контроль в аэропортах. Школы закрывали на карантин целыми районами — особенно активно в США и Мексике. Производство вакцины развернули в рекордные сроки.</p><p>К концу 2009 года вирус обошёл весь земной шар. По оценкам ВОЗ, погибло от <strong>18 до 284 тысяч человек</strong> — разброс отражал трудности с учётом смертности в бедных странах.</p><p><em>В августе 2010 года ВОЗ объявит об окончании пандемии. Но в 2009-м мир впервые за десятилетия ощутил, что эпидемия — не история из учебников.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

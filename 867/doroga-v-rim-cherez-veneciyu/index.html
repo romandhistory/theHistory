@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/867/">← К году 867</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Дорога в Рим через Венецию</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/867/Kir&MefedutvRim.webp" alt="Дорога в Рим через Венецию" />
+            <img class="hero-image" src="https://thehistory.pro/cont/867/Kir&MefedutvRim.webp" alt="Дорога в Рим через Венецию" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В 867 году братья покинули Моравию и двинулись в Рим — отвечать на обвинения франкского духовенства, считавшего эти земли своей канонической территорией и требовавшего исключительного права на латинскую литургию.</p><p>По дороге случилась показательная остановка. В Венеции братья столкнулись с западными клириками, отстаивавшими так называемую <strong>«трёхъязычную ересь»</strong>: богослужение законно лишь на трёх языках — еврейском, греческом и латинском. Все прочие — кощунство. Братья привезли с собой реликвии святого Климента — третьего епископа Рима после апостолов — и это обеспечило им торжественный приём в столице христианства.</p><p>В Рим они прибыли вскоре после того, как <strong>Адриан II</strong> взошёл на папский престол 14 декабря 867 года. <strong>Николай I</strong>, первоначально пригласивший их, умер месяцем раньше. Адриан встретил братьев с почестями и торжественно одобрил славянскую литургию.</p><p><em>Два брата из Фессалоники ехали в Рим оправдываться. Уехали оттуда победителями — с буллой, изменившей историю половины Европы.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

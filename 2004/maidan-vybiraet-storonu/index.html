@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2004/">← К году 2004</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Майдан выбирает сторону</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2004/revolution.webp" alt="Майдан выбирает сторону" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2004/revolution.webp" alt="Майдан выбирает сторону" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>21 ноября 2004 года ЦИК Украины объявил победителем второго тура президентских выборов <strong>Виктора Януковича</strong> — 49,46% против 46,61% у <strong>Виктора Ющенко</strong>. Данные немедленно разошлись с результатами экзит-поллов. Уже вечером на киевском <strong>Майдане Незалежности</strong> начали собираться люди. На следующий день протесты охватили всю страну.</p><p>Оранжевый цвет — цвет кампании Ющенко — стал символом сопротивления. В пике на Майдане одновременно находились сотни тысяч человек. Янукович созвал контрмитинги — сторонники из восточных регионов ехали в Киев, оказываясь в меньшинстве.</p><p>Верховный суд признал итоги второго тура недействительными — были установлены массовые фальсификации. 26 декабря прошёл повторный тур. Ющенко победил с 51,99%. 23 января 2005 года он был инаугурирован.</p><p><strong>Владимир Путин</strong> первым поздравил Януковича ещё до официального объявления результатов. Москва делала ставку на своего кандидата — и проиграла.</p><p><em>Украина совершила выбор. Насколько он необратим — покажет будущее.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

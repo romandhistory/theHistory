@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2020/">← К году 2020</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Частный билет на орбиту: SpaceX меняет правила космической гонки</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2020/spacex.webp" alt="Частный билет на орбиту: SpaceX меняет правила космической гонки" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2020/spacex.webp" alt="Частный билет на орбиту: SpaceX меняет правила космической гонки" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>30 мая 2020 года ракета <strong>Falcon 9</strong> стартовала с мыса Канаверал и вывела на орбиту корабль <strong>Crew Dragon</strong> с двумя астронавтами NASA на борту. <strong>Роберт Бенкен</strong> и <strong>Дуглас Хёрли</strong> стали первыми людьми, полетевшими в космос на корабле частной компании. Через 19 часов они пристыковались к Международной космической станции.</p><p>Для NASA миссия <strong>Demo-2</strong> закрывала девятилетний разрыв: после закрытия программы Space Shuttle в 2011 году американские астронавты добирались до МКС исключительно на российских «Союзах» — по цене около <strong>90 миллионов долларов</strong> за место. SpaceX предложила принципиально иную экономику и иную философию: многоразовые ракеты, частный капитал, конкурентный рынок космических услуг.</p><p>Crew Dragon приводнился в Атлантическом океане 2 августа 2020 года — впервые с программы «Аполлон» американский пилотируемый корабль возвращался на воду. В ноябре того же года SpaceX выполнила первый штатный коммерческий полёт к МКС с экипажем из четырёх человек.</p><p><strong>Илон Маск</strong> на протяжении многих лет был объектом скептицизма в аэрокосмической отрасли. Demo-2 превратил SpaceX из дерзкого стартапа в основного подрядчика NASA по пилотируемым полётам.</p><p><em>Частный космос перестал быть метафорой — он стал транспортным расписанием.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

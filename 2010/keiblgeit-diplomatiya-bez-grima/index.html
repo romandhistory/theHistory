@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2010/">← К году 2010</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Кейблгейт: дипломатия без грима</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2010/wikileaks.webp" alt="Кейблгейт: дипломатия без грима" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2010/wikileaks.webp" alt="Кейблгейт: дипломатия без грима" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>28 ноября 2010 года сайт <strong>WikiLeaks</strong> одновременно с пятью крупнейшими газетами мира — <strong>The Guardian</strong>, <strong>Le Monde</strong>, <strong>Der Spiegel</strong>, <strong>El País</strong> и <strong>The New York Times</strong> — начал публикацию <strong>251 287</strong> секретных депеш Государственного департамента США. Скандал немедленно окрестили <strong>«Кейблгейтом»</strong>.</p><p>Депеши охватывали переписку <strong>274 американских посольств</strong> с 1966 по 2010 год. Дипломаты писали откровенно: давали резкие характеристики мировым лидерам, описывали закулисные договорённости, фиксировали то, о чём публично никогда не говорили. Госдеп требовал от посольств биометрические данные руководства ООН, включая образцы ДНК и пароли.</p><p>Источником утечки оказался военный аналитик <strong>Брэдли Мэннинг</strong>, скачавший архив из закрытой базы данных в Ираке. Основатель WikiLeaks <strong>Джулиан Ассанж</strong> к концу года оказался под угрозой ареста сразу по нескольким делам — Интерпол выдал на него ордер.</p><p><em>Правительства негодовали. Читатели — не отрывались от экранов.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

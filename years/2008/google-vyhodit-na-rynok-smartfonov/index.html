@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2008/">← К году 2008</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Google выходит на рынок смартфонов</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2008/android.webp" alt="Google выходит на рынок смартфонов" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2008/android.webp" alt="Google выходит на рынок смартфонов" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>23 сентября 2008 года <strong>Google</strong> официально представила операционную систему <strong>Android 1.0</strong>. Первым смартфоном на новой платформе стал <strong>HTC Dream</strong> — угловатый аппарат с выдвижной клавиатурой, поступивший в продажу <strong>22 октября</strong> в США.</p><p>Android разрабатывала небольшая компания, которую Google приобрела ещё в 2005 году. Ключевым решением стала открытость: исходный код системы был доступен любому производителю бесплатно. Это принципиально отличало Android от <strong>iOS</strong> — закрытой платформы Apple, появившейся годом раньше вместе с первым iPhone.</p><p>Первая версия была скромной: браузер, почта, карты, YouTube, магазин приложений <strong>Android Market</strong>. Интерфейс выглядел функционально, но без изящества. Критики сравнивали с iPhone не в пользу Google.</p><p>Открытая модель делала своё дело: уже через год десятки производителей — Samsung, Motorola, LG — выпускали собственные Android-устройства. У Apple была одна модель телефона. У Android — десятки.</p><p><em>Рынок смартфонов перестал быть монополией одной компании.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

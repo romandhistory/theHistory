@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/863/">← К году 863</a>
             <p class="meta-tag">Россия</p>
             <h1>Север и юг: два города, одна река, никакого единства</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/863/novgor&kiev.webp" alt="Север и юг: два города, одна река, никакого единства" />
+            <img class="hero-image" src="https://thehistory.pro/cont/863/novgor&kiev.webp" alt="Север и юг: два города, одна река, никакого единства" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>863 год не был переломным в привычном смысле — не было великих битв, не подписывались договоры, не менялись династии. Но именно в этот год варяжская система на севере Руси прошла первое серьёзное испытание — и устояла.</p><p>Восстание подавлено. Знать разбежалась. Рюрик остался. Это само по себе было результатом: молодая власть пережила первый кризис и не рассыпалась.</p><p>На севере выстраивалась административная сеть — <strong>Ладога, Новгород, Белоозеро, Изборск</strong>. Полюдье превращало племенные территории в управляемое пространство. Варяжская дружина из гостей превращалась в постоянный институт власти.</p><p>На юге <strong>Киев</strong> жил своей жизнью — независимо, без оглядки на Новгород. <strong>Аскольд</strong> торговал с Константинополем, принимал беглецов с севера и строил собственную систему по берегам Днепра.</p><p><em>Два центра, одна река, никакого единства — такой была Русь в 863 году. Не государство, но уже и не просто племена. Что-то среднее: варяжские узлы на торговых путях, скреплённые силой и выгодой, но ещё не общей судьбой.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">
