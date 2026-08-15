@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/871/">← К году 871</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Альфред платит — войско уходит в Лондон</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/871/alf&vikingi.webp" alt="Альфред платит — войско уходит в Лондон" />
+            <img class="hero-image" src="https://thehistory.pro/cont/871/alf&vikingi.webp" alt="Альфред платит — войско уходит в Лондон" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>Через несколько месяцев после Эшдауна <strong>Альфред</strong>, новый король Уэссекса, сделал то, чего не делал ни один его предшественник перед лицом этой армии так быстро: купил мир. Серия поражений — Бейзинг, Мертон, гибель брата, поражение под Уилтоном уже при самом Альфреде — не оставляла выбора. Год начался победой, но завершался истощением казны и сил.</p><p>Сделка сработала. <strong>Великое языческое войско</strong>, усиленное прибывшим из Скандинавии <strong>Великим Летним Войском</strong> под командованием Багсека, получило плату — и покинуло Уэссекс. Зимой 871–872 года армия встала на зимовку в <strong>Лондоне</strong>.</p><p>Это была не оккупация — скорее перевалочная база на краю недавно атакованного королевства. <strong>Ивар Бескостный</strong>, один из вождей похода, после этого года пропадает из хроник; брат его, <strong>Хальфдан Рагнарссон</strong>, остаётся во главе войска.</p><p>Лондон уже видел викингов прежде, но никогда — на правах долгой зимней стоянки целой армии. Передышка была временной: уже следующим летом войско двинется обратно на север — подавлять мятеж в Нортумбрии, где марионеточный правитель был свергнут собственным народом.</p><p><em>Уэссекс получил пять лет относительного покоя. Цена была — серебро и унижение первой откупленной войны нового короля.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

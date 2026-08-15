@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2005/">← К году 2005</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Третья революция на постсоветском пространстве</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2005/revolution.webp" alt="Третья революция на постсоветском пространстве" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2005/revolution.webp" alt="Третья революция на постсоветском пространстве" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>24 марта 2005 года тысячи протестующих захватили здание правительства в <strong>Бишкеке</strong>. Президент <strong>Аскар Акаев</strong> бежал из страны. Революция, получившая название «тюльпановой», завершила 15-летнее правление первого президента республики.</p><p>Поводом стали парламентские выборы февраля и марта 2005 года. Оппозиция заявила о массовых фальсификациях — в парламент прошли родственники Акаева, включая его дочь. Протесты начались на юге страны, охватили <strong>Ош</strong> и <strong>Джалал-Абад</strong>, затем двинулись на <strong>Бишкек</strong>.</p><p>Акаев улетел в <strong>Москву</strong>. 5 апреля он подписал заявление об отставке прямо в посольстве Кыргызстана в Москве. Исполняющим обязанности президента и премьером стал <strong>Курманбек Бакиев</strong>. В ночь после революции в Бишкеке прокатилась волна грабежей — мародёры разгромили десятки магазинов.</p><p>После <strong>Грузии</strong> и <strong>Украины</strong> Кыргызстан стал третьей постсоветской страной, пережившей «цветную революцию» менее чем за полтора года.</p><p><em>Москва наблюдала с растущим беспокойством. Чередование революций по периметру России становилось закономерностью.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

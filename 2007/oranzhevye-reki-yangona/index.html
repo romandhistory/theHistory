@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2007/">← К году 2007</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Оранжевые реки Янгона</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2007/revolution.webp" alt="Оранжевые реки Янгона" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2007/revolution.webp" alt="Оранжевые реки Янгона" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>15 августа 2007 года военный режим Мьянмы без предупреждения отменил топливные субсидии. Цены на дизель выросли на <strong>66%</strong>, на сжиженный газ — <strong>в пять раз</strong> за одну неделю. Страна взорвалась.</p><p>Особую роль в протестах сыграли буддийские монахи — тысячи людей в шафрановых одеяниях текли по улицам Янгона, мирно выражая протест военному режиму. Картинка облетела весь мир. Западные СМИ немедленно окрестили происходящее <em>«шафрановой революцией»</em>.</p><p>Хунта поначалу выжидала. Затем нанесла удар: монастыри оцепили, лидеров арестовали, на улицах появились солдаты. Разгон сопровождался насилием — число погибших власти занижали, правозащитники называли другие цифры.</p><p>США ввели санкции и заморозили бирманские активы. ООН направила спецпосланника. Китай и Индия — крупнейшие торговые партнёры режима — призвали к сдержанности и не более того.</p><p><em>Революция не случилась. Хунта устояла. Но мир впервые за двадцать лет снова заговорил о Мьянме.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

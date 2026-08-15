@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/864/">← К году 864</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Болгария принимает крест</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/864/borisI.webp" alt="Болгария принимает крест" />
+            <img class="hero-image" src="https://thehistory.pro/cont/864/borisI.webp" alt="Болгария принимает крест" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В начале 864 года хан <strong>Борис I</strong> был тайно крещён в Плиске византийскими священнослужителями вместе с семьёй и частью болгарской знати. Крёстным отцом стал византийский император <strong>Михаил III</strong> — в его честь Борис принял христианское имя <strong>Михаил</strong>.</p><p>Обращение не было добровольным в полном смысле слова. Борис изначально склонялся к западному христианству и вёл переговоры с <strong>Людовиком Немецким</strong>, однако в конце 863 года Византия вторглась в Болгарию в период голода и стихийных бедствий. Застигнутый врасплох, Борис был вынужден просить мира и согласился принять крещение по восточному обряду в обмен на мир и территориальные уступки во Фракии.</p><p>Знать встретила новую веру без восторга. Вспыхнул языческий мятеж — Борис подавил его, казнив <strong>52 боярина</strong> вместе с семьями.</p><p>Однако политическая игра на этом только началась. Борис десятилетиями лавировал между Римом и Константинополем, добиваясь для Болгарии независимой церкви. В итоге он склонился в пользу Константинополя, заложив основу православной идентичности, которая через Болгарию перешла к Сербии и России.</p><p><em>Крещение под давлением обернулось одним из главных цивилизационных выборов средневековой Европы.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

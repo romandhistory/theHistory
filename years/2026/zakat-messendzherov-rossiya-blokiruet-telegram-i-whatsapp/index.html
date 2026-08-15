@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2026/">← К году 2026</a>
             <p class="meta-tag">Россия</p>
             <h1>Закат мессенджеров: Россия блокирует Telegram и WhatsApp</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2026/blokirovkamess.webp" alt="Закат мессенджеров: Россия блокирует Telegram и WhatsApp" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2026/blokirovkamess.webp" alt="Закат мессенджеров: Россия блокирует Telegram и WhatsApp" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>Блокировка Telegram в России официально началась в феврале 2026 года — фактически с августа 2025-го, когда стала ограничиваться возможность звонков. 10 февраля 2026 года <strong>Роскомнадзор</strong> официально подтвердил замедление мессенджера по всей стране, сославшись на нарушение российского законодательства.</p><p>11 февраля домен <strong>WhatsApp</strong> исчез из DNS-серверов РКН — тот же технический приём, что ранее применялся против YouTube. Схема была знакома: не резкая блокировка, а методичное удушение — сначала звонки, затем медиафайлы, затем общие сбои.</p><p>По данным источников РБК, близких к Кремлю, полная блокировка Telegram запланирована на начало апреля 2026 года. Роскомнадзор с начала 2026 года потребовал удалить более <strong>35 600 материалов</strong> в Telegram. За 2025 год платформа заблокировала более <strong>44 миллионов каналов и групп</strong> — в 2,7 раза больше, чем в 2024-м.</p><p>Технический парадокс не остался незамеченным. По оценкам экспертов, оборудование Роскомнадзора не способно одновременно эффективно блокировать несколько крупных платформ — YouTube, Telegram и WhatsApp. Когда Telegram замедляли, WhatsApp у части пользователей неожиданно начинал работать лучше.</p><p>Россия уже блокировала Telegram в 2018 году — и через два года была вынуждена отступить. Теперь аналитики ждут полной блокировки к сентябрю 2026 года — к парламентским выборам. На этот раз инфраструктура РКН мощнее, альтернатива в виде <strong>МАХ</strong> готова, а политическая воля очевидна.</p><p><em>Telegram строился как мессенджер вне юрисдикций. Россия методично доказывала обратное — по одному замедлению за раз.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

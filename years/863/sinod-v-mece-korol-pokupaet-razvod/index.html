@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/863/">← К году 863</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Синод в Меце: король покупает развод</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/863/Lotar'II.webp" alt="Синод в Меце: король покупает развод" />
+            <img class="hero-image" src="https://thehistory.pro/cont/863/Lotar'II.webp" alt="Синод в Меце: король покупает развод" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>На Синоде в Меце в июне 863 года <strong>Лотарь II</strong> выдвинул епископам совершенно новые основания для своего второго брака: он заявил, что с самого начала был женат на <strong>Вальдраде</strong>, а <strong>Тьетбергу</strong> взял в жёны лишь потому, что её брат принудил его к этому силой.</p><p>За этим стоял простой расчёт. Лотарь заблаговременно подкупил епископов — и синод вынес нужный приговор: первый брак недействителен, Вальдрада — законная королева. Лотарь немедленно обвенчался с ней и короновал её.</p><p>Победа оказалась недолгой. Тьетберга бежала ко двору <strong>Карла Лысого</strong> и обратилась напрямую к папе. <strong>Николай I</strong> аннулировал решение Меца и вызвал в Рим архиепископов Кёльнского и Трирского, председательствовавших на синоде. Оба были отстранены от должности.</p><p>Дело о разводе лотарингского короля превратилось в одно из главных испытаний папского авторитета IX века: кто сильнее — соборный консенсус подкупленных епископов или воля Рима?</p><p><em>Николай ответил однозначно.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

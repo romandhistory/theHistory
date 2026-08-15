@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/869/">← К году 869</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Болгария выбирает сторону — снова</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/869/bolgaria.webp" alt="Болгария выбирает сторону — снова" />
+            <img class="hero-image" src="https://thehistory.pro/cont/869/bolgaria.webp" alt="Болгария выбирает сторону — снова" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>На последнем заседании IV Константинопольского собора, <strong>28 февраля 870 года</strong>, болгарские послы задали прямой вопрос: под чью юрисдикцию — Рима или Константинополя — должна войти болгарская церковь?</p><p>Вопрос был отнюдь не богословским. <strong>Борис I</strong> четыре года играл на противоречиях двух церквей — принял крещение от Константинополя, затем обратился к Риму, затем снова начал переговоры с Востоком. Каждый раз он добивался одного: независимой болгарской церкви с собственным патриархом.</p><p>Ни Рим, ни Константинополь патриархата не давали. Но Константинополь предложил больше практических уступок — и собор проголосовал в его пользу. Болгария отходила под юрисдикцию Константинополя. Папские легаты были потрясены: они считали болгар законной территорией Рима.</p><p>Латинские миссионеры, четыре года работавшие в Болгарии, были высланы. <strong>Игнатий</strong> немедленно рукоположил архиепископа для болгар и направил греческих священников.</p><p><em>Рим проиграл Болгарию — прямо на соборе, где рассчитывал победить.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

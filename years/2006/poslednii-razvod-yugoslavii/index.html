@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2006/">← К году 2006</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Последний развод Югославии</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2006/chenogoria.webp" alt="Последний развод Югославии" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2006/chenogoria.webp" alt="Последний развод Югославии" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>21 мая 2006 года в Черногории прошёл референдум о независимости. За выход из союза с Сербией проголосовали <strong>55,5%</strong> — ровно чуть больше установленного ЕС порога в <strong>55%</strong>. Явка составила <strong>86,5%</strong>. Перевес был минимальным, но юридически достаточным.</p><p><strong>3 июня</strong> парламент Черногории провозгласил независимость. Государственный союз Сербии и Черногории — последнее политическое образование на месте распавшейся Югославии — прекратил существование. <strong>28 июня</strong> Черногория стала членом ООН.</p><p>Путь к референдуму занял годы. Премьер <strong>Мило Джуканович</strong> последовательно вёл страну к разрыву с Белградом, апеллируя к европейской перспективе. Сербия восприняла решение болезненно — но без резких шагов.</p><p>Распад Югославии растянулся на полтора десятилетия: Словения, Хорватия, Босния, Македония, затем Сербия и Черногория. Каждый развод давался с разной степенью боли.</p><p><em>Черногорский вышел самым тихим. Население проголосовало — и разошлись.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

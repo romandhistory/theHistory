@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2010/">← К году 2010</a>
             <p class="meta-tag">Россия</p>
             <h1>Россия закрывает зерновой кран</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2010/zerno.webp" alt="Россия закрывает зерновой кран" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2010/zerno.webp" alt="Россия закрывает зерновой кран" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>5 августа 2010 года премьер-министр <strong>Владимир Путин</strong> подписал постановление о временном запрете экспорта зерна. С 15 августа по 31 декабря Россия прекращала вывоз пшеницы, ржи, ячменя, кукурузы и муки. Для послереформенной страны это была беспрецедентная мера.</p><p>Причина — аномальная засуха и пожары, уничтожившие посевы в <strong>27 регионах</strong>. Из <strong>48 засеянных миллионов гектаров</strong> огонь и жара выжгли не менее <strong>10 миллионов</strong>. Итоговый урожай составил около <strong>60 миллионов тонн</strong> — на <strong>37%</strong> меньше, чем годом ранее. Внутренний рынок нужно было защитить от дефицита и скачка цен.</p><p>Мировые рынки отреагировали мгновенно: цены на пшеницу на Чикагской бирже подскочили в день объявления решения. Крупнейшие импортёры российского зерна — Египет, Турция, Пакистан — оказались перед необходимостью срочно искать альтернативных поставщиков. США заняли освободившуюся нишу.</p><p>Внутри страны в конце августа исчезла гречневая крупа — магазинные полки опустели за считанные дни. Выросли цены на хлеб, молоко и мясо птицы. Правительство распределяло зерно из государственного интервенционного фонда напрямую по регионам.</p><p><em>Запрет продлили до конца года...</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

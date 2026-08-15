@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/867/">← К году 867</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Фотий наносит ответный удар</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/867/fotianskaisxizma.webp" alt="Фотий наносит ответный удар" />
+            <img class="hero-image" src="https://thehistory.pro/cont/867/fotianskaisxizma.webp" alt="Фотий наносит ответный удар" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>Четыре года <strong>Фотий</strong> терпел. В 863 году <strong>Николай I</strong> отлучил его от церкви и объявил незаконным патриархом. Фотий не подчинился — и не ответил. Ответ последовал в 867-м, и оказался сокрушительным.</p><p>В 867 году в Константинополе собрался собор с участием около <strong>тысячи епископов, священников и монахов</strong>. Собор объявил Николая I низложенным, анафематствованным и отлучённым от церкви — назвав его <em>«еретиком, опустошающим виноградник Господень»</em>.</p><p>Поводом послужила Болгария. Когда Николай написал болгарам, нападая на греческие обряды, Фотий ответил обвинением Запада в ереси — прежде всего за добавление <strong>«филиокве»</strong> к Символу веры. Богословский спор был настоящим, но за ним стояло главное: кто управляет церковью на Балканах и кто имеет право низлагать патриархов.</p><p>Схизма длилась четыре года — с 863 по 867-й. Она отличалась от великого раскола 1054 года: тогда разрыв стал окончательным. Фотианская схизма закончилась неожиданно — в том же сентябре 867-го <strong>Василий I</strong> убил Михаила III, низложил Фотия и вернул на кафедру <strong>Игнатия</strong>.</p><p>Николай так и не узнал об этом: он умер <strong>13 ноября 867 года</strong> — через несколько недель после того, как его заочно предали анафеме.</p><p><em>Два человека, отлучившие друг друга, ушли в одном году. Спор пережил обоих.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

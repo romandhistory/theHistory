@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/871/">← К году 871</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Корона по праву брака</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/871/rodri.webp" alt="Корона по праву брака" />
+            <img class="hero-image" src="https://thehistory.pro/cont/871/rodri.webp" alt="Корона по праву брака" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>Около 871–872 года умер <strong>Гугон ап Меуриг</strong>, последний правитель небольшого валлийского королевства <strong>Кередигион</strong> — по легенде, утонул. У него не было прямого наследника, способного претендовать на трон.</p><p>Зато был зять. <strong>Родри</strong>, король <strong>Гвинеда</strong>, давно был женат на <strong>Анхарад</strong>, сестре покойного Гугона. Этого оказалось достаточно, чтобы Родри принял Кередигион под свою руку — хотя само валлийское право прямого наследования по женской линии не признавало. Прецедент уже был опробован: Кередигионом руки и расчёта Родри уже прирастил <strong>Поуис</strong>, когда умер бездетный король Кингхен — там сработала родословная по матери Родри.</p><p>К этому моменту Родри правил Гвинедом почти три десятилетия, прославившись как воитель против датских викингов — в 856-м он разбил и убил их вождя Горма, и весть об этой победе дошла даже до двора <strong>Карла Лысого</strong>. Теперь его власть простиралась от Англси до полуострова Гауэр.</p><p><strong>«Анналы Ольстера»</strong> назовут его <em>«королём бриттов»</em> — хотя сам Родри никогда не правил всем Уэльсом, и юго-восток оставался за пределами его власти. Но три королевства — Гвинед, Поуис, теперь Кередигион — под одной короной были чем-то новым для раздробленной валлийской политики.</p><p><em>Брак оказался эффективнее меча. Хотя меч Родри тоже пригодится — уже совсем скоро.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

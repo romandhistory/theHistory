@@ -23,6 +23,21 @@ def first_sentences(text, limit=220):
     return clean[:limit].rstrip() + '...'
 
 
+def safe_image_src(src, fallback='img/logo1.png'):
+    value = str(src or '').strip()
+    if not value or value == '--':
+        return fallback
+    normalized = value.replace('\\', '/').lstrip('/')
+    return normalized if normalized else fallback
+
+
+def img_tag(src, alt='', css=''):
+    safe_src = safe_image_src(src)
+    safe_alt = escape(str(alt or ''))
+    style = f' style="{css}"' if css else ''
+    return f'<img src="{BASE_URL}/{safe_src}" alt="{safe_alt}"{style} onerror="this.onerror=null;this.src=\'{BASE_URL}/img/logo1.png\';" />'
+
+
 def slugify(value):
     text = str(value or '').strip()
     if not text:
@@ -99,20 +114,6 @@ def render_static_shell(title, description, page_url, hero_image, body_html, pag
             .content-card {{ padding: 18px; }}
         }}
     </style>
-    <script>
-        (function () {{
-            try {{
-                var match = window.location.pathname.match(/^\\/\\d+(?:\\/[^/]+)?\\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {{
-                    window.location.replace('/' + targetHash + window.location.search);
-                }}
-            }} catch (e) {{}}
-        }})();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -140,7 +141,7 @@ def build_year_page(slide, year_data, all_years):
     for tab_name in ('world', 'russia'):
         tab = tabs.get(tab_name, {})
         for index, article in enumerate(tab.get('articles', []), 1):
-            title = article.get('title') or article.get('button') or f'Событие {index}'
+            title = article.get('button') or article.get('title') or f'Событие {index}'
             slug = slugify(title)
             events.append({
                 'title': title,
@@ -182,7 +183,7 @@ def build_year_page(slide, year_data, all_years):
         for article in tabs.get(tab_name, {}).get('articles', []):
             all_body_parts.extend(article.get('body', []))
     primary_description = first_sentences(' '.join(all_body_parts)) or f'Ключевые события {year_label} года на theХистори.'
-    hero_image = f'{BASE_URL}/' + str(slide.get('image', 'img/logo1.png')).replace('\\', '/')
+    hero_image = f'{BASE_URL}/' + safe_image_src(slide.get('image', 'img/logo1.png')).replace('\\', '/')
 
     event_cards_html = ''.join(
         f'<li style="margin:10px 0; list-style:none;"><a href="{event["url"]}" style="color:#66d9ef; text-decoration:none;">{escape(event["title"])}</a></li>'
@@ -199,7 +200,7 @@ def build_year_page(slide, year_data, all_years):
             <span class="meta-tag">{escape(year_label)} • theХистори</span>
             <h1>{escape(year_label)} — theХистори</h1>
             <p class="muted">{escape(primary_description)}</p>
-            <img class="hero-image" src="{hero_image}" alt="{escape(year_label)}" />
+            <img class="hero-image" src="{hero_image}" alt="{escape(year_label)}" onerror="this.onerror=null;this.src='{BASE_URL}/img/logo1.png';" />
         </div>
         <div class="content-card" style="margin-top:20px;">
             <h2>События года</h2>
@@ -226,12 +227,12 @@ def build_year_page(slide, year_data, all_years):
 
 def build_event_page(slide, year_data, tab_name, article, article_index, all_years):
     year_id = str(slide.get('id', '')).strip()
-    title = article.get('title') or article.get('button') or f'Событие {article_index}'
+    title = article.get('button') or article.get('title') or f'Событие {article_index}'
     slug = slugify(title)
     description = first_sentences(' '.join(article.get('body', []))) or f'{title} — события {year_id} года на theХистори.'
     image = article.get('image', {})
     image_src = image.get('src') if isinstance(image, dict) else None
-    image_url = f'{BASE_URL}/' + str(image_src or slide.get('image', 'img/logo1.png')).replace('\\', '/')
+    image_url = f'{BASE_URL}/' + safe_image_src(image_src or slide.get('image', 'img/logo1.png')).replace('\\', '/')
     page_url = f'{BASE_URL}/{year_id}/{slug}/'
 
     body_html = ''.join(article.get('body', []))
@@ -263,7 +264,7 @@ def build_event_page(slide, year_data, tab_name, article, article_index, all_yea
             <a href="{BASE_URL}/{year_id}/">← К году {year_id}</a>
             <p class="meta-tag">{escape(section_label)}</p>
             <h1>{escape(title)}</h1>
-            <img class="hero-image" src="{image_url}" alt="{escape(title)}" />
+            <img class="hero-image" src="{image_url}" alt="{escape(title)}" onerror="this.onerror=null;this.src='{BASE_URL}/img/logo1.png';" />
             <div class="muted">{body_html}</div>
         </div>
         <div class="content-card" style="margin-top:20px;">
@@ -290,14 +291,16 @@ def generate_pages():
 
     for slide in slides:
         year_id = str(slide.get('id', '')).strip()
-        if not year_id or slide.get('locked'):
-            continue
-        content_path = ROOT_PATH / str(slide.get('content', ''))
-        if not content_path.exists():
+        if not year_id:
             continue
 
-        with content_path.open('r', encoding='utf-8') as f:
-            year_data = json.load(f)
+        content_value = str(slide.get('content', '') or '').strip()
+        content_path = ROOT_PATH / content_value if content_value else None
+        if content_path and content_path.exists() and content_path.is_file():
+            with content_path.open('r', encoding='utf-8') as f:
+                year_data = json.load(f)
+        else:
+            year_data = {'tabs': {'world': {'articles': []}, 'russia': {'articles': []}}}
 
         legacy_year_dir = YEAR_OUTPUT_DIR / year_id
         legacy_year_dir.mkdir(exist_ok=True)
@@ -311,7 +314,7 @@ def generate_pages():
         for tab_name in ('world', 'russia'):
             tab = year_data.get('tabs', {}).get(tab_name, {})
             for article_index, article in enumerate(tab.get('articles', []), 1):
-                title = article.get('title') or article.get('button') or f'Событие {article_index}'
+                title = article.get('button') or article.get('title') or f'Событие {article_index}'
                 slug = slugify(title)
 
                 event_page = build_event_page(slide, year_data, tab_name, article, article_index, slides)

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2003/">← К году 2003</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Музыка по 99 центов за песню</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2003/itunes.webp" alt="Музыка по 99 центов за песню" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2003/itunes.webp" alt="Музыка по 99 центов за песню" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>28 апреля 2003 года <strong>Apple</strong> открыла <strong>iTunes Store</strong> — первый легальный онлайн-магазин музыки, предложивший покупку отдельных треков по 99 центов. В первую неделю было продано более миллиона песен. <strong>Стив Джобс</strong> назвал это «поворотным моментом для музыкальной индустрии».</p><p>До iTunes интернет был для музыкальной индустрии главным врагом: <strong>Napster</strong> и его последователи позволяли скачивать всё бесплатно. Лейблы судились с сервисами и проигрывали культурно — люди всё равно качали. Apple предложила иное: дешевле, чем альбом, удобнее, чем пиратство.</p><p>Джобс лично убедил руководителей пяти крупнейших мейджоров подписать соглашения. Главным аргументом было простое наблюдение: люди хотят платить за музыку, если цена справедлива и покупка не требует усилий.</p><p>В первый год iTunes Store продал 70 миллионов треков. Сервис работал только на Mac — владельцы Windows ждали своей очереди до октября того же года.</p><p><em>Эпоха компакт-дисков не закончилась в один день. Но её закат начался именно здесь.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

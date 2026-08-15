@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2005/">← К году 2005</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Восемь лет спустя после подписания</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2005/protokol.webp" alt="Восемь лет спустя после подписания" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2005/protokol.webp" alt="Восемь лет спустя после подписания" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>16 февраля 2005 года вступил в силу Киотский протокол к Рамочной конвенции ООН об изменении климата. Подписанный ещё в декабре 1997 года в японском <strong>Киото</strong>, документ ждал ратификации более семи лет. Условие — поддержка стран, производящих не менее 55% мировых выбросов парниковых газов.</p><p>Ключевой стала ратификация <strong>России</strong>. На долю России приходилось 17,4% выбросов — без её подписи протокол не мог вступить в силу. <strong>Владимир Путин</strong> подписал закон о ратификации в ноябре 2004 года, и через 90 дней документ обрёл юридическую силу.</p><p>Протокол обязывал развитые страны сократить выбросы парниковых газов в среднем на 5,2% по сравнению с уровнем 1990 года — до 2012 года. <strong>США</strong>, крупнейший на тот момент эмитент, протокол не ратифицировали. <strong>Джордж Буш</strong> назвал его экономически невыгодным для американской промышленности.</p><p>Документ разделил мир на тех, кто взял на себя обязательства, и тех, кто отказался. Развивающиеся страны — <strong>Китай</strong>, <strong>Индия</strong> — обязательств не имели вовсе.</p><p><em>Климатическая дипломатия сделала первый юридически обязывающий шаг. Насколько твёрдый — покажет время.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

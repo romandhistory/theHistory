@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2006/">← К году 2006</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Германия правит Альпами</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2006/torino.webp" alt="Германия правит Альпами" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2006/torino.webp" alt="Германия правит Альпами" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>С 10 по 26 февраля 2006 года Турин принимал XX зимние Олимпийские игры. <strong>80 стран</strong>, <strong>2508 спортсменов</strong>, <strong>84 комплекта медалей</strong> в 15 видах спорта. Впервые в истории трансляции Игр были доступны на мобильных телефонах.</p><p>Медальный зачёт уверенно выиграла <strong>Германия</strong> — <strong>11 золотых</strong>, <strong>29 медалей</strong> итого. США заняли второе место, Австрия — третье. Россия финишировала четвёртой: <strong>8 золотых</strong>, <strong>22 медали</strong>. Талисманом российской команды впервые стал Чебурашка.</p><p>Главной звездой Игр стал немецкий биатлонист <strong>Михаэль Грайс</strong> — три золота за одну Олимпиаду. Среди скандалов — многочисленные допинговые разбирательства, прежде всего в лыжных гонках, и дисквалификации по ходу соревнований.</p><p>Турин подготовился основательно: <strong>65 новых спортивных объектов</strong>, специально открытое метро, масштабная реконструкция городской инфраструктуры. Олимпиада обошлась в несколько миллиардов евро.</p><p><em>На закрытии флаг передали Ванкуверу. Россия уходила четвёртой — и уже думала о следующих Играх.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

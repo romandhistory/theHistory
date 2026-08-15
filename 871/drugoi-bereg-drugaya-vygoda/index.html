@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/871/">← К году 871</a>
             <p class="meta-tag">Россия</p>
             <h1>Другой берег, другая выгода</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/871/torgi.webp" alt="Другой берег, другая выгода" />
+            <img class="hero-image" src="https://thehistory.pro/cont/871/torgi.webp" alt="Другой берег, другая выгода" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>Балтийская торговля была не единственным источником богатства Новгородской земли. На востоке, вниз по Волге, лежал другой путь — к землям Волжской Булгарии, торговому узлу между севером и мусульманским миром.</p><p>Булгарские купцы принимали меха, воск, рабов — обычный северный товар — и взамен предлагали то, чего не было на Балтике: серебро восточной чеканки, пряности, изделия ремесла, добравшиеся сюда через долгие караванные пути из земель гораздо южнее и восточнее.</p><p>Путь по Волге был длиннее и сложнее днепровского маршрута на юг, но куда спокойнее — печенежская угроза, терзавшая киевскую торговлю, здесь почти не ощущалась. Восточное направление оставалось надёжным там, где южное становилось всё рискованнее.</p><p>Для Рюриковой земли этот маршрут был вторым дыханием экономики — не главным, но важным дополнением к балтийским доходам. Два направления, два рынка, две выгоды, работавшие одновременно и независимо друг от друга.</p><p><em>Новгород богател не одной рекой, а сразу двумя — и именно эта двойная опора делала северную систему устойчивее, чем казалось со стороны.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

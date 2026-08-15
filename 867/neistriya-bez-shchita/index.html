@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/867/">← К году 867</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Нейстрия без щита</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/867/RobSilnyi.webp" alt="Нейстрия без щита" />
+            <img class="hero-image" src="https://thehistory.pro/cont/867/RobSilnyi.webp" alt="Нейстрия без щита" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p><strong>Роберт Сильный</strong> погиб 2 июля 866 года при Брисарте — перехватив датский отряд и не дождавшись подкреплений. Со смертью главного защитника Нейстрии викинги почувствовали перемену немедленно.</p><p>В 860-е годы датчане трижды возвращались к Парижу — и трижды уходили, получив выкуп. Они знали: пока на Луаре и Сене есть человек, способный перехватить флот и захватить корабли, набег обходится слишком дорого. Роберт был именно таким человеком. После его гибели таких не осталось.</p><p>867-й стал годом, когда Западно-Франкское королевство начало привыкать откупаться. <strong>Карл Лысый</strong> неоднократно платил викингам золотом и серебром — выкупая мир, который можно было выиграть мечом. Каждый данегельд учил норманнов одному: приходить снова.</p><p>Сильное присутствие викингов в Нейстрии — от Луары до Бельгии — стало постоянным. Мощный вождь по имени <strong>Роллон</strong> в итоге возьмёт под контроль устье Сены и земли до пятидесяти миль вглубь страны.</p><p><em>Роберт держал дверь закрытой. После его смерти её просто перестали запирать.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

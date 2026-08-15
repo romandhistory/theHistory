@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/864/">← К году 864</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Указ против крепостей, которые уже стояли</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/864/KarlLisyi.webp" alt="Указ против крепостей, которые уже стояли" />
+            <img class="hero-image" src="https://thehistory.pro/cont/864/KarlLisyi.webp" alt="Указ против крепостей, которые уже стояли" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>25 июня 864 года в Питре, на Сене, <strong>Карл Лысый</strong> обнародовал капитулярий, вошедший в историю как <strong>Питрский эдикт</strong>. Один из его пунктов предписывал снести все укрепления, возведённые без королевского разрешения.</p><p>Сам этот пункт был признанием слабости, а не силы. Чтобы запрещать частные крепости указом, нужно было сперва обнаружить, что их уже построили — по всему королевству, руками графов и владетелей, не спрашивавших короля.</p><p>Эдикт содержал и другие меры: строительство укреплённых мостов на Сене и Луаре против норманнских ладей, запрет продавать викингам оружие и коней под страхом смерти, сокращение числа монетных дворов с <strong>девяти до трёх</strong>. Каждая мера отвечала на утрату королём прямого контроля над своими землями.</p><p>На том же собрании в Питре был низложен <strong>Пипин II</strong>, король Аквитании, — соперник, десятилетиями оспаривавший у Карла власть над югом, незадолго до этого захваченный в плен.</p><p><em>Карл Лысый в 864 году правил королевством, где не он один решал, кому и где ставить стены. Указ мог назвать это беззаконием — но не мог отменить того факта, что крепости уже стояли, и построил их не король.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

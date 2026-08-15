@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2006/">← К году 2006</a>
             <p class="meta-tag">Россия</p>
             <h1>Русский интернет обретает свою социальную сеть</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2006/vk.webp" alt="Русский интернет обретает свою социальную сеть" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2006/vk.webp" alt="Русский интернет обретает свою социальную сеть" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>10 октября 2006 года, в день своего 22-летия, <strong>Павел Дуров</strong> запустил <strong>«ВКонтакте»</strong> — появились первые функции сайта. Идея возникла после окончания филфака СПбГУ: Дуров хотел поддерживать связь с однокурсниками и создал платформу за несколько недель, вдохновившись Facebook (организация, запрещенная в России).</p><p>Первыми пользователями стали студенты с форума СПбГУ — регистрация была по приглашению с указанием настоящего имени. <strong>22 ноября</strong> Дуров объявил о запуске на студенческом форуме, в конце ноября регистрация открылась для всех. Месяцем раньше в России уже работали <strong>«Одноклассники»</strong> — конкуренция началась сразу.</p><p>ВКонтакте с первых дней отличался от западных аналогов: акцент на музыку, видео и открытый обмен контентом привлекал молодёжь быстрее, чем любой маркетинг. Правообладатели морщились — пользователи не замечали.</p><p>Инвесторов поначалу не было: Дуров строил сеть на собственные средства и деньги партнёров. Проект выглядел студенческой поделкой.</p><p><em>Рунет получил второй крупный социальный сервис за год. Достаточно ли места для двух — покажет время.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

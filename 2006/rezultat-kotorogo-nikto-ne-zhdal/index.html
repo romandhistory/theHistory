@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2006/">← К году 2006</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Результат, которого никто не ждал</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2006/hamas.webp" alt="Результат, которого никто не ждал" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2006/hamas.webp" alt="Результат, которого никто не ждал" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>25 января 2006 года прошли выборы в Палестинский законодательный совет. <strong>ХАМАС</strong> получил <strong>74 места</strong> из 132 — абсолютное большинство. <strong>ФАТХ</strong>, правивший Палестинской автономией десятилетиями, потерпел сокрушительное поражение. Ещё до официального объявления результатов сторонники ХАМАС ворвались в здание парламента в Рамалле и водрузили над ним зелёное знамя.</p><p>Победу объяснили несколькими факторами. ХАМАС год работал в местных советах и умел решать бытовые проблемы — в отличие от ФАТХ, ставшего в глазах многих символом коррупции и бездействия. Плюс — репутация непримиримости: организация никогда не шла на уступки Израилю.</p><p>Реакция была мгновенной. США, ЕС, Израиль и Россия потребовали от нового правительства признать право Израиля на существование и отказаться от насилия. ХАМАС отказал. Западные страны заморозили финансовую помощь Палестинской автономии.</p><p>Президент <strong>Аббас</strong> поручил <strong>Исмаилу Хании</strong> сформировать правительство. Палестина оказалась в политическом и финансовом тупике.</p><p><em>Мир предлагал демократические выборы — и получил результат, которого не ожидал принять.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2021/">← К году 2021</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Телескоп, который смотрит в начало времён</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2021/teleskop.webp" alt="Телескоп, который смотрит в начало времён" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2021/teleskop.webp" alt="Телескоп, который смотрит в начало времён" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>25 декабря 2021 года с космодрома Куру во Французской Гвиане стартовала ракета <strong>Ariane 5</strong> с телескопом <strong>Джеймса Уэбба</strong> на борту. Запуск, откладывавшийся <strong>14 лет</strong>, наконец состоялся — в рождественское утро, с задержкой всего в несколько минут.</p><p>Уэбб разрабатывался с <strong>1996 года</strong>. Бюджет вырос с изначальных <strong>500 миллионов</strong> до <strong>10 миллиардов долларов</strong>. Телескоп настолько сложен в конструктивном отношении, что при развёртывании должен был последовательно выполнить около <strong>344 критических операций</strong> — каждая из которых в случае отказа могла уничтожить всю миссию. Все 344 выполнились штатно.</p><p>В январе 2022 года Уэбб занял рабочую позицию в <strong>точке Лагранжа L2</strong> — в <strong>1,5 миллиона километров</strong> от Земли. В июле 2022 года <strong>NASA</strong> опубликовало первые снимки: скопления галактик, туманности, атмосферы экзопланет — с детализацией, недоступной никакому предыдущему инструменту. Уэбб видит в инфракрасном диапазоне и способен фиксировать свет галактик, возникших через несколько сотен миллионов лет после Большого взрыва.</p><p>Его предшественник — телескоп <strong>Хаббл</strong> — изменил представления человечества о масштабах Вселенной. Уэбб работает в диапазонах, где Хаббл слеп, и смотрит на порядок глубже.</p><p><em>Человечество строило этот инструмент три десятилетия — чтобы увидеть то, что было за 13,5 миллиарда лет до нас.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

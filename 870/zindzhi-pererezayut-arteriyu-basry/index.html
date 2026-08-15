@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/870/">← К году 870</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Зинджи перерезают артерию Басры</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/870/port_Ubulla.webp" alt="Зинджи перерезают артерию Басры" />
+            <img class="hero-image" src="https://thehistory.pro/cont/870/port_Ubulla.webp" alt="Зинджи перерезают артерию Басры" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>28 июня 870 года повстанцы-зинджи взяли <strong>Аль-Убуллу</strong> — портовый город на Тигре, главную торговую артерию Басры. Поначалу <strong>Али ибн Мухаммад</strong> планировал ударить по Аббадану, но передумал в пользу более ценной цели.</p><p>Город защищал <strong>Абу аль-Ахвас аль-Бахили</strong> — но удержать Аль-Убуллу не смог. Зинджи атаковали с двух сторон: сухопутным штурмом и с захваченных лодок по каналу. К вечеру оборона рухнула, город был взят и разорён.</p><p>Эффект превзошёл военное значение самой победы. Жители соседнего Аббадана, наслышанные о судьбе Аль-Убуллы, сдались без боя — Али ибн Мухаммад позволил своим людям забрать там оружие и рабов. В Басре началась паника: новости о падении портового города заставили многих покинуть его и искать убежища там, куда зинджи пока не дошли.</p><p><em>Потеря Аль-Убуллы перерезала главный торговый путь, питавший Басру. Город, ещё недавно процветавший центр южного Ирака, начал стремительно слабеть — и именно эта слабость через год откроет зинджам дорогу к его захвату.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

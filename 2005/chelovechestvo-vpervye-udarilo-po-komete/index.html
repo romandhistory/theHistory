@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2005/">← К году 2005</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Человечество впервые ударило по комете</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2005/zond.webp" alt="Человечество впервые ударило по комете" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2005/zond.webp" alt="Человечество впервые ударило по комете" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>12 января 2005 года <strong>НАСА</strong> запустило зонд <strong>Deep Impact</strong>. Шесть месяцев полёта — и 4 июля, в 9:52 по московскому времени, медный снаряд весом 370 килограммов врезался в комету <strong>Темпеля 1</strong> на скорости около 10 километров в секунду. Впервые в истории созданный руками человека предмет намеренно столкнулся с кометой.</p><p>Удар выбросил в пространство около 10 тысяч тонн кометного вещества — облако пыли и льда, видимое в телескопы с Земли. Яркость кометы мгновенно возросла. На её поверхности образовался кратер размером с футбольное поле.</p><p>Цель была научной: изучить внутренний состав кометного ядра, законсервированного с момента образования Солнечной системы. Данные, полученные с зонда-наблюдателя, помогли учёным понять, из чего сделаны древнейшие тела нашей системы.</p><p>Событие получило неожиданный юридический отголосок: московский суд принял к рассмотрению иск российского астролога, потребовавшей от <strong>НАСА</strong> 9 миллиардов рублей за «порчу кометы как семейной реликвии».</p><p><em>Учёные комментировать иск отказались.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

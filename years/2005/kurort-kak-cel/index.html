@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2005/">← К году 2005</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Курорт как цель</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2005/terakt.webp" alt="Курорт как цель" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2005/terakt.webp" alt="Курорт как цель" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В ночь с 22 на 23 июля 2005 года на египетском курорте <strong>Шарм-эш-Шейх</strong> прогремели три взрыва. Первый — у отеля «Газаля Гарденс» в районе Наама-Бей, через семь минут — ещё два: в торговой зоне и на автостоянке. Погибли от 64 до 88 человек, около 200 получили ранения. Крупнейший теракт в новейшей истории Египта.</p><p>Среди жертв — британцы, голландцы, катарцы, египтяне. Среди пострадавших — россияне и украинцы. Ответственность взяли на себя группировки, связанные с «Аль-Каидой». Годом ранее похожий удар был нанесён по Табе — следствие считало, что за обоими терактами стоят одни и те же люди.</p><p><strong>Мубарак</strong> лично прилетел на место событий. Полиция перекрыла все выезды из города и задержала более 90 подозреваемых. Синайский полуостров был объявлен зоной усиленного контроля.</p><p><strong>Шарм-эш-Шейх</strong> жил туризмом — и удар был нанесён именно по нему. Тысячи туристов, в том числе из России, находились в городе в момент взрывов.</p><p><em>Пляжи опустели на несколько недель. Египет подсчитывал убытки — и мёртвых.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

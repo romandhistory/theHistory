@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2009/">← К году 2009</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Сообщение, которое изменило связь</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2009/whatsapp.webp" alt="Сообщение, которое изменило связь" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2009/whatsapp.webp" alt="Сообщение, которое изменило связь" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В январе 2009 года бывшие сотрудники Yahoo <strong>Джан Кум</strong> и <strong>Брайан Эктон</strong> зарегистрировали компанию <strong>WhatsApp Inc.</strong> Приложение появилось в App Store в ноябре того же года. Идея была проста до очевидности: показывать статус пользователя — <em>«в сети»</em>, <em>«на встрече»</em>, <em>«заряжаю телефон»</em>. Но пользователи начали использовать статусы как сообщения — и создатели поняли, что нашли нечто большее.</p><p>Кум знал цену простоте: он вырос на Украине, эмигрировал в США подростком, работал уборщиком. Когда Facebook отказал ему в работе, он основал компанию. Принципиальным решением стал отказ от рекламы — приложение продавалось за <strong>один доллар</strong> в год.</p><p>WhatsApp работал поверх интернета, а не через SMS-канал оператора. Для пользователей в странах с дорогими тарифами это означавало экономию. Сервис мгновенно взорвался в Индии, Бразилии, странах Африки — там, где SMS стоили денег.</p><p>Интерфейс был намеренно аскетичным: никакой ленты, никакой рекламы, никаких лишних функций. Только переписка.</p><p><em>Телекоммуникационные компании поначалу не воспринимали приложение всерьёз. Они потеряли миллиарды на SMS раньше, чем успели это осознать.</em></p><p>(организация, запрещенная в России)</p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

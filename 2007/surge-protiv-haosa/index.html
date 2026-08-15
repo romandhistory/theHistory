@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2007/">← К году 2007</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Surge против хаоса</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2007/irak.webp" alt="Surge против хаоса" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2007/irak.webp" alt="Surge против хаоса" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>2007 год стал переломным для американской кампании в Ираке — в обоих смыслах слова. В январе <strong>Буш</strong> объявил о переброске <strong>20 тысяч</strong> дополнительных военных — стратегия получила название <strong>surge</strong>. Целью было подавить сектантское насилие, захлестнувшее страну после взрыва мечети в Самарре годом ранее.</p><p>Одновременно 2007-й стал самым кровавым годом для мирного населения: число погибших среди гражданских достигло максимума за всё время войны. Смертники, придорожные бомбы, расправы между суннитами и шиитами — насилие носило характер гражданской войны, в которую были втянуты иностранные войска.</p><p>К осени генерал <strong>Петреус</strong> доложил Конгрессу: surge даёт результаты, уровень насилия снижается. Противники войны оспаривали цифры и требовали вывода войск. Сторонники настаивали: нужно время. Страна раскололась — опросы фиксировали рекордно низкую поддержку кампании.</p><p>Число погибших американских военных в 2007-м превысило <strong>900 человек</strong> — больше, чем в любой предыдущий год. Иракская армия медленно принимала ответственность за безопасность.</p><p><em>Война шла пятый год. Конца не было видно.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

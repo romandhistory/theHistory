@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2007/">← К году 2007</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Тегеран переходит черту</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2007/iran.webp" alt="Тегеран переходит черту" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2007/iran.webp" alt="Тегеран переходит черту" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>9 апреля 2007 года, в Национальный день ядерных технологий, Иран официально заявил о начале обогащения урана в промышленных масштабах. Президент <strong>Ахмадинежад</strong> торжественно объявил об этом на ядерном объекте в <strong>Натанзе</strong>. Тегеран настаивал: программа исключительно мирная, цель — производство топлива для электростанций.</p><p>Запад воспринял иначе. Совет Безопасности ООН ещё в декабре 2006 года принял резолюцию с требованием приостановить обогащение. Иран проигнорировал её. Теперь, запустив тысячи центрифуг, страна демонстративно перешла к следующему этапу — не лабораторному, а промышленному.</p><p>США и Евросоюз усилили давление. <strong>МАГАТЭ</strong> фиксировало нарушения режима нераспространения и требовало доступа к объектам. Россия и Китай призывали к дипломатическому решению и блокировали жёсткие санкции в Совбезе.</p><p>Принципиальный вопрос оставался без ответа: обогащение до <strong>4,8%</strong> — топливный уровень или шаг к оружейному? Грань между мирным атомом и военной программой проходила именно здесь.</p><p><em>Иран стоял на своём. Переговоры заходили в тупик раз за разом.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

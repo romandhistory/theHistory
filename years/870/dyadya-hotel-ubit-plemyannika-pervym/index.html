@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/870/">← К году 870</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Дядя хотел убить племянника первым</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/870/Sviatopolk.webp" alt="Дядя хотел убить племянника первым" />
+            <img class="hero-image" src="https://thehistory.pro/cont/870/Sviatopolk.webp" alt="Дядя хотел убить племянника первым" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В 870 году <strong>Святополк</strong>, племянник <strong>Ростислава</strong>, тайно договорился с <strong>Карломаном Баварским</strong> — признал его сюзеренитет в обмен на обещание власти над Моравией. Ростислав узнал о сговоре и пришёл в ярость: подослал убийц, чтобы задушить племянника на пиру.</p><p>Святополка предупредили заранее — он спасся, сделав вид, что отправляется на охоту. Затем поменял роли: подстерёг дядю с войском и захватил его. Связанного Ростислава отправили Карломану, а тот передал его <strong>Людовику Немецкому</strong> в Регенсбург.</p><p>Суд был формальным. Собравшиеся франки, баварцы и славяне приговорили Ростислава к смерти за измену — двадцать лет он водил Моравию между Византией и Франкией, отказываясь признавать чьё-либо безусловное господство. Людовик заменил казнь ослеплением и пожизненным заключением. Ростислава бросили в баварский монастырь, где он умер в том же году.</p><p>Карломан немедленно вторгся в моравские владения и подчинил все крепости. Победа Святополка обернулась для него самого недолгим триумфом — но это уже другая история.</p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

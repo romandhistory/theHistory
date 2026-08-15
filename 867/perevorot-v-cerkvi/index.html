@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/867/">← К году 867</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Переворот в церкви</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/867/nizlojeniefotia.webp" alt="Переворот в церкви" />
+            <img class="hero-image" src="https://thehistory.pro/cont/867/nizlojeniefotia.webp" alt="Переворот в церкви" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>Осенью 867 года <strong>Фотий</strong> находился на вершине — собор только что отлучил <strong>Николая I</strong>, болгарский вопрос решался в пользу Константинополя. Всё рухнуло за несколько дней.</p><p>Когда <strong>Василий I</strong> убил Михаила III и захватил трон, Фотий отказался допустить его к причастию — назвав убийцей. Ответ последовал немедленно: Фотия сместили с патриаршего престола и заперли в монастыре под стражей.</p><p>Причина низложения была не богословской. Фотия сместили не столько как ставленника убитого Михаила, сколько потому, что Василий I нуждался в союзе с папой и западным императором для легитимации своей власти. <strong>Игнатий</strong> был нужен как инструмент дипломатии — и 23 ноября 867 года он был восстановлен на патриаршей кафедре.</p><p>Парадокс судьбы Фотия в том, что оба его противника — Михаил III и Николай I — ушли в том же году. Первый убит, второй умер через несколько недель после восстановления Игнатия.</p><p><em>Человека, которого дважды низлагали, дважды возвращали. История церкви редко бывает последовательной.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

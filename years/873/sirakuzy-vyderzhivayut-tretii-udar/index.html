@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/873/">← К году 873</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Сиракузы выдерживают третий удар</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/873/osada3.webp" alt="Сиракузы выдерживают третий удар" />
+            <img class="hero-image" src="https://thehistory.pro/cont/873/osada3.webp" alt="Сиракузы выдерживают третий удар" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В 873 году аглабиды предприняли очередную осаду <strong>Сиракуз</strong> — последнего крупного оплота Византии на Сицилии. Это была уже третья такая попытка за пять лет: город уже отбивался от штурма в 868-м и в 869-м, и оба раза стены и гарнизон выдержали натиск.</p><p>Причина настойчивости была очевидна. К этому времени аглабиды контролировали большую часть острова — Палермо, Мессина, Энна давно перешли в их руки, и Сиракузы оставались единственным крупным препятствием на пути к полному завоеванию. Город удерживал стратегическую гавань, служил резиденцией византийского стратига и оставался символом того, что Сицилия всё ещё частично принадлежит империи.</p><p>Осада 873 года, как и две предыдущие, окончилась неудачей. Сиракузские укрепления, выстроенные за века византийского правления, продолжали держать оборону там, где аглабидская армия раз за разом терпела разочарование.</p><p><em>Победа давалась острову нелегко. Но устоять снова — не значило устоять навсегда: с каждой новой попыткой аглабиды лишь набирались опыта, нужного для решающего штурма.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

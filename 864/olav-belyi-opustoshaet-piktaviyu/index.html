@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/864/">← К году 864</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Олав Белый опустошает Пиктавию</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/864/olaf.webp" alt="Олав Белый опустошает Пиктавию" />
+            <img class="hero-image" src="https://thehistory.pro/cont/864/olaf.webp" alt="Олав Белый опустошает Пиктавию" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>Около 864–866 года <strong>Олав Белый</strong>, конунг Дублина, повёл войско через море на север — в <strong>Пиктавию</strong>, королевство, занимавшее большую часть нынешней Шотландии.</p><p>К тому моменту Олав уже более десяти лет правил Дублином как первый засвидетельствованный норманнский король — подчинив разрозненные отряды викингов в Ирландии и обложив данью ирландских правителей. Дублин превратился в плацдарм, откуда норманны действовали сразу в нескольких направлениях.</p><p>В Шотландии Олав вместе с братом <strong>Аусле</strong> высадился в <strong>Фортриу</strong> — сердце пиктского королевства — разграбил Пиктавию и увёл многочисленных заложников.</p><p>Набег не был случайным. Ирландское море превращалось в норманское внутреннее пространство: Дублин, Гебриды, западное побережье Шотландии — всё это связывалось в единую сеть власти и грабежа. Викинги Дублина становились сюзеренами Гебридских островов, острова Мэн и западной Шотландии.</p><p><em>Пикты заплатили заложниками. Через несколько лет их королевство прекратит существование.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

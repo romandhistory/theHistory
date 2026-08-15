@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2005/">← К году 2005</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Видео для всех</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2005/youtube.webp" alt="Видео для всех" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2005/youtube.webp" alt="Видео для всех" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>14 февраля 2005 года трое бывших сотрудников PayPal — <strong>Чад Хёрли</strong>, <strong>Стив Чен</strong> и <strong>Джавед Карим</strong> — зарегистрировали домен <strong>YouTube.com</strong>. В апреле появилась бета-версия, в ноябре сайт открылся для широкой публики. Первое видео — 18-секундный ролик Карима у вольера со слонами в зоопарке — было загружено <strong>23 апреля</strong>.</p><p>Идея возникла из бытового неудобства: авторы хотели поделиться видеозаписью вечеринки, но не знали как. Электронная почта не справлялась, специальных платформ не было. Решение казалось очевидным — но никто до этого не реализовал его так просто.</p><p>К концу 2005 года на сайт ежедневно загружалось около <strong>8 тысяч роликов</strong>, просмотров насчитывалось уже миллионы. Пользователи снимали всё подряд: выступления, приколы, новости, домашние видео. Алгоритм рекомендаций не существовал — люди находили ролики через ссылки и поиск.</p><p>Телевизионные компании поначалу игнорировали новый сервис. Авторских прав никто не соблюдал — пиратский контент соседствовал с любительскими съёмками.</p><p><em>Мир получил платформу, которая изменила то, как люди смотрят, снимают и делятся видео.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

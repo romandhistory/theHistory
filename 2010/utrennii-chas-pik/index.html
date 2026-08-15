@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2010/">← К году 2010</a>
             <p class="meta-tag">Россия</p>
             <h1>Утренний час пик</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2010/metro.webp" alt="Утренний час пик" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2010/metro.webp" alt="Утренний час пик" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>29 марта 2010 года в 7:57 утра на станции <strong>«Лубянка»</strong> Сокольнической линии прогремел взрыв во втором вагоне поезда. Через 40 минут второй взрыв — на <strong>«Парке культуры»</strong>. Обе бомбы привели в действие террористки-смертницы, прибывшие из Дагестана. Погибли <strong>40 человек</strong>, более <strong>90</strong> получили ранения.</p><p>Место было выбрано намеренно: «Лубянка» — в двух шагах от штаб-квартиры ФСБ. Оба взрыва сработали в момент остановки поезда, когда плотность людей в вагонах и на платформе максимальна. Ответственность взял на себя лидер <strong>«Кавказского эмирата»</strong> <strong>Доку У.</strong>, назвав теракт <em>«акцией возмездия»</em>.</p><p><strong>30 марта</strong> в Москве объявили день траура. <strong>Дмитрий Медведев</strong> поручил создать комплексную систему безопасности на транспорте. Движение на Сокольнической линии было восстановлено в тот же день к вечеру.</p><p>Организатором терактов следствие установило <strong>Магомедали В.</strong> — одного из лидеров дагестанского подполья. В августе того же года он был ликвидирован в ходе спецоперации.</p><p><em>Для Москвы это стал первый крупный теракт в метро за шесть лет — после взрывов на «Автозаводской» и «Рижской» в 2004-м. Город вновь столкнулся с уязвимостью подземки.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

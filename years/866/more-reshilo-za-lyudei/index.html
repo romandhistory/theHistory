@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/866/">← К году 866</a>
             <p class="meta-tag">Россия</p>
             <h1>Море решило за людей</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/866/burya.webp" alt="Море решило за людей" />
+            <img class="hero-image" src="https://thehistory.pro/cont/866/burya.webp" alt="Море решило за людей" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>Константинополь не сдался — и не мог сдаться. Городские стены, выстроенные ещё при Феодосии, были непреодолимы для варяжского флота без осадных машин и без армии. <strong>Аскольд</strong> это понимал. Поход был демонстрацией силы, а не попыткой взять город.</p><p>Развязка пришла со стороны, которую не планировал никто. Византийские источники — и патриарх <strong>Фотий</strong> в первую очередь — описывают внезапную бурю, рассеявшую варяжский флот. Волны разметали ладьи, часть судов затонула, поход закончился отступлением. Фотий увидел в этом чудо Богородицы — патриарх лично обходил стены с её ризой, и буря грянула именно тогда.</p><p>Чудо или нет — флот отступил. Аскольд вернулся в Киев без победы, но и без разгрома: дружина была жива, ладьи — большей частью целы, добыча из предместий — собрана. По меркам эпохи это был не провал, а неудача.</p><p>Важнее другое: Константинополь после ухода варяжского флота немедленно отправил посольство. Византия предпочитала договариваться с теми, кто только что стоял у её стен. Буря рассеяла флот — но не отменила политических последствий похода.</p><p><em>Аскольд уходил от Константинополя с пустыми руками — и с полными возможностями.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2003/">← К году 2003</a>
             <p class="meta-tag">Россия</p>
             <h1>Наркотики получают отдельное ведомство</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2003/gnk.webp" alt="Наркотики получают отдельное ведомство" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2003/gnk.webp" alt="Наркотики получают отдельное ведомство" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>11 марта 2003 года указом президента <strong>Путина</strong> Государственный комитет по противодействию незаконному обороту наркотических средств при МВД был преобразован в самостоятельный <strong>Госнаркоконтроль России</strong>. Новая структура выходила из-под крыши МВД и получала независимый статус.</p><p>Решение созревало давно. Наркотрафик через Россию в 2000-х резко вырос — в первую очередь афганский ге***н, шедший через Центральную Азию. По официальным данным, число наркозависимых в стране исчислялось миллионами. МВД занималось слишком многим — специализированное ведомство должно было работать точнее.</p><p>Госнаркоконтроль получил широкие полномочия: оперативно-розыскная деятельность, следствие, международное сотрудничество. Первым директором стал <strong>Виктор Черкесов</strong> — давний сотрудник спецслужб из окружения Владимира Путина.</p><p>Ведомство с первых дней критиковали за дублирование функций МВД и ФСБ. Три структуры теперь делили одно поле — и нередко конкурировали, а не сотрудничали.</p><p><em>Проблема существовала. Вопрос был в том, поможет ли новая вывеска её решить.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

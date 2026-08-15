@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2020/">← К году 2020</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Гибель баскетболиста Коби Брайанта</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2020/kobi.webp" alt="Гибель баскетболиста Коби Брайанта" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2020/kobi.webp" alt="Гибель баскетболиста Коби Брайанта" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>26 января 2020 года вертолёт <strong>Sikorsky S-76</strong> разбился в горах Калабасас к западу от Лос-Анджелеса. На борту находились девять человек — все погибли. Среди них — <strong>Коби Брайант</strong> и его 13-летняя дочь <strong>Джанна</strong>.</p><p>Брайант летел на тренировку юношеской баскетбольной команды, которую тренировал после завершения карьеры. Густой туман дезориентировал пилота — вертолёт врезался в склон холма на скорости около <strong>280 км/ч</strong>. Расследование <strong>NTSB</strong> установило: пилот, по всей видимости, потерял пространственную ориентацию в условиях нулевой видимости.</p><p>Брайант провёл все 20 сезонов НБA в <strong>Los Angeles Lakers</strong>, дважды выиграл Олимпийское золото и пять раз — чемпионат лиги. В 2016 году завершил карьеру с <strong>33 643 очками</strong> — четвёртый результат в истории НБA на тот момент. В 2020-м, уже посмертно, был введён в Зал славы.</p><p>Гибель Брайанта ударила неожиданно и глубоко — не только потому что он был великим спортсменом, но и потому что в сознании миллионов он уже стал чем-то большим: отцом, наставником, человеком, строившим вторую жизнь после первой, блистательной. <em>Джанна погибла рядом с ним — и это сделало трагедию невыносимой.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

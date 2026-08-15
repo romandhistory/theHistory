@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2003/">← К году 2003</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Гувернатор</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2003/guber.webp" alt="Гувернатор" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2003/guber.webp" alt="Гувернатор" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>7 октября 2003 года <strong>Калифорния</strong> провела досрочные выборы губернатора. <strong>Арнольд Шварценеггер</strong> набрал 51,1% голосов — почти вдвое больше ближайшего соперника. Австриец по рождению, получивший американское гражданство в 1983 году, стал 38-м губернатором штата.</p><p>Выборы были внеочередными — жители Калифорнии проголосовали за отзыв действующего губернатора <strong>Грея Дэвиса</strong> на фоне энергетического кризиса, бюджетного дефицита в 38 миллиардов долларов и растущего недовольства. Список кандидатов на замену насчитывал 135 человек — среди них порнозвёзды, комики и профессиональные политики. Шварценеггер на их фоне выглядел серьёзным кандидатом.</p><p>Американские СМИ немедленно окрестили его «Гувернатором» — гибридом слов «губернатор» и «Терминатор». Шварценеггер принял прозвище с юмором. На митингах он появлялся с метлой — символом обещания вымести прежние порядки.</p><p>Шварценеггер стал первым губернатором штата, родившимся за пределами США, со времён ирландца <strong>Джона Дауни</strong>, избранного в 1862 году.</p><p><em>Голливуд отправил своего человека в политику. Калифорния получила губернатора, которого знал весь мир.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

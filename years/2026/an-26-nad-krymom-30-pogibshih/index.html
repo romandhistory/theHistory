@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2026/">← К году 2026</a>
             <p class="meta-tag">Россия</p>
             <h1>Ан-26 над Крымом: 30 погибших</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2026/krusheniean-26.webp" alt="Ан-26 над Крымом: 30 погибших" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2026/krusheniean-26.webp" alt="Ан-26 над Крымом: 30 погибших" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>31 марта 2026 года военно-транспортный самолёт <strong>Ан-26</strong> ВКС России совершал плановый перелёт над Крымом, когда около 18:00 мск связь с ним была потеряна в районе села Куйбышево Бахчисарайского района. На борту находились <strong>30 человек</strong> — семь членов экипажа и 23 пассажира. Выживших нет.</p><p>Среди погибших — командующий 45-й армией ВВС и ПВО Северного флота <strong>Александр Отрощенко</strong>. Гибель генерала такого уровня в авиакатастрофе в военное время — событие исключительное: командующий авиацией целого флота погиб не в бою, а при плановом перелёте.</p><p>Министерство обороны сообщило, что поражающего воздействия по самолёту не было. По данным «Интерфакса», крушение произошло из-за столкновения со скалой. Расследование вели следователи СК — детали официально не раскрывались.</p><p>Ан-26 — тот же советский турбовинтовой транспортник, что разбился над Паланой в 2021 году. Самолёт, которому давно место в музее, продолжает летать в условиях военного времени — когда потери техники на фронте делают любую исправную машину незаменимой.</p><p><em>Плановый перелёт. Ясная погода. Тридцать человек. Иногда катастрофа не нуждается во враге.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

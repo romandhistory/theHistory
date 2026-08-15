@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2022/">← К году 2022</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Восемь миллиардов: планета считает людей</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2022/8bilmen.webp" alt="Восемь миллиардов: планета считает людей" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2022/8bilmen.webp" alt="Восемь миллиардов: планета считает людей" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>15 ноября 2022 года <strong>ООН</strong> официально зафиксировала символический рубеж — население Земли достигло <strong>восьми миллиардов человек</strong>. Символическим он остаётся потому, что точной даты не существует: демографы работают с моделями и оценками, а не с реальным счётчиком.</p><p>Скорость роста поражает исторической перспективой. Первый миллиард человечество набрало к <strong>1800 году</strong> — за всю предшествующую историю. Второй — к <strong>1927-му</strong>, за 127 лет. Восьмой миллиард добавился всего за <strong>11 лет</strong> после седьмого, зафиксированного в <strong>2011 году</strong>. Впрочем, темп роста замедляется: по прогнозам ООН, девятый миллиард появится примерно через <strong>15 лет</strong>, а пик численности населения — около <strong>10,4 миллиарда</strong> — ожидается в <strong>2080-х</strong>, после чего возможна стабилизация или убыль.</p><p>География роста принципиально неравномерна. Более половины прироста в ближайшие десятилетия обеспечат <strong>восемь стран</strong> — прежде всего <strong>Индия, Пакистан, Конго, Эфиопия, Нигерия</strong>. Индия в 2023 году обогнала Китай по численности населения. Европа и Восточная Азия стареют и сокращаются.</p><p><em>Восемь миллиардов — это одновременно триумф медицины и сельского хозяйства, снизивших смертность, и вызов для климата, ресурсов и политических систем, не рассчитанных на такую нагрузку.</em></p><p><em>Планета никогда не кормила столько людей — и никогда прежде так остро не стоял вопрос, сможет ли она продолжать.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2007/">← К году 2007</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Земля стала проходимой насквозь</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2007/gsv.webp" alt="Земля стала проходимой насквозь" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2007/gsv.webp" alt="Земля стала проходимой насквозь" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>25 мая 2007 года <strong>Google</strong> запустила <strong>Street View</strong> — сервис панорамных снимков улиц с уровня земли. В первый день было доступно пять американских городов: Нью-Йорк, Сан-Франциско, Лас-Вегас, Майами и Денвер. По улицам ездили специальные автомобили с камерами на крыше, снимавшими всё вокруг одновременно.</p><p>Идея казалась простой — но её реализация потребовала тысяч километров съёмки, огромных серверных мощностей и нового программного обеспечения для сшивки панорам. <strong>Google Maps</strong> уже существовал, Street View превращал карту в живую прогулку.</p><p>Реакция оказалась двоякой. Пользователи были в восторге: можно было <em>«пройтись»</em> по улицам Манхэттена, не выходя из дома. Критики немедленно заговорили о приватности — на снимках попадали лица людей, номерные знаки, окна квартир. Несколько человек обнаружили себя в компрометирующих ситуациях.</p><p>Google начала размывать лица и номера — но не сразу. В ряде стран сервис запретили или ограничили, ссылаясь на законодательство о персональных данных.</p><p><em>Мир получил инструмент, который изменил представление о пространстве. Любой угол планеты стал потенциально видимым.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

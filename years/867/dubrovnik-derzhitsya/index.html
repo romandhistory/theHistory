@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/867/">← К году 867</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Дубровник держится</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/867/vizantflot.webp" alt="Дубровник держится" />
+            <img class="hero-image" src="https://thehistory.pro/cont/867/vizantflot.webp" alt="Дубровник держится" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В 866 году аглабидский флот из <strong>36 кораблей</strong> под командованием эмира Бари Савдана, Сабы из Таренто и бербера Кальфуна обрушился на далматинское побережье. Разграбив Будву, Рисан и Котор, арабы осадили <strong>Рагузу</strong> — будущий <strong>Дубровник</strong>.</p><p>Город держался. Рагузане выдерживали осаду <strong>пятнадцать месяцев</strong> — пока силы не иссякли. Тогда они отправили послов в Константинополь с просьбой о помощи.</p><p>867 год стал переломным: новый император <strong>Василий I</strong> снарядил флот из <strong>ста кораблей</strong> под командованием опытного патрикия <strong>Никиты Оорифы</strong>. Одного появления византийского флота оказалось достаточно — осада была снята в 868 году при приближении византийских кораблей.</p><p>Последствия вышли далеко за пределы одного города. Провал арабской осады и возвращение Византии в Далмацию ознаменовали начало новой агрессивной западной политики Василия I — восстановление фемы Далмация, христианизацию сербских и хорватских племён и в итоге возобновление византийского присутствия в южной Италии.</p><p><em>Рагуза выстояла в одиночку пятнадцать месяцев. Это стоило ей зависимости от Константинополя — но сохранило городу жизнь.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

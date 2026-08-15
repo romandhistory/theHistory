@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2010/">← К году 2010</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Тридцать секунд, которые уничтожили страну</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2010/gaiti.webp" alt="Тридцать секунд, которые уничтожили страну" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2010/gaiti.webp" alt="Тридцать секунд, которые уничтожили страну" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>12 января 2010 года в 16:53 по местному времени земля под Гаити сдвинулась. Магнитуда — <strong>7,0</strong>, эпицентр — в <strong>22 километрах</strong> от столицы Порт-о-Пренса. За ним последовали <strong>15 повторных толчков</strong> с магнитудой выше 5.</p><p>Порт-о-Пренс рухнул. Жилые кварталы, больницы, правительственные здания — всё, что строилось без соблюдения норм сейсмостойкости, обвалилось за секунды. Погибло около <strong>200 тысяч человек</strong>, более <strong>двух миллионов</strong> лишились крова. Среди жертв — более <strong>ста сотрудников ООН</strong>.</p><p>Помощь прибывала с трудом: аэропорт работал, но был перегружен, портовые сооружения разрушены. США взяли под контроль воздушную гавань — и сами оказались в центре скандала: самолёты с европейскими спасателями и грузами часами ждали посадки.</p><p><em>Гаити была беднейшей страной Западного полушария ещё до катастрофы. После неё она превратилась в руины с призраком государства.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

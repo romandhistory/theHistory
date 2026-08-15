@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/862/">← К году 862</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Ростислав призывает Кирилла и Мефодия</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/862/Kiril&hazars.webp" alt="Ростислав призывает Кирилла и Мефодия" />
+            <img class="hero-image" src="https://thehistory.pro/cont/862/Kiril&hazars.webp" alt="Ростислав призывает Кирилла и Мефодия" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В 862 году моравский князь <strong>Ростислав</strong> обратился к императору <strong>Михаилу III</strong> и патриарху <strong>Фотию</strong> с просьбой прислать миссионеров — и выбор пал на братьев <strong>Кирилла и Мефодия</strong>.</p><p>Запрос был политическим не меньше, чем религиозным. Ростислав уже испытал давление немецких миссионеров и искал поддержки Константинополя, чтобы сохранить независимость королевства. Ему был нужен учитель, способный наставлять народ и совершать литургию на славянском языке. Франкские священники несли с собой не только Евангелие, но и политическую зависимость от <strong>Людовика Немецкого</strong>.</p><p>В 862 году оба брата вступили в дело, которое и обеспечило им место в истории. Кирилл — профессор философии при патриаршей школе Константинополя — приступил к созданию славянского алфавита. Вместе с Мефодием он начал переводить богослужебные тексты на язык, которого прежде не существовало в письменном виде. В Моравию братья отправятся в <strong>863-м</strong> — но решение, изменившее историю славянской письменности, было принято именно в 862-м.</p><p><em>Ростислав просил миссионеров. Получил алфавит.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2010/">← К году 2010</a>
             <p class="meta-tag">Россия</p>
             <h1>Праздничная ночь в забое</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2010/raspadskai.webp" alt="Праздничная ночь в забое" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2010/raspadskai.webp" alt="Праздничная ночь в забое" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В ночь с 8 на 9 мая 2010 года на крупнейшей угольной шахте России <strong>«Распадская»</strong> в Междуреченске с интервалом в четыре часа прогремели два взрыва метана. Второй, более мощный, ударил уже после того, как в шахту спустились спасатели. Погибли <strong>91 человек</strong>, <strong>133</strong> получили травмы. Взрывами были разрушены почти все выработки — свыше <strong>300 километров</strong>.</p><p>Причиной стала накопившаяся метановоздушная смесь. Появилась информация о том, что датчики концентрации метана были намеренно закрыты — ради большей выработки угля. Потогонная система оплаты труда поощряла нарушения техники безопасности: премия зависела от тоннажа, а не от соблюдения регламентов.</p><p>Ростехнадзор ещё до аварии четырежды обращался в суд с иском о дисквалификации директора шахты за многочисленные нарушения — безуспешно. После катастрофы завели уголовное дело на полтора десятка человек.</p><p>На площади Междуреченска собрались <strong>три тысячи человек</strong> — не только скорбеть, но и требовать. Шахтёры говорили открыто: чтобы заработать нормальную зарплату, им приходилось нарушать правила безопасности каждую смену.</p><p><em>Уголовное дело в итоге закрыли по истечении срока давности. Никто не был осуждён.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

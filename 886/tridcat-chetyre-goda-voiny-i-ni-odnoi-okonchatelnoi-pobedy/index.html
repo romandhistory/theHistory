@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/886/">← К году 886</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Тридцать четыре года войны — и ни одной окончательной победы</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/886/death_muham.webp" alt="Тридцать четыре года войны — и ни одной окончательной победы" />
+            <img class="hero-image" src="https://thehistory.pro/cont/886/death_muham.webp" alt="Тридцать четыре года войны — и ни одной окончательной победы" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В 886 году умер <strong>Мухаммад I</strong> — эмир Кордовы с 852 года, сын Абд ар-Рахмана II, правитель, проведший три с лишним десятилетия в непрекращающихся войнах на нескольких фронтах одновременно.</p><p>На севере его войска раз за разом воевали против христианских королевств — и раз за разом возвращались без окончательного результата. В 877-м его армия разоряла Леон, Бьерсо и Галисию. В 882-м его сын <strong>аль-Мунзир</strong> шёл с Ибн Луббом к Сельориго — и отступил. <strong>Альфонсо III</strong> каждый раз отстраивал разорённое и двигал границу на юг.</p><p>Внутри страны дела шли не лучше. В 873 году <strong>Толедо</strong> фактически образовал независимую республику. <strong>Умар ибн Хафсун</strong> в 880 году поднял первое восстание — и, несмотря на поражение, к 884-му снова сидел в Бобастро. Центральную власть перестали признавать правители Бадахоса, Эльвиры, Севильи.</p><p>Власть Мухаммада I унаследовал сын аль-Мунзир — человек, лично водивший войска против Альфонсо III ещё при отце и проигравший ему при Вальдеморе в 878 году.</p><p><em>Мухаммад I правил дольше, чем большинство его современников. Умер, не решив ни одной из задач, которые ставил с первого года правления.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

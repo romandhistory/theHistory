@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2009/">← К году 2009</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Манила под водой</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2009/ketsana.webp" alt="Манила под водой" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2009/ketsana.webp" alt="Манила под водой" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>26 сентября 2009 года тайфун <strong>«Кетсана»</strong> обрушился на Филиппины. За несколько часов над Манилой выпало осадков больше, чем обычно выпадает за месяц. Река Марикина вышла из берегов, улицы превратились в реки, целые кварталы ушли под воду на несколько метров. На Филиппинах погибли <strong>464 человека</strong>, пострадали семьи <strong>2,5 миллиона человек</strong>.</p><p>Затем тайфун двинулся дальше. Вьетнам, Лаос, Камбоджа, Таиланд — «Кетсана» прошёлся по всему полуострову. Порывы ветра достигали <strong>165 километров в час</strong>. Во Вьетнаме погибли более <strong>160 человек</strong>, разрушено около <strong>170 тысяч домов</strong>, уничтожены посевы в десятках провинций. В Лаосе — <strong>16 жертв</strong>, в Камбодже — <strong>17</strong>.</p><p>Суммарный ущерб от тайфуна превысил <strong>1,15 миллиарда долларов</strong>. Имя «Кетсана» по итогам сезона было навсегда исключено из списка названий — знак, которым метеорологи отмечают катастрофы особой разрушительной силы.</p><p>Манила оказалась совершенно не готова: система дренажа не справлялась, эвакуация запоздала. Власти получили жёсткую критику — и обещали реформировать систему предупреждения о стихийных бедствиях.</p><p><em>Не прошло и недели, как к Филиппинам подошёл следующий тайфун — <strong>«Парма»</strong>.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

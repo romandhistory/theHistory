@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2004/">← К году 2004</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Сорок лет борьбы — и парижский госпиталь</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2004/iasir.webp" alt="Сорок лет борьбы — и парижский госпиталь" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2004/iasir.webp" alt="Сорок лет борьбы — и парижский госпиталь" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>11 ноября 2004 года в военном госпитале «Перси» под <strong>Парижем</strong> скончался <strong>Ясир Арафат</strong>. Ему было 75 лет. Официальная причина — обширный инсульт на фоне неизвестной инфекции. Французские врачи отказались раскрывать детали. Вопрос о причине смерти остался открытым.</p><p>Арафат руководил <strong>Организацией освобождения Палестины</strong> с 1969 года — 35 лет символ палестинского сопротивления в куфии и с пистолетом на поясе. Лауреат Нобелевской премии мира 1994 года. Человек, подписавший <strong>соглашения Осло</strong> — и не сумевший довести их до конца. Последние годы он провёл фактически под домашним арестом в резиденции Мукатаа в <strong>Рамалле</strong>: Израиль заблокировал выезд.</p><p>12 октября у него внезапно ухудшилось самочувствие прямо на совещании. 29 октября его переправили в Париж. Через две недели он умер, так и не придя в сознание.</p><p>Похороны прошли 12 ноября в Рамалле. Тысячи людей вырвались за оцепление — гроб с телом едва донесли до места захоронения.</p><p><em>Арафат пережил десятки покушений. Смерть застала его в больничной палате.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/864/">← К году 864</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Победа, за которой пришла рана</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/864/robertsilniy.webp" alt="Победа, за которой пришла рана" />
+            <img class="hero-image" src="https://thehistory.pro/cont/864/robertsilniy.webp" alt="Победа, за которой пришла рана" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В 864 году <strong>Роберт Сильный</strong>, маркграф Нейстрии, напал на норманнский отряд, разорявший земли по Луаре. Атака удалась: воины Роберта взяли в плен <strong>Акфреда</strong> — бывшего советника Карла Дитя, короля Аквитании, обвинённого в мятеже против <strong>Карла Лысого</strong>.</p><p>Не успев закрепить успех, Роберт столкнулся с другим отрядом норманнов — куда более многочисленным. В завязавшемся бою маркграфа ранили. Отступать пришлось с поля, которое минуту назад выглядело выигранным.</p><p>Для Западно-Франкского королевства даже такой исход был редкой удачей. Франки годами откупались от викингов серебром — сам Роберт годом раньше заплатил норманнам с Сены <strong>шесть тысяч фунтов</strong> за мир, лишь бы не пустить их к своим владениям.</p><p>Пленник Акфред достался Роберту не как трофей войны с норманнами, а как побочный улов: заодно с обороной Луары маркграф разбирался с недобитым мятежом внутри самого франкского дома.</p><p><em>Рана Роберта затянется. Норманны на Луаре — нет: они возвращались туда снова и снова, и каждая такая стычка была лишь очередным раундом войны без конца и без победителя.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

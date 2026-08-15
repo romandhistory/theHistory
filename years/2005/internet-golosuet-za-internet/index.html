@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2005/">← К году 2005</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Интернет голосует за интернет</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2005/reddit.webp" alt="Интернет голосует за интернет" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2005/reddit.webp" alt="Интернет голосует за интернет" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>23 июня 2005 года выпускники Университета Вирджинии <strong>Стив Хаффман</strong> и <strong>Алексис Оганян</strong> запустили <strong>Reddit</strong>. Стартовый капитал — <strong>100 тысяч долларов</strong> от венчурного фонда <strong>Y Combinator</strong>. Первые недели основатели сами публиковали ссылки под фиктивными аккаунтами, чтобы сайт не выглядел пустым.</p><p>Концепция была проста: пользователи публикуют ссылки и тексты, остальные голосуют <em>«за»</em> или <em>«против»</em>. Лучшее всплывает наверх, худшее тонет. Никакого редактора, никакого алгоритма — только коллективное решение аудитории.</p><p>Платформа быстро разбилась на тематические сообщества — <strong>сабреддиты</strong>. Технологии, политика, юмор, наука — каждая тема получала своё пространство со своими правилами и модераторами. Анонимность поощрялась, личность не важна — только контент.</p><p>В 2005-м это был просто сайт, где незнакомые люди делились ссылками и спорили в комментариях.</p><p><em>Интернет получил свою площадь — шумную, хаотичную и совершенно непредсказуемую.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

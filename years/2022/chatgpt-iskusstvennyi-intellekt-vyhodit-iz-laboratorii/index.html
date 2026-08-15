@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2022/">← К году 2022</a>
             <p class="meta-tag">Мировые события</p>
             <h1>ChatGPT: искусственный интеллект выходит из лабораторий</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2022/ai.webp" alt="ChatGPT: искусственный интеллект выходит из лабораторий" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2022/ai.webp" alt="ChatGPT: искусственный интеллект выходит из лабораторий" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>30 ноября 2022 года компания <strong>OpenAI</strong> выпустила <strong>ChatGPT</strong> в открытый доступ. За пять дней сервис набрал <strong>миллион пользователей</strong> — быстрее, чем любой продукт в истории технологий до этого. За два месяца — <strong>сто миллионов</strong>.</p><p>ChatGPT не был первой языковой моделью и не был технически самым сложным продуктом на рынке. Его прорывом стала <strong>доступность</strong>: впервые мощная генеративная модель получила простой диалоговый интерфейс, не требовавший технических знаний. Миллионы людей, никогда не слышавших об GPT-3, внезапно писали с ним код, эссе, письма и стихи.</p><p>Индустрия отреагировала немедленно. <strong>Google</strong> объявил <strong>«красный код»</strong> — внутреннюю тревогу из-за угрозы поисковому бизнесу. В феврале 2023 года <strong>Microsoft</strong> интегрировал технологию OpenAI в Bing и пакет Office. Google ускорил выпуск собственной модели <strong>Bard</strong>. <strong>Amazon, Anthropic, Mistral</strong> — гонка генеративного ИИ развернулась по всем фронтам одновременно.</p><p>Споры не заставили себя ждать. Художники подавали иски за использование их работ в обучающих данных. Университеты вводили политики против ChatGPT. Регуляторы в Европе и США начали разрабатывать законодательство. Несколько стран временно заблокировали сервис.</p><p><strong>GPT-4, Claude, Gemini, Llama</strong> — за следующие два года модели сменяли друг друга с темпом, который сама индустрия едва успевала осмыслять.</p><p><em>2022 год стал не началом искусственного интеллекта — он стал моментом, когда ИИ перестал быть делом специалистов и стал делом всех.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

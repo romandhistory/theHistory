@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2026/">← К году 2026</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Двойной удар по побережью</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2026/venesuel.webp" alt="Двойной удар по побережью" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2026/venesuel.webp" alt="Двойной удар по побережью" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>24 июня 2026 года на севере Венесуэлы произошли два мощных землетрясения. Сначала толчок магнитудой <strong>7,2</strong>, через десятки секунд — более мощный, магнитудой <strong>7,5</strong>. Эпицентр находился близ города Морон на карибском побережье, в <strong>160 километрах</strong> западнее Каракаса, на глубине около <strong>10 километров</strong>. Это сильнейшие землетрясения в стране за более чем столетие.</p><p>По данным на начало июля, число погибших превысило <strong>3500 человек</strong>, ранены более <strong>16 тысяч</strong>. Свыше <strong>43 тысяч</strong> числились пропавшими без вести. ООН допускала, что окончательные потери могут превысить <strong>десять тысяч</strong>.</p><p>Небольшая глубина очага сыграла роковую роль: энергия быстро достигла поверхности, обрушив здания, дороги и коммуникации. Толчки ощущались в Колумбии — в Боготе, за тысячу километров от эпицентра.</p><p>Более <strong>2200 спасателей</strong> из <strong>27 стран</strong> участвовали в поисковой операции. Венесуэла — страна, и без того измотанная экономическим кризисом, — оказалась не готова к масштабу катастрофы.</p><p><em>Природа не выбирает момент. Июнь 2026-го это подтвердил.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

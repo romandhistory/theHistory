@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2005/">← К году 2005</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Конец понтификата длиною в эпоху</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2005/papa.webp" alt="Конец понтификата длиною в эпоху" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2005/papa.webp" alt="Конец понтификата длиною в эпоху" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>Вечером 2 апреля 2005 года скончался папа римский <strong>Иоанн Павел II</strong>. Кароль Войтыла занимал Святой Престол <strong>26 лет</strong> — один из самых долгих понтификатов в истории. Проститься с ним в Ватикан приехали около <strong>четырёх миллионов человек</strong> — крупнейшее паломничество в истории католической церкви.</p><p>Иоанн Павел II был первым папой-поляком и первым неитальянцем на престоле за <strong>455 лет</strong>. Его понтификат пришёлся на холодную войну, распад СССР и начало новой эпохи. Он объездил <strong>129 стран</strong>, встречался с лидерами всех мастей и канонизировал больше святых, чем все предыдущие папы вместе взятые.</p><p><strong>19 апреля 2005 года</strong>, через 17 дней после смерти предшественника, конклав избрал нового папу — немецкого кардинала <strong>Йозефа Ратцингера</strong>, принявшего имя <strong>Бенедикт XVI</strong>. Ближайший соратник Иоанна Павла II, богослов-консерватор, он стал первым немецким папой за несколько столетий.</p><p>Белый дым над Сикстинской капеллой появился на второй день голосования. Площадь Святого Петра взорвалась аплодисментами.</p><p><em>Католический мир проводил одного великана — и принял другого.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

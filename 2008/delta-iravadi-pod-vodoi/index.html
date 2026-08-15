@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2008/">← К году 2008</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Дельта Иравади под водой</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2008/nargis.webp" alt="Дельта Иравади под водой" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2008/nargis.webp" alt="Дельта Иравади под водой" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>2 мая 2008 года тропический циклон <strong>«Наргис»</strong> обрушился на побережье Мьянмы. Порывы ветра достигали <strong>215 километров в час</strong>. Штормовая волна смела деревни в дельте реки Иравади — одном из самых густонаселённых сельскохозяйственных районов страны.</p><p>Погибли, по различным оценкам, от <strong>80 до 140 тысяч человек</strong>. Около <strong>55 тысяч</strong> числились пропавшими без вести. <strong>Два с половиной миллиона человек</strong> остались без еды, воды и крова. Ущерб составил около <strong>4 миллиардов долларов</strong>.</p><p>Масштаб катастрофы усугубила позиция властей. Военная хунта, управлявшая страной, поначалу отвергала международную помощь. Иностранным спасателям отказывали в визах, гуманитарные грузы задерживались на границе. Пока шли согласования, люди умирали.</p><p>Мировое сообщество давило на Янгон через <strong>АСЕАН</strong> — единственный канал, который хунта готова была воспринимать. Лишь через несколько недель доступ частично открылся.</p><p><em>Циклон «Наргис» и землетрясение в Сычуани разделили всего десять дней. Май 2008-го стал одним из самых трагических месяцев в новейшей истории Азии.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2020/">← К году 2020</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Бейрут, 18:08: взрыв, который мог не случиться</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2020/beirut.webp" alt="Бейрут, 18:08: взрыв, который мог не случиться" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2020/beirut.webp" alt="Бейрут, 18:08: взрыв, который мог не случиться" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>4 августа 2020 года в 18:08 по местному времени в порту Бейрута взорвались <strong>2 750 тонн нитрата аммония</strong>. Взрыв унёс жизни более <strong>220 человек</strong>, ранил свыше <strong>6 000</strong>, оставил без крова около <strong>300 000</strong>. Ударная волна ощущалась на Кипре — в 240 километрах.</p><p>Нитрат аммония хранился в портовом складе № 12 с 2013 года — после того как судно <strong>MV Rhosus</strong> с опасным грузом было задержано в Бейруте из-за технических неисправностей и долгов. Ливанские чиновники знали об этом: сохранились письма портовых властей с предупреждениями о смертельной опасности груза. <strong>Их проигнорировали шесть раз.</strong></p><p>Взрыв уничтожил половину города. Были разрушены больницы, зернохранилище с запасами на месяц вперёд, исторические кварталы. Ливан, уже охваченный экономическим коллапсом и протестами, оказался на грани распада. Расследование внутри страны зашло в тупик: судья, пытавшийся привлечь к ответственности высокопоставленных чиновников, столкнулся с политическим давлением и был отстранён.</p><p><strong>Никто так и не понёс реальной ответственности.</strong></p><p>Бейрутский взрыв — не катастрофа в привычном смысле. <em>Это задокументированное, предсказуемое и многократно предупреждённое преступление халатности, которое государство совершило против собственных граждан.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

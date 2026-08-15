@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/867/">← К году 867</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Империя без центра</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/867/imperiaTan.webp" alt="Империя без центра" />
+            <img class="hero-image" src="https://thehistory.pro/cont/867/imperiaTan.webp" alt="Империя без центра" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>К 867 году Танская империя существовала в двух измерениях одновременно. В Чанъане — блестящий двор, церемонии, поэты, экзамены. В провинциях — <strong>цзедуши</strong>, военные губернаторы, чья власть давно переросла изначальный замысел: пограничные наместники превратились в наследственных правителей, передававших должности сыновьям и игнорировавших приказы из столицы.</p><p>Механизм распада был запущен ещё восстанием <strong>Ань Лушаня</strong> в <strong>755 году</strong>. После его подавления двор был вынужден назначать цзедуши повсеместно — в том числе во внутренних районах, далёких от границ. Власть учёных-чиновников ослабла; власть военных губернаторов росла непрерывно.</p><p>Большинство цзедуши при этом не были открытыми сепаратистами — они нуждались в придворных титулах и императорском авторитете для управления собственными армиями. Это был негласный договор: центр признаёт их власть, они признают центр символом легитимности.</p><p><em>867-й был последним относительно спокойным десятилетием перед этим обвалом. Империя ещё держалась — но уже только по инерции.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/865/">← К году 865</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Людовик Немецкий делит королевство с сыновьями</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/865/deleniekorolevstva.webp" alt="Людовик Немецкий делит королевство с сыновьями" />
+            <img class="hero-image" src="https://thehistory.pro/cont/865/deleniekorolevstva.webp" alt="Людовик Немецкий делит королевство с сыновьями" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>Раздел 865 года был не добровольным жестом — он был вырван силой. В 863 году <strong>Карломан</strong> поднял мятеж против отца; его примеру последовал <strong>Людовик Младший</strong>, к которому присоединился и <strong>Карл</strong>. Все три сына восставали поочерёдно, добиваясь одного — гарантий на будущее наследство.</p><p>В 864 году <strong>Людовик</strong> был вынужден уступить Карломану <strong>Баварию</strong>. В следующем году он разделил остальные земли: <strong>Саксонию с Франконией и Тюрингией</strong> отдал Людовику Младшему, <strong>Швабию с Рецией</strong> — <strong>Карлу</strong>, прозванному впоследствии <strong>Толстым</strong>.</p><p>Формально это был не окончательный раздел, а распределение <em>«ожидаемых долей»</em> — отец оставался королём до смерти. Но прецедент был создан.</p><p><em>Людовик держал королевство вместе почти три десятилетия. В конце концов его собственные сыновья разрезали его на части — ещё при его жизни.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

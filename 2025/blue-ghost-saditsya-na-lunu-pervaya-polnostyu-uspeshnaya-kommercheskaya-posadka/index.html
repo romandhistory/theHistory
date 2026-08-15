@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2025/">← К году 2025</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Blue Ghost садится на Луну: первая полностью успешная коммерческая посадка</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2025/BlueGhost1.webp" alt="Blue Ghost садится на Луну: первая полностью успешная коммерческая посадка" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2025/BlueGhost1.webp" alt="Blue Ghost садится на Луну: первая полностью успешная коммерческая посадка" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>2 марта 2025 года в 3:34 утра по восточному времени лунный посадочный модуль <strong>Blue Ghost</strong> компании <strong>Firefly Aerospace</strong> совершил посадку вблизи вулканического образования Монс Латрей в кратере Маре Кризиум — на северо-восточном квадранте видимой стороны Луны.</p><p>Аппарат стартовал <strong>15 января 2025 года</strong> на ракете <strong>Falcon 9</strong> с мыса Канаверал — вместе с японским зондом <strong>Resilience</strong> компании ispace. Путь до Луны занял около <strong>45 дней</strong>: сначала орбита вокруг Земли, затем перелёт и 16 дней на лунной орбите.</p><p>Firefly объявила миссию первой <em>«полностью успешной»</em> коммерческой посадкой на Луну — в отличие от предыдущих миссий Intuitive Machines, чьи аппараты приземлились набок. <strong>NASA</strong> заплатило за доставку <strong>101,5 миллиона долларов</strong> по программе коммерческих лунных грузоперевозок CLPS.</p><p>На борту — <strong>десять научных инструментов</strong> NASA. За две недели работы аппарат передал на Землю около <strong>120 гигабайт данных</strong> и продолжал работать ещё пять часов после наступления лунной ночи. Первые научные результаты поставили под сомнение устоявшиеся представления о распределении тепловыделяющих элементов в лунной коре.</p><p><em>Частный бизнес доставляет науку на Луну — аккуратно, в срок и в нужную точку. Лунная экономика перестаёт быть метафорой.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

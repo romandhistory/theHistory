@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2007/">← К году 2007</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Книга без бумаги</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2007/kindel.webp" alt="Книга без бумаги" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2007/kindel.webp" alt="Книга без бумаги" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>19 ноября 2007 года <strong>Amazon</strong> представила электронную читалку <strong>Kindle</strong>. Устройство раскупили за несколько часов — запасы закончились в день старта, следующая партия появилась лишь через пять месяцев. Цена — <strong>399 долларов</strong>.</p><p>Kindle работал на технологии электронных чернил <strong>E Ink</strong> — экран не светился и не утомлял глаза. Одна зарядка держала неделю. Главным же козырем была встроенная сеть: книги скачивались прямо на устройство за минуты без компьютера и проводов.</p><p>В день запуска магазин Amazon предлагал <strong>88 тысяч книг</strong> по <strong>9,99 доллара</strong>. Издатели поначалу восприняли цену как демпинг — бумажные книги стоили дороже. Но Amazon настоял на своём.</p><p>Книжная индустрия наблюдала настороженно. Попытки создать электронные читалки предпринимались с 1990-х — все проваливались. Kindle казался очередным экспериментом.</p><p><em>Но за Amazon стоял крупнейший книжный магазин мира — с каталогом, логистикой и миллионами покупателей. Это меняло всё.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2012/">← К году 2012</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Dragon пристыковался к МКС — «Союзам» нашли конкурента</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2012/SpaceXDragon.webp" alt="Dragon пристыковался к МКС — «Союзам» нашли конкурента" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2012/SpaceXDragon.webp" alt="Dragon пристыковался к МКС — «Союзам» нашли конкурента" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>25 мая 2012 года, в 16:02 по Гринвичу, грузовой корабль <strong>Dragon</strong> компании <strong>SpaceX</strong> впервые в истории пристыковался к Международной космической станции. Частный аппарат подошёл к модулю <strong>«Гармония»</strong>, завершив путь, начатый тремя днями и восемью часами ранее — 22 мая, стартом ракеты <strong>Falcon 9</strong> с мыса Канаверал.</p><p>Запуск откладывали дважды. 19 мая обратный отсчёт прервали за полсекунды до старта — компьютеры зафиксировали нештатное давление в камере сгорания одного из девяти двигателей первой ступени. Неисправный клапан заменили за три дня — рекордная по меркам ракетной техники скорость починки.</p><p>Сама стыковка прошла в два этапа, будто с оглядкой на осторожность. На дистанции <strong>10 метров</strong> Dragon завис в свободном дрейфе, дожидаясь команды — а затем астронавт <strong>Дональд Петтит</strong> и космонавт <strong>Андре Кёйперс</strong> перехватили его манипулятором <strong>«Канадарм2»</strong> вручную, подстраховав автоматику. Корабль доставил на станцию <strong>520 килограммов</strong> груза — провизию, вещи экипажа, материалы для экспериментов — и 31 мая вернулся на Землю с <strong>660 килограммами</strong> груза на борту.</p><p>Роскосмос до последнего возражал против включения стыковки в программу полёта — согласие NASA появилось лишь под конец подготовки. Возражения объяснимы: за место у станции, которое двадцать лет считалось монополией государств, впервые взялась частная компания — причём с первой попытки не разбившись и не потеряв груз.</p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/868/">← К году 868</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Осада кончилась раньше, чем начался бой</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/868/flot.webp" alt="Осада кончилась раньше, чем начался бой" />
+            <img class="hero-image" src="https://thehistory.pro/cont/868/flot.webp" alt="Осада кончилась раньше, чем начался бой" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В 868 году византийский флот из <strong>ста кораблей</strong> под командованием друнгария <strong>Никиты Орифы</strong> подошёл к Рагузе — и арабы, пятнадцать месяцев державшие город в осаде, снялись с лагеря и ушли, не дождавшись сражения.</p><p>Осада началась ещё в 866 году: флот эмирата Бари, укрепившегося на другом берегу Адриатики, взял в кольцо самый защищённый порт далматинского побережья. Рагузане, чья сила была не в сухопутном войске, а в кораблях и торговых связях, продержались больше года собственными силами.</p><p>Помощи они запросили у Константинополя. <strong>Василий I</strong>, только что взошедший на престол после гибели Михаила III, оценил, чем грозит потеря контроля над Адриатикой, и отправил эскадру немедленно.</p><p>Одно появление византийских парусов на горизонте решило исход дела. Арабы, не имевшие сведений о численности подошедшего флота, предпочли не рисковать и отступили к своим базам в Италии.</p><p><em>Рагуза и соседние славянские племена — хорваты, сербы — признали над собой власть империи. Пятнадцать месяцев страха закончились в тот день, когда врагу хватило одного взгляда на чужие паруса, чтобы отказаться от боя, который он вёл больше года.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

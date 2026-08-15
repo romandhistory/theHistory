@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/869/">← К году 869</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Карл не ждёт</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/869/karlzahvatLotarg.webp" alt="Карл не ждёт" />
+            <img class="hero-image" src="https://thehistory.pro/cont/869/karlzahvatLotarg.webp" alt="Карл не ждёт" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>Едва весть о смерти <strong>Лотаря II</strong> достигла западно-франкского двора, <strong>Карл Лысый</strong> двинулся в Лотарингию — не дожидаясь ни брата <strong>Людовика</strong>, ни племянника <strong>Людовика II Итальянского</strong>, законного наследника.</p><p>В сентябре 869 года в Меце Карл короновался королём Лотарингии. Церемонию провёл архиепископ <strong>Гинкмар Реймсский</strong> — тот самый, что годами противостоял притязаниям Лотаря в деле о разводе. Теперь он короновал человека, нарушавшего соглашения с братом.</p><p>Соглашения были недвусмысленными. В 865 году в Тюзе и в 868-м в Меце Карл и Людовик Немецкий договорились делить Лотарингию поровну после смерти племянника. Карл взял всё.</p><p>Людовик Немецкий лежал тяжело больным и не мог ответить немедленно. Людовик II Итальянский был связан осадой Бари.</p><p>Лотарингия — богатые земли между Рейном и Маасом, с древними городами Мецем, Вердёном и Аахеном — досталась Карлу без единого сражения.</p><p><em>Братский договор нарушен.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

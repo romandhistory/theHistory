@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/865/">← К году 865</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Моравия: чужие священники и своя азбука</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/865/RostislavZaKir&Mef.webp" alt="Моравия: чужие священники и своя азбука" />
+            <img class="hero-image" src="https://thehistory.pro/cont/865/RostislavZaKir&Mef.webp" alt="Моравия: чужие священники и своя азбука" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>Миссия <strong>Кирилла и Мефодия</strong> в Моравии с самого начала была не только религиозной, но и политической. <strong>Ростислав</strong> выгнал римских миссионеров и обратился к Константинополю — он искал независимость от франков, а не просто новых проповедников.</p><p>Пока братья работали, немецкое духовенство не сидело сложа руки. <strong>Теотмар</strong>, архиепископ Зальцбургский, считал Моравию своей канонической территорией и добивался, чтобы там звучала исключительно латинская литургия. Каждый переведённый текст, каждый обученный местный священник был ударом по его юрисдикции.</p><p>Ростислав стоял за миссией твёрдо: его цель была именно в том, чтобы создать церковь, говорящую с народом на его языке — и тем самым вырвать Моравию из-под франкского церковного контроля.</p><p><em>Ростислав получил то, что хотел: несколько лет, за которые в Моравии выросло целое поколение священников, читавших Писание не на латыни.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

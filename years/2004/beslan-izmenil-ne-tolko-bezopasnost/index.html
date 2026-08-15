@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2004/">← К году 2004</a>
             <p class="meta-tag">Россия</p>
             <h1>Беслан изменил не только безопасность</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2004/vybory.webp" alt="Беслан изменил не только безопасность" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2004/vybory.webp" alt="Беслан изменил не только безопасность" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>13 сентября 2004 года — через десять дней после трагедии в <strong>Беслане</strong> — <strong>Владимир Путин</strong> выступил с телеобращением. Среди антитеррористических мер прозвучало предложение, не имевшее прямого отношения к терроризму: отменить прямые губернаторские выборы. Отныне глав регионов должны утверждать законодательные собрания по представлению президента.</p><p>Логика была обозначена чётко: угроза терроризма требует единства власти и управляемости. Критики немедленно возразили: Беслан произошёл не потому, что Северная Осетия выбирала своего губернатора. Дискуссия не повлияла на ход событий.</p><p>11 декабря 2004 года закон был принят. Система, при которой россияне голосовали за глав регионов с 1991 года, прекратила существование. Федеральная вертикаль замкнулась: от президента через назначенных губернаторов до муниципального уровня.</p><p>Региональные элиты приняли реформу молча. Сопротивляться публично было некому и незачем.</p><p><em>Страна получила управляемые регионы. Цену этой управляемости предстояло узнать позже.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

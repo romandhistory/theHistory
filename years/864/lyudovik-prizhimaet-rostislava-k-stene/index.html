@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/864/">← К году 864</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Людовик прижимает Ростислава к стене</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/864/vtorshenievmoraviu.webp" alt="Людовик прижимает Ростислава к стене" />
+            <img class="hero-image" src="https://thehistory.pro/cont/864/vtorshenievmoraviu.webp" alt="Людовик прижимает Ростислава к стене" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В августе 864 года король <strong>Людовик Немецкий</strong> перешёл Дунай с огромным войском и осадил <strong>Ростислава Моравского</strong> в крепости <strong>Девин</strong> — скале над слиянием Моравы и Дуная, о которой хронисты до этого дня не писали ни строчки.</p><p>Приступом крепость не взяли. Стены Девина оказались Людовику не по силам, как и три года назад под тем же Девином его отцу не поддавались укрепления моравов.</p><p>Но за спиной у Ростислава на этот раз не было прежних союзников. Болгарский хан <strong>Борис</strong> держал сторону Людовика, <strong>Карломан</strong> после мятежей 861 и 863 годов сам был усмирён отцом. Помощи ждать было неоткуда.</p><p>Ростислав выбрал не осаду до конца, а сделку: он признал себя вассалом Людовика и впустил обратно в Моравию восточно-франкских священников, которых прежде изгонял.</p><p><em>Крепость, которую невозможно было взять силой, сдалась без единого удара — просто потому, что у её защитника кончились союзники раньше, чем кончились стены.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

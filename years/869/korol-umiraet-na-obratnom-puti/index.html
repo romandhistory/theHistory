@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/869/">← К году 869</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Король умирает на обратном пути</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/869/death_Lotar'.webp" alt="Король умирает на обратном пути" />
+            <img class="hero-image" src="https://thehistory.pro/cont/869/death_Lotar'.webp" alt="Король умирает на обратном пути" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>7 августа 869 года <strong>Лотарь II</strong> слёг в Пьяченце с лихорадкой и умер. Ему было около <strong>тридцати трёх лет</strong>. За плечами — четырнадцать лет борьбы за развод, который так и остался недостижимым.</p><p>Незадолго до смерти он встретился в Монте-Кассино с папой <strong>Адрианом II</strong>. Лотарь был уверен, что получил если не одобрение, то по крайней мере молчаливое согласие на развод с <strong>Тьетбергой</strong>. На обратном пути его настигла болезнь.</p><p>Он умер без законных наследников. Единственный сын — от <strong>Вальдрады</strong> — был объявлен незаконнорождённым. Королевство, носившее его имя — <strong>Лотарингия</strong> — осталось без хозяина.</p><p><strong>Людовик II</strong>, старший брат Лотаря и законный наследник, в это время воевал с арабами на юге Италии. Его дяди — <strong>Карл Лысый</strong> и <strong>Людовик Немецкий</strong> — давно ждали именно этого момента.</p><p><em>Карл не стал медлить.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

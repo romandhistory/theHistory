@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2005/">← К году 2005</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Первая</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2005/merkel'.webp" alt="Первая" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2005/merkel'.webp" alt="Первая" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>22 ноября 2005 года бундестаг избрал <strong>Ангелу Меркель</strong> федеральным канцлером ФРГ — <strong>397 голосов</strong> из 611. Она стала первой женщиной на этом посту, самым молодым канцлером в истории страны и первым выходцем из бывшей ГДР во главе объединённой Германии.</p><p>Меркель выросла в Восточной Германии, изучала физику, защитила докторскую диссертацию по квантовой химии. В политику пришла поздно — после падения Берлинской стены. За пятнадцать лет прошла путь от рядового депутата до лидера ХДС и кандидата в канцлеры.</p><p>Путь к победе оказался непростым. Досрочные выборы в сентябре дали блоку ХДС/ХСС лишь <strong>35,2%</strong> — минимальный перевес над СДПГ. Понадобились два месяца переговоров и формирование <em>«большой коалиции»</em> с социал-демократами. <strong>Шрёдер</strong> уходил с явной неохотой.</p><p>Западные лидеры встретили Меркель осторожным оптимизмом. <strong>Путин</strong> — с интересом: новый канцлер свободно говорила по-русски.</p><p><em>Германия сменила не только канцлера, но и целую политическую эпоху.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

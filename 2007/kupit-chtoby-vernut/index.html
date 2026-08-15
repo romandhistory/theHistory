@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2007/">← К году 2007</a>
             <p class="meta-tag">Россия</p>
             <h1>Купить, чтобы вернуть</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2007/collection.webp" alt="Купить, чтобы вернуть" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2007/collection.webp" alt="Купить, чтобы вернуть" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>17 сентября 2007 года аукционный дом <strong>Sotheby's</strong> объявил об отмене намеченных торгов. За день до аукциона российский бизнесмен <strong>Алишер Усманов</strong> выкупил коллекцию Ростроповича и Вишневской целиком. Около <strong>450 предметов</strong> русского искусства — Брюллов, Серов, Репин, Рерих, императорский фарфор — не разошлись по частным рукам по всему миру.</p><p>Коллекция собиралась десятилетиями. Ростропович и Вишневская были высланы из СССР в <strong>1974 году</strong> — вместе с ними ушло и собрание. После смерти Ростроповича в апреле того же 2007 года вдова решила выставить его на торги. Ожидаемая выручка — свыше <strong>40 миллионов фунтов стерлингов</strong>.</p><p>Усманов передал коллекцию государству. Её разместили в Константиновском дворце под Петербургом. Сумму сделки стороны не раскрывали.</p><p>Жест был воспринят неоднозначно. Одни видели в нём искренний патриотизм. Другие задавались вопросом: не слишком ли удобно совпали интересы бизнеса и государственного символизма.</p><p><em>Картины вернулись на родину. Их создатели — кто успел.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

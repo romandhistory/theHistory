@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2008/">← К году 2008</a>
             <p class="meta-tag">Мировые события</p>
             <h1>147 долларов за баррель</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2008/neft'.webp" alt="147 долларов за баррель" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2008/neft'.webp" alt="147 долларов за баррель" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>4 июля 2008 года нефть марки <strong>Brent</strong> достигла <strong>143,95 доллара</strong> за баррель — абсолютный исторический максимум. В начале года баррель стоил около <strong>90 долларов</strong>. <strong>29 февраля</strong> цена впервые в истории пробила отметку в <strong>100 долларов</strong>. К июлю рынок разогрелся до предела.</p><p>Причин было несколько: стремительный рост спроса в Китае и Индии, слабый доллар, геополитическая напряжённость на Ближнем Востоке. <strong>6 июня</strong> нефть подорожала за один день на рекордные <strong>10 долларов</strong> — рынок отреагировал на слухи о возможном ударе Израиля по Ирану. Спекулятивный капитал хлынул в сырьевые фьючерсы.</p><p>Россия в эти месяцы купалась в нефтедолларах. Бюджет трещал от профицита, резервные фонды пополнялись, экономика росла. Казалось, что чёрное золото будет дорогим всегда.</p><p>Затем грянул финансовый кризис. К декабрю того же года баррель стоил уже <strong>33 доллара</strong> — падение на <strong>77%</strong> за полгода. Российский бюджет, свёрстанный из расчёта на дорогую нефть, пришлось срочно пересматривать.</p><p><em>Никто не знал, что этот пик окажется вершиной. Рынок смотрел вверх — и не замечал, что фундамент уже трещит.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

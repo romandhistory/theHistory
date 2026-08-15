@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2018/">← К году 2018</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Lion Air 610: новый самолёт падает в море через 13 минут</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2018/lion_air.webp" alt="Lion Air 610: новый самолёт падает в море через 13 минут" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2018/lion_air.webp" alt="Lion Air 610: новый самолёт падает в море через 13 минут" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>29 октября 2018 года <strong>Boeing 737 MAX 8</strong> авиакомпании <strong>Lion Air</strong> упал в Яванское море через <strong>13 минут</strong> после взлёта из Джакарты. Все <strong>189 человек</strong> на борту погибли. Самолёту было два месяца от роду.</p><p>Расследование установило причину: система автоматической стабилизации <strong>MCAS</strong> — Maneuvering Characteristics Augmentation System — многократно толкала нос самолёта вниз в ответ на ложные показания датчика угла атаки. Экипаж боролся с системой, но не смог её победить. Критически важная деталь: пилоты не были должным образом обучены работе с MCAS — Boeing не включил информацию о новой системе в стандартную документацию для лётного состава.</p><p>737 MAX разрабатывался как экономичное обновление проверенной платформы. Давление конкурентов — прежде всего <strong>Airbus</strong> с его A320neo — заставляло Boeing торопиться. MCAS была добавлена для компенсации изменённого поведения самолёта с новыми двигателями. Система работала по данным единственного датчика — без резервирования.</p><p>Катастрофа Lion Air была первой. Через пять месяцев, в марте 2019 года, в Эфиопии разбился ещё один 737 MAX — по той же причине. После второй катастрофы самолёт был заземлён по всему миру.</p><p><em>Lion Air 610 упал в море — и поднял вопрос, ответ на который оказался неудобным для одной из крупнейших корпораций мира: можно ли торопиться, когда цена ошибки — человеческие жизни?</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/870/">← К году 870</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Архиепископ под судом собственных соперников</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/870/Mefodi_arest.webp" alt="Архиепископ под судом собственных соперников" />
+            <img class="hero-image" src="https://thehistory.pro/cont/870/Mefodi_arest.webp" alt="Архиепископ под судом собственных соперников" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В конце 870 года в Регенсбурге собралась баварская провинциальная синода под председательством архиепископа Зальцбургского <strong>Адальвина</strong>. Король <strong>Людовик Немецкий</strong> присутствовал лично. Перед судом стоял <strong>Мефодий</strong> — архиепископ, чей титул по факту перекрывал юрисдикцию обоих его судей.</p><p>Обвинение было простым: Мефодий вёл миссионерскую деятельность на территории епархий Зальцбурга и Пассау без разрешения местных прелатов. Формально — нарушение церковной субординации. По существу — Зальцбург и Пассау десятилетиями считали Моравию и Паннонию своей канонической территорией, а теперь явился человек с папской буллой, ставящей его выше них.</p><p>Синод приговорил Мефодия к многолетнему заключению. Его отправили в Германию — по одним данным в Элльванген, по другим в Эльванген под надзор епископа Пассауского <strong>Эрменриха</strong>, который сам же и арестовал его. <strong>Два с половиной года</strong> Мефодий провёл в монастырском плену.</p><p>Документы самого синода не сохранились — о процессе известно из четырёх писем папы <strong>Адриана II</strong> и из <strong>«Жития Мефодия»</strong>. Архиепископ Сирмийский, рукоположенный в Риме с прямым папским благословением, сидел в баварской тюрьме по приговору собственных церковных конкурентов.</p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

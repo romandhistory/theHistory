@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/868/">← К году 868</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Союз у стен Ноттингема</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/868/Alfred&Elsvita.webp" alt="Союз у стен Ноттингема" />
+            <img class="hero-image" src="https://thehistory.pro/cont/868/Alfred&Elsvita.webp" alt="Союз у стен Ноттингема" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В 868 году <strong>Альфред</strong> и его брат-король <strong>Этельред</strong> привели войска к Ноттингему — помогать Мерсии против <strong>Великого языческого войска</strong>. Именно там Альфред встретил <strong>Эльсвиту</strong>. Чтобы скрепить союз с Мерсией, они поженились.</p><p>Эльсвита была дочерью Этельреда Мусела, элдормена Гайни — знатного мерсийского рода. Её мать происходила из королевской династии Мерсии. Брак был политическим расчётом: Уэссекс и Мерсия десятилетиями соперничали, теперь им нужно было держаться вместе перед лицом викингов.</p><p>В момент свадьбы Альфред был не королём, а младшим братом короля — его наследником.</p><p>Эльсвита так и не получила титул королевы — в Уэссексе существовал обычай не титуловать супругу короля, восходивший к легенде о коварной королеве, отравившей собственного мужа. Биограф Альфреда епископ Ассер не упоминает её имени ни разу.</p><p>Их дети стали строителями английского государства: сын <strong>Эдуард Старший</strong> продолжит дело отца, дочь <strong>Этельфлед</strong> будет сама водить войска против викингов и войдёт в историю как <em>«Леди мерсийцев»</em>.</p><p><em>Брак начался у стен осаждённого города. Из него выросла Англия.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

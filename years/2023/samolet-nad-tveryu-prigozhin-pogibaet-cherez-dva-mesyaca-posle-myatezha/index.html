@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2023/">← К году 2023</a>
             <p class="meta-tag">Россия</p>
             <h1>Самолёт над Тверью: Пригожин погибает через два месяца после мятежа</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2023/prigozhin.webp" alt="Самолёт над Тверью: Пригожин погибает через два месяца после мятежа" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2023/prigozhin.webp" alt="Самолёт над Тверью: Пригожин погибает через два месяца после мятежа" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>23 августа 2023 года частный самолёт <strong>Embraer Legacy 600</strong> разбился в Тверской области. Все десять человек на борту погибли. Среди них — <strong>Евгений Пригожин</strong>, основатель группы Вагнера, и <strong>Дмитрий Уткин</strong>, её военный командир. Прошло ровно два месяца со дня мятежа.</p><p>Самолёт следовал из Москвы в Санкт-Петербург. По данным очевидцев и видеозаписям, борт начал разрушаться в воздухе — отломилось крыло, фюзеляж упал в штопор. Признаков технической неисправности до момента крушения не фиксировалось. Американские официальные лица заявили, что имеющиеся данные указывают на <strong>намеренный подрыв самолёта</strong>.</p><p><strong>Владимир Путин</strong> выразил соболезнования и назвал Пригожина <em>«талантливым бизнесменом»</em>. На прямой вопрос о причастности России ответил отрицанием — добавив, что следствие разберётся. Официального расследования, результаты которого были бы преданы огласке, так и не последовало.</p><p><em>Пригожин был одним из немногих людей, публично бросивших вызов российскому военному командованию и пережившим это — пусть и на два месяца. Уткин, ветеран спецназа с позывным «Вагнер», давший имя всей группе, погиб рядом с ним.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/873/">← К году 873</a>
             <p class="meta-tag">Россия</p>
             <h1>Два народа, один щит</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/873/drugina.webp" alt="Два народа, один щит" />
+            <img class="hero-image" src="https://thehistory.pro/cont/873/drugina.webp" alt="Два народа, один щит" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>Дружина <strong>Рюрика</strong> с самого начала была смешанной — варяги, пришедшие с князем, и славяне, вступавшие в её ряды по мере укрепления власти. К 873 году это смешение стало нормой, а не исключением.</p><p>Различия в происхождении не определяли место в иерархии — опыт и верность значили больше крови. Славянский воин, показавший себя в деле, поднимался наравне с варяжским.</p><p>Такое устройство укрепляло саму власть — дружина, набранная из разных народов земли, служила не чужой силе, а общему порядку, в котором были заинтересованы обе стороны.</p><p><em>Щит Рюрика 873 года держали руки разного происхождения — и именно в этом смешении крылась прочность, которой не было бы у чисто варяжской силы.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2008/">← К году 2008</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Самая большая машина в истории</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2008/kollaider.webp" alt="Самая большая машина в истории" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2008/kollaider.webp" alt="Самая большая машина в истории" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>10 сентября 2008 года в Европейском центре ядерных исследований (<strong>ЦЕРН</strong>) на границе Швейцарии и Франции был запущен <strong>Большой адронный коллайдер</strong>. В 10:28 по местному времени первый пучок протонов прошёл по <strong>27-километровому кольцу</strong> туннеля на глубине <strong>100 метров</strong>. Учёные аплодировали стоя.</p><p>БАК строили <strong>14 лет</strong>, потратили около <strong>10 миллиардов долларов</strong>. В проекте участвовали более <strong>10 тысяч учёных и инженеров</strong> из <strong>100 стран</strong>. Цель — разогнать частицы до скоростей, близких к скорости света, и изучить то, что происходит при их столкновении. Физики рассчитывали найти следы бозона Хиггса — частицы, объясняющей происхождение массы.</p><p>Запуск сопровождался волной общественной паники. В интернете распространялись теории о том, что коллайдер создаст чёрную дыру и уничтожит Землю. В ЦЕРН поступали угрозы, некоторые сотрудники получали письма с проклятиями. Учёные методично объясняли, почему это физически невозможно.</p><p>Торжество длилось недолго: через девять дней после запуска в системе охлаждения произошла авария — коллайдер встал на ремонт.</p><p><em>Но 10 сентября машина работала. Человечество заглянуло в начало времён.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

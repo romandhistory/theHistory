@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2003/">← К году 2003</a>
             <p class="meta-tag">Россия</p>
             <h1>Битл на брусчатке</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2003/pol_mak.webp" alt="Битл на брусчатке" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2003/pol_mak.webp" alt="Битл на брусчатке" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>24 мая 2003 года на <strong>Красной площади</strong> впервые в истории состоялся концерт западной рок-звезды. <strong>Пол Маккартни</strong> собрал, по разным оценкам, от 20 до 50 тысяч зрителей. Шоу длилось почти три часа — почти сорок песен.</p><p>До концерта Маккартни побывал в Кремле — <strong>Владимир Путин</strong> лично провёл его по залам и выслушал «Let It Be» в приватном исполнении. Часть депутатов Государственной думы требовала запретить концерт: Красная площадь, по их мнению, не место для западной рок-музыки. Их не послушали.</p><p><strong>The Beatles</strong> в СССР были запрещены — их пластинки переписывали на рентгеновских снимках, передавали из рук в руки. Теперь один из главных «битлов» стоял на сцене у стен Кремля и пел «Back in the USSR». Зал рыдал.</p><p>Маккартни готовился к выступлению тщательно — даже пытался выучить несколько слов по-русски. Публика отвечала взаимностью.</p><p><em>Это был не просто концерт. Это было примирение — страны с музыкой, которую она слушала тайком полвека.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/863/">← К году 863</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Три сына поднялись на одного отца разом</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/863/karloman.webp" alt="Три сына поднялись на одного отца разом" />
+            <img class="hero-image" src="https://thehistory.pro/cont/863/karloman.webp" alt="Три сына поднялись на одного отца разом" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В 863 году мятеж <strong>Карломана Баварского</strong>, тянувшийся с 861 года, перестал быть делом одного строптивого сына. К отцу против отца, <strong>Людовика Немецкого</strong>, присоединились двое младших братьев Карломана — <strong>Людовик Младший</strong> и <strong>Карл Толстый</strong>.</p><p>Двумя годами раньше Карломан восстал в одиночку, заручившись поддержкой моравского князя <strong>Ростислава</strong> и приведя на франкские земли неведомых прежде всадников-мадьяр. Людовик Немецкий тогда ответил встречным союзом с болгарским ханом <strong>Борисом</strong>.</p><p>Теперь против короля стояло не одно герцогство, а весь следующий каролингский призыв — трое сыновей, каждый со своими землями и своей дружиной. Карломан правил в Баварии, Людовик Младший метил на саксонские земли, Карл Толстый — на швабские.</p><p>Людовику Немецкому было под <strong>шестьдесят</strong>. Его сыновьям — от двадцати с небольшим до тридцати с лишним. Время играло не на отца.</p><p><em>Король франков создавал единое королевство десятилетиями, воюя то с братьями, то с племянниками. В 863 году он обнаружил, что главную угрозу этому королевству растил в собственном доме — и растил её сам, наделяя сыновей землёй и властью, которых им оказалось мало.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

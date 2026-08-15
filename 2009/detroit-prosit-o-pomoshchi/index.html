@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2009/">← К году 2009</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Детройт просит о помощи</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2009/GM.webp" alt="Детройт просит о помощи" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2009/GM.webp" alt="Детройт просит о помощи" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>Весной 2009 года рухнули два столпа американского автопрома. <strong>30 апреля</strong> процедуру банкротства начал <strong>Chrysler</strong>, <strong>1 июня</strong> — <strong>General Motors</strong>. Для GM это стало крупнейшим банкротством промышленной компании в истории США: <strong>82 миллиарда долларов</strong> активов против <strong>173 миллиардов</strong> долгов.</p><p>Причины копились десятилетиями: раздутые пенсионные обязательства, негибкие договоры с профсоюзами, потеря рынка. В 1980 году GM контролировала <strong>45%</strong> американского авторынка — к 2009-му доля сократилась до <strong>19,5%</strong>. Финансовый кризис 2008 года лишь нанёс последний удар.</p><p>Государство не дало отрасли умереть. Администрации Буша и Обамы последовательно влили в GM и Chrysler десятки миллиардов долларов из антикризисного фонда. Правительство США получило контрольный пакет акций <em>«новой»</em> GM — беспрецедентный случай национализации в американской истории.</p><p>Уже <strong>10 июля</strong>, через сорок дней после банкротства, новая GM вышла из-под защиты от кредиторов. Chrysler достался итальянскому концерну <strong>Fiat</strong>.</p><p><em>Детройт выжил — но заплатил за это потерей независимости и десятками тысяч рабочих мест.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

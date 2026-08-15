@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/867/">← К году 867</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Йорк падает дважды</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/867/bitvapriorke.webp" alt="Йорк падает дважды" />
+            <img class="hero-image" src="https://thehistory.pro/cont/867/bitvapriorke.webp" alt="Йорк падает дважды" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>Когда <strong>Великое языческое войско</strong> вошло в Нортумбрию осенью 866 года, королевство было занято собственным уничтожением. <strong>Элла</strong> и <strong>Осберт</strong> делили трон — ни один не контролировал страну полностью. Викинги воспользовались моментом: 1 ноября 866 года <strong>Ивар</strong> и <strong>Убба</strong> взяли Йорк без особого труда.</p><p>Весной 867-го враги наконец объединились. 21 марта 867 года Осберт и Элла соединили силы и двинулись на Йорк. Поначалу всё шло хорошо. Нортумбрийцы прорвали городские укрепления и ворвались внутрь — но в узких улицах преимущество в численности исчезло. Викинги знали, как воевать в тесноте. Оба короля погибли.</p><p>По позднейшей традиции, Элла был казнён через <strong>«кровавого орла»</strong> — жестокий ритуал мести за смерть Рагнара Лодброка. Достоверность этой легенды историки оспаривают.</p><p>Победители посадили на нортумбрийский трон марионетку по имени <strong>Эгберт</strong> — и занялись следующими королевствами.</p><p><em>Нортумбрия, некогда один из главных центров англосаксонской учёности и христианства, перестала существовать как независимая сила.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

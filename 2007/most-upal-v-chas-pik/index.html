@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2007/">← К году 2007</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Мост упал в час пик</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2007/most.webp" alt="Мост упал в час пик" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2007/most.webp" alt="Мост упал в час пик" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>1 августа 2007 года в 18:05 восьмиполосный автомобильный мост через реку Миссисипи в Миннеаполисе рухнул в воду. На мосту в момент обрушения находились <strong>111 автомобилей</strong> — шёл вечерний час пик, плюс велись дорожные ремонтные работы. Погибли <strong>13 человек</strong>, <strong>145</strong> получили ранения.</p><p>Расследование установило причину: дефектные стальные пластины-косынки толщиной чуть больше сантиметра — вдвое тоньше, чем требовалось по проекту. Конструктивный изъян существовал с момента постройки в <strong>1967 году</strong>. Дополнительная нагрузка от строительной техники во время ремонта стала последней каплей.</p><p>Катастрофа обнажила системную проблему: по данным федеральных инспекторов, тысячи американских мостов находились в критическом состоянии и нуждались в срочном ремонте или замене. Мост I-35W проходил плановые инспекции и получал удовлетворительные оценки.</p><p>Конгресс выделил экстренные средства на восстановление.</p><p><em>Миннеаполис поднял обломки со дна реки и задал вопрос всей стране: сколько ещё таких мостов держится на честном слове?</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/867/">← К году 867</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Халиф убивает своих хозяев</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/867/mutazdeistvuet.webp" alt="Халиф убивает своих хозяев" />
+            <img class="hero-image" src="https://thehistory.pro/cont/867/mutazdeistvuet.webp" alt="Халиф убивает своих хозяев" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p><strong>Аль-Мутазз</strong> занял трон в январе 866-го — и с первых дней понял, что трон этот ненастоящий. Тюркские военачальники <strong>Васиф</strong> и <strong>Буга</strong>, посадившие его на престол, по-прежнему контролировали армию, финансы и доступ к халифу.</p><p>Аль-Мутазз решил действовать. Назначив умелого визиря <strong>Ахмада ибн Исраила</strong>, он начал методично устранять тюркских командиров — тех самых <em>«королевских делателей»</em>, что за шесть лет сменили четырёх халифов.</p><p>29 октября 867 года тюркские солдаты — вместе с регионами Ушрусания и Фараганы — взбунтовались, требуя четырёхмесячного жалованья. В тот же день был убит <strong>Васиф аль-Турки</strong> — один из главных архитекторов <em>«самаррской анархии»</em>. Это было частью целенаправленной кампании аль-Мутазза: чуть раньше, в конце 866-го или начале 867-го, его люди устроили засаду и казнили Васифа.</p><p><em>Халиф, попытавшийся вернуть власть, не пережил своей попытки. Самарра пожирала всех.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

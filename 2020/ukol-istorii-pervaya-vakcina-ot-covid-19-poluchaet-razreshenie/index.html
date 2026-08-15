@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2020/">← К году 2020</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Укол истории: первая вакцина от COVID-19 получает разрешение</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2020/vacine.webp" alt="Укол истории: первая вакцина от COVID-19 получает разрешение" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2020/vacine.webp" alt="Укол истории: первая вакцина от COVID-19 получает разрешение" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>2 декабря 2020 года британский регулятор <strong>MHRA</strong> первым в мире одобрил вакцину от COVID-19 — препарат <strong>Pfizer/BioNTech</strong> под названием <strong>Comirnaty</strong>. Восемь дней спустя 90-летняя британка <strong>Маргарет Киннан</strong> стала первым человеком в мире, получившим прививку вне клинических испытаний.</p><p>От выявления вируса до одобренной вакцины прошло <strong>менее года</strong> — рекорд в истории медицины. Предыдущий рекорд принадлежал вакцине от свинки: она разрабатывалась <strong>четыре года</strong>. Скорость стала возможной благодаря нескольким факторам одновременно: технология мРНК разрабатывалась десятилетиями до пандемии, финансирование было беспрецедентным, а клинические фазы проводились параллельно, а не последовательно.</p><p>США одобрили ту же вакцину 11 декабря в режиме экстренного использования, ЕС — 21 декабря. Следом появились препараты <strong>Moderna, AstraZeneca, Johnson &amp; Johnson</strong> и российский <strong>«Спутник V»</strong>, зарегистрированный ещё в августе 2020-го — до завершения третьей фазы испытаний, что вызвало споры в научном сообществе.</p><p>К концу 2021 года в мире было сделано более <strong>8 миллиардов прививок</strong>. Доступ к вакцинам распределился катастрофически неравномерно: богатые страны накапливали дозы, бедные ждали месяцами.</p><p><em>Вакцина от COVID-19 стала триумфом науки и провалом глобальной солидарности — одновременно.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

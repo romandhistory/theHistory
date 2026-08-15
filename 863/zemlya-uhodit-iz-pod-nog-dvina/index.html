@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/863/">← К году 863</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Земля уходит из-под ног Двина</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/863/zemletrasvdvine.webp" alt="Земля уходит из-под ног Двина" />
+            <img class="hero-image" src="https://thehistory.pro/cont/863/zemletrasvdvine.webp" alt="Земля уходит из-под ног Двина" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>13 февраля 863 года землетрясение ударило по <strong>Двину</strong> — единственному крупному городу мусульманской Армении того времени. Хронист <strong>Ованес Драсханакертци</strong> сообщает, что подземные толчки нанесли серьёзный урон жилым домам, крепостным стенам и дворцам. Многие погибли сразу; выжившие бежали на рынки и улицы, боясь, что их дома обрушатся. Зимняя стужа добила тех, кто уцелел под завалами.</p><p>Двин был многонациональным городом в составе Аббасидского халифата — армяне, арабы, персы. Именно здесь годом ранее <strong>Ашот Багратуни</strong> получил титул <strong>«князя князей»</strong>, превратив город в политический центр армянских земель. Стихийное бедствие ударило в самое сердце этого возрождения.</p><p><em>Город восстановится — но ненадолго. Землетрясение <strong>893 года</strong> уничтожит Двин окончательно, вместе с большей частью его жителей. 863-й был лишь предупреждением, которое никто не услышал.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2010/">← К году 2010</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Скважина, которую никто не умел закрыть</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2010/horizont.webp" alt="Скважина, которую никто не умел закрыть" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2010/horizont.webp" alt="Скважина, которую никто не умел закрыть" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>20 апреля 2010 года в Мексиканском заливе, в 80 километрах от берегов Луизианы, взорвалась буровая платформа <strong>Deepwater Horizon</strong>. Погибли <strong>11 человек</strong>. Пожар горел <strong>36 часов</strong>, после чего платформа затонула, оставив открытую скважину на полуторакилометровой глубине.</p><p>Нефть хлестала <strong>87 дней</strong>. Все попытки заглушить скважину поначалу проваливались — ни у <strong>British Petroleum (BP)</strong>, ни у конкурентов не было ни оборудования, ни отработанных методик для аварий на такой глубине. В итоге в воды залива вылилось около <strong>пяти миллионов баррелей</strong>. Нефтяное пятно площадью <strong>75 тысяч квадратных километров</strong> было видно из космоса.</p><p>Полторы тысячи километров побережья покрылись нефтью. Под удар попали рыболовная и туристическая отрасли пяти штатов — без работы остались <strong>150 тысяч человек</strong>. Погибли тысячи птиц, черепах, морских млекопитающих.</p><p><em>Расследование показало системную халтуру: BP годами игнорировала нарушения техники безопасности. Компания в итоге выплатила более <strong>20 миллиардов долларов</strong> штрафов — крупнейшее корпоративное урегулирование в истории США.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/867/">← К году 867</a>
             <p class="meta-tag">Россия</p>
             <h1>Год без потрясений</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/867/Novgorod&Kiev.webp" alt="Год без потрясений" />
+            <img class="hero-image" src="https://thehistory.pro/cont/867/Novgorod&Kiev.webp" alt="Год без потрясений" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>867 год не войдёт в учебники как переломный — и правильно. Великих битв не было, династии не менялись, договоры не подписывались. Варяжская Русь просто жила — и это само по себе было достижением для государства, которому едва исполнилось пять лет.</p><p>На севере <strong>Рюрик</strong> держал систему в рабочем состоянии. На юге <strong>Аскольд</strong> выстраивал отношения с Константинополем на новых условиях. Два центра, две логики, одна река — привычная картина, ставшая за эти годы почти нормальной.</p><p>Но под поверхностью спокойного года накапливались противоречия, которые рано или поздно должны были выйти наружу. Христианство в Киеве было верой меньшинства в языческом городе — долго так продолжаться не могло. Север и юг росли независимо друг от друга — и чем сильнее становился каждый центр, тем острее становился вопрос об их отношениях.</p><p>867 год был затишьем — не финалом. Варяжская Русь стояла на пороге следующего десятилетия с выстроенной системой на севере, крещёным князем на юге и открытым вопросом о том, что будет дальше.</p><p><em>Ответы начнут приходить в 870-е — медленно, а потом все сразу.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2009/">← К году 2009</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Аденский залив — аллея пиратов</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2009/pirats.webp" alt="Аденский залив — аллея пиратов" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2009/pirats.webp" alt="Аденский залив — аллея пиратов" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В 2009 году сомалийские пираты совершили <strong>214 нападений</strong> и захватили не менее <strong>47 судов</strong> — рекорд для современной эпохи. Трафик через Суэцкий канал сократился на <strong>20%</strong> по сравнению с 2008 годом — Египет недосчитался почти <strong>миллиарда долларов</strong> доходов.</p><p>Корни явления уходили в 1990-е: после распада сомалийского государства тысячи вооружённых людей остались без работы, а иностранные траулеры опустошали прибрежные воды. Рыбаки, лишившиеся заработка, быстро смекнули, что захват кораблей, идущих из Азии в Средиземноморье через Суэц, — куда прибыльнее рыбной ловли.</p><p>Схема была отработанной: быстрые лодки, автоматы, абордаж — и требование выкупа. За захват судна пираты выручали несколько миллионов долларов. Агенты в сомалийских диаспорах по всему миру передавали информацию о маршрутах.</p><p><strong>8 апреля 2009 года</strong> четыре пирата захватили американский контейнеровоз <strong>Maersk Alabama</strong>. Капитан <strong>Ричард Филлипс</strong> оказался в заложниках. Морской спецназ США ликвидировал троих пиратов и освободил его — инцидент попал на первые полосы газет всего мира.</p><p><em>В ответ международное сообщество развернуло в Аденском заливе военно-морскую группировку из кораблей США, России, Китая, Индии и стран ЕС. Пираты на время притихли — но не исчезли.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

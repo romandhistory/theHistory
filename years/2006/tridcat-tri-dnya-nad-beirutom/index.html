@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2006/">← К году 2006</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Тридцать три дня над Бейрутом</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2006/isravshasb.webp" alt="Тридцать три дня над Бейрутом" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2006/isravshasb.webp" alt="Тридцать три дня над Бейрутом" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>12 июля 2006 года <strong>«Хезболла»</strong> атаковала израильский военный патруль на границе и захватила двух солдат. Израиль ответил немедленно — авиационными ударами по югу Ливана и морской блокадой. Началась <strong>Вторая ливанская война</strong>.</p><p>Израиль рассчитывал на быструю операцию. Вместо этого получил <strong>33 дня</strong> упорных боёв. «Хезболла» ежедневно обстреливала север Израиля ракетами — под удар попали Хайфа, Нахария, Цфат. В Ливане погибли около <strong>900 мирных жителей</strong>, в Израиле — <strong>44 гражданских</strong>. Потери ЦАХАЛ составили <strong>119 военных</strong>.</p><p><strong>14 августа 2006 года</strong> при посредничестве ООН вступило в силу прекращение огня. Резолюция <strong>1701</strong> Совета Безопасности потребовала разоружения «Хезболлы» и развёртывания ливанской армии на юге страны. На юг вошли миротворцы.</p><p>Итоги войны оспаривались обеими сторонами. Израиль не уничтожил «Хезболлу» и не вернул пленных солдат. «Хезболла» устояла и объявила себя победителем.</p><p><em>Война обнажила пределы военной силы — и укрепила позиции «Хезболлы» в Ливане сильнее, чем любые выборы.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

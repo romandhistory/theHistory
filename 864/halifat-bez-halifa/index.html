@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/864/">← К году 864</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Халифат без халифа</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/864/turskievoennye.webp" alt="Халифат без халифа" />
+            <img class="hero-image" src="https://thehistory.pro/cont/864/turskievoennye.webp" alt="Халифат без халифа" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>К 864 году Аббасидский халифат существовал скорее номинально. Реальная власть в Самарре принадлежала тюркским военачальникам — гвардии, которую халифы сами же и создали как противовес арабской знати. Теперь гвардия сама назначала и свергала правителей.</p><p>Правление <strong>аль-Мустаина</strong> было отмечено нарастающим влиянием тюркских офицеров на все дела халифата. Поражения в кампаниях в Армении и Малой Азии и внутренние восстания только усугубляли нестабильность.</p><p>В 864 году его войска подавили восстание алида <strong>Яхьи ибн Умара</strong> и мятеж в Химсе — но это были лишь симптомы, а не болезнь. Год спустя аль-Мустаин бежит из Самарры в Багдад, развязав гражданскую войну.</p><p><strong>«Анархия в Самарре»</strong> — так историки назвали весь этот период с <strong>861 по 870 год</strong>. За девять лет сменилось четыре халифа, все — ставленники тюркских фракций, все — убиты или свергнуты своей же стражей.</p><p><em>Халифат оставался символом исламского единства. Символ больше не управлял ничем.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

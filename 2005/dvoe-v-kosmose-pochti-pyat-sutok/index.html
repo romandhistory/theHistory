@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2005/">← К году 2005</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Двое в космосе — почти пять суток</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2005/korabl'.webp" alt="Двое в космосе — почти пять суток" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2005/korabl'.webp" alt="Двое в космосе — почти пять суток" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>12 октября 2005 года с космодрома <strong>Цзюцюань</strong> стартовал «<strong>Шэньчжоу-6</strong>» — второй пилотируемый корабль Китая. На борту двое тайконавтов: <strong>Фэй Цзюньлун</strong> и <strong>Не Хайшэн</strong>. Имена экипажа объявили лишь за пять часов до старта.</p><p>Миссия длилась 115 часов 32 минуты — почти пять суток. За это время корабль совершил 76 витков вокруг Земли. В отличие от предыдущего полёта «Шэньчжоу-5», где один космонавт провёл в капсуле менее суток, теперь экипаж впервые работал в орбитальном модуле — переходил из спускаемой капсулы и обратно, выполнял научные эксперименты.</p><p>Посадка прошла 17 октября во <strong>Внутренней Монголии</strong>. <strong>Фэй Цзюньлун</strong> и <strong>Не Хайшэн</strong> вышли из капсулы самостоятельно — знак хорошего самочувствия после многодневного полёта.</p><p>Китай последовательно усложнял задачи: первый человек в космосе, затем многодневный полёт с двумя космонавтами. Следующим шагом должен был стать выход в открытый космос.</p><p><em>Программа шла строго по плану.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

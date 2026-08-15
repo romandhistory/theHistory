@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/869/">← К году 869</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Волна, которую не ждали</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/869/cunami_honsu.webp" alt="Волна, которую не ждали" />
+            <img class="hero-image" src="https://thehistory.pro/cont/869/cunami_honsu.webp" alt="Волна, которую не ждали" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>9 июля 869 года у восточного побережья Хонсю произошло землетрясение магнитудой около <strong>8,6</strong>. Толчки ощущались по всему острову. Но главный удар нанесла не земля — а море.</p><p>Цунами обрушилось на равнину Сэндай. Хроника <strong>«Нихон сандай дзицуроку»</strong> описывает картину без прикрас: огромные волны затопили поля провинции Муцу, вода хлынула вглубь суши на несколько километров. Тысячи людей погибли — хроника называет цифру около <strong>тысячи утонувших</strong> только в одном районе, но реальные потери были, по всей видимости, значительно больше.</p><p>Равнина Сэндай была густо заселена и активно возделывалась — рис, соль, рыболовство. Цунами уничтожило урожай и смыло прибрежные поселения.</p><p>Императорский двор воспринял катастрофу как небесный знак. Были проведены молебны, буддийские монахи читали сутры, провинциальным чиновникам велели доложить о потерях.</p><p><em>Равнина Сэндай восстановится. Но память о волне останется в японских хрониках — как предупреждение, которое следующие поколения со временем забудут.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

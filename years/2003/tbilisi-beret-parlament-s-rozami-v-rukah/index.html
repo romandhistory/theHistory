@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2003/">← К году 2003</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Тбилиси берёт парламент с розами в руках</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2003/revolution.webp" alt="Тбилиси берёт парламент с розами в руках" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2003/revolution.webp" alt="Тбилиси берёт парламент с розами в руках" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>2 ноября 2003 года в <strong>Грузии</strong> прошли парламентские выборы. Официальные результаты расходились с данными экзит-поллов — оппозиция заявила о фальсификациях. Протесты нарастали три недели.</p><p>22 ноября на митинг в <strong>Тбилиси</strong> вышли около 50 тысяч человек. <strong>Михаил Саакашвили</strong> с букетом роз в руках ворвался с толпой на первое заседание нового парламента прямо во время выступления президента <strong>Шеварднадзе</strong>. Президент покинул трибуну и скрылся в резиденции.</p><p>При посредничестве главы МИД России <strong>Игоря Иванова</strong> прошли переговоры Шеварднадзе с лидерами оппозиции, после которых президент объявил об отставке. Революция заняла два дня — с 22 по 23 ноября — и прошла без единого выстрела.</p><p>Шеварднадзе правил Грузией с 1992 года. Его уход символизировал окончательный разрыв с советским прошлым — человек, возглавлявший МИД СССР, ушёл под давлением уличной толпы.</p><p><em>Москва наблюдала с тревогой. На постсоветском пространстве впервые сменилась власть через народный протест — мирно и необратимо.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

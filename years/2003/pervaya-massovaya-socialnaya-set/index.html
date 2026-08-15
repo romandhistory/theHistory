@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2003/">← К году 2003</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Первая массовая социальная сеть</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2003/myspace.webp" alt="Первая массовая социальная сеть" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2003/myspace.webp" alt="Первая массовая социальная сеть" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>1 августа 2003 года в <strong>Санта-Монике</strong>, Калифорния, была запущена социальная сеть <strong>MySpace</strong>. Её создали сотрудники маркетинговой компании eUniverse <strong>Том Андерсон</strong> и <strong>Крис ДеВольф</strong>. Первым пользователем и другом по умолчанию для всех новых аккаунтов стал сам Андерсон — «Tom» стал одним из самых узнаваемых лиц раннего интернета.</p><p>MySpace предложил то, чего раньше не существовало в таком виде: персональную страницу, которую можно оформить самостоятельно — выбрать фон, музыку, шрифт, разместить фотографии. Для молодёжи начала 2000-х это было откровением. Музыканты получили бесплатную площадку для продвижения, фанаты — прямой контакт с артистами.</p><p>Аудитория росла стремительно. Пользователи приводили друзей, друзья — ещё друзей. Платформа превращалась в главное место онлайн-общения молодого поколения.</p><p>Интернет наконец получил место, где можно было не просто читать — но и быть собой, заявлять о себе, находить своих.</p><p><em>Эпоха социальных сетей начиналась именно здесь.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

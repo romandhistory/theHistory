@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2004/">← К году 2004</a>
             <p class="meta-tag">Россия</p>
             <h1>Подземка под ударом</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2004/metro.webp" alt="Подземка под ударом" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2004/metro.webp" alt="Подземка под ударом" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>6 февраля 2004 года в 8:32 утра в вагоне поезда на перегоне между <strong>«Автозаводской»</strong> и <strong>«Павелецкой»</strong> сработало взрывное устройство мощностью около 4 килограммов в тротиловом эквиваленте. Террорист-смертник привёл его в действие в час пик. Погибли 41 человек, около 250 получили ранения. Взрыв был столь мощным, что многих жертв опознали лишь с помощью генетической экспертизы.</p><p>31 августа того же года — новый удар. Террористка-смертница взорвала себя у вестибюля станции <strong>«Рижская»</strong>. Погибли 8 человек, около 50 получили ранения. Бомба сработала преждевременно — организатор теракта, находившийся рядом, получил тяжёлые ранения и впоследствии скончался. Это и помогло следствию выйти на организаторов февральского взрыва.</p><p>Оба теракта были связаны с одной сетью — карачаевским подпольем.</p><p>2004 год стал для московского метро особым: два теракта за восемь месяцев — и <strong>Беслан</strong> между ними. Россия переживала самый тяжёлый всплеск террора за постсоветскую историю.</p><p><em>Подземка продолжала возить пассажиров. Другого выхода не было.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

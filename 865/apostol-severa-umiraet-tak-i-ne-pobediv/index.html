@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/865/">← К году 865</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Апостол Севера умирает, так и не победив</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/865/ansgar_severn.webp" alt="Апостол Севера умирает, так и не победив" />
+            <img class="hero-image" src="https://thehistory.pro/cont/865/ansgar_severn.webp" alt="Апостол Севера умирает, так и не победив" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>3 февраля 865 года в Бремене скончался <strong>Ансгар</strong> — архиепископ Гамбургско-Бременский, которого современники и потомки нарекли <strong>«Апостолом Севера»</strong>. Шестьдесят три года жизни, почти сорок из которых — в непрерывной борьбе за христианизацию Скандинавии.</p><p>Итог выглядел скромно. Два храма на границе с Данией и один священник в Швеции — вот всё, что осталось от его миссий к моменту смерти. Когда Ансгар угасал на смертном одре, христианство так и не укрепилось в Скандинавии по-настоящему.</p><p>Жизнь его была полна поражений. В <strong>845 году</strong> викинги сожгли Гамбург дотла — вместе с церквями, библиотекой и тем, что удалось выстроить за полтора десятилетия. Дания и Швеция снова погрузились в язычество. Ансгар начинал заново — без жалоб и без отчаяния.</p><p>Богатый урожай обращений был собран лишь три поколения спустя. Скандинавия приняла христианство около <strong>1000 года</strong> — через сто тридцать лет после смерти человека, который первым посеял это зерно.</p><p><em>Ансгар не дожил до победы. Но именно он сделал её возможной.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

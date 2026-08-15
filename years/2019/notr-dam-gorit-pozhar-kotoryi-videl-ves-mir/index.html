@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2019/">← К году 2019</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Нотр-Дам горит: пожар, который видел весь мир</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2019/noterdam.webp" alt="Нотр-Дам горит: пожар, который видел весь мир" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2019/noterdam.webp" alt="Нотр-Дам горит: пожар, который видел весь мир" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>15 апреля 2019 года в 18:18 по парижскому времени в соборе <strong>Нотр-Дам де Пари</strong> вспыхнул пожар. Огонь охватил деревянные конструкции кровли — <em>«лес»</em>, как называли её реставраторы: <strong>52 гектара</strong> дубовых балок XIII века. Шпиль обрушился в 19:53. Весь мир наблюдал в прямом эфире.</p><p>Пожар начался во время реставрационных работ на крыше. Точная причина так и не была официально установлена — следствие рассматривало версию о замыкании электропроводки или непотушенном окурке строителей. Уголовное дело было закрыто без предъявления обвинений.</p><p>Пожарные спасали собор <strong>девять часов</strong>. Главные реликвии — терновый венец Христа, туника Людовика Святого, часть Креста Господня — были вынесены в первые минуты. Витражи розеток уцелели. Две башни устояли. Из <strong>850-летней</strong> истории собора огонь уничтожил кровлю и шпиль — и не тронул несущие стены.</p><p>На следующее утро президент <strong>Макрон</strong> объявил о восстановлении собора за <strong>пять лет</strong>. Слова казались невероятными — реставрация таких объектов обычно занимает десятилетия. Тем не менее <strong>7 декабря 2024 года</strong> Нотр-Дам открылся после реставрации — точно в срок.</p><p><em>За несколько часов на восстановление собора было собрано более <strong>миллиарда евро</strong> пожертвований — от миллиардеров до школьников. Нотр-Дам горел так, что весь мир захотел его спасти.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

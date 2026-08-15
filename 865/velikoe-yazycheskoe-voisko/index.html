@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/865/">← К году 865</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Великое языческое войско</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/865/voiskovikingov.webp" alt="Великое языческое войско" />
+            <img class="hero-image" src="https://thehistory.pro/cont/865/voiskovikingov.webp" alt="Великое языческое войско" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>Осенью 865 года у берегов Восточной Англии высадилась армия, которую «Англосаксонская хроника» назвала <em>micel hæþen here</em> — <strong>«великое языческое войско»</strong>. Всё, что было до этого — разрозненными набегами. Это была война с целью завоевания.</p><p>Войско возглавляли трое из сыновей полулегендарного <strong>Рагнара Лодброка</strong> — <strong>Хальвдан Рагнарссон</strong>, <strong>Ивар Бескостный</strong> и <strong>Убба</strong>. Скандинавские саги утверждают, что братья собрали армию, чтобы отомстить за гибель отца, казнённого королём Нортумбрии <strong>Эллой</strong>. Историческая достоверность этой версии остаётся предметом споров. Но какой бы ни была причина — результат был одинаков.</p><p>Восточноанглийский король <strong>Эдмунд</strong> попытался откупиться, предоставив викингам лошадей в обмен на мир. Войско перезимовало в Тетфорде без столкновений. Это был единственный раз, когда данегельд сработал.</p><p>Только на этот раз плата обернулась против плативших. Пешее войско, получив коней, стало конным — способным двигаться в глубь страны быстрее, чем прежде.</p><p><em>Раньше викинги приходили, грабили и уходили с добычей до весны. Эти остались зимовать на английской земле — и никто в 865 году ещё не знал, что зимовкой дело не ограничится.</em></p></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/869/">← К году 869</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Рабы Басры поднимают восстание</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/869/vosstanie.webp" alt="Рабы Басры поднимают восстание" />
+            <img class="hero-image" src="https://thehistory.pro/cont/869/vosstanie.webp" alt="Рабы Басры поднимают восстание" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В месяц Рамадан 869 года <strong>Али ибн Мухаммад</strong> вышел к группам восточноафриканских невольников, работавших на осушении солончаков к востоку от Басры. Он связал надсмотрщиков, освободил рабов и предложил им выбор — свобода или цепи. Выбор был очевиден.</p><p><strong>Зинджи</strong> — чернокожие рабы, привезённые с восточноафриканского побережья — трудились в нечеловеческих условиях. Тысячи людей снимали засоленный верхний слой почвы голыми руками, получая взамен горсть муки и финики. Хозяева Басры богатели. Рабы умирали.</p><p>Али ибн Мухаммад был не рабом — харизматичный авантюрист, поэт и самозваный пророк, он уже пробовал поднимать восстания в Бахрейне и проиграл. В Басре он нашёл аудиторию, готовую слушать. Он обещал свободу и богатство, объявил себя потомком четвёртого халифа <strong>Али</strong> и заявил, что любой — даже чернокожий раб — может стать халифом.</p><p>22–23 октября 869 года зинджи разбили басрийское войско в боях среди каналов. Повстанцы ушли в болота и основали там столицу — <strong>аль-Мухтару</strong>, неприступную крепость среди топей.</p><p><em>Халифат только что пережил гражданскую войну в Самарре. Теперь у него новая война — у порога собственной столицы.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

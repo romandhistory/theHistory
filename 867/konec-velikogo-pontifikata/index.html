@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/867/">← К году 867</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Конец великого понтификата</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/867/papaNikolaI.webp" alt="Конец великого понтификата" />
+            <img class="hero-image" src="https://thehistory.pro/cont/867/papaNikolaI.webp" alt="Конец великого понтификата" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>13 ноября 867 года в Риме умер <strong>Николай I</strong> — самый властный папа раннего средневековья, чей понтификат определил место папства в европейской политике на поколения вперёд. Он не узнал, что его анафема Фотием предана — ни до, ни после смерти не дала результата, а сам Фотий был низложен за несколько недель до его кончины.</p><p>Николай правил <strong>девять лет</strong> — и за это время поставил на место строптивых архиепископов, отказал в разводе каролингскому королю, вступил в открытое противостояние с Константинополем и превратил Болгарию в поле схватки двух церквей. Он считается наиболее значимым папой каролингского периода и предшественником реформаторских понтификатов XI века.</p><p><strong>Адриан II</strong> был избран 14 декабря 867 года как компромиссный кандидат — между сторонниками жёсткого курса Николая и теми, кто хотел передышки. Ему было <strong>семьдесят пять лет</strong>. По молодости он был женат, имел дочь — оба жили при нём в Латеранском дворце.</p><p>Адриан пытался продолжать политику предшественника — но с меньшей твёрдостью и меньшей удачей. Карл Лысый его проигнорировал, герцог Сполето разграбил Рим сразу после выборов.</p><p><em>После Николая Великого любой преемник казался бы меньше. Адриан II не был исключением.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

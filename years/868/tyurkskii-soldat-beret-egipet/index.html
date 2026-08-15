@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/868/">← К году 868</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Тюркский солдат берёт Египет</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/868/tulun.webp" alt="Тюркский солдат берёт Египет" />
+            <img class="hero-image" src="https://thehistory.pro/cont/868/tulun.webp" alt="Тюркский солдат берёт Египет" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>27 августа 868 года <strong>Ахмад ибн Тулун</strong> прибыл в Египет — сначала как заместитель своего отчима Бакбака, назначенного халифом аль-Мутаззом наместником провинции. 15 сентября он въехал в столицу Фустат.</p><p>Начинал он скромно. Сын тюркского раба, выросший при аббасидском дворе в Самарре, ибн Тулун поднялся по ступеням халифской администрации и прибыл в Египет в роли заместителя наместника. Провинция, однако, оказалась плодородной почвой — в прямом и переносном смысле.</p><p>В Египте ибн Тулун обнаружил, что реальная власть сосредоточена в руках финансового чиновника <strong>Ибн аль-Мудаббира</strong>, который годами обогащался за счёт провинции и не спешил признавать нового губернатора. За четыре года ибн Тулун вытеснил его, взял под контроль египетскую казну и создал армию, лично преданную ему — а не халифу.</p><p>Тулунидская династия стала первой местной династией, фактически независимой от Аббасидского халифата. При ибн Тулуне выросли налоговые доходы, расцвела торговля, была построена <strong>мечеть его имени</strong> — один из шедевров исламской архитектуры, стоящий в Каире по сей день.</p><p><em>Халифат отправил тюркского солдата управлять провинцией. Солдат взял её себе.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

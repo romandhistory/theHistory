@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2007/">← К году 2007</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Сто пятьдесят секунд</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2007/zemletras.webp" alt="Сто пятьдесят секунд" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2007/zemletras.webp" alt="Сто пятьдесят секунд" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>15 августа 2007 года в 18:40 по местному времени земля под южным побережьем Перу вздрогнула. Магнитуда — <strong>8,0</strong>, продолжительность — <strong>150 секунд</strong>. Погибли <strong>514 человек</strong>, около <strong>1100</strong> получили ранения.</p><p>Эпицентр находился в <strong>161 километре</strong> от Лимы, в департаменте Ика. Больше всего пострадал портовый город <strong>Писко</strong>: <strong>80%</strong> зданий было разрушено. Во время службы рухнул католический собор Сан-Клементе — под обломками погибли около <strong>ста человек</strong>.</p><p>Большинство строений в регионе возводилось без соблюдения сейсмических норм — <strong>adobe</strong>, необожжённый кирпич из глины и соломы, рассыпался от толчков мгновенно. Целые кварталы превращались в груды пыли за две с половиной минуты.</p><p>Президент <strong>Гарсия</strong> объявил чрезвычайное положение в трёх регионах. Помощь поступала медленно — дороги были перекрыты обломками, связь прервана. Международные спасательные команды работали несколько суток.</p><p><em>Перу находится на стыке тектонических плит и регулярно переживает землетрясения. Август 2007-го напомнил: для этой страны подземная угроза — не исключение, а условие существования.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

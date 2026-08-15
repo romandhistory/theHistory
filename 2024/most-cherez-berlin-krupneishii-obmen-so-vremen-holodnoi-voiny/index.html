@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2024/">← К году 2024</a>
             <p class="meta-tag">Россия</p>
             <h1>Мост через Берлин: крупнейший обмен со времён холодной войны</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2024/obmenszapadom.webp" alt="Мост через Берлин: крупнейший обмен со времён холодной войны" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2024/obmenszapadom.webp" alt="Мост через Берлин: крупнейший обмен со времён холодной войны" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>1 августа 2024 года на мосту <strong>Глиникер Брюке</strong> в Берлине — том самом, где в годы холодной войны обменивали шпионов — состоялся крупнейший обмен заключёнными между Россией и западными странами за последние десятилетия. Одновременно передвигались <strong>26 человек</strong> в двух направлениях.</p><p>Россия освободила американского журналиста <strong>Эвана Гершковича</strong> из Wall Street Journal, бывшего морского пехотинца <strong>Пола Уилана</strong>, журналистку «Радио Свобода» <strong>Алсу Курмашеву</strong> и ряд других граждан западных стран. Со стороны России в обмен вошли несколько человек — в том числе <strong>Вадим Красиков</strong>, осуждённый в Германии за убийство чеченского диссидента в берлинском парке в 2019 году. Его освобождение Москва считала приоритетным.</p><p>Переговоры об обмене велись более года при посредничестве нескольких стран — <strong>Германии, Турции, ОАЭ, Норвегии, Словении</strong>. Сложность состояла в том, что разные заключённые находились в разных странах — потребовалась синхронизация между множеством правительств одновременно.</p><p><strong>Алексей Навальный</strong> фигурировал в переговорах как возможный участник обмена — западные стороны добивались его включения в список. Он погиб в феврале 2024 года, не дождавшись.</p><p><em>Глиникер Брюке снова стал местом, где холодная война материализуется в живых людях — переходящих мост в разные стороны.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

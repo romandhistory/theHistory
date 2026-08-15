@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/869/">← К году 869</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Тишина после последней строки</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/869/maia.webp" alt="Тишина после последней строки" />
+            <img class="hero-image" src="https://thehistory.pro/cont/869/maia.webp" alt="Тишина после последней строки" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В 869 году резчик по камню в <strong>Тикале</strong> завершил работу над стелой — и поставил дату. Это была последняя надпись, которую когда-либо сделают в одном из величайших городов майя.</p><p>Тикаль к тому времени стоял уже <strong>полтора тысячелетия</strong>. В период расцвета — VI–VIII века — его население достигало <strong>ста тысяч человек</strong>. Высокие храмы-пирамиды возвышались над джунглями, торговые пути связывали город с половиной Мезоамерики, правители увековечивали победы на каменных стелах с точными датами и именами.</p><p>Что именно произошло — неизвестно. Источников нет: майя не оставили хроник коллапса. Среди вероятных причин — затяжные засухи, истощение почв вокруг огромного города, межгосударственные войны, разрушившие торговые сети, восстания против правящей элиты.</p><p>К 869 году надписи прекратились. Строительство остановилось. Люди уходили — медленно, без единого драматического момента.</p><p><em>Джунгли возвращали своё молчание.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

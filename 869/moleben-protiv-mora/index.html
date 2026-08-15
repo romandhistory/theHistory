@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/869/">← К году 869</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Молебен против мора</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/869/fest_gion.webp" alt="Молебен против мора" />
+            <img class="hero-image" src="https://thehistory.pro/cont/869/fest_gion.webp" alt="Молебен против мора" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В 869 году по всей Японии прокатилась эпидемия — предположительно оспа или иная заразная болезнь, опустошавшая провинции одну за другой. Императорский двор искал способ умилостивить богов.</p><p>По приказу императора <strong>Сэйвы</strong> в столичном саду Синсэнъэн был установлен <strong>66 алебард</strong> — по числу провинций страны. Каждая алебарда символизировала одну провинцию и её защиту от болезни. Из святилища Ясака были доставлены переносные паланкины с божествами — <strong>микоси</strong> — и торжественно пронесены по улицам Хэйана.</p><p>Это шествие стало первым <strong>Гион Мацури</strong> — фестивалем, который японцы проводят по сей день, превратив его в одно из главных празднеств страны.</p><p>В 869 году это был не праздник — это был отчаянный религиозный акт. Двор не знал, как остановить эпидемию, и обращался к богам с единственным доступным инструментом — ритуалом.</p><p><em>Эпидемия отступила. Помогли ли алебарды — вопрос веры. Но шествие повторили. И ещё раз. И ещё.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

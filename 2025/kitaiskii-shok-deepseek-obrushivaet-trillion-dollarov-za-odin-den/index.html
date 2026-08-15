@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2025/">← К году 2025</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Китайский шок: DeepSeek обрушивает триллион долларов за один день</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2025/deepseek-r1.webp" alt="Китайский шок: DeepSeek обрушивает триллион долларов за один день" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2025/deepseek-r1.webp" alt="Китайский шок: DeepSeek обрушивает триллион долларов за один день" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В конце января 2025 года китайский стартап <strong>DeepSeek</strong> выпустил модель <strong>R1</strong> — и вызвал панику на американском фондовом рынке. Разработчики утверждали, что создали модель, не уступающую передовым западным аналогам, но за несравнимо меньшие деньги: обучение обошлось якобы в <strong>5,6 миллиона долларов</strong>, тогда как западные компании тратили на это сотни миллионов.</p><p>27 января 2025 года капитализация рынка сократилась на <strong>триллион долларов</strong>. Акции <strong>Nvidia</strong> упали на <strong>17,8%</strong> — крупнейшее однодневное падение в истории компании. <strong>Broadcom</strong> и <strong>Microsoft</strong> также потеряли значительную часть стоимости.</p><p>Логика инвесторов была прямолинейной: если китайский стартап создаёт конкурентоспособную модель за миллионы — зачем вкладывать миллиарды в Nvidia, Microsoft и OpenAI? DeepSeek R1 по эффективности работал на уровне Google и OpenAI. Модель была выложена в открытый доступ — без ограничений по числу запросов.</p><p>Скептики обнаружили нюансы. Аналитики Cloud Security Alliance назвали заявление о стоимости обучения в 5,6 миллиона <em>«значительно преувеличенным»</em>. Выяснилось также, что DeepSeek использовал чипы Nvidia, запрещённые для экспорта в Китай. В апреле 2025 года двухпартийный комитет Конгресса США назвал DeepSeek <em>«серьёзной угрозой национальной безопасности»</em> — в том числе из-за маршрутизации пользовательских данных через инфраструктуру, связанную с Китаем.</p><p><em>DeepSeek показал то, что индустрия предпочитала не замечать: монополия на передовой ИИ, построенная на дорогих чипах и многомиллиардных инвестициях, оказалась уязвимее, чем считалось.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2008/">← К году 2008</a>
             <p class="meta-tag">Россия</p>
             <h1>Шесть вместо четырёх</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2008/konstitut.webp" alt="Шесть вместо четырёх" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2008/konstitut.webp" alt="Шесть вместо четырёх" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>5 ноября 2008 года в первом же президентском послании <strong>Дмитрий Медведев</strong> предложил изменить Конституцию: увеличить срок полномочий президента с <strong>четырёх до шести</strong> лет, Государственной думы — с <strong>четырёх до пяти</strong>. Инициатива прозвучала через шесть месяцев после его собственного избрания.</p><p>Дума приняла поправки в трёх чтениях за две недели. <strong>21 ноября</strong> — окончательное голосование: <strong>392 «за»</strong>, <strong>57 «против»</strong> — все коммунисты. Совет Федерации одобрил <strong>26 ноября</strong>. <strong>30 декабря</strong> Медведев подписал закон.</p><p>Инициатива была подана как техническая — для повышения эффективности государственного управления. Критики немедленно задались вопросом: кому именно эти шесть лет выгодны — действующему президенту или его предшественнику, занявшему кресло премьера?</p><p>Поправки не распространялись на действующий президентский срок — только на следующего избранного президента. Это уточнение заметили все, но интерпретировали по-разному.</p><p><em>Конституция 1993 года менялась впервые за пятнадцать лет. Изменение оказалось коротким по тексту — и длинным по смыслу.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

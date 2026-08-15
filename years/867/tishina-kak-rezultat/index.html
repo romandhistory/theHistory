@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/867/">← К году 867</a>
             <p class="meta-tag">Россия</p>
             <h1>Тишина как результат</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/867/stabilrurika.webp" alt="Тишина как результат" />
+            <img class="hero-image" src="https://thehistory.pro/cont/867/stabilrurika.webp" alt="Тишина как результат" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>867 год на севере Руси не оставил следов в летописях — и это само по себе красноречиво. <strong>Нестор</strong> записывал войны, мятежи и смерти князей. Если записывать было нечего — значит, всё шло своим чередом.</p><p><strong>Рюрик</strong> к 867 году правил пятый год. Восстание Вадима подавлено, недовольные разбежались, административная система выстроена. Полюдье работало регулярно, варяжские наместники сидели на местах, торговые пути функционировали. Север жил в режиме, который историки называют скучным словом «консолидация» — а на деле это просто власть, которая перестала бороться за выживание и начала просто работать.</p><p>Рюрик объезжал земли, собирал дань, решал споры. Финно-угорские племена на востоке платили нерегулярно — но платили. Кривичи на западе были встроены в систему достаточно прочно, чтобы не думать о мятеже. Новгород рос — медленно, но уверенно.</p><p>На юге <strong>Аскольд</strong> крестился и договаривался с Константинополем. До Рюрика эти новости доходили — но не меняли ничего в его повседневной работе. Север и юг по-прежнему жили параллельно.</p><p><em>Тишина 867 года была не пустотой — она была результатом. Государство, которое не производит кризисов, уже чего-то стоит.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

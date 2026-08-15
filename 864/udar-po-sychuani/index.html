@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/864/">← К году 864</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Удар по Сычуани</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/864/sichuan.webp" alt="Удар по Сычуани" />
+            <img class="hero-image" src="https://thehistory.pro/cont/864/sichuan.webp" alt="Удар по Сычуани" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В 864 году войска царства <strong>Наньчжао</strong> перешли границу и атаковали <strong>Сычуань</strong> — один из ключевых административных центров танского Китая на юго-западе. Удар пришёлся по <strong>Чэнду</strong> или его окрестностям: Наньчжао уже не впервые испытывало оборону Тан на прочность именно здесь.</p><p>К этому моменту царство на территории нынешней Юньнани превратилось в полноценную региональную державу. Оно лавировало между Тан и Тибетом десятилетиями, а когда Тибетская империя рухнула в <strong>842 году</strong>, Наньчжао лишилось противовеса — и стало действовать агрессивнее. Сычуань манила ресурсами, торговыми путями и символическим значением: взять её областной центр означало унизить империю публично.</p><p>Танский двор, истощённый после восстания Хуан Чао и внутренними распрями, с трудом удерживал юго-западный фланг. Местные гарнизоны отражали набеги, но инициатива всё чаще оставалась за Наньчжао.</p><p><em>Рейд 864 года не стал завоеванием — но стал сигналом: периферия больше не боится центра.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

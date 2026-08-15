@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/869/">← К году 869</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Собор, который Восток не признал</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/869/IVkonstantin_sobor.webp" alt="Собор, который Восток не признал" />
+            <img class="hero-image" src="https://thehistory.pro/cont/869/IVkonstantin_sobor.webp" alt="Собор, который Восток не признал" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>5 октября 869 года в соборе Святой Софии открылся <strong>IV Константинопольский собор</strong> — восьмой вселенский по счёту западной церкви. Под председательством папских легатов <strong>Адриана II</strong> собрались представители всех патриархатов. Первое заседание посетили лишь <strong>12 епископов</strong> — красноречивое свидетельство того, насколько непопулярным было это мероприятие на Востоке.</p><p>Цель была одна: официально закрепить то, что <strong>Василий I</strong> уже сделал в 867 году — низложение <strong>Фотия</strong> и восстановление <strong>Игнатия</strong>. Фотий не признал обвинений и отказался подписать присланный из Рима документ о покаянии. После десяти заседаний собор принял <strong>27 канонов</strong>: Фотий осуждён и лишён сана, все рукоположённые им священнослужители низведены до мирян.</p><p>Впервые Рим официально признал древнее право Константинополя на второе место среди пяти великих патриархатов. Казалось, десятилетие церковных войн — Фотиева схизма, болгарский вопрос, взаимные анафемы — наконец завершилось миром.</p><p><em>Но собор собрал лишь сотню епископов. Фотий жив, осуждён — и не сломлен. Восточная церковь смотрела на происходящее молча.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

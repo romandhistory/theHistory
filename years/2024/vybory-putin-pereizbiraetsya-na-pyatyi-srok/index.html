@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2024/">← К году 2024</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Выборы: Путин переизбирается на пятый срок</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2024/putin.webp" alt="Выборы: Путин переизбирается на пятый срок" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2024/putin.webp" alt="Выборы: Путин переизбирается на пятый срок" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>17 марта 2024 года Центральная избирательная комиссия России объявила результаты президентских выборов. <strong>Владимир Путин</strong> набрал <strong>87,28%</strong> голосов при явке <strong>77,49%</strong> — оба показателя стали рекордными за всю историю российских президентских выборов. Путин будет занимать пост до <strong>2030 года</strong>.</p><p>Выборы проходили три дня — с 15 по 17 марта. Основные оппозиционные политики к участию допущены не были: <strong>Навальный</strong> скончался в арктической колонии за месяц до голосования — <strong>16 февраля 2024 года</strong>. <strong>Борис Надеждин</strong>, антивоенный кандидат собравший подписи сотен тысяч граждан, получил отказ в регистрации. Допущенные кандидаты — <strong>Харитонов, Даванков, Слуцкий</strong> — не представляли реальной альтернативы и в совокупности набрали около <strong>12%</strong>.</p><p>Международные наблюдатели от <strong>ОБСЕ</strong> на выборы приглашены не были. Независимые российские наблюдатели фиксировали вбросы и «карусели» — традиционный набор нарушений. Голосование на новых территориях — в ДНР, ЛНР, Запорожской и Херсонской областях, часть которых находится под украинским контролем, — вызвало отдельные вопросы.</p><p><em>Владимир Путин правит Россией с <strong>2000 года</strong> — с технической паузой на президентство Медведева. Выборы 2024 года продлили этот срок минимум до <strong>2030-го</strong>, а поправки к Конституции теоретически — до <strong>2036-го</strong>.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2006/">← К году 2006</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Вулкан и ураган в один день</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2006/dur'ian.webp" alt="Вулкан и ураган в один день" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2006/dur'ian.webp" alt="Вулкан и ураган в один день" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>В конце ноября 2006 года тайфун <strong>«Дурьян»</strong> обрушился на полуостров Бикол — самый густонаселённый район южного Лусона. Порывы ветра достигали <strong>250 километров в час</strong>. Но главной угрозой стало не это.</p><p>Смешавшись с вулканической пылью на склонах вулкана <strong>Майон</strong>, водные потоки превратились в лавины грязи и обломков, которые снесли целые деревни. Горные сёла у подножия вулкана были погребены заживо. Поисково-спасательные операции шли в условиях непрекращающихся дождей и повторных оползней.</p><p>Число погибших превысило <strong>тысячу человек</strong>, сотни числились пропавшими без вести. Десятки тысяч жителей эвакуировали из зоны бедствия. Провинция Альбай, где сосредоточились основные разрушения, была объявлена зоной национального бедствия.</p><p>Правительство Филиппин вновь столкнулось с привычной дилеммой: население не желало покидать деревни у подножия Майона, несмотря на регулярные предупреждения. Земля там плодородна — уходить значит терять всё.</p><p><em>Тайфун ушёл. Вулкан остался.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

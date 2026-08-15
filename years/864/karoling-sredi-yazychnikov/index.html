@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/864/">← К году 864</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Каролинг среди язычников</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/864/pipinII.webp" alt="Каролинг среди язычников" />
+            <img class="hero-image" src="https://thehistory.pro/cont/864/pipinII.webp" alt="Каролинг среди язычников" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>К 864 году <strong>Пипин II</strong> был фигурой конченой — без земель, без поддержки знати, скитавшийся по окраинам того королевства, которое когда-то считал своим. Последним ходом стал союз с викингами: вместе с норманнским отрядом он осадил <strong>Тулузу</strong>.</p><p>Современники говорили, что Пипин отрёкся от христианства и стал поклоняться Одину, живя <em>«как один из них»</em>. Насколько это буквально — неизвестно, но политический смысл был очевиден: внук Людовика Благочестивого выбрал язычников против собственной династии.</p><p>Осада провалилась — граф Тулузы отстоял город. Вскоре после этого аквитанцы схватили Пипина хитростью. <strong>«Анналы Сен-Бертена»</strong> фиксируют коротко: <em>«Аквитанцы хитростью захватили вероотступника Пипина и отлучили его от норманнов»</em>.</p><p>Дальнейшая судьба его туманна — он исчезает из источников после 864 года.</p><p><em>Пипин II прожил жизнь в войне с Карлом Лысым и проиграл её окончательно — не в битве, а в канаве среди чужих ему людей.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

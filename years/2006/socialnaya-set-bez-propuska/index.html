@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2006/">← К году 2006</a>
             <p class="meta-tag">Мировые события</p>
             <h1>Социальная сеть без пропуска</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2006/fb.webp" alt="Социальная сеть без пропуска" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2006/fb.webp" alt="Социальная сеть без пропуска" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>26 сентября 2006 года <strong>Facebook</strong> снял последнее ограничение: теперь зарегистрироваться мог любой пользователь старше 13 лет с действующим адресом электронной почты. До этого сеть была доступна только студентам американских университетов, затем — школьникам и корпоративным пользователям. Эксклюзивность была частью стратегии.</p><p>Основатель <strong>Марк Цукерберг</strong> запустил Facebook в феврале 2004 года из комнаты в Гарварде. За два года сеть прошла путь от студенческого справочника до платформы с <strong>12 миллионами</strong> пользователей — и всё равно оставалась закрытым клубом. Открытие изменило масштаб.</p><p>К концу 2006 года аудитория перевалила за <strong>20 миллионов</strong>. <strong>MySpace</strong> в тот момент был крупнейшей социальной сетью мира с десятками миллионов пользователей — Facebook выглядел догоняющим. Инвесторы не спешили: в 2006-м Цукерберг отверг предложение <strong>Yahoo</strong> купить компанию за <strong>миллиард долларов</strong>.</p><p>Решение открыть регистрацию всем казалось рискованным — можно было потерять элитарность, привлекавшую студентов. Риск не оправдался.</p><p><em>Мир получил платформу. Что с ней делать — предстояло выяснить.</em></p><p>(организация, запрещенная в России)</p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">

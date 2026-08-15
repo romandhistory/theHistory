@@ -52,20 +52,6 @@
             .content-card { padding: 18px; }
         }
     </style>
-    <script>
-        (function () {
-            try {
-                var match = window.location.pathname.match(/^\/\d+(?:\/[^/]+)?\/?$/);
-                if (!match) return;
-                var parts = window.location.pathname.split('/').filter(Boolean);
-                if (!parts.length) return;
-                var targetHash = '#' + parts.join('/');
-                if (window.location.hash !== targetHash) {
-                    window.location.replace('/' + targetHash + window.location.search);
-                }
-            } catch (e) {}
-        })();
-    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -81,7 +67,7 @@
             <a href="https://thehistory.pro/2009/">← К году 2009</a>
             <p class="meta-tag">Россия</p>
             <h1>Война официально закончилась</h1>
-            <img class="hero-image" src="https://thehistory.pro/cont/2009/chechn.webp" alt="Война официально закончилась" />
+            <img class="hero-image" src="https://thehistory.pro/cont/2009/chechn.webp" alt="Война официально закончилась" onerror="this.onerror=null;this.src='https://thehistory.pro/img/logo1.png';" />
             <div class="muted"><p>С полуночи 16 апреля 2009 года Чечня перестала быть зоной контртеррористической операции (КТО). По поручению президента <strong>Дмитрия Медведева</strong> директор ФСБ <strong>Бортников</strong> отменил приказ, действовавший с <strong>23 сентября 1999 года</strong> — почти десять лет.</p><p>Практические последствия были немедленными. Из республики выводились <strong>20 тысяч военнослужащих</strong> внутренних войск. Снимались спецрежимы в аэропорту и на таможне. Жители Чечни получили право свободно перемещаться по стране — как граждане любого другого региона.</p><p>Инициатива исходила от <strong>Рамзана Кадырова</strong>: ещё <strong>25 марта</strong> он объявил, что режим вот-вот отменят. Медведев поручил Национальному антитеррористическому комитету рассмотреть вопрос. На это ушло меньше трёх недель. Кадыров объявил 16 апреля праздничным днём — <strong>Днём мира</strong>.</p><p>Формально война завершилась. По официальным данным, на территории республики оставалось ещё около <strong>480 боевиков</strong> — силовикам предписывалось продолжать работу в обычном, не чрезвычайном режиме.</p><p><em>Чечня получила статус мирного региона. Что за этим стоит на практике — вопрос, который каждый решал для себя сам.</em></p></div>
         </div>
         <div class="content-card" style="margin-top:20px;">
