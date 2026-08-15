@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             const yearId = clickedSlide.getAttribute('data-year-id');
             if (!yearId) return;
 
-            window.location.assign('/' + yearId + '/');
+            navigateToEvent(yearId, 1, 0, false);
         });
     }
     function initSliderWheelBehavior() {
@@ -692,16 +692,48 @@ document.addEventListener('DOMContentLoaded', async function () {
         } else {
             const segments = rawHash.split('/').filter(Boolean);
             yearId = segments[0] || null;
-            if (segments.length === 2) {
-                if (/^\d+$/.test(segments[1])) {
-                    article = segments[1];
+
+            if (segments.length >= 2) {
+                const secondSegment = segments[1];
+                if (/^\d+$/.test(secondSegment)) {
+                    article = secondSegment;
                 } else {
-                    tab = segments[1];
+                    const data = yearCache[yearId];
+                    let matchedArticleIndex = 0;
+                    let matchedTabNum = 1;
+
+                    if (data && data.tabs) {
+                        const allArticles = [].concat(
+                            (data.tabs.world && data.tabs.world.articles ? data.tabs.world.articles : []),
+                            (data.tabs.russia && data.tabs.russia.articles ? data.tabs.russia.articles : [])
+                        );
+                        const matchIndex = allArticles.findIndex(function (articleData) {
+                            const title = articleData.title || articleData.button || '';
+                            return slugifyPathText(title) === secondSegment;
+                        });
+
+                        if (matchIndex >= 0) {
+                            matchedArticleIndex = matchIndex + 1;
+                            matchedTabNum = matchIndex < (data.tabs.world && data.tabs.world.articles ? data.tabs.world.articles.length : 0)
+                                ? 1
+                                : 2;
+                        }
+                    }
+
+                    if (matchedArticleIndex > 0) {
+                        return {
+                            yearId,
+                            tabNum: matchedTabNum,
+                            articleIndex: matchedArticleIndex
+                        };
+                    }
+
+                    tab = secondSegment;
+                    if (tab === '3') tab = 'gallery';
+                    if (segments.length >= 3 && /^\d+$/.test(segments[2])) {
+                        article = segments[2];
+                    }
                 }
-            } else if (segments.length >= 3) {
-                tab = segments[1];
-                if (tab === '3') tab = 'gallery';
-                article = segments[2];
             }
         }
 
