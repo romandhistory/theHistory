@@ -44,6 +44,91 @@ def slugify(value):
     return translit or 'event'
 
 
+def render_static_shell(title, description, page_url, hero_image, body_html, page_type='year'):
+    return f'''<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{escape(title)}</title>
+    <meta name="description" content="{escape(description)}" />
+    <link rel="canonical" href="{page_url}" />
+    <link rel="icon" type="image/png" href="{BASE_URL}/img/logo1.png" />
+    <link rel="apple-touch-icon" href="{BASE_URL}/img/logo1.png" />
+    <meta property="og:title" content="{escape(title)}" />
+    <meta property="og:description" content="{escape(description)}" />
+    <meta property="og:image" content="{hero_image}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{page_url}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{escape(title)}" />
+    <meta name="twitter:description" content="{escape(description)}" />
+    <meta name="twitter:image" content="{hero_image}" />
+    <style>
+        :root {{
+            --bg: #0d1117;
+            --panel: #111827;
+            --panel-2: #1f2937;
+            --text: #f3f4f6;
+            --muted: #d1d5db;
+            --accent: #66d9ef;
+            --accent-2: #7dd3fc;
+            --border: rgba(255,255,255,0.08);
+            --shadow: rgba(0,0,0,0.35);
+        }}
+        * {{ box-sizing: border-box; }}
+        html, body {{ margin: 0; padding: 0; font-family: Arial, sans-serif; background: var(--bg); color: var(--text); }}
+        body {{ line-height: 1.6; }}
+        a {{ color: var(--accent); text-decoration: none; }}
+        a:hover {{ text-decoration: underline; }}
+        .page-shell {{ max-width: 1120px; margin: 0 auto; padding: 30px 20px 40px; }}
+        .site-topbar {{ display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 0 20px; border-bottom: 1px solid var(--border); margin-bottom: 28px; }}
+        .brand {{ font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text); }}
+        .top-links {{ display: flex; gap: 14px; flex-wrap: wrap; }}
+        .hero-image {{ width: 100%; max-width: 900px; border-radius: 18px; display: block; margin: 28px 0; border: 1px solid var(--border); box-shadow: 0 18px 45px var(--shadow); }}
+        .content-card {{ background: rgba(17,24,39,0.8); border: 1px solid var(--border); border-radius: 18px; padding: 24px; box-shadow: 0 18px 45px var(--shadow); }}
+        h1, h2, h3 {{ margin: 0 0 12px; color: var(--text); }}
+        p {{ margin: 0 0 14px; color: var(--muted); }}
+        ul {{ padding-left: 18px; margin: 14px 0 0; color: var(--muted); }}
+        li {{ margin: 8px 0; }}
+        .meta-tag {{ display: inline-block; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent-2); margin-bottom: 14px; }}
+        .muted {{ color: var(--muted); }}
+        @media (max-width: 640px) {{
+            .page-shell {{ padding: 18px 14px 30px; }}
+            .site-topbar {{ flex-direction: column; align-items: flex-start; }}
+            .content-card {{ padding: 18px; }}
+        }}
+    </style>
+    <script>
+        (function () {{
+            try {{
+                var match = window.location.pathname.match(/^\\/\\d+(?:\\/[^/]+)?\\/?$/);
+                if (!match) return;
+                var parts = window.location.pathname.split('/').filter(Boolean);
+                if (!parts.length) return;
+                var targetHash = '#' + parts.join('/');
+                if (window.location.hash !== targetHash) {{
+                    window.location.replace('/' + targetHash + window.location.search);
+                }}
+            }} catch (e) {{}}
+        }})();
+    </script>
+</head>
+<body>
+    <div class="page-shell">
+        <div class="site-topbar">
+            <div class="brand">theХистори</div>
+            <div class="top-links">
+                <a href="{BASE_URL}/">На главную</a>
+                <a href="{BASE_URL}/">Главная лента</a>
+            </div>
+        </div>
+        {body_html}
+    </div>
+</body>
+</html>'''
+
+
 def build_year_page(slide, year_data, all_years):
     year_id = str(slide.get('id', '')).strip()
     year_label = slide.get('label', year_id)
@@ -109,60 +194,34 @@ def build_year_page(slide, year_data, all_years):
         for entry in all_years if str(entry.get('id', '')) != str(year_id)
     )
 
-    page_html = f'''<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{escape(primary_title)} | {year_label} | theХистори</title>
-    <meta name="description" content="{escape(primary_description)}" />
-    <link rel="canonical" href="{year_url}" />
-    <link rel="icon" type="image/png" href="{BASE_URL}/img/logo1.png" />
-    <link rel="apple-touch-icon" href="{BASE_URL}/img/logo1.png" />
-    <meta property="og:title" content="{escape(primary_title)} | {year_label} | theХистори" />
-    <meta property="og:description" content="{escape(primary_description)}" />
-    <meta property="og:image" content="{hero_image}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="{year_url}" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="{escape(primary_title)} | {year_label} | theХистори" />
-    <meta name="twitter:description" content="{escape(primary_description)}" />
-    <meta name="twitter:image" content="{hero_image}" />
-    <script type="application/ld+json">
-        {{
-            "@context": "https://schema.org",
-            "@type": "CollectionPage",
-            "name": "{escape(year_label)} | theХистори",
-            "description": "{escape(primary_description)}",
-            "url": "{year_url}",
-            "image": "{hero_image}",
-            "publisher": {{
-                "@type": "Organization",
-                "name": "theХистори",
-                "url": "{BASE_URL}/",
-                "logo": "{BASE_URL}/img/logo1.png"
-            }}
-        }}
-    </script>
-</head>
-<body style="font-family:Arial,sans-serif;background:#0d1117;color:#fff;padding:40px;">
-    <div style="max-width:1120px;margin:0 auto;">
-        <p><a href="{BASE_URL}/" style="color:#66d9ef;">← На главную</a></p>
-        <h1 style="margin-bottom:8px;">{escape(year_label)} — theХистори</h1>
-        <p style="color:#d1d5db;">{escape(primary_description)}</p>
-        <img src="{hero_image}" alt="{escape(year_label)}" style="width:100%;max-width:900px;border-radius:16px;display:block;margin:24px 0;" />
-        <h2 style="margin-top:20px;">События года</h2>
-        <ul style="padding-left:0;">
-            {event_cards_html}
-        </ul>
-        <h2 style="margin-top:24px;">Другие годы</h2>
-        <ul style="padding-left:0;">
-            {year_links_html}
-        </ul>
-    </div>
-</body>
-</html>'''
-    return page_html
+    body_html = f'''
+        <div class="content-card">
+            <span class="meta-tag">{escape(year_label)} • theХистори</span>
+            <h1>{escape(year_label)} — theХистори</h1>
+            <p class="muted">{escape(primary_description)}</p>
+            <img class="hero-image" src="{hero_image}" alt="{escape(year_label)}" />
+        </div>
+        <div class="content-card" style="margin-top:20px;">
+            <h2>События года</h2>
+            <ul>
+                {event_cards_html}
+            </ul>
+        </div>
+        <div class="content-card" style="margin-top:20px;">
+            <h2>Другие годы</h2>
+            <ul>
+                {year_links_html}
+            </ul>
+        </div>
+    '''
+    return render_static_shell(
+        f'{primary_title} | {year_label} | theХистори',
+        primary_description,
+        year_url,
+        hero_image,
+        body_html,
+        page_type='year'
+    )
 
 
 def build_event_page(slide, year_data, tab_name, article, article_index, all_years):
@@ -199,74 +258,28 @@ def build_event_page(slide, year_data, tab_name, article, article_index, all_yea
         for entry in all_years if str(entry.get('id', '')) != str(year_id)
     )
 
-    return f'''<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{escape(title)} | {year_id} | theХистори</title>
-    <meta name="description" content="{escape(description)}" />
-    <link rel="canonical" href="{page_url}" />
-    <link rel="icon" type="image/png" href="{BASE_URL}/img/logo1.png" />
-    <link rel="apple-touch-icon" href="{BASE_URL}/img/logo1.png" />
-    <meta property="og:title" content="{escape(title)} | theХистори" />
-    <meta property="og:description" content="{escape(description)}" />
-    <meta property="og:image" content="{image_url}" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="{page_url}" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="{escape(title)} | theХистори" />
-    <meta name="twitter:description" content="{escape(description)}" />
-    <meta name="twitter:image" content="{image_url}" />
-    <script type="application/ld+json">
-        {{
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "{escape(title)}",
-            "name": "{escape(title)}",
-            "description": "{escape(description)}",
-            "url": "{page_url}",
-            "image": "{image_url}",
-            "author": {{
-                "@type": "Organization",
-                "name": "theХистори"
-            }},
-            "publisher": {{
-                "@type": "Organization",
-                "name": "theХистори",
-                "logo": "{BASE_URL}/img/logo1.png"
-            }},
-            "mainEntityOfPage": {{
-                "@type": "WebPage",
-                "@id": "{page_url}"
-            }},
-            "about": {{
-                "@type": "Event",
-                "name": "{escape(title)}",
-                "startDate": "{year_id}"
-            }}
-        }}
-    </script>
-</head>
-<body style="font-family:Arial,sans-serif;background:#0d1117;color:#fff;padding:40px;">
-    <div style="max-width:980px;margin:0 auto;">
-        <p><a href="{BASE_URL}/{year_id}/" style="color:#66d9ef;">← К году {year_id}</a></p>
-        <p style="text-transform:uppercase;letter-spacing:.12em;color:#66d9ef;font-size:12px;">{escape(section_label)}</p>
-        <h1>{escape(title)}</h1>
-        <img src="{image_url}" alt="{escape(title)}" style="width:100%;max-width:760px;border-radius:16px;display:block;margin:20px 0;" />
-        <div style="color:#d1d5db;line-height:1.8;">{body_html}</div>
-        <h2 style="margin-top:24px;">Другие события этого года</h2>
-        <ul style="padding-left:0;">
-            {related_events_html}
-        </ul>
-        <h2 style="margin-top:24px;">Другие годы</h2>
-        <ul style="padding-left:0;">
-            {year_links_html}
-        </ul>
-        <p style="margin-top:30px;"><a href="{BASE_URL}/" style="color:#66d9ef;">На главную</a></p>
-    </div>
-</body>
-</html>'''
+    body_html = f'''
+        <div class="content-card">
+            <a href="{BASE_URL}/{year_id}/">← К году {year_id}</a>
+            <p class="meta-tag">{escape(section_label)}</p>
+            <h1>{escape(title)}</h1>
+            <img class="hero-image" src="{image_url}" alt="{escape(title)}" />
+            <div class="muted">{body_html}</div>
+        </div>
+        <div class="content-card" style="margin-top:20px;">
+            <h2>Другие события этого года</h2>
+            <ul>
+                {related_events_html}
+            </ul>
+        </div>
+        <div class="content-card" style="margin-top:20px;">
+            <h2>Другие годы</h2>
+            <ul>
+                {year_links_html}
+            </ul>
+        </div>
+    '''
+    return render_static_shell(title, description, page_url, image_url, body_html, page_type='article')
 
 
 def generate_pages():
