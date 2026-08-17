@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     function initSwiper() {
         const defaultSlideIndex = slidesData.findIndex(function (slide) {
-            return slide.tag === '873';
+            return slide.tag === '874';
         });
         const isMobile = window.matchMedia('(max-width: 768px)').matches;
 
