@@ -1,0 +1,41 @@
+name: Generate static pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/**'
+      - 'generate_year_pages.py'
+      - 'generate_sitemap.py'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: generate-pages
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Generate year and event pages
+        run: python generate_year_pages.py
+
+      - name: Generate sitemap and robots.txt
+        run: python generate_sitemap.py
+
+      - name: Commit generated files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: regenerate static pages [skip ci]'
+          commit_user_name: 'theHistory Bot'
+          commit_user_email: 'actions@github.com'
