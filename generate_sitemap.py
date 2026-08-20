@@ -12,12 +12,23 @@ ROBOTS_PATH = ROOT_PATH / 'robots.txt'
 
 def slugify(value):
     text = str(value or '').strip()
-    text = unicodedata.normalize('NFKD', text)
-    text = text.encode('ascii', 'ignore').decode('ascii')
-    text = re.sub(r'[^a-zA-Z0-9\s-]', '', text.lower())
-    text = re.sub(r'\s+', '-', text)
-    text = re.sub(r'-+', '-', text).strip('-')
-    return text or 'event'
+    if not text:
+        return 'event'
+
+    mapping = {
+        'а': 'a', 'б': 'b', 'в': 'v', 'г': 'g', 'д': 'd', 'е': 'e', 'ё': 'e', 'ж': 'zh', 'з': 'z',
+        'и': 'i', 'й': 'i', 'к': 'k', 'л': 'l', 'м': 'm', 'н': 'n', 'о': 'o', 'п': 'p', 'р': 'r',
+        'с': 's', 'т': 't', 'у': 'u', 'ф': 'f', 'х': 'h', 'ц': 'c', 'ч': 'ch', 'ш': 'sh', 'щ': 'shch',
+        'ы': 'y', 'э': 'e', 'ю': 'yu', 'я': 'ya', 'ъ': '', 'ь': ''
+    }
+
+    normalized = unicodedata.normalize('NFKD', text.lower())
+    translit = ''.join(mapping.get(ch, ch) for ch in normalized)
+    translit = translit.encode('ascii', 'ignore').decode('ascii')
+    translit = re.sub(r'[^a-z0-9\s-]', '', translit)
+    translit = re.sub(r'\s+', '-', translit)
+    translit = re.sub(r'-+', '-', translit).strip('-')
+    return translit or 'event'
 
 
 def load_slides(path):
@@ -39,7 +50,7 @@ def build_urls(slides):
         if not year_id:
             continue
 
-        urls.append(f'{BASE_URL}/years/{year_id}/')
+        urls.append(f'{BASE_URL}/{year_id}/')
 
         content_path = ROOT_PATH / str(slide.get('content', ''))
         if not content_path.exists():
@@ -47,9 +58,9 @@ def build_urls(slides):
 
         year_data = load_year(content_path)
         for tab_name in ('world', 'russia'):
-            for article in year_data.get('tabs', {}).get(tab_name, {}).get('articles', []):
-                title = article.get('title') or article.get('button') or 'event'
-                urls.append(f'{BASE_URL}/years/{year_id}/{slugify(title)}/')
+            for index, article in enumerate(year_data.get('tabs', {}).get(tab_name, {}).get('articles', []), 1):
+                title = article.get('button') or article.get('title') or f'Событие {index}'
+                urls.append(f'{BASE_URL}/{year_id}/{slugify(title)}/')
 
     return urls
 

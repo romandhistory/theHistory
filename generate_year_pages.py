@@ -1,6 +1,7 @@
 import argparse
 import json
 import re
+import shutil
 import time
 import unicodedata
 from html import escape
@@ -9,7 +10,6 @@ from pathlib import Path
 BASE_URL = 'https://thehistory.pro'
 ROOT_PATH = Path(__file__).resolve().parent
 SLIDES_PATH = ROOT_PATH / 'data' / 'slides.json'
-YEAR_OUTPUT_DIR = ROOT_PATH / 'years'
 
 
 def strip_tags(value):
@@ -149,7 +149,6 @@ def build_year_page(slide, year_data, all_years):
     tabs = year_data.get('tabs', {})
     events = []
     year_url = f'{BASE_URL}/{year_id}/'
-    legacy_year_url = f'{BASE_URL}/years/{year_id}/'
 
     for tab_name in ('world', 'russia'):
         tab = tabs.get(tab_name, {})
@@ -300,8 +299,6 @@ def generate_pages():
     with SLIDES_PATH.open('r', encoding='utf-8') as f:
         slides = json.load(f)
 
-    YEAR_OUTPUT_DIR.mkdir(exist_ok=True)
-
     for slide in slides:
         year_id = str(slide.get('id', '')).strip()
         if not year_id:
@@ -315,13 +312,21 @@ def generate_pages():
         else:
             year_data = {'tabs': {'world': {'articles': []}, 'russia': {'articles': []}}}
 
-        legacy_year_dir = YEAR_OUTPUT_DIR / year_id
-        legacy_year_dir.mkdir(exist_ok=True)
-        year_page = build_year_page(slide, year_data, slides)
-        (legacy_year_dir / 'index.html').write_text(year_page, encoding='utf-8')
+        current_slugs = set()
+        for tab_name in ('world', 'russia'):
+            tab = year_data.get('tabs', {}).get(tab_name, {})
+            for article_index, article in enumerate(tab.get('articles', []), 1):
+                title = article.get('button') or article.get('title') or f'Событие {article_index}'
+                current_slugs.add(slugify(title))
 
         short_year_dir = ROOT_PATH / year_id
         short_year_dir.mkdir(exist_ok=True)
+
+        for existing in short_year_dir.iterdir():
+            if existing.is_dir() and existing.name not in current_slugs:
+                shutil.rmtree(existing)
+
+        year_page = build_year_page(slide, year_data, slides)
         (short_year_dir / 'index.html').write_text(year_page, encoding='utf-8')
 
         for tab_name in ('world', 'russia'):
@@ -332,15 +337,11 @@ def generate_pages():
 
                 event_page = build_event_page(slide, year_data, tab_name, article, article_index, slides)
 
-                legacy_event_dir = legacy_year_dir / slug
-                legacy_event_dir.mkdir(exist_ok=True)
-                (legacy_event_dir / 'index.html').write_text(event_page, encoding='utf-8')
-
                 short_event_dir = short_year_dir / slug
                 short_event_dir.mkdir(exist_ok=True)
                 (short_event_dir / 'index.html').write_text(event_page, encoding='utf-8')
 
-    print(f'Generated year and event pages in {YEAR_OUTPUT_DIR}')
+    print(f'Generated year and event pages in {ROOT_PATH}')
 
 
 def main():

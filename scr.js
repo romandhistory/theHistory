@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     let pinchStartScale = 1;
 
     try {
-        const response = await fetch('data/slides.json');
+        const response = await fetch('/data/slides.json');
         slidesData = await response.json();
         renderSlides(slidesData);
         initSwiper();
@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         initSliderWheelBehavior();
         history.replaceState({ deepLink: false }, '', window.location.pathname + window.location.search + window.location.hash);
 
-        if (window.location.hash && !window.location.pathname.startsWith('/years/')) {
-            const legacyRedirectTarget = redirectLegacyHashToStaticPath();
+        if (window.location.hash) {
+            const legacyRedirectTarget = await redirectLegacyHashToStaticPath();
             if (legacyRedirectTarget) {
                 window.location.replace(legacyRedirectTarget);
                 return;
@@ -56,12 +56,19 @@ document.addEventListener('DOMContentLoaded', async function () {
         console.error('Не удалось загрузить data/slides.json. Запустите через Live Server.', error);
     }
 
+    function toRootPath(path) {
+        const raw = String(path || '').trim();
+        if (!raw) return raw;
+        if (/^(https?:)?\/\//i.test(raw)) return raw;
+        if (raw.startsWith('/')) return raw;
+        return '/' + raw.replace('\\', '/').replace(/^\.\//, '');
+    }
+
     function normalizeImageSource(src) {
         const raw = String(src || '').trim();
         if (!raw || raw === '--') return FALLBACK_IMAGE;
         if (/^(https?:)?\/\//i.test(raw) || raw.startsWith('data:') || raw.startsWith('blob:')) return raw;
-        if (raw.startsWith('/')) return raw;
-        return '/' + raw.replace('\\', '/').replace(/^\.\//, '');
+        return toRootPath(raw);
     }
 
     function renderSlides(slides) {
@@ -279,10 +286,21 @@ document.addEventListener('DOMContentLoaded', async function () {
     async function loadYear(yearId) {
         if (yearCache[yearId]) return yearCache[yearId];
         const slide = slidesData.find(function (s) { return s.id === yearId; });
-        const response = await fetch(slide.content);
+        const response = await fetch(toRootPath(slide.content));
         const data = await response.json();
         yearCache[yearId] = data;
         return data;
+    }
+
+    async function loadYearIfAvailable(yearId) {
+        if (yearCache[yearId]) return yearCache[yearId];
+        const slide = slidesData.find(function (s) { return s.id === yearId; });
+        if (!slide || !slide.content) return null;
+        try {
+            return await loadYear(yearId);
+        } catch (error) {
+            return null;
+        }
     }
 
     function renderYearContent(yearId, yearData) {
@@ -668,7 +686,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
     }
 
-    function parseDeepLinkHash() {
+    async function parseDeepLinkHash() {
         const pathMatch = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
         if (pathMatch) {
             const yearId = pathMatch[1];
@@ -677,7 +695,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             let tabNum = 1;
 
             if (articleSlug) {
-                const data = yearCache[yearId];
+                const data = await loadYearIfAvailable(yearId);
                 if (data && data.tabs) {
                     const allArticles = [].concat(
                         (data.tabs.world && data.tabs.world.articles ? data.tabs.world.articles : []),
@@ -729,7 +747,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                 if (/^\d+$/.test(secondSegment)) {
                     article = secondSegment;
                 } else {
-                    const data = yearCache[yearId];
+                    const data = await loadYearIfAvailable(yearId);
                     let matchedArticleIndex = 0;
                     let matchedTabNum = 1;
 
@@ -775,7 +793,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         };
     }
 
-    function redirectLegacyHashToStaticPath() {
+    async function redirectLegacyHashToStaticPath() {
         const rawHash = window.location.hash.replace(/^#/, '').trim();
         if (!rawHash) return null;
 
@@ -799,14 +817,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             }
         }
 
-        if (!yearCache[yearId]) {
-            const slide = slidesData.find(function (item) { return String(item.id) === String(yearId); });
-            if (!slide || !slide.content) return null;
-            const data = loadYear(yearId);
-            if (!data) return null;
-        }
-
-        const data = yearCache[yearId];
+        const data = await loadYearIfAvailable(yearId);
         if (!data || !data.tabs) return '/' + String(yearId) + '/';
 
         const targetPath = '/' + String(yearId) + '/';
@@ -819,8 +830,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         return targetPath + slug + '/';
     }
 
-    function handleDeepLink(replaceHistory) {
-        const { yearId, tabNum, articleIndex } = parseDeepLinkHash();
+    async function handleDeepLink(replaceHistory) {
+        const { yearId, tabNum, articleIndex } = await parseDeepLinkHash();
         if (!yearId) return;
 
         const slideIndex = slidesData.findIndex(function (slide) { return slide.id === yearId; });
