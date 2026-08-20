@@ -1,6 +1,11 @@
 # Зависимости (если будут)
 node_modules/
+.venv/
 *.log
+
+# Python
+__pycache__/
+*.pyc
 
 # Настройки VS Code
 .vscode/
