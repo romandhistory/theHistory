@@ -17,7 +17,15 @@
           "image": {
             "src": "cont/875/death_ludovikII.webp",
             "alt": "death_ludovikII"
-          }
+          },
+          "links": [
+            {
+              "year": "872",
+              "tab": "world",
+              "article": 2,
+              "label": "872 — Коронация Людовика II императором"
+            }
+          ]
         },
         {
           "button": "Карл Лысый коронован императором папой Иоанном VIII",
@@ -33,7 +41,15 @@
           "image": {
             "src": "cont/875/karl_lys.webp",
             "alt": "karl_lys"
-          }
+          },
+          "links": [
+            {
+              "year": "873",
+              "tab": "world",
+              "article": 3,
+              "label": "873 — Карл Лысый осуждает сына Карломана на смерть"
+            }
+          ]
         },
         {
           "button": "Людовик Немецкий вторгается во владения Карла Лысого",
@@ -48,7 +64,15 @@
           "image": {
             "src": "cont/875/vtorgenie.webp",
             "alt": "vtorgenie"
-          }
+          },
+          "links": [
+            {
+              "year": "874",
+              "tab": "world",
+              "article": 2,
+              "label": "874 — Святополк и Людовик Немецкий заключают договор"
+            }
+          ]
         },
         {
           "button": "Смерть эмира Мухаммада II и приход к власти Ибрахима II в Ифрикии",
@@ -63,7 +87,15 @@
           "image": {
             "src": "cont/875/ibrahim.webp",
             "alt": "ibrahim"
-          }
+          },
+          "links": [
+            {
+              "year": "873",
+              "tab": "world",
+              "article": 10,
+              "label": "873 — Третья осада Сиракуз отбита"
+            }
+          ]
         },
         {
           "button": "Великая языческая армия разделилась между Хальфданом и Гутрумом",
@@ -78,7 +110,15 @@
           "image": {
             "src": "cont/875/raskol.webp",
             "alt": "raskol"
-          }
+          },
+          "links": [
+            {
+              "year": "874",
+              "tab": "world",
+              "article": 1,
+              "label": "874 — Падение Мерсии — воцарение Кеолвульфа"
+            }
+          ]
         },
         {
           "button": "Морской бой Альфреда Великого у берегов Дорсета",
@@ -93,7 +133,15 @@
           "image": {
             "src": "cont/875/morsk.bitva.webp",
             "alt": "morsk.bitva"
-          }
+          },
+          "links": [
+            {
+              "year": "871",
+              "tab": "world",
+              "article": 12,
+              "label": "871 — Гибель епископа Хеахмунда в битве за Уэссекс"
+            }
+          ]
         },
         {
           "button": "Битва при Долларе",
@@ -138,7 +186,15 @@
           "image": {
             "src": "cont/875/yakub&zinj.webp",
             "alt": "yakub&zinj"
-          }
+          },
+          "links": [
+            {
+              "year": "874",
+              "tab": "world",
+              "article": 11,
+              "label": "874 — Якуб ибн аль-Лейс выступает против зейдитов"
+            }
+          ]
         },
         {
           "button": "Ибн Марван основал Бадахос",
