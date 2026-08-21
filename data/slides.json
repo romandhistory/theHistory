@@ -233,19 +233,37 @@
     "content": "data/years/886.json"
   },
   {
+    "id": "887",
+    "tag": "887",
+    "label": "887",
+    "century": "IX",
+    "image": "img/logo(loc).webp",
+    "locked": true,
+    "content": "data/years/887.json"
+  },
+  {
     "id": "19",
     "tag": "19",
-    "label": "887-2001",
+    "label": "888-2000",
     "century": "X-XX",
     "image": "img/logo.webp",
     "locked": true
+  },
+  {
+    "id": "2001",
+    "tag": "2001",
+    "label": "2001",
+    "century": "XXI",
+    "image": "img/logo(loc).webp",
+    "locked": false,
+    "content": "data/years/2001.json"
   },
   {
     "id": "2002",
     "tag": "2002",
     "label": "2002",
     "century": "XXI",
-    "image": "img/logo(loc).webp",
+    "image": "img/2002.webp",
     "locked": false,
     "content": "data/years/2002.json"
   },
