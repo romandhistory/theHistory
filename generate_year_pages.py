@@ -63,6 +63,9 @@ def render_static_shell(title, description, page_url, hero_image, body_html, pag
     redirect_script = r'''
     <script>
         (function () {
+            var isCrawler = /bot|spider|crawler|slurp|facebookexternalhit|telegrambot|whatsapp|embedly|quora link preview|showyoubot|outbrain|pinterest|vkshare|w3c_validator/i.test(navigator.userAgent || '');
+            if (isCrawler) return;
+
             const match = window.location.pathname.match(/^\/(\d+)(?:\/([^/]+))?\/?$/);
             if (!match) return;
             const year = match[1];
