@@ -542,8 +542,13 @@ body {
 
 .site-footer__link {
     color: inherit;
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 2px;
     opacity: 0.85;
+}
+
+.site-footer__link:hover {
+    opacity: 1;
 }
 
 .site-footer__sep { opacity: 0.5; }
