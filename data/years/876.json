@@ -17,7 +17,15 @@
           "image": {
             "src": "cont/876/death_ludov.webp",
             "alt": "death_ludov"
-          }
+          },
+          "links": [
+            {
+              "year": "875",
+              "tab": "world",
+              "article": 3,
+              "label": "875 — Людовик Немецкий вторгается во владения Карла Лысого"
+            }
+          ]
         },
         {
           "button": "Карл Лысый признан королём Италии",
@@ -32,7 +40,15 @@
           "image": {
             "src": "cont/876/kor_itali.webp",
             "alt": "kor_itali"
-          }
+          },
+          "links": [
+            {
+              "year": "875",
+              "tab": "world",
+              "article": 2,
+              "label": "875 — Карл Лысый коронован императором"
+            }
+          ]
         },
         {
           "button": "Битва при Андернахе",
@@ -80,7 +96,15 @@
           "image": {
             "src": "cont/876/kor-viking.webp",
             "alt": "kor-viking"
-          }
+          },
+          "links": [
+            {
+              "year": "875",
+              "tab": "world",
+              "article": 7,
+              "label": "875 — Битва при Долларе"
+            }
+          ]
         },
         {
           "button": "Византия заняла Бари — основана фема Лангобардия",
@@ -95,7 +119,15 @@
           "image": {
             "src": "cont/876/bary.webp",
             "alt": "bary"
-          }
+          },
+          "links": [
+            {
+              "year": "873",
+              "tab": "world",
+              "article": 7,
+              "label": "873 — Морское сражение при Кардии"
+            }
+          ]
         },
         {
           "button": "Смерть Домагоя, князя Приморской Хорватии",
@@ -110,7 +142,15 @@
           "image": {
             "src": "cont/876/death_domag.webp",
             "alt": "death_domag"
-          }
+          },
+          "links": [
+            {
+              "year": "867",
+              "tab": "world",
+              "article": 9,
+              "label": "867 — Домагой сдерживает арабов на Адриатике"
+            }
+          ]
         },
         {
           "button": "Битва при Дайр аль-Акуле",
@@ -125,7 +165,15 @@
           "image": {
             "src": "cont/876/d_akyla.webp",
             "alt": "d_akyla"
-          }
+          },
+          "links": [
+            {
+              "year": "875",
+              "tab": "world",
+              "article": 9,
+              "label": "875 — Якуб ибн Лейс вторгся в Хузестан"
+            }
+          ]
         },
         {
           "button": "Зинджи заняли месопотамские болота между Басрой и Васитом",
@@ -140,7 +188,15 @@
           "image": {
             "src": "cont/876/zindg.webp",
             "alt": "zindg"
-          }
+          },
+          "links": [
+            {
+              "year": "871",
+              "tab": "world",
+              "article": 5,
+              "label": "871 — Разграбление Басры зинджами"
+            }
+          ]
         },
         {
           "button": "Император Сэйва отрекается от престола",
@@ -155,7 +211,15 @@
           "image": {
             "src": "cont/876/imperat.webp",
             "alt": "imperator"
-          }
+          },
+          "links": [
+            {
+              "year": "872",
+              "tab": "world",
+              "article": 10,
+              "label": "872 — Фудзивара но Мотоцунэ укрепляет влияние"
+            } 
+          ]
         },
         {
           "button": "Признание наследственного владения Бочжоу за родом Ян",
