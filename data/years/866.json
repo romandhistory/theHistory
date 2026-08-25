@@ -102,7 +102,15 @@
           "image": {
             "src": "cont/866/AlfonsoIII.webp",
             "alt": "AlfonsoIII"
-          }
+          },
+          "links": [
+            {
+              "year": "868",
+              "tab": "world",
+              "article": 7,
+              "label": "868 — Основание графства Португалия"
+            }
+          ]
         },
         {
           "button": "Вступление на престол аббасидского халифа аль-Мутазза",
