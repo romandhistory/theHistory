@@ -17,7 +17,15 @@
           "image": {
             "src": "cont/877/death_karl.webp",
             "alt": "death_karl"
-          }
+          },
+          "links": [
+            {
+              "year": "876",
+              "tab": "world",
+              "article": 2,
+              "label": "876 — Карл Лысый признан королём Италии"
+            }
+          ]
         },
         {
           "button": "Коронация Людовика II Заики",
@@ -46,7 +54,15 @@
           "image": {
             "src": "cont/877/karloman_bav.webp",
             "alt": "karloman_bav"
-          }
+          },
+          "links": [
+            {
+              "year": "863",
+              "tab": "world",
+              "article": 10,
+              "label": "863 — Карломан поднял мятеж против Людовика Немецкого"
+            }
+          ]
         },
         {
           "button": "Аглабиды начали осаду Сиракуз",
@@ -61,7 +77,15 @@
           "image": {
             "src": "cont/877/osada.webp",
             "alt": "osada"
-          }
+          },
+          "links": [
+            {
+              "year": "875",
+              "tab": "world",
+              "article": 4,
+              "label": "875 — Смерть эмира Мухаммада II и приход к власти Ибрахима II"
+            }
+          ]
         },
         {
           "button": "Альфред Великий осаждает датчан в Эксетере",
@@ -75,7 +99,21 @@
           "image": {
             "src": "cont/877/alfred.webp",
             "alt": "alfred"
-          }
+          },
+          "links": [
+            {
+              "year": "875",
+              "tab": "world",
+              "article": 6,
+              "label": "875 — Морской бой Альфреда Великого"
+            },
+            {
+              "year": "876",
+              "tab": "world",
+              "article": 4,
+              "label": "876 — Гутрум удерживал Уэрхем"
+            }
+          ]
         },
         {
           "button": "Гибель Хальфдана Рагнарссона в битве при Странгфорд-Лохе",
@@ -91,7 +129,15 @@
           "image": {
             "src": "cont/877/hal'fdan.webp",
             "alt": "hal'fdan"
-          }
+          },
+          "links": [
+            {
+              "year": "876",
+              "tab": "world",
+              "article": 5,
+              "label": "876 — Хальфдан становится первым датским королём Йорка"
+            }
+          ]
         },
         {
           "button": "Фотий вернулся на патриарший престол Константинополя",
@@ -106,7 +152,15 @@
           "image": {
             "src": "cont/877/foti.webp",
             "alt": "foti"
-          }
+          },
+          "links": [
+            {
+              "year": "869",
+              "tab": "world",
+              "article": 1,
+              "label": "869 — IV Константинопольский собор"
+            }
+          ]
         },
         {
           "button": "Смерть Джаявармана III",
@@ -136,7 +190,15 @@
           "image": {
             "src": "cont/877/leon.webp",
             "alt": "leon"
-          }
+          },
+          "links": [
+            {
+              "year": "875",
+              "tab": "world",
+              "article": 10,
+              "label": "875 — Ибн Марван основал Бадахос"
+            }
+          ]
         },
         {
           "button": "Альфонсо III подавил мятеж и взял Асторгу",
@@ -151,7 +213,15 @@
           "image": {
             "src": "cont/877/astoga.webp",
             "alt": "astoga"
-          }
+          },
+          "links": [
+            {
+              "year": "872",
+              "tab": "world",
+              "article": 12,
+              "label": "872 — Мавры возвращают Коимбру"
+            }
+          ]
         },
         {
           "button": "Папа Иоанн VIII даровал Овьедо апостольские привилегии",
@@ -165,7 +235,15 @@
           "image": {
             "src": "cont/877/ov'edo.webp",
             "alt": "ov'edo"
-          }
+          },
+          "links": [
+            {
+              "year": "872",
+              "tab": "world",
+              "article": 3,
+              "label": "872 — Избрание Иоанна VIII папой"
+            }
+          ]
         },
         {
           "button": "Напечатан старейший из сохранившихся китайских календарей",
@@ -180,7 +258,15 @@
           "image": {
             "src": "cont/877/kalendar.webp",
             "alt": "kalendar"
-          }
+          },
+          "links": [
+            {
+              "year": "868",
+              "tab": "world",
+              "article": 1,
+              "label": "868 — Алмазная сутра — первая печатная книга"
+            }
+          ]
         }
       ]
     },
