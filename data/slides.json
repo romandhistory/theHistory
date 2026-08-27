@@ -148,7 +148,7 @@
     "label": "877",
     "century": "IX",
     "image": "img/877.webp",
-    "locked": true,
+    "locked": false,
     "content": "data/years/877.json"
   },
   {
@@ -237,7 +237,7 @@
     "tag": "887",
     "label": "887",
     "century": "IX",
-    "image": "img/logo(loc).webp",
+    "image": "img/887.webp",
     "locked": true,
     "content": "data/years/887.json"
   },
