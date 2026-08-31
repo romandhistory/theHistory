@@ -17,7 +17,21 @@
           "image": {
             "src": "cont/878/vtorgenie.webp",
             "alt": "vtorgenie"
-          }
+          },
+          "links": [
+            {
+              "year": "877",
+              "tab": "world",
+              "article": 5,
+              "label": "877 — Альфред Великий осаждает датчан в Эксетере"
+            },
+            {
+              "year": "878",
+              "tab": "world",
+              "article": 4,
+              "label": "878 — Уэдморский мир"
+            }
+          ]
         },
         {
           "button": "Битва при Кинвите — гибель Уббы Рагнарссона",
@@ -46,7 +60,21 @@
           "image": {
             "src": "cont/878/edington.webp",
             "alt": "edington"
-          }
+          },
+          "links": [
+            {
+              "year": "877",
+              "tab": "world",
+              "article": 5,
+              "label": "877 — Альфред Великий осаждает датчан в Эксетере"
+            },
+            {
+              "year": "878",
+              "tab": "world",
+              "article": 4,
+              "label": "878 — Уэдморский мир"
+            }
+          ]
         },
         {
           "button": "Уэдморский мир",
@@ -61,7 +89,21 @@
           "image": {
             "src": "cont/878/gutrum.webp",
             "alt": "gutrum"
-          }
+          },
+          "links": [
+            {
+              "year": "878",
+              "tab": "world",
+              "article": 1,
+              "label": "878 — Вторжение Гутрума в Уэссекс и захват Чиппенхэма"
+            },
+            {
+              "year": "878",
+              "tab": "world",
+              "article": 3,
+              "label": "878 — Битва при Эдингтоне"
+            }
+          ]
         },
         {
           "button": "Падение Сиракуз",
@@ -77,7 +119,15 @@
           "image": {
             "src": "cont/878/sirukuzy.webp",
             "alt": "sirukuzy"
-          }
+          },
+          "links": [
+            {
+              "year": "877",
+              "tab": "world",
+              "article": 4,
+              "label": "877 — Аглабиды начали осаду Сиракуз"
+            }
+          ]
         },
         {
           "button": "Собор в Труа — осуждение Бернара Готского и раздел его владений",
@@ -92,7 +142,15 @@
           "image": {
             "src": "cont/878/sobor_trua.webp",
             "alt": "sobor_trua"
-          }
+          },
+          "links": [
+            {
+              "year": "877",
+              "tab": "world",
+              "article": 2,
+              "label": "877 — Коронация Людовика II Заики"
+            }
+          ]
         },
         {
           "button": "Зинджи установили контроль над Южным Ираком",
@@ -107,7 +165,15 @@
           "image": {
             "src": "cont/878/zindg.webp",
             "alt": "zindg"
-          }
+          },
+          "links": [
+            {
+              "year": "876",
+              "tab": "world",
+              "article": 9,
+              "label": "876 — Зинджи заняли месопотамские болота"
+            }
+          ]
         },
         {
           "button": "Альфонсо III взял Брагу и Порту",
@@ -122,7 +188,15 @@
           "image": {
             "src": "cont/878/alfonso.webp",
             "alt": "alfonso"
-          }
+          },
+          "links": [
+            {
+              "year": "877",
+              "tab": "world",
+              "article": 10,
+              "label": "877 — Альфонсо III подавил мятеж и взял Асторгу"
+            }
+          ]
         },
         {
           "button": "Гибель Родри Великого",
@@ -136,7 +210,15 @@
           "image": {
             "src": "cont/878/rodri.webp",
             "alt": "rodri"
-          }
+          },
+          "links": [
+            {
+              "year": "871",
+              "tab": "world",
+              "article": 11,
+              "label": "871 — Родри Мор присоединяет Кередигион к своим владениям"
+            }
+          ]
         },
         {
           "button": "Смерть Амогхаварши I, императора Раштракутов",
@@ -166,7 +248,15 @@
           "image": {
             "src": "cont/878/sian'g.webp",
             "alt": "sian'g"
-          }
+          },
+          "links": [
+            {
+              "year": "874",
+              "tab": "world",
+              "article": 7,
+              "label": "874 — Восстание Хуан Чао начинается"
+            }
+          ]
         },
         {
           "button": "Гибель Аэда Белоногого, короля Альбы",
@@ -180,7 +270,15 @@
           "image": {
             "src": "cont/878/aed_bel.webp",
             "alt": "aed_bel"
-          }
+          },
+          "links": [
+            {
+              "year": "862",
+              "tab": "world",
+              "article": 8,
+              "label": "862 — Константин I вступил на престол Альбы"
+            }
+          ]
         }
       ]
     },
