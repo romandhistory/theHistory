@@ -6,6 +6,7 @@ from pathlib import Path
 BASE_URL = 'https://thehistory.pro'
 ROOT_PATH = Path(__file__).resolve().parent
 SLIDES_PATH = ROOT_PATH / 'data' / 'slides.json'
+FIGURES_PATH = ROOT_PATH / 'data' / 'figures.json'
 SITEMAP_PATH = ROOT_PATH / 'sitemap.xml'
 ROBOTS_PATH = ROOT_PATH / 'robots.txt'
 
@@ -65,6 +66,20 @@ def build_urls(slides):
     return urls
 
 
+def build_cast_urls():
+    if not FIGURES_PATH.exists():
+        return []
+
+    with FIGURES_PATH.open('r', encoding='utf-8') as f:
+        figures = json.load(f)
+
+    return [
+        f'{BASE_URL}/cast/{slugify(figure.get("figure", ""))}/'
+        for figure in figures
+        if figure.get('events')
+    ]
+
+
 def write_sitemap(path, urls):
     lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
@@ -91,7 +106,7 @@ def write_robots(path):
 
 if __name__ == '__main__':
     slides = load_slides(SLIDES_PATH)
-    urls = build_urls(slides)
+    urls = build_urls(slides) + build_cast_urls()
     write_sitemap(SITEMAP_PATH, urls)
     write_robots(ROBOTS_PATH)
     print(f'Wrote {len(urls)} URLs to {SITEMAP_PATH}')

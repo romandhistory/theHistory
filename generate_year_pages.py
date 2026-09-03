@@ -137,7 +137,6 @@ def render_static_shell(title, description, page_url, hero_image, body_html, pag
             <div class="brand">theХистори</div>
             <div class="top-links">
                 <a href="{BASE_URL}/">На главную</a>
-                <a href="{BASE_URL}/">Главная лента</a>
             </div>
         </div>
         {body_html}

@@ -5,8 +5,10 @@ on:
     branches: [main]
     paths:
       - 'data/**'
+      - 'TG/kompanovka.xlsx'
       - 'generate_year_pages.py'
       - 'generate_sitemap.py'
+      - 'generate_figures.py'
 
 permissions:
   contents: write
@@ -29,6 +31,9 @@ jobs:
 
       - name: Generate year and event pages
         run: python generate_year_pages.py
+
+      - name: Generate figures index and pages
+        run: python generate_figures.py
 
       - name: Generate sitemap and robots.txt
         run: python generate_sitemap.py

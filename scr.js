@@ -7,8 +7,13 @@ document.addEventListener('DOMContentLoaded', async function () {
     const tabButtons = document.querySelectorAll('.tab-button');
     const modalHeader = document.querySelector('.modal-header');
     const searchInput = document.querySelector('.slide-search');
+    const figuresBtn = document.getElementById('figuresBtn');
+    const figuresOverlay = document.getElementById('figuresOverlay');
+    const figuresClose = document.getElementById('figuresClose');
+    const figuresList = document.getElementById('figuresList');
 
     let slidesData = [];
+    let figuresData = null;
     let swiper = null;
     let currentYearId = null;
     const yearCache = {};
@@ -958,6 +963,10 @@ document.addEventListener('DOMContentLoaded', async function () {
                 document.body.classList.remove('photo-modal-open');
                 return;
             }
+            if (figuresOverlay.classList.contains('active')) {
+                closeFiguresOverlay();
+                return;
+            }
             if (modalOverlay.classList.contains('active')) closeModal();
         });
 
@@ -986,6 +995,96 @@ document.addEventListener('DOMContentLoaded', async function () {
                 location.reload();
             });
         }
+
+        if (figuresBtn) {
+            figuresBtn.addEventListener('click', openFiguresOverlay);
+        }
+        if (figuresClose) {
+            figuresClose.addEventListener('click', closeFiguresOverlay);
+        }
+        if (figuresOverlay) {
+            figuresOverlay.addEventListener('click', function (e) {
+                if (e.target === figuresOverlay) closeFiguresOverlay();
+            });
+        }
+        if (figuresList) {
+            figuresList.addEventListener('click', function (event) {
+                if (event.target.closest('.figure-page-link')) return;
+
+                const groupHeader = event.target.closest('.figure-group-header');
+                if (groupHeader) {
+                    groupHeader.closest('.figure-group').classList.toggle('expanded');
+                    return;
+                }
+
+                const eventBtn = event.target.closest('.figure-event-btn');
+                if (eventBtn) {
+                    const year = eventBtn.getAttribute('data-year');
+                    const tabNum = resolveTabNum(eventBtn.getAttribute('data-tab'));
+                    const articleIndex = parseInt(eventBtn.getAttribute('data-article'), 10) || 0;
+                    closeFiguresOverlay();
+                    navigateToEvent(year, tabNum, articleIndex);
+                }
+            });
+        }
+    }
+
+    async function loadFigures() {
+        if (figuresData) return figuresData;
+        try {
+            const response = await fetch('/data/figures.json');
+            figuresData = await response.json();
+        } catch (error) {
+            console.error('Не удалось загрузить data/figures.json', error);
+            figuresData = [];
+        }
+        return figuresData;
+    }
+
+    function renderFigures(figures) {
+        if (!figures.length) {
+            figuresList.innerHTML = '<p>Список пока пуст.</p>';
+            return;
+        }
+
+        figuresList.innerHTML = figures.map(function (figure) {
+            const eventsHtml = figure.events.map(function (ev) {
+                return '<button type="button" class="figure-event-btn"' +
+                    ' data-year="' + escapeAttr(ev.year) + '"' +
+                    ' data-tab="' + escapeAttr(ev.tab) + '"' +
+                    ' data-article="' + ev.article + '">' +
+                    '<span class="figure-event-year">' + escapeHtml(ev.year) + '</span>' +
+                    escapeHtml(ev.title) +
+                    '</button>';
+            }).join('');
+
+            const figureSlug = slugifyPathText(figure.figure);
+
+            return (
+                '<div class="figure-group">' +
+                '<div class="figure-group-header">' +
+                '<span class="figure-group-name">' + escapeHtml(figure.figure) + '</span>' +
+                '<a class="figure-page-link" href="/cast/' + figureSlug + '/" target="_blank"' +
+                ' rel="noopener noreferrer" title="Открыть страницу сюжетной линии">' +
+                '<ion-icon name="open-outline"></ion-icon></a>' +
+                '<ion-icon class="figure-chevron" name="chevron-down-outline"></ion-icon>' +
+                '</div>' +
+                '<div class="figure-events">' + eventsHtml + '</div>' +
+                '</div>'
+            );
+        }).join('');
+    }
+
+    async function openFiguresOverlay() {
+        const figures = await loadFigures();
+        renderFigures(figures);
+        figuresOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeFiguresOverlay() {
+        figuresOverlay.classList.remove('active');
+        document.body.style.overflow = '';
     }
 
     function escapeHtml(text) {
