@@ -63,6 +63,7 @@
         <div class="container header-inner">
             <div class="header-actions">
                 <button type="button" class="header-btn" id="mainBtn">Main</button>
+                <button type="button" class="header-btn" id="figuresBtn">Cast</button>
                 <button type="button" class="header-btn" id="logBtn"><ion-icon name="power"></ion-icon> Log</button>
             </div>
         </div>
@@ -111,6 +112,15 @@
                 <button class="tab-button" data-tab="tab2">Россия</button>
                 <button class="tab-button" data-tab="tab3">Галерея</button>
             </div>
+        </div>
+    </div>
+    <div class="modal-overlay" id="figuresOverlay">
+        <div class="modal figures-modal">
+            <div class="modal-header">
+                <h2>Сюжетные линии</h2>
+                <button class="modal-close" id="figuresClose" aria-label="Закрыть">×</button>
+            </div>
+            <div class="figures-list" id="figuresList"></div>
         </div>
     </div>
     <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.2/ionicons/ionicons.esm.js"></script>
