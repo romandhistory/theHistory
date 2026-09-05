@@ -53,8 +53,11 @@ def build_urls(slides):
 
         urls.append(f'{BASE_URL}/{year_id}/')
 
-        content_path = ROOT_PATH / str(slide.get('content', ''))
-        if not content_path.exists():
+        content_value = str(slide.get('content', '') or '').strip()
+        if not content_value:
+            continue
+        content_path = ROOT_PATH / content_value
+        if not content_path.is_file():
             continue
 
         year_data = load_year(content_path)

@@ -6,6 +6,7 @@ on:
     paths:
       - 'data/**'
       - 'TG/kompanovka.xlsx'
+      - 'TG/intros.xlsx'
       - 'generate_year_pages.py'
       - 'generate_sitemap.py'
       - 'generate_figures.py'

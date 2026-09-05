@@ -12,6 +12,7 @@ sys.path.insert(0, str(ROOT_PATH))
 from generate_year_pages import render_static_shell, slugify, safe_image_src, BASE_URL  # noqa: E402
 
 SRC_PATH = ROOT_PATH / 'TG' / 'kompanovka.xlsx'
+INTROS_PATH = ROOT_PATH / 'TG' / 'intros.xlsx'
 YEARS_DIR = ROOT_PATH / 'data' / 'years'
 SLIDES_PATH = ROOT_PATH / 'data' / 'slides.json'
 OUT_PATH = ROOT_PATH / 'data' / 'figures.json'
@@ -106,8 +107,35 @@ def parse_source(path):
     return figures
 
 
+def parse_intros(path):
+    intros = {}
+    if not path.exists():
+        return intros
+
+    with path.open('r', encoding='utf-8') as f:
+        for raw_line in f:
+            line = raw_line.strip()
+            if not line or ' — ' not in line:
+                continue
+            name, _, text = line.partition(' — ')
+            name = name.strip()
+            text = text.strip()
+            if name and text:
+                intros[name] = text
+
+    return intros
+
+
 def resolve_figures():
     figures = parse_source(SRC_PATH)
+    intros = parse_intros(INTROS_PATH)
+    figure_names = {figure['figure'] for figure in figures}
+    unmatched_intros = [name for name in intros if name not in figure_names]
+
+    for figure in figures:
+        if not figure['intro'] and figure['figure'] in intros:
+            figure['intro'] = intros[figure['figure']]
+
     year_cache = {}
     resolved_figures = []
     unmatched = []
@@ -137,7 +165,7 @@ def resolve_figures():
                 'events': resolved_events
             })
 
-    return resolved_figures, unmatched, fuzzy_used, year_cache
+    return resolved_figures, unmatched, fuzzy_used, year_cache, unmatched_intros
 
 
 def build_figure_page(figure, year_cache, slide_by_id):
@@ -212,7 +240,7 @@ def build():
         print(f'{SRC_PATH} not found, skipping figures generation')
         return
 
-    resolved_figures, unmatched, fuzzy_used, year_cache = resolve_figures()
+    resolved_figures, unmatched, fuzzy_used, year_cache, unmatched_intros = resolve_figures()
 
     OUT_PATH.write_text(
         json.dumps(resolved_figures, ensure_ascii=False, indent=2) + '\n',
@@ -249,6 +277,10 @@ def build():
         print(f'{len(unmatched)} events could NOT be matched to an article:')
         for figure_name, title, year in unmatched:
             print(f'  {figure_name}: {title}/{year}')
+    if unmatched_intros:
+        print(f'{len(unmatched_intros)} intro(s) in {INTROS_PATH.name} did NOT match any figure name - check for typos:')
+        for name in unmatched_intros:
+            print(f'  {name}')
 
 
 if __name__ == '__main__':
