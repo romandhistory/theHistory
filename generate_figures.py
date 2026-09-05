@@ -65,6 +65,66 @@ def find_article(year_data, title):
     return None
 
 
+def sort_key(name):
+    return normalize(name)
+
+
+def sort_kompanovka_file(path):
+    if not path.exists():
+        return
+
+    with path.open('r', encoding='utf-8') as f:
+        lines = [line.rstrip('\n').rstrip('\r') for line in f]
+
+    blocks = []
+    current = None
+    for line in lines:
+        stripped = line.strip()
+        if not stripped:
+            continue
+        is_header = stripped.startswith('•')
+        if is_header:
+            current = {'name': stripped.lstrip('•').strip(), 'body': []}
+            blocks.append(current)
+        elif current is not None:
+            current['body'].append(line)
+
+    if not blocks:
+        return
+
+    blocks.sort(key=lambda b: sort_key(b['name']))
+
+    out_lines = []
+    for block in blocks:
+        out_lines.append('• ' + block['name'])
+        out_lines.extend(block['body'])
+        out_lines.append('')
+
+    new_content = '\n'.join(out_lines).rstrip('\n') + '\n'
+    if path.read_text(encoding='utf-8') != new_content:
+        path.write_text(new_content, encoding='utf-8')
+        print(f'Sorted {path.name} ({len(blocks)} entries)')
+
+
+def sort_intros_file(path):
+    if not path.exists():
+        return
+
+    with path.open('r', encoding='utf-8') as f:
+        lines = [line.strip() for line in f]
+
+    entries = [line for line in lines if line and ' — ' in line]
+    if not entries:
+        return
+
+    entries.sort(key=lambda entry: sort_key(entry.partition(' — ')[0].strip()))
+
+    new_content = '\n'.join(entries) + '\n'
+    if path.read_text(encoding='utf-8') != new_content:
+        path.write_text(new_content, encoding='utf-8')
+        print(f'Sorted {path.name} ({len(entries)} entries)')
+
+
 def parse_source(path):
     figures = []
     current = None
@@ -239,6 +299,9 @@ def build():
     if not SRC_PATH.exists():
         print(f'{SRC_PATH} not found, skipping figures generation')
         return
+
+    sort_kompanovka_file(SRC_PATH)
+    sort_intros_file(INTROS_PATH)
 
     resolved_figures, unmatched, fuzzy_used, year_cache, unmatched_intros = resolve_figures()
 
