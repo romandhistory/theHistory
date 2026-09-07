@@ -175,7 +175,7 @@
     "label": "880",
     "century": "IX",
     "image": "img/880.webp",
-    "locked": true,
+    "locked": false,
     "content": "data/years/880.json"
   },
   {

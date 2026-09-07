@@ -16,7 +16,15 @@
           "image": {
             "src": "cont/880/ribemon.webp",
             "alt": "ribemon"
-          }
+          },
+          "links": [
+            {
+              "year": "879",
+              "tab": "world",
+              "article": 2,
+              "label": "879 — Людовик III и Карломан II помазаны на царство"
+            }
+          ]
         },
         {
           "button": "Смерть Карломана Баварского",
@@ -30,7 +38,15 @@
           "image": {
             "src": "cont/880/death_karloman.webp",
             "alt": "death_karloman"
-          }
+          },
+          "links": [
+            {
+              "year": "877",
+              "tab": "world",
+              "article": 3,
+              "label": "877 — Карломан Баварский провозглашён королём Италии"
+            }
+          ]
         },
         {
           "button": "Битва при Эбсторфе",
@@ -45,7 +61,15 @@
           "image": {
             "src": "cont/880/bitva.webp",
             "alt": "bitva"
-          }
+          },
+          "links": [
+            {
+              "year": "879",
+              "tab": "world",
+              "article": 6,
+              "label": "879 — Новый отряд викингов разбил лагерь у Фулема"
+            }
+          ]
         },
         {
           "button": "Булла Industriae tuae",
@@ -59,7 +83,15 @@
           "image": {
             "src": "cont/880/bulla.webp",
             "alt": "bulla"
-          }
+          },
+          "links": [
+            {
+              "year": "874",
+              "tab": "world",
+              "article": 3,
+              "label": "874 — Возвращение Мефодия в Моравию"
+            }
+          ]
         },
         {
           "button": "Вихинг назначен первым епископом Нитры",
@@ -73,7 +105,15 @@
           "image": {
             "src": "cont/880/eparh.webp",
             "alt": "eparh"
-          }
+          },
+          "links": [
+            {
+              "year": "874",
+              "tab": "world",
+              "article": 8,
+              "label": "874 — Святополк Моравский подчинил вислянского князя"
+            }
+          ]
         },
         {
           "button": "Победа Насара у Кефалонии",
@@ -88,7 +128,15 @@
           "image": {
             "src": "cont/880/nochn_boi.webp",
             "alt": "nochn_boi"
-          }
+          },
+          "links": [
+            {
+              "year": "876",
+              "tab": "world",
+              "article": 6,
+              "label": "876 — Византия заняла Бари"
+            }
+          ]
         },
         {
           "button": "Освящение Nea Ekklesia в Константинополе",
@@ -103,7 +151,15 @@
           "image": {
             "src": "cont/880/ekklesia.webp",
             "alt": "new_ekklesia"
-          }
+          },
+          "links": [
+            {
+              "year": "872",
+              "tab": "world",
+              "article": 5,
+              "label": "872 — Битва при Вафириаке"
+            }
+          ]
         },
         {
           "button": "Хуан Чао захватывает Лоян",
@@ -117,7 +173,15 @@
           "image": {
             "src": "cont/880/loian.webp",
             "alt": "loian"
-          }
+          },
+          "links": [
+            {
+              "year": "879",
+              "tab": "world",
+              "article": 8,
+              "label": "879 — Резня в Гуанчжоу"
+            }
+          ]
         },
         {
           "button": "Умар ибн Хафсун поднял восстание в горах Ронды",
@@ -132,7 +196,15 @@
           "image": {
             "src": "cont/880/umar.webp",
             "alt": "umar"
-          }
+          },
+          "links": [
+            {
+              "year": "877",
+              "tab": "world",
+              "article": 9,
+              "label": "877 — Кордовский эмират атаковал Леон, Бьерсо и Галисию"
+            }
+          ]
         },
         {
           "button": "Битва при Тимеоне",
@@ -185,7 +257,15 @@
           "image": {
             "src": "cont/880/karta.webp",
             "alt": "karta"
-          }
+          },
+          "links": [
+            {
+              "year": "870",
+              "tab": "world",
+              "article": 12,
+              "label": "870 — Мир в 861–870 годах: итог десятилетия"
+            }
+          ]
         }
       ]
     },

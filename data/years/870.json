@@ -327,7 +327,15 @@
           "image": {
             "src": "cont/870/karta870.webp",
             "alt": "karta870"
-          }
+          },
+          "links": [
+            {
+              "year": "880",
+              "tab": "world",
+              "article": 12,
+              "label": "880 — Мир в 871–880 годах: итог десятилетия"
+            }
+          ]
         }
       ]
     },
