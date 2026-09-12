@@ -251,9 +251,18 @@
     "content": "data/years/888.json"
   },
   {
+    "id": "889",
+    "tag": "889",
+    "label": "889",
+    "century": "IX",
+    "image": "img/889.webp",
+    "locked": true,
+    "content": "data/years/889.json"
+  },
+  {
     "id": "19",
     "tag": "19",
-    "label": "889-2000",
+    "label": "890-2000",
     "century": "X-XX",
     "image": "img/logo.webp",
     "locked": false
