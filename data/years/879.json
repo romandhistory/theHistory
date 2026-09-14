@@ -101,7 +101,15 @@
           "image": {
             "src": "cont/879/karl_tolst.webp",
             "alt": "karl_tolst"
-          }
+          },
+          "links": [
+            {
+              "year": "881",
+              "tab": "world",
+              "article": 1,
+              "label": "881 — Карл III Толстый коронован императором"
+            }
+          ]
         },
         {
           "button": "Новый отряд викингов разбил лагерь у Фулема на Темзе",
