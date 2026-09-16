@@ -262,10 +262,19 @@
   {
     "id": "19",
     "tag": "19",
-    "label": "890-2000",
+    "label": "890-1999",
     "century": "X-XX",
     "image": "img/logo.webp",
     "locked": false
+  },
+  {
+    "id": "2000",
+    "tag": "2000",
+    "label": "2000",
+    "century": "XXI",
+    "image": "img/2000.webp",
+    "locked": false,
+    "content": "data/years/2000.json"
   },
   {
     "id": "2001",
