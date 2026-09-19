@@ -260,6 +260,15 @@
     "content": "data/years/889.json"
   },
   {
+    "id": "890",
+    "tag": "890",
+    "label": "890",
+    "century": "IX",
+    "image": "img/890.webp",
+    "locked": true,
+    "content": "data/years/890.json"
+  },
+  {
     "id": "19",
     "tag": "19",
     "label": "890-1999",
