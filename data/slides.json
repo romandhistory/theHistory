@@ -202,7 +202,7 @@
     "label": "883",
     "century": "IX",
     "image": "img/883.webp",
-    "locked": true,
+    "locked": false,
     "content": "data/years/883.json"
   },
   {
