@@ -211,7 +211,7 @@
     "label": "884",
     "century": "IX",
     "image": "img/884.webp",
-    "locked": true,
+    "locked": false,
     "content": "data/years/884.json"
   },
   {
@@ -220,7 +220,7 @@
     "label": "885",
     "century": "IX",
     "image": "img/885.webp",
-    "locked": true,
+    "locked": false,
     "content": "data/years/885.json"
   },
   {
@@ -276,6 +276,15 @@
     "image": "img/891.webp",
     "locked": true,
     "content": "data/years/891.json"
+  },
+  {
+    "id": "892",
+    "tag": "892",
+    "label": "892",
+    "century": "IX",
+    "image": "img/892.webp",
+    "locked": true,
+    "content": "data/years/892.json"
   },
   {
     "id": "19",
