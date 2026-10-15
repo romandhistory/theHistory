@@ -277,7 +277,15 @@
           "image": {
             "src": "cont/879/ripol'.webp",
             "alt": "ripol'"
-          }
+          },
+          "links": [
+            {
+              "year": "886",
+              "tab": "world",
+              "article": 7,
+              "label": "886 — Начало политического кризиса в Испанской марке"
+            }
+          ]
         }
       ]
     },
