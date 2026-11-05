@@ -293,7 +293,15 @@
           "image": {
             "src": "cont/876/death_bagrat.webp",
             "alt": "death_bagrat"
-          }
+          },
+          "links": [
+            {
+              "year": "888",
+              "tab": "world",
+              "article": 11,
+              "label": "888 — Адарнасе IV провозглашён царём Иберии"
+            }
+          ]
         }
       ]
     },
