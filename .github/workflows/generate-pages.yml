@@ -10,6 +10,7 @@ on:
       - 'generate_year_pages.py'
       - 'generate_sitemap.py'
       - 'generate_figures.py'
+      - 'generate_tg_lists.py'
 
 permissions:
   contents: write
@@ -35,6 +36,9 @@ jobs:
 
       - name: Generate figures index and pages
         run: python generate_figures.py
+
+      - name: Generate TG block lists (Мир / Россия)
+        run: python generate_tg_lists.py
 
       - name: Generate sitemap and robots.txt
         run: python generate_sitemap.py
