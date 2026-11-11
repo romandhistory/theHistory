@@ -40,15 +40,15 @@ def build(tab):
         lines.append(str(year))
         lines.extend('    ' + b for b in buttons)
         lines.append('')
-    return '\r\n'.join(lines)
+    return '\n'.join(lines)
 
 
 def main():
     for tab, out in OUTPUTS.items():
         text = build(tab)
-        old = out.read_bytes() if out.exists() else None
-        if text.encode('utf-8') != old:
-            out.write_bytes(text.encode('utf-8'))
+        old = out.read_text(encoding='utf-8') if out.exists() else None
+        if text != old:
+            out.write_text(text, encoding='utf-8')
             print(f'updated {out.relative_to(ROOT)}')
         else:
             print(f'unchanged {out.relative_to(ROOT)}')
