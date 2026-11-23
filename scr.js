@@ -95,9 +95,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
 
     function initSwiper() {
-        const defaultSlideIndex = slidesData.findIndex(function (slide) {
-            return slide.tag === '19';
-        });
+        const defaultSlideIndex = Math.floor(Math.random() * slidesData.length);
         const isMobile = window.matchMedia('(max-width: 768px)').matches;
 
         swiper = new Swiper('.tranding-slider', {
@@ -843,6 +841,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         if (slideIndex === -1) return;
 
         if (swiper) swiper.slideTo(slideIndex);
+        if (slidesData[slideIndex].locked) return;
         navigateToEvent(yearId, tabNum, articleIndex, replaceHistory);
     }
 

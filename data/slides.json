@@ -4,7 +4,8 @@
     "tag": "1",
     "label": "∞-861",
     "century": "∞-IX",
-    "image": "img/logo.webp"
+    "image": "img/logo.webp",
+    "locked": true
   },
   {
     "id": "862",
@@ -255,11 +256,57 @@
     "content": "data/years/892.json"
   },
   {
-    "id": "19",
-    "tag": "19",
-    "label": "892-1999",
-    "century": "X-XX",
-    "image": "img/logo.webp"
+    "id": "1962",
+    "tag": "1962",
+    "label": "1962",
+    "century": "XX",
+    "image": "img/logo.webp",
+    "content": "data/years/1962.json",
+    "locked": true
+  },
+  {
+    "id": "1963",
+    "tag": "1963",
+    "label": "1963",
+    "century": "XX",
+    "image": "img/1963.webp",
+    "content": "data/years/1963.json"
+  },
+  {
+    "id": "1964",
+    "tag": "1964",
+    "label": "1964",
+    "century": "XX",
+    "image": "img/logo.webp",
+    "content": "data/years/1964.json",
+    "locked": true
+  },
+  {
+    "id": "1986",
+    "tag": "1986",
+    "label": "1986",
+    "century": "XX",
+    "image": "img/logo.webp",
+    "content": "data/years/1986.json",
+    "locked": true
+  },
+  {
+    "id": "1987",
+    "tag": "1987",
+    "label": "1987",
+    "century": "XX",
+    "image": "img/logo.webp",
+    "content": "data/years/1987.json",
+    "locked": true
+  },
+  {
+    "id": "1988",
+    "tag": "1988",
+    "label": "1988",
+    "century": "XX",
+    "image": "img/logo.webp",
+    "content": "data/years/1988.json",
+    "locked": true
   },
   {
     "id": "2000",
